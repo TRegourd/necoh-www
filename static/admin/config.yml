@@ -1,0 +1,164 @@
+backend:
+  name: github
+  repo: TRegourd/necoh-www
+  branch: main
+media_folder: src/assets/image
+public_folder: ""
+publish_mode: editorial_workflow
+collections:
+  - label: "Contenu de la page d'accueil"
+    name: "index"
+    files:
+      - label: "Bannière d'accueil"
+        name: "heroContent"
+        file: "src/data/hero.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous-Titre, name: subtitle, widget: string }
+          - { label: Image, name: hero_img, widget: image }
+          - { label: Carte Glissante Haute, name: topCard, widget: string }
+          - { label: Carte Glissante Basse, name: botCard, widget: string }
+
+  - label: "Contenu de la page A propos"
+    name: "about"
+    files:
+      - label: "Contenu de la page"
+        name: "aboutContent"
+        file: "src/data/about.md"
+        fields:
+          - label: Entête
+            name: aboutHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+          - label: Description
+            name: aboutDesc
+            widget: object
+            fields:
+              - {
+                  label: Titre de la description,
+                  name: descTitle,
+                  widget: string,
+                }
+              - {
+                  label: Sous Titre de la description,
+                  name: descSubtitle,
+                  widget: text,
+                }
+              - {
+                  label: Image de la description n°1,
+                  name: descImage1,
+                  widget: image,
+                }
+              - {
+                  label: Image de la description n°2,
+                  name: descImage2,
+                  widget: image,
+                }
+          - label: Auteur
+            name: aboutAuthor
+            widget: object
+            fields:
+              - { label: Titre de l'auteur, name: authorTitle, widget: string }
+              - { label: Image de l'auteur, name: authorImage, widget: image }
+              - { label: Nom de l'auteur, name: authorName, widget: string }
+              - {
+                  label: Description de l'auteur,
+                  name: authorDesc,
+                  widget: markdown,
+                }
+          - label: Call To Action
+            name: aboutCTA
+            widget: object
+            fields:
+              - {
+                  label: Titre du Call to Action,
+                  name: CTATitle,
+                  widget: string,
+                }
+              - {
+                  label: SousTitre du Call to Action,
+                  name: CTASubtitle,
+                  widget: string,
+                }
+
+  - label: "Contenu de la FAQ"
+    name: "faq"
+    files:
+      - label: "Contenu de la page"
+        name: "faqContent"
+        file: "src/data/faq.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - label: Catégorie
+            name: category
+            widget: list
+            fields:
+              - { label: Nom, name: name, widget: string }
+              - label: Questions
+                name: questions
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Texte, name: text, widget: markdown }
+
+  - label: "Contenu des Articles"
+    name: "articles"
+    files:
+      - label: "Contenu de la page"
+        name: "articlesContent"
+        file: "src/data/articles.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
+          - label: Catégorie
+            name: category
+            widget: list
+            fields:
+              - { label: Nom, name: name, widget: string }
+              - label: Articles
+                name: articles
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: description, widget: string }
+                  - { label: Date, name: date, widget: date }
+                  - { label: Auteur, name: author, widget: string }
+                  - {
+                      label: Photo de couverture,
+                      name: thumbnail,
+                      widget: image,
+                    }
+                  - { label: Texte, name: text, widget: markdown }
+                  - label: Tags
+                    name: tags
+                    widget: list
+                    fields:
+                      - { label: Tag, name: tag, widget: string }
+  - label: "Contenu de la page contact"
+    name: "contact"
+    files:
+      - label: "Contenu de la page"
+        name: "contactContent"
+        file: "src/data/contact.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous-Titre, name: subtitle, widget: string }
+      - label: "Coordonnées"
+        name: "contactDetails"
+        file: "src/data/contactDetails.md"
+        fields:
+          - { label: Téléphone, name: phone, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Adresse Ligne 1 (rue), name: addressLine1, widget: string }
+          - {
+              label: Adresse Ligne 2 (CP et Ville),
+              name: addressLine2,
+              widget: string,
+            }
+          - { label: Linkedin, name: linkedin, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: Twitter, name: twitter, widget: string }
