@@ -19,9 +19,6 @@ export const HeaderButtonWrapper = styled(Box)`
     letter-spacing: -0.4px;
     margin-left: 10px;
     color: #fff;
-    background-color: #5034fc;
-    border-color: #5034fc;
-    box-shadow: -12px 20px 50px rgb(80 52 252 / 30%);
     font-size: 15px;
     font-weight: 500;
     height: 50px;
@@ -95,7 +92,11 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
           </a>
         </li>
       </ul>
-      <Link target="_blank" className="btn btn-2" to={btnLink ? btnLink : "/"}>
+      <Link
+        target="_blank"
+        className="btn btn-primary"
+        to={btnLink ? btnLink : "/"}
+      >
         {btnText}
       </Link>
     </HeaderButtonWrapper>

@@ -1,15 +1,8 @@
 const path = require(`path`)
 module.exports = {
   siteMetadata: {
-    title: `Fastland Gatsby`,
+    title: `Necoh`,
   },
-  // flags: {
-  //   PRESERVE_FILE_DOWNLOAD_CACHE: true,
-  //   PRESERVE_WEBPACK_CACHE: true,
-  //   THE_FLAG: false,
-  //   DEV_SSR: true,
-  //   FAST_REFRESH: true,
-  // },
   plugins: [
     `gatsby-plugin-styled-components`,
     {
@@ -24,12 +17,22 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `assets`,`image`),
+        path: path.join(__dirname, `src`, `assets`, `image`),
         // `${__dirname}/src/assets/image`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/data/`,
       },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-background-image`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-slug`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import { PageWrapper } from "~components/Core"
-import HeaderButton from "~sections/home/Header"
+import HeaderButton from "~sections/shared/Header"
 import HeroSection from "~sections/home/Hero"
 import ServicesSection from "~sections/home/Services"
 import FeatureSection from "~sections/home/Feature"
@@ -9,16 +9,17 @@ import ProcessSection from "~sections/home/Process"
 import CtaSection from "~sections/home/Cta"
 import TestimonialSection from "~sections/home/Testimonial"
 import ContactSection from "~sections/home/Contact"
-import Footer from "~sections/home/Footer"
+import Footer from "~sections/shared/Footer"
+import { graphql } from "gatsby"
 
-const header = {
+export const NecohHeader = {
   headerClasses:
     "site-header site-header--menu-start light-header site-header--with-border site-header--sticky",
   containerFluid: false,
   buttonBlock: (
     <HeaderButton
       className="ms-auto d-none d-xs-inline-flex"
-      btnText="Nous contacter"
+      btnText="Contact"
       mr="15px"
       mrLG="0"
       btnLink="/contact"
@@ -26,9 +27,10 @@ const header = {
   ),
 }
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log(data.contactDetails)
   return (
-    <PageWrapper headerConfig={header}>
+    <PageWrapper headerConfig={NecohHeader}>
       <HeroSection />
       <ServicesSection />
       <FeatureSection />
@@ -37,7 +39,26 @@ export default function Home() {
       <CtaSection />
       <TestimonialSection />
       <ContactSection />
-      <Footer />
+      <Footer contactDetails={data.contactDetails?.frontmatter} />
     </PageWrapper>
   )
 }
+
+export const query = graphql`
+  query {
+    contactDetails: markdownRemark(
+      fields: { slug: { eq: "/contactDetails" } }
+    ) {
+      frontmatter {
+        email
+        phone
+        addressLine1
+        addressLine2
+        twitter
+        facebook
+        instagram
+        linkedin
+      }
+    }
+  }
+`

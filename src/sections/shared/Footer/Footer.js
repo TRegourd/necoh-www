@@ -3,8 +3,9 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { Images } from "~data"
 import Footer from "./style"
-export default function PageFooter() {
+export default function PageFooter({ contactDetails }) {
   const currentYear = new Date().getFullYear()
+
   return (
     <Footer>
       <Container>
@@ -22,30 +23,24 @@ export default function PageFooter() {
                     />
                   </Link>
                 </Footer.Box>
-                <Footer.Text mb="36px">
-                  We’re the digital agency to create
-                  <br className="d-none d-xl-block" /> your digital presence for
-                  better
-                  <br className="d-none d-xl-block" /> conversion and sales.
-                </Footer.Text>
                 <Footer.SocialShare>
                   <Footer.SocialShareItem>
-                    <a href="#">
+                    <a href={contactDetails?.facebook}>
                       <i className="fab fa-facebook-square" />
                     </a>
                   </Footer.SocialShareItem>
                   <Footer.SocialShareItem>
-                    <a href="#">
+                    <a href={contactDetails?.twitter}>
                       <i className="fab fa-twitter" />
                     </a>
                   </Footer.SocialShareItem>
                   <Footer.SocialShareItem>
-                    <a href="#">
+                    <a href={contactDetails?.instagram}>
                       <i className="fab fa-instagram" />
                     </a>
                   </Footer.SocialShareItem>
                   <Footer.SocialShareItem>
-                    <a href="#">
+                    <a href={contactDetails?.linkedin}>
                       <i className="fab fa-linkedin" />
                     </a>
                   </Footer.SocialShareItem>
@@ -56,32 +51,33 @@ export default function PageFooter() {
               <Row>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
-                    <Footer.Title>Contact Details</Footer.Title>
+                    <Footer.Title>
+                      <a href={"/contact"} className="text-black">
+                        Contact
+                      </a>
+                    </Footer.Title>
                     <Footer.Address className="widgets-address">
                       <Footer.AddressItem>
                         <i className="fa fa-map-marker-alt" />
                         <span>
-                          Address: <br className="d-block" />
-                          Netherlands
-                          <br className="d-block" />
-                          4401 Waldeck Street,
-                          <br className="d-block" />
-                          Grapevine Nashville, Tx 76051
+                          {contactDetails?.addressLine1}
+                          <br />
+                          {contactDetails?.addressLine2}
                         </span>
                       </Footer.AddressItem>
                       <Footer.AddressItem>
                         <i className="fa fa-phone-alt" />
 
-                        <a href="#">
-                          <span> Phone: </span>
-                          <br className="d-block" /> +99 (0) 101 0000 888
+                        <a href={`tel:${contactDetails?.phone}`}>
+                          <span> Téléphone: </span>
+                          <br className="d-block" /> {contactDetails?.phone}
                         </a>
                       </Footer.AddressItem>
                       <Footer.AddressItem>
                         <i className="fa fa-envelope" />
-                        <a href="mailto:info@medcartel.com">
+                        <a href={`mailto:${contactDetails?.email}`}>
                           <span className="d-block"> Email:</span>
-                          info@medcartel.com
+                          {contactDetails?.email}
                         </a>
                       </Footer.AddressItem>
                     </Footer.Address>
@@ -89,22 +85,16 @@ export default function PageFooter() {
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
-                    <Footer.Title>Company</Footer.Title>
+                    <Footer.Title>Necoh</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <a href="#">About us</a>
+                        <a href="/about">A propos</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Privacy Policy</a>
+                        <a href="#">Mentions Légales</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Terms &amp; Conditions</a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="#">Rider</a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="#">Contact</a>
+                        <a href="#">Credits</a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
@@ -112,22 +102,20 @@ export default function PageFooter() {
                 <Col xs="12" className="col-md-4 col-xs-9">
                   <Footer.Widgets>
                     <Footer.Title>Newsletter</Footer.Title>
-                    <Footer.Text>
-                      Get the latest trends updates right at your inbox.
-                    </Footer.Text>
+                    <Footer.Text>Recevez les dernières actualités</Footer.Text>
                     {/* Newsletter */}
                     <Footer.Newsletter>
                       <form action="/.">
-                        <input type="text" placeholder="Enter Your Email" />
+                        <input type="text" placeholder="Votre Email" />
                         <Footer.NewsletterBtn
-                          backgroundColor="#fd346e"
+                          className="btn btn-primary"
                           hoverTextColor="#fff"
                           textColor="#fff"
                           sizeX="150px"
                           sizeY="56px"
                           type="submit"
                         >
-                          Subscribe
+                          S'inscrire
                         </Footer.NewsletterBtn>
                       </form>
                     </Footer.Newsletter>
