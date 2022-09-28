@@ -26,32 +26,34 @@ export default function ContactOne({ contactDetails, contactForm }) {
                     <div className="form-floating">
                       <input
                         className="form-control"
-                        placeholder="Leave a comment here"
-                        id="floatinginput"
+                        placeholder="Votre Nom"
+                        id="name"
+                        name="name"
+                        required
                       />
-                      <label htmlFor="floatinginput">Votre Nom</label>
+                      <label htmlFor="name">Votre Nom</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-6 mb-4">
                     <div className="form-floating">
                       <input
                         className="form-control"
-                        placeholder="Leave a comment here"
-                        id="floatinginput"
+                        placeholder="Votre Email"
+                        id="email"
+                        name="email"
+                        required
                       />
-                      <label htmlFor="floatinginput">Votre Email</label>
+                      <label htmlFor="email">Votre Email</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-6 mb-4">
                     <div className="form-floating">
                       <input
                         className="form-control"
-                        placeholder="Leave a comment here"
-                        id="floatinginput2"
+                        placeholder="Votre Numéro de Téléphone"
+                        id="phone"
                       />
-                      <label htmlFor="floatinginput2">
-                        Votre Numéro de Téléphone
-                      </label>
+                      <label htmlFor="phone">Votre Numéro de Téléphone</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-12">
@@ -59,9 +61,11 @@ export default function ContactOne({ contactDetails, contactForm }) {
                       <textarea
                         className="form-control"
                         placeholder="Leave a comment here"
-                        id="floatingTextarea3"
+                        id="message"
+                        name="message"
+                        required
                       />
-                      <label htmlFor="floatingTextarea3">Votre Message </label>
+                      <label htmlFor="message">Votre Message</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-12">
