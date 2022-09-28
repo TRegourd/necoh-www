@@ -99,9 +99,8 @@ Contact.From = styled(Box)`
     }
   }
 `
-Contact.WidgetsBox = styled(Box)`
+Contact.WidgetsBox = styled(Box).attrs({ className: "bg-primary" })`
   padding: 30px 30px 15px;
-  background-color: #5034fc;
   border-radius: 15px;
 
   @media (min-width: 575px) {
@@ -160,10 +159,6 @@ Contact.WidgetsIcon = styled(Paragraph)`
   font-size: 21px;
   color: #fff;
   border-radius: 50%;
-  &.active {
-    color: #5034fc;
-    background-color: #fff;
-  }
 `
 Contact.WidgetsTitle = styled(Heading)`
   color: #fff;
@@ -186,7 +181,10 @@ Contact.WidgetsText = styled(Paragraph)`
 `
 Contact.WidgetsBoxBody = styled(Box)``
 
-Contact.Button = styled(Button).attrs({ className: "btn-secondary" })`
+Contact.Button = styled(Button).attrs({
+  type: "submit",
+  className: "btn-secondary",
+})`
   min-width: 180px;
   height: 56px;
 
