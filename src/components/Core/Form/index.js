@@ -10,7 +10,7 @@ const Form = ({ children, hname, hvalue, ...rest }) => {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <input type="hidden" name={hname} value={hvalue} />
+      <input type="hidden" name={"form-name"} value={hname} />
       {children}
     </form>
   )

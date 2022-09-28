@@ -181,7 +181,10 @@ Contact.WidgetsText = styled(Paragraph)`
 `
 Contact.WidgetsBoxBody = styled(Box)``
 
-Contact.Button = styled(Button).attrs({ className: "btn-secondary" })`
+Contact.Button = styled(Button).attrs({
+  type: "submit",
+  className: "btn-secondary",
+})`
   min-width: 180px;
   height: 56px;
 
