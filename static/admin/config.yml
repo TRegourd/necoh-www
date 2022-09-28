@@ -140,16 +140,19 @@ collections:
   - label: "Contenu de la page contact"
     name: "contact"
     files:
-      - label: "Contenu de la page"
-        name: "contactContent"
-        file: "src/data/contact.md"
+      - label: "Formulaire"
+        name: "contactForm"
+        file: "src/data/contactForm.md"
         fields:
           - { label: Titre, name: title, widget: string }
           - { label: Sous-Titre, name: subtitle, widget: string }
+          - { label: Texte, name: text, widget: string }
       - label: "Coordonnées"
         name: "contactDetails"
         file: "src/data/contactDetails.md"
         fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Texte, name: text, widget: string }
           - { label: Téléphone, name: phone, widget: string }
           - { label: Email, name: email, widget: string }
           - { label: Adresse Ligne 1 (rue), name: addressLine1, widget: string }

@@ -8,7 +8,10 @@ import { graphql } from "gatsby"
 export default function contactOne({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
-      <ContactSection />
+      <ContactSection
+        contactForm={data.contactForm?.frontmatter}
+        contactDetails={data.contactDetails?.frontmatter}
+      />
       <Footer contactDetails={data.contactDetails?.frontmatter} />
     </PageWrapper>
   )
@@ -20,6 +23,8 @@ export const query = graphql`
       fields: { slug: { eq: "/contactDetails" } }
     ) {
       frontmatter {
+        title
+        text
         email
         phone
         addressLine1
@@ -28,6 +33,13 @@ export const query = graphql`
         facebook
         instagram
         linkedin
+      }
+    }
+    contactForm: markdownRemark(fields: { slug: { eq: "/contactForm" } }) {
+      frontmatter {
+        title
+        subtitle
+        text
       }
     }
   }
