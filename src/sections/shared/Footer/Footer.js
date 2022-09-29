@@ -3,9 +3,27 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { Images } from "~data"
 import Footer from "./style"
+import { graphql, useStaticQuery } from "gatsby"
 export default function PageFooter({ contactDetails }) {
   const currentYear = new Date().getFullYear()
-
+  const data = useStaticQuery(graphql`
+    query {
+      contactDetails: markdownRemark(
+        fields: { slug: { eq: "/contactDetails" } }
+      ) {
+        frontmatter {
+          email
+          phone
+          addressLine1
+          addressLine2
+          twitter
+          facebook
+          instagram
+          linkedin
+        }
+      }
+    }
+  `)
   return (
     <Footer>
       <Container>
@@ -25,22 +43,22 @@ export default function PageFooter({ contactDetails }) {
                 </Footer.Box>
                 <Footer.SocialShare>
                   <Footer.SocialShareItem>
-                    <a href={contactDetails?.facebook}>
+                    <a href={data.contactDetails?.frontmatter.facebook}>
                       <i className="fab fa-facebook-square" />
                     </a>
                   </Footer.SocialShareItem>
                   <Footer.SocialShareItem>
-                    <a href={contactDetails?.twitter}>
+                    <a href={data.contactDetails?.frontmatter.twitter}>
                       <i className="fab fa-twitter" />
                     </a>
                   </Footer.SocialShareItem>
                   <Footer.SocialShareItem>
-                    <a href={contactDetails?.instagram}>
+                    <a href={data.contactDetails?.frontmatter.instagram}>
                       <i className="fab fa-instagram" />
                     </a>
                   </Footer.SocialShareItem>
                   <Footer.SocialShareItem>
-                    <a href={contactDetails?.linkedin}>
+                    <a href={data.contactDetails?.frontmatter.linkedin}>
                       <i className="fab fa-linkedin" />
                     </a>
                   </Footer.SocialShareItem>
@@ -60,24 +78,29 @@ export default function PageFooter({ contactDetails }) {
                       <Footer.AddressItem>
                         <i className="fa fa-map-marker-alt" />
                         <span>
-                          {contactDetails?.addressLine1}
+                          {data.contactDetails?.frontmatter.addressLine1}
                           <br />
-                          {contactDetails?.addressLine2}
+                          {data.contactDetails?.frontmatter.addressLine2}
                         </span>
                       </Footer.AddressItem>
                       <Footer.AddressItem>
                         <i className="fa fa-phone-alt" />
 
-                        <a href={`tel:${contactDetails?.phone}`}>
+                        <a
+                          href={`tel:${data.contactDetails?.frontmatter.phone}`}
+                        >
                           <span> Téléphone: </span>
-                          <br className="d-block" /> {contactDetails?.phone}
+                          <br className="d-block" />{" "}
+                          {data.contactDetails?.frontmatter.phone}
                         </a>
                       </Footer.AddressItem>
                       <Footer.AddressItem>
                         <i className="fa fa-envelope" />
-                        <a href={`mailto:${contactDetails?.email}`}>
+                        <a
+                          href={`mailto:${data.contactDetails?.frontmatter.email}`}
+                        >
                           <span className="d-block"> Email:</span>
-                          {contactDetails?.email}
+                          {data.contactDetails?.frontmatter.email}
                         </a>
                       </Footer.AddressItem>
                     </Footer.Address>
@@ -91,10 +114,13 @@ export default function PageFooter({ contactDetails }) {
                         <a href="/about">A propos</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
+                        <a href="#">Nous rejoindre</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
                         <a href="#">Mentions Légales</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Credits</a>
+                        <a href="#">Crédits</a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>

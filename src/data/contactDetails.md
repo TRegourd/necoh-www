@@ -8,6 +8,6 @@ addressLine2: 73000 BARBERAZ
 linkedin: https://www.linkedin.com/company/necoh/
 facebook: https://www.facebook.com/NECOHExpertise/
 instagram: https://www.instagram.com/necohexpertise/
-twitter: https://twitter.com/cohenguillaume
+twitter: https://twitter.com/necohexpertise
 adress: 22 route de Challes - 73000 BARBERAZ
 ---

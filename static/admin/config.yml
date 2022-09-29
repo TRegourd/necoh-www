@@ -9,15 +9,21 @@ collections:
   - label: "Contenu de la page d'accueil"
     name: "index"
     files:
-      - label: "Bannière d'accueil"
-        name: "heroContent"
-        file: "src/data/hero.md"
+      - label: "Contenu"
+        name: "indexContent"
+        file: "src/data/index.md"
         fields:
-          - { label: Titre, name: title, widget: string }
-          - { label: Sous-Titre, name: subtitle, widget: string }
-          - { label: Image, name: hero_img, widget: image }
-          - { label: Carte Glissante Haute, name: topCard, widget: string }
-          - { label: Carte Glissante Basse, name: botCard, widget: string }
+          - label: Entête
+            name: indexHero
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - label: Texte Dynamique
+                name: dynamicText
+                widget: list
+                fields:
+                  - { label: Text, name: text, widget: string }
 
   - label: "Contenu de la page A propos"
     name: "about"

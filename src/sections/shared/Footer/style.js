@@ -137,7 +137,7 @@ Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
     line-height: 30px;
     transition: 0.4s;
     &:hover {
-      color: #fd346e !important;
+      color: #ab4922 !important;
     }
   }
   i {
@@ -180,7 +180,7 @@ Footer.SocialShareItem = styled(Box).attrs({
     font-size: 15px;
     transition: 0.4s;
     &:hover {
-      color: #fd346e;
+      color: #ab4922;
     }
   }
 `

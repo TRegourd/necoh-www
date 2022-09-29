@@ -1,45 +1,62 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
+import ReactTypingEffect from "react-typing-effect"
 import { Link } from "~components"
+import { Button } from "~styled"
 import ImageGroup from "./Components/ImageGroup"
 import Hero from "./style"
-export default function HeroSection() {
+
+export default function HeroSection({ content }) {
   return (
-    <Hero>
+    <Hero className="position-relative bg-default">
       <Container>
-        <Row className="align-items-center justify-content-center justify-content-md-start">
+        <Row>
           {/* Welcome content Area */}
           <Col
+            className="col-xl-6 col-lg-7 col-md-8 col-xs-11 order-2 order-lg-1"
             xs="12"
-            className="col-xxl-5 col-xl-6 col-lg-7 col-md-8 col-xs-11"
           >
-            <div className="welcome-content welcome-content--l3">
-              <Hero.Subtitle></Hero.Subtitle>
-              <Hero.Title>
-                Make More Time <br className="d-none d-xs-block" /> For The Work
-                That <br className="d-none d-xs-block" /> Matters Most
+            <Hero.Content>
+              <Hero.Title as="h1">
+                {content.title}
+                <br />
+                <ReactTypingEffect
+                  text={content.dynamicText?.map(item => {
+                    if (item.text) {
+                      return item.text
+                    }
+                  })}
+                  className="highlight-text d-inline-block text-primary"
+                  speed="100"
+                  eraseSpeed="50"
+                  typingDelay="400"
+                  eraseDelay="800"
+                  cursorClassName="typed-cursor"
+                />
               </Hero.Title>
-              <Hero.Text>
-                When, while lovely valley teems with vapour around meand{" "}
-                <br className="d-none d-sm-block" />
-                meridian sun strikes the upper impenetroble.
-              </Hero.Text>
-              <Hero.BtnGroup>
-                <Hero.Button
-                  className="btn-primary btn-1 text-white"
-                  as={Link}
-                  to="/about"
-                >
-                  En savoir plus
-                </Hero.Button>
-              </Hero.BtnGroup>
-            </div>
+              <Hero.Text>{content.subtitle}</Hero.Text>
+              {/* Newsletter */}
+              <Row>
+                <Col xs="12" className="col-xxl-10">
+                  <Hero.Newsletter>
+                    <Button
+                      className="btn-secondary"
+                      textTransform="capitalized"
+                    >
+                      <Link to="/contact" className=" text-white">
+                        En savoir Plus
+                      </Link>
+                    </Button>
+                  </Hero.Newsletter>
+                </Col>
+              </Row>
+            </Hero.Content>
           </Col>
           {/*/ .Welcome Content Area */}
           {/*Welcome Image Area */}
           <Col
-            xs="12"
-            className="col-xxl-7 col-xl-6 col-lg-5 col-md-8 col-6 position-static d-none d-lg-block"
+            xs={12}
+            className="col-xl-6 col-lg-5 col-md-10 order-1 order-lg-2 position-static"
           >
             <ImageGroup />
           </Col>

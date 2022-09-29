@@ -8,7 +8,7 @@ import ContentSectionOne from "~sections/home/ContentOne"
 import ProcessSection from "~sections/home/Process"
 import CtaSection from "~sections/home/Cta"
 import TestimonialSection from "~sections/home/Testimonial"
-import ContactSection from "~sections/home/Contact"
+import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
 
@@ -28,28 +28,43 @@ export const NecohHeader = {
 }
 
 export default function Home({ data }) {
-  console.log(data.contactDetails)
   return (
     <PageWrapper headerConfig={NecohHeader}>
-      <HeroSection />
-      <ServicesSection />
+      <HeroSection content={data.index.frontmatter?.indexHero} />
+      {/* <ServicesSection />
       <FeatureSection />
       <ContentSectionOne />
       <ProcessSection />
       <CtaSection />
-      <TestimonialSection />
-      <ContactSection />
-      <Footer contactDetails={data.contactDetails?.frontmatter} />
+      <TestimonialSection /> */}
+      <ContactSection
+        contactForm={data.contactForm?.frontmatter}
+        contactDetails={data.contactDetails?.frontmatter}
+      />
+      <Footer />
     </PageWrapper>
   )
 }
 
 export const query = graphql`
   query {
+    index: markdownRemark(fields: { slug: { eq: "/index" } }) {
+      frontmatter {
+        indexHero {
+          title
+          subtitle
+          dynamicText {
+            text
+          }
+        }
+      }
+    }
     contactDetails: markdownRemark(
       fields: { slug: { eq: "/contactDetails" } }
     ) {
       frontmatter {
+        title
+        text
         email
         phone
         addressLine1
@@ -58,6 +73,13 @@ export const query = graphql`
         facebook
         instagram
         linkedin
+      }
+    }
+    contactForm: markdownRemark(fields: { slug: { eq: "/contactForm" } }) {
+      frontmatter {
+        title
+        subtitle
+        text
       }
     }
   }
