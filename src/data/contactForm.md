@@ -1,6 +1,5 @@
 ---
-title: Nous envoyer un message
+title: Besoin d'un renseignement ? D'un Devis ?
 subtitle: Contact
-text: Contactez nous directement via ce formulaire, nous reviendrons vers vous
-  dans les plus brefs délais.
+text: Contactez nous ! Nous reviendrons vers vous dans les plus brefs délais.
 ---
