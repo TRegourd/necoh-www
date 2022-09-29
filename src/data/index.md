@@ -1,6 +1,6 @@
 ---
 indexHero:
-  title: Necoh Expertise
+  title: Votre Partenaire
   subtitle: "Notre collectif d’experts-comptables, avocats, juristes, huissiers,
     notaires, auditeurs, consultants et recruteurs s’engage aux côtés des
     entrepreneurs, dirigeants et décideurs d’entreprises en mouvement, autour
