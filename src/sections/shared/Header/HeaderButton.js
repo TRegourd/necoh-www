@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "~components"
 import styled from "styled-components/macro"
 import { Box } from "~styled"
+import { graphql, useStaticQuery } from "gatsby"
 
 export const HeaderButtonWrapper = styled(Box)`
   .btn {
@@ -68,26 +69,45 @@ export const HeaderButtonWrapper = styled(Box)`
   }
 `
 const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      contactDetails: markdownRemark(
+        fields: { slug: { eq: "/contactDetails" } }
+      ) {
+        frontmatter {
+          email
+          phone
+          addressLine1
+          addressLine2
+          twitter
+          facebook
+          instagram
+          linkedin
+        }
+      }
+    }
+  `)
+
   return (
     <HeaderButtonWrapper {...rest}>
       <ul className="d-none d-xl-flex list-unstyled">
         <li>
-          <a href="#">
+          <a href={data.contactDetails?.frontmatter.instagram}>
             <i className="fab fa-instagram text-primary"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href={data.contactDetails?.frontmatter.linkedin}>
             <i className="fab fa-linkedin text-primary"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href={data.contactDetails?.frontmatter.facebook}>
             <i className="fab fa-facebook text-primary"></i>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href={data.contactDetails?.frontmatter.twitter}>
             <i className="fab fa-twitter text-primary"></i>
           </a>
         </li>

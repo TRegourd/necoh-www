@@ -52,6 +52,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         className="form-control"
                         placeholder="Votre Numéro de Téléphone"
                         id="phone"
+                        name="phone"
                       />
                       <label htmlFor="phone">Votre Numéro de Téléphone</label>
                     </div>
@@ -101,8 +102,9 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         Nous rendre visite :
                       </Contact.WidgetsTitle>
                       <Contact.WidgetsText as="p">
-                        {contactDetails.addressLine1} <br className="d-block" />
-                        {contactDetails.addressLine2}
+                        {contactDetails?.addressLine1}{" "}
+                        <br className="d-block" />
+                        {contactDetails?.addressLine2}
                       </Contact.WidgetsText>
                     </Contact.WidgetsBoxBody>
                   </Contact.Widgets>
@@ -117,7 +119,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         Nous écrire
                       </Contact.WidgetsTitle>
                       <Contact.WidgetsText as="p">
-                        {contactDetails.email}
+                        {contactDetails?.email}
                       </Contact.WidgetsText>
                     </Contact.WidgetsBoxBody>
                   </Contact.Widgets>
@@ -132,7 +134,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         Nous appeller
                       </Contact.WidgetsTitle>
                       <Contact.WidgetsText as="p">
-                        {contactDetails.phone}
+                        {contactDetails?.phone}
                       </Contact.WidgetsText>
                     </Contact.WidgetsBoxBody>
                   </Contact.Widgets>
