@@ -52,6 +52,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         className="form-control"
                         placeholder="Votre Numéro de Téléphone"
                         id="phone"
+                        name="phone"
                       />
                       <label htmlFor="phone">Votre Numéro de Téléphone</label>
                     </div>
