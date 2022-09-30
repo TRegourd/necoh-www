@@ -34,18 +34,35 @@ indexTestimonials:
       avatar: fred-foo.jpeg
     - name: Sophie Dubois
       position: Directrice Financière de Company
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum."
       avatar: jane-doe.jpeg
     - name: Frédéric Dujardin
-      position: Comptable
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      position: Compatable
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
         vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
         modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
         aliquam quia vel labore ipsum ut enim ratione non modi molestiae in
         ipsam rerum."
       avatar: john-doe.jpeg
+indexBrands:
+  title: Les Marques Necoh
+  subtitle: Expertise
+  testimonials:
+    comptabilite:
+      title: Comptabilité
+      desc: Necoh Expertise Comptable
+    social:
+      title: Social
+      desc: Necoh Social
+    juridique:
+      title: Juridique
+      desc: Necoh Juridique
+    fiscalite:
+      title: Fiscalité
+      desc: Necoh Fiscalité
+    audit:
+      title: Audit
+      desc: Necoh Audit
 ---
