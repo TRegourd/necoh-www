@@ -33,28 +33,24 @@ export default function TestiomialCard({
       return el.relativePath === image
     })?.childrenImageSharp[0]
   )
+
   return (
-    <Card
-      hoverbackground="#f39200"
-      elemColor="#262729"
-      backgroundColor="#fff"
-      {...rest}
-    >
-      <Card.Top mb="20px">
+    <Card>
+      <Card.Body backgroundColor="#fff">
+        <Card.Text>{text}</Card.Text>
         <Card.UserBlock>
-          <Card.Image mr="10px">
+          <Card.Image>
             <GatsbyImage image={avatar} alt="Testimonial" />
           </Card.Image>
-          <Card.Box>
+          <Card.UserTexts>
             <Card.Title as="h3">{userName}</Card.Title>
             <Card.UserPosition>{userPosition}</Card.UserPosition>
-          </Card.Box>
+          </Card.UserTexts>
         </Card.UserBlock>
-        <Card.Icon>
-          <i className={icon} />
-        </Card.Icon>
-      </Card.Top>
-      <Card.Text>{text}</Card.Text>
+      </Card.Body>
+      <Card.Icon>
+        <i className={icon} />
+      </Card.Icon>
     </Card>
   )
 }

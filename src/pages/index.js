@@ -11,6 +11,7 @@ import TestimonialSection from "~sections/home/Testimonial"
 import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
+import About from "~sections/home/About"
 
 export const NecohHeader = {
   headerClasses:
@@ -36,6 +37,7 @@ export default function Home({ data }) {
       <ContentSectionOne />
       <ProcessSection />
       <CtaSection /> */}
+      <About />
       <TestimonialSection content={data.index.frontmatter?.indexTestimonials} />
       <ContactSection
         contactForm={data.contactForm?.frontmatter}

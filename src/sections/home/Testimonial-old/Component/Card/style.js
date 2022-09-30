@@ -2,27 +2,20 @@ import styled from "styled-components/macro"
 import { Box, Heading, Button, Paragraph } from "~styled"
 
 const Card = styled(Box).attrs({ className: "card-testimonial" })`
-  border: 0;
+  border: none;
   border-radius: 15px;
-  transition: 0.4s;
-
+  position: relative;
+  z-index: 0;
+  color: #262729;
+  background: transparent;
   padding-top: 30px;
-  padding-left: 30px;
+`
+Card.Body = styled(Box)`
+  padding-top: 55px;
+  padding-bottom: 25px;
+  padding-left: 40px;
   padding-right: 30px;
-  padding-bottom: 30px;
-  @media (min-width: 575px) {
-    padding-top: 45px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 40px;
-  }
-  &:hover {
-    background-color: ${props => props.hoverbackground};
-    color: #fff;
-    .card-icon {
-      color: inherit;
-    }
-  }
+  border-radius: 15px;
 `
 Card.Image = styled(Box)`
   min-width: 50px;
@@ -30,50 +23,61 @@ Card.Image = styled(Box)`
   min-height: 50px;
   max-height: 50px;
   border-radius: 500px;
-  width: 100%;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  @media (min-width: 480px) {
-    margin-bottom: 0;
-  }
+  margin-right: 15px;
   img {
     width: 100%;
     border-radius: 500px;
   }
 `
 Card.Title = styled(Heading)`
-  color: inherit;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: normal;
-  line-height: 1.73333;
+  line-height: 25px;
   margin-bottom: 0;
+  color: inherit;
 `
 Card.Text = styled(Paragraph)`
-  color: inherit;
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
-`
-Card.Icon = styled(Box).attrs({ className: "text-secondary card-icon" })`
-  color: #6001d3;
-  font-size: 36px;
-  font-weight: 400;
   letter-spacing: normal;
-  line-height: normal;
+  line-height: 30px;
+  margin-bottom: 25px;
+  color: inherit;
+`
+Card.Icon = styled(Box).attrs({ className: "card-icon bg-primary" })`
+  max-width: 60px;
+  min-width: 60px;
+  max-height: 60px;
+  min-height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #5034fc;
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  z-index: 9;
+  left: 40px;
 `
 
 Card.UserPosition = styled(Paragraph)`
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 22px;
+  line-height: 1.2;
   opacity: 0.7;
 `
 Card.Top = styled(Box)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`
+Card.UserTexts = styled(Box)`
+  position: relative;
+  top: 9px;
 `
 Card.UserBlock = styled(Box)`
   display: flex;
