@@ -35,8 +35,8 @@ export default function Home({ data }) {
       <FeatureSection />
       <ContentSectionOne />
       <ProcessSection />
-      <CtaSection />
-      <TestimonialSection /> */}
+      <CtaSection /> */}
+      <TestimonialSection content={data.index.frontmatter?.indexTestimonials} />
       <ContactSection
         contactForm={data.contactForm?.frontmatter}
         contactDetails={data.contactDetails?.frontmatter}
@@ -54,6 +54,16 @@ export const query = graphql`
           title
           subtitle
           dynamicText {
+            text
+          }
+        }
+        indexTestimonials {
+          title
+          subtitle
+          testimonials {
+            name
+            position
+            avatar
             text
           }
         }
