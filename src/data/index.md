@@ -39,7 +39,7 @@ indexTestimonials:
         ut enim ratione non modi molestiae in ipsam rerum."
       avatar: jane-doe.jpeg
     - name: Frédéric Dujardin
-      position: Compatable
+      position: Comptable
       text:
         " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
