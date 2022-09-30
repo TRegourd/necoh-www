@@ -60,10 +60,10 @@ export default function FooterOne() {
                         <a href="#">Nous rejoindre</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Mentions Légales</a>
+                        <a href="/terms">Mentions Légales</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Crédits</a>
+                        <a href="/credits">Crédits</a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
