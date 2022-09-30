@@ -59,6 +59,7 @@ $theme-colors: map-merge(
   (
     "primary": $primary,
     "secondary": $secondary,
+    "third": $third,
   ),
   $theme-colors
 );
@@ -67,6 +68,7 @@ $theme-colors: map-merge(
 $colors: (
   "primary": $primary,
   "secondary": $secondary,
+  "third": $third,
   "black": $black,
   "white": $white,
   "boulder": $boulder,
@@ -111,6 +113,7 @@ $colors: (
 // For button color
 $btn-colors: (
   "primary": $primary,
+  "third": $third,
   "black": $black,
   "white": $white,
   "readical-red ": $readical-red,
@@ -128,6 +131,7 @@ $btn-colors: (
 
 $backgroundColors: (
   "blue": $blue,
+  "third": $third,
   "blue-ribbon": $blue-ribbon,
   "blue-ribbon-2": $blue-ribbon-2,
   "green-2": $green-2,
@@ -160,6 +164,7 @@ $backgroundColors: (
 );
 $TextColors: (
   "blue-ribbon": $blue-ribbon,
+  "third": $third,
   "white": $white,
   "radical-red": $radical-red,
   "green-2": $green-2,
@@ -189,6 +194,7 @@ $TextColors: (
 
 $opacity-colors: (
   "blue-ribbon": $blue-ribbon,
+  "third": $third,
   "white": $white,
   "primary": $primary,
   "radical-red": $radical-red,
