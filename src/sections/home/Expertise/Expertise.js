@@ -4,15 +4,15 @@ import SectionTitle from "./components/SectionTitle"
 import Widget from "./components/widget"
 import { StaticImage as Img } from "gatsby-plugin-image"
 import About from "./style"
-export default function AboutSection() {
+export default function ExpertiseSection({ content }) {
   return (
     <About backgroundColor="#f2f5fb">
       <Container>
         <Row className="justify-content-center">
           <Col className="col-xl-6 col-lg-8 col-md-9 col-xs-10 text-center">
             <SectionTitle
-              subTitle="Expertise"
-              title="Les marques Necoh"
+              subTitle={content.subtitle}
+              title={content.title}
               titleProps={{ mb: "50px" }}
               subTitleProps={{ mb: "15px" }}
             />
@@ -22,25 +22,25 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
             <Widget
               directionXS="row-reverse"
-              title="Comptabilité"
-              icon="fa fa-layer-group"
-              text="Necoh Expertise Comptable"
+              title={content?.brands?.comptabilite?.title}
+              icon={content?.brands?.comptabilite?.logo}
+              text={content?.brands?.comptabilite?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
             />
             <Widget
               directionXS="row-reverse"
-              title="Audit"
-              icon="fa fa-chart-pie"
-              text="Necoh Audit"
+              title={content?.brands?.audit?.title}
+              icon={content?.brands?.audit?.logo}
+              text={content?.brands?.audit?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
             />
             <Widget
               directionXS="row-reverse"
-              title="Social"
-              icon="fa fa-cog"
-              text="Necoh Social"
+              title={content?.brands?.social?.title}
+              icon={content?.brands?.social?.logo}
+              text={content?.brands?.social?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
             />
@@ -69,17 +69,17 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3">
             <Widget
               directionXS="row"
-              title="Juridique"
-              icon="fa fa-bookmark"
-              text="Necoh Expertise Juridique"
+              title={content?.brands?.juridique?.title}
+              icon={content?.brands?.juridique?.logo}
+              text={content?.brands?.juridique?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
             />
             <Widget
               directionXS="row"
-              title="Fiscalité"
-              icon="fa fa-headphones"
-              text="Necoh Expertise Fiscale"
+              title={content?.brands?.fiscalite?.title}
+              icon={content?.brands?.fiscalite?.logo}
+              text={content?.brands?.fiscalite?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
             />

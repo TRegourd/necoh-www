@@ -1,6 +1,8 @@
 import React from "react"
 import Widget from "./style"
 import logo from "../../../../../assets/image/favicon.png"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
 export default function AboutWidget({
   title,
   text,
@@ -9,10 +11,34 @@ export default function AboutWidget({
   icon,
   ...rest
 }) {
+  const images = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "" }
+          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+        }
+      ) {
+        nodes {
+          relativePath
+          childrenImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
+
+  const logo = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === icon
+    })?.childrenImageSharp[0]
+  )
+
   return (
     <Widget {...rest}>
       <Widget.Icon>
-        <img src={logo} alt="content" placeholder="blurred" />
+        <GatsbyImage image={logo} alt="content" />
       </Widget.Icon>
       <Widget.Box>
         <Widget.Title as="h5">{title}</Widget.Title>
