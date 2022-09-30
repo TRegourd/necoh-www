@@ -3,8 +3,8 @@ import { Link } from "~components"
 import { Box, Button, Heading, Paragraph } from "~styled"
 
 const Footer = styled(Box)`
+  background-color: #32141c;
   padding-top: 60px;
-  padding-bottom: 20px;
 
   @media (min-width: 768px) {
     padding-top: 80px;
@@ -34,8 +34,21 @@ Footer.Newsletter = styled(Box)`
         box-shadow: none;
       }
     }
+
+    .btn {
+      width: 150px;
+      height: 56px;
+      border-radius: 50px;
+      color: #fff;
+      text-align: right;
+      margin-right: auto;
+    }
   }
 `
+Footer.NewsletterBtn = styled(Button)`
+  box-shadow: 0 10px 20px rgb(255 30 56 / 25%);
+`
+
 Footer.Link = styled(Box)``
 
 Footer.Title = styled(Heading)`
@@ -44,17 +57,16 @@ Footer.Title = styled(Heading)`
   letter-spacing: normal;
   line-height: 28px;
   margin-bottom: 25px;
-  color: #fff;
-  opacity: 0.7;
+  color: #262729;
 `
 
 Footer.Text = styled(Paragraph)`
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 38px;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.875;
+    color: rgba(#262729, 0.7)
+    margin-top: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 30px;
 `
 
 Footer.Address = styled(Box).attrs({ className: "list-unstyled", as: "ul" })`
@@ -65,7 +77,10 @@ Footer.Address = styled(Box).attrs({ className: "list-unstyled", as: "ul" })`
     margin-bottom: 0;
   }
 `
-Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
+Footer.AddressItem = styled(Box).attrs({
+  className: "list-items text-primary",
+  as: "li",
+})`
   font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
@@ -73,29 +88,25 @@ Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
-  color: #fff !important;
+
   a {
-    color: #fff !important;
     font-size: inherit;
     font-weight: 400;
     letter-spacing: normal;
     line-height: 30px;
     transition: 0.4s;
-    &:hover {
-      color: #fd346e !important;
-    }
   }
   i {
     margin-right: 5px;
-    margin-top: 7px;
+    margin-top: 10px;
     font-size: 20px;
     width: 35px;
-    color: #fff;
   }
   span {
-    color: #fff !important;
+    color: rgba(38, 39, 41, 0.7) !important;
     display: inline-block;
     word-break: break-all;
+    margin-right: 15px;
   }
 `
 
@@ -119,15 +130,14 @@ Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
   margin-bottom: 15px;
   color: rgba(38, 39, 41, 0.7) !important;
   a {
-    color: #fff !important;
+    color: rgba(38, 39, 41, 0.7) !important;
     font-size: inherit;
     font-weight: 400;
     letter-spacing: normal;
     line-height: 30px;
     transition: 0.4s;
     &:hover {
-      color: #fff;
-      text-decoration: underline;
+      color: #32141c !important;
     }
   }
   i {
@@ -135,7 +145,7 @@ Footer.ListItems = styled(Box).attrs({ className: "list-items", as: "li" })`
     margin-top: 10px;
     font-size: 20px;
     width: 35px;
-    color: #fff;
+    color: #0abfbc;
   }
   span {
     color: rgba(38, 39, 41, 0.7) !important;
@@ -147,38 +157,30 @@ Footer.SocialShare = styled(Box).attrs({
 })`
   padding: 0;
   margin: 0 -10px;
-  margin-top: 30px;
+  margin-bottom: 30px;
   @media (min-width: 992px) {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 `
 Footer.SocialShareItem = styled(Box).attrs({
   className: "list-items",
   as: "li",
 })`
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
+  padding: 0 10px;
   a {
     display: inline-flex;
     align-items: center;
-    position: relative;
-    padding: 0 8px;
-    transition: 0.4s;
-    color: #fff;
+    justify-content: center;
+    min-width: 25px;
+    min-height: 25px;
+    padding-left: 0;
+    border-radius: 500px;
+    color: #262729;
     font-size: 15px;
-    &::before {
-      content: ".";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
+    transition: 0.4s;
     &:hover {
-      color: #fd346e;
-    }
-  }
-  &:first-child {
-    a:before {
-      display: none;
+      color: #32141c;
     }
   }
 `
@@ -187,17 +189,7 @@ Footer.Copyright = styled(Box)`
   text-align: center;
   padding-top: 25px;
   padding-bottom: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  @media (min-width: 576px) {
-    justify-content: space-between;
-  }
-  @media (min-width: 992px) {
-    text-align: left;
-  }
+  border-top: 1px solid rgba(38, 39, 41, 0.1);
 `
 
 Footer.CopyrightText = styled(Box)`
@@ -206,7 +198,6 @@ Footer.CopyrightText = styled(Box)`
   font-style: normal;
   letter-spacing: normal;
   line-height: 22px;
-  color: #fff !important;
 `
 
 Footer.Box = styled(Box)``

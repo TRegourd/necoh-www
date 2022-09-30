@@ -22,21 +22,21 @@ export default function AboutSection() {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
             <Widget
               directionXS="row-reverse"
-              title="Expertise Comtable"
+              title="Comptabilité"
               icon="fa fa-layer-group"
-              text="The White iphone smartphone mockup counterclockwise "
+              text="Necoh Expertise Comptable"
             />
             <Widget
               directionXS="row-reverse"
               title="Audit"
               icon="fa fa-chart-pie"
-              text="The White iphone smartphone mockup counterclockwise "
+              text="Necoh Audit"
             />
             <Widget
               directionXS="row-reverse"
               title="Social"
               icon="fa fa-cog"
-              text="The White iphone smartphone mockup counterclockwise "
+              text="Necoh Social"
             />
           </Col>
           <Col
@@ -52,7 +52,7 @@ export default function AboutSection() {
               />
               <About.Shape>
                 <Img
-                  src="../../../assets/image/home-app/green-shape.png"
+                  src="../../../assets/image/home-app/Necoh_Symbole.png"
                   alt="content"
                   layout="fullWidth"
                   placeholder="blurred"
@@ -65,13 +65,13 @@ export default function AboutSection() {
               directionXS="row"
               title="Juridique"
               icon="fa fa-bookmark"
-              text="The White iphone smartphone mockup counterclockwise "
+              text="Necoh Expertise Juridique"
             />
             <Widget
               directionXS="row"
               title="Fiscalité"
               icon="fa fa-headphones"
-              text="The White iphone smartphone mockup counterclockwise "
+              text="Necoh Expertise Ficale"
             />
           </Col>
         </Row>

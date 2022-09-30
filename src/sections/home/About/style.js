@@ -25,11 +25,11 @@ About.ImageContent = styled(Box)`
 `
 About.Shape = styled(Box)`
   position: absolute;
-  top: 50%;
-  left: 56%;
+  top: 40%;
+  left: 70%;
   z-index: -1;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
 `
 About.Box = styled(Box)``
 
