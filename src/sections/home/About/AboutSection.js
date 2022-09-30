@@ -25,18 +25,24 @@ export default function AboutSection() {
               title="Comptabilité"
               icon="fa fa-layer-group"
               text="Necoh Expertise Comptable"
+              linkText="En savoir plus"
+              linkUrl="/contact"
             />
             <Widget
               directionXS="row-reverse"
               title="Audit"
               icon="fa fa-chart-pie"
               text="Necoh Audit"
+              linkText="En savoir plus"
+              linkUrl="/contact"
             />
             <Widget
               directionXS="row-reverse"
               title="Social"
               icon="fa fa-cog"
               text="Necoh Social"
+              linkText="En savoir plus"
+              linkUrl="/contact"
             />
           </Col>
           <Col
@@ -66,12 +72,16 @@ export default function AboutSection() {
               title="Juridique"
               icon="fa fa-bookmark"
               text="Necoh Expertise Juridique"
+              linkText="En savoir plus"
+              linkUrl="/contact"
             />
             <Widget
               directionXS="row"
               title="Fiscalité"
               icon="fa fa-headphones"
-              text="Necoh Expertise Ficale"
+              text="Necoh Expertise Fiscale"
+              linkText="En savoir plus"
+              linkUrl="/contact"
             />
           </Col>
         </Row>

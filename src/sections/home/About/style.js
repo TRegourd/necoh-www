@@ -28,7 +28,7 @@ About.Shape = styled(Box)`
   top: 40%;
   left: 70%;
   z-index: -1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(180deg);
   width: 100%;
 `
 About.Box = styled(Box)``

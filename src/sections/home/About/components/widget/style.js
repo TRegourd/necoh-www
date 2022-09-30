@@ -1,5 +1,5 @@
 import styled from "styled-components/macro"
-import { Box, Heading, Button, Paragraph } from "~styled"
+import { Box, Heading, Button, Paragraph, ButtonLink } from "~styled"
 
 const Widget = styled(Box)`
   display: flex;
@@ -99,9 +99,16 @@ Widget.Text = styled(Paragraph)`
   line-height: 30px;
 `
 
-Widget.Box = styled(Box)`
-
-}
+Widget.Link = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30px;
+  span {
+    margin-left: 10px;
+  }
 `
+
+Widget.Box = styled(Box)``
 
 export default Widget
