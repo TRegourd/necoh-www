@@ -53,16 +53,21 @@ indexBrands:
     comptabilite:
       title: Comptabilité
       desc: Necoh Expertise Comptable
+      logo: necohcomptable_logocouleursnoir-copie-2.png
     social:
       title: Social
       desc: Necoh Social
+      logo: necohsociale_logocouleursnoir-copie.png
     juridique:
       title: Juridique
       desc: Necoh Juridique
+      logo: necohjuridique_logocouleursnoir-copie.png
     fiscalite:
       title: Fiscalité
       desc: Necoh Fiscalité
+      logo: necohfiscale_logocouleursnoir-copie.png
     audit:
       title: Audit
       desc: Necoh Audit
+      logo: necohaudit_logonoir-copie.png
 ---
