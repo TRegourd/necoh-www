@@ -61,13 +61,6 @@ const Widget = styled(Box)`
         props.directionXL == "row-reverse" ? "0 0 20px 20px" : null};
     }
   }
-  &:hover {
-    .widget-icon {
-      background-color: #fff;
-      color: #fff;
-      cursor: pointer;
-    }
-  }
 `
 
 Widget.Icon = styled(Box).attrs({ className: "widget-icon" })`

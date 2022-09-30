@@ -60,32 +60,32 @@ export default function FooterOne() {
                         <a href="#">Nous rejoindre</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Mentions Légales</a>
+                        <a href="/terms">Mentions Légales</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Crédits</a>
+                        <a href="/credits">Crédits</a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
                 </Col>
                 <Col xs="6" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
-                    <Footer.Title>Company</Footer.Title>
+                    <Footer.Title>Nos Métiers</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <a href="#">About us</a>
+                        <a href="#">Expertise Comptable</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Privacy Policy</a>
+                        <a href="#">Juridique</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Terms &amp; Conditions</a>
+                        <a href="#">Fiscalité</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Rider</a>
+                        <a href="#">Audit</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Contact</a>
+                        <a href="#">Social</a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
