@@ -192,7 +192,6 @@ Contact.Button = styled(Button).attrs({
   color: #fff;
   &:hover {
     color: #fff;
-    background-color: rgba(255, 87, 34, 0.7);
   }
 `
 Contact.Box = styled(Box)``

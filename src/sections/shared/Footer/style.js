@@ -82,7 +82,7 @@ Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
     line-height: 30px;
     transition: 0.4s;
     &:hover {
-      color: #fd346e !important;
+      color: #f39200 !important;
     }
   }
   i {
@@ -173,7 +173,7 @@ Footer.SocialShareItem = styled(Box).attrs({
       bottom: 0;
     }
     &:hover {
-      color: #fd346e;
+      color: #f39200;
     }
   }
   &:first-child {

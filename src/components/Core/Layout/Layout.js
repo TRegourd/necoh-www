@@ -1,8 +1,14 @@
-import React from "react"
+import React, { useLayoutEffect } from "react"
 import { Helmet } from "react-helmet"
 import favicon from "~image/favicon.png"
 import Header from "../Header"
+import "../../../../node_modules/aos/dist/aos.css"
+import AOS from "aos"
+
 export default function Layout({ children }) {
+  useLayoutEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <Helmet>

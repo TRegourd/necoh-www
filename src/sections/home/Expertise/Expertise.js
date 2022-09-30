@@ -27,6 +27,10 @@ export default function ExpertiseSection({ content }) {
               text={content?.brands?.comptabilite?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-once="true"
+              data-aos-delay="100"
             />
             <Widget
               directionXS="row-reverse"
@@ -35,6 +39,10 @@ export default function ExpertiseSection({ content }) {
               text={content?.brands?.audit?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-once="true"
+              data-aos-delay="300"
             />
             <Widget
               directionXS="row-reverse"
@@ -43,6 +51,10 @@ export default function ExpertiseSection({ content }) {
               text={content?.brands?.social?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
+              data-aos="fade-right"
+              data-aos-duration="750"
+              data-aos-once="true"
+              data-aos-delay="500"
             />
           </Col>
           <Col
@@ -74,6 +86,10 @@ export default function ExpertiseSection({ content }) {
               text={content?.brands?.juridique?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-once="true"
+              data-aos-delay="700"
             />
             <Widget
               directionXS="row"
@@ -82,6 +98,10 @@ export default function ExpertiseSection({ content }) {
               text={content?.brands?.fiscalite?.desc}
               linkText="En savoir plus"
               linkUrl="/contact"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-once="true"
+              data-aos-delay="900"
             />
           </Col>
         </Row>
