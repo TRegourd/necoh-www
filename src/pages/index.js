@@ -11,6 +11,7 @@ import TestimonialSection from "~sections/home/Testimonial"
 import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
+import Expertise from "~sections/home/Expertise"
 
 export const NecohHeader = {
   headerClasses:
@@ -35,8 +36,9 @@ export default function Home({ data }) {
       <FeatureSection />
       <ContentSectionOne />
       <ProcessSection />
-      <CtaSection />
-      <TestimonialSection /> */}
+      <CtaSection /> */}
+      <Expertise content={data.index.frontmatter?.indexBrands} />
+      <TestimonialSection content={data.index.frontmatter?.indexTestimonials} />
       <ContactSection
         contactForm={data.contactForm?.frontmatter}
         contactDetails={data.contactDetails?.frontmatter}
@@ -55,6 +57,47 @@ export const query = graphql`
           subtitle
           dynamicText {
             text
+          }
+        }
+        indexTestimonials {
+          title
+          subtitle
+          testimonials {
+            name
+            position
+            avatar
+            text
+          }
+        }
+        indexBrands {
+          title
+          subtitle
+          brands {
+            comptabilite {
+              title
+              desc
+              logo
+            }
+            audit {
+              title
+              desc
+              logo
+            }
+            fiscalite {
+              title
+              desc
+              logo
+            }
+            juridique {
+              title
+              desc
+              logo
+            }
+            social {
+              title
+              desc
+              logo
+            }
           }
         }
       }

@@ -4,7 +4,7 @@ import { Box, Heading, Button, Paragraph } from "~styled"
 const Contact = styled(Box)`
   padding-top: 100px;
   padding-bottom: 36px;
-  border-top: 1px solid rgba(38, 39, 41, 0.1);
+
   @media (min-width: 768px) {
     padding-top: 200px;
     padding-bottom: 55px;

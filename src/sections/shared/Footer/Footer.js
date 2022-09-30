@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Images } from "~data"
 import Footer from "./style"
 import { graphql, useStaticQuery } from "gatsby"
-export default function PageFooter({ contactDetails }) {
+export default function FooterOne() {
   const currentYear = new Date().getFullYear()
   const data = useStaticQuery(graphql`
     query {
@@ -25,52 +25,75 @@ export default function PageFooter({ contactDetails }) {
     }
   `)
   return (
-    <Footer>
+    <Footer backgroundColor="#32141c">
       <Container>
-        <Footer.Box pbXL="95px">
+        <Footer.Box>
           <Row>
-            <Col xs="12" className="col-lg-3 col-md-7 col-xs-9">
+            <Col xs="12" className="col-lg-4 col-md-8 col-xs-10">
               <Footer.Widgets className="footer-widgets footer-widgets--l7">
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
                   <Link to="#">
                     <img
-                      src={Images.FooterSix.LogoBlack}
+                      src={Images.FooterOne.LogoWhite}
                       width={"200px"}
                       alt="logo"
                     />
                   </Link>
                 </Footer.Box>
-                <Footer.SocialShare>
-                  <Footer.SocialShareItem>
-                    <a href={data.contactDetails?.frontmatter.facebook}>
-                      <i className="fab fa-facebook-square" />
-                    </a>
-                  </Footer.SocialShareItem>
-                  <Footer.SocialShareItem>
-                    <a href={data.contactDetails?.frontmatter.twitter}>
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </Footer.SocialShareItem>
-                  <Footer.SocialShareItem>
-                    <a href={data.contactDetails?.frontmatter.instagram}>
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </Footer.SocialShareItem>
-                  <Footer.SocialShareItem>
-                    <a href={data.contactDetails?.frontmatter.linkedin}>
-                      <i className="fab fa-linkedin" />
-                    </a>
-                  </Footer.SocialShareItem>
-                </Footer.SocialShare>
+                <Footer.Text mb="36px">
+                  Votre partenaire Expertise Comptable, Juridique, Fiscalité,
+                  Social et Audit.
+                </Footer.Text>
               </Footer.Widgets>
             </Col>
-            <Col xs="12" className="col-lg-9">
+            <Col xs="12" className="col-xl-8">
               <Row>
+                <Col xs="6" className="col-md-4 col-xs-6">
+                  <Footer.Widgets>
+                    <Footer.Title>Necoh</Footer.Title>
+                    <Footer.List>
+                      <Footer.ListItems>
+                        <a href="/about">A propos</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Nous rejoindre</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Mentions Légales</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Crédits</a>
+                      </Footer.ListItems>
+                    </Footer.List>
+                  </Footer.Widgets>
+                </Col>
+                <Col xs="6" className="col-md-4 col-xs-6">
+                  <Footer.Widgets>
+                    <Footer.Title>Company</Footer.Title>
+                    <Footer.List>
+                      <Footer.ListItems>
+                        <a href="#">About us</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Privacy Policy</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Terms &amp; Conditions</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Rider</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="#">Contact</a>
+                      </Footer.ListItems>
+                    </Footer.List>
+                  </Footer.Widgets>
+                </Col>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
                     <Footer.Title>
-                      <a href={"/contact"} className="text-black">
+                      <a href={"/contact"} className="text-white">
                         Contact
                       </a>
                     </Footer.Title>
@@ -106,48 +129,6 @@ export default function PageFooter({ contactDetails }) {
                     </Footer.Address>
                   </Footer.Widgets>
                 </Col>
-                <Col xs="12" className="col-md-4 col-xs-6">
-                  <Footer.Widgets>
-                    <Footer.Title>Necoh</Footer.Title>
-                    <Footer.List>
-                      <Footer.ListItems>
-                        <a href="/about">A propos</a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="#">Nous rejoindre</a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="#">Mentions Légales</a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="#">Crédits</a>
-                      </Footer.ListItems>
-                    </Footer.List>
-                  </Footer.Widgets>
-                </Col>
-                <Col xs="12" className="col-md-4 col-xs-9">
-                  <Footer.Widgets>
-                    <Footer.Title>Newsletter</Footer.Title>
-                    <Footer.Text>Recevez les dernières actualités</Footer.Text>
-                    {/* Newsletter */}
-                    <Footer.Newsletter>
-                      <form action="/.">
-                        <input type="text" placeholder="Votre Email" />
-                        <Footer.NewsletterBtn
-                          className="btn btn-primary"
-                          hoverTextColor="#fff"
-                          textColor="#fff"
-                          sizeX="150px"
-                          sizeY="56px"
-                          type="submit"
-                        >
-                          S'inscrire
-                        </Footer.NewsletterBtn>
-                      </form>
-                    </Footer.Newsletter>
-                    {/*/ .Newsletter */}
-                  </Footer.Widgets>
-                </Col>
               </Row>
             </Col>
           </Row>
@@ -159,9 +140,33 @@ export default function PageFooter({ contactDetails }) {
               target="_blank"
               aria-label="Ridge Coding"
             >
-              <p>&copy; Ridge Coding, {currentYear} All Rights Reserved</p>
+              <p className="text-white">
+                &copy; Ridge Coding, {currentYear} All Rights Reserved
+              </p>
             </a>
           </Footer.CopyrightText>
+          <Footer.SocialShare>
+            <Footer.SocialShareItem>
+              <a href={data.contactDetails?.frontmatter.facebook}>
+                <i className="fab fa-facebook-square" />
+              </a>
+            </Footer.SocialShareItem>
+            <Footer.SocialShareItem>
+              <a href={data.contactDetails?.frontmatter.twitter}>
+                <i className="fab fa-twitter" />
+              </a>
+            </Footer.SocialShareItem>
+            <Footer.SocialShareItem>
+              <a href={data.contactDetails?.frontmatter.instagram}>
+                <i className="fab fa-instagram" />
+              </a>
+            </Footer.SocialShareItem>
+            <Footer.SocialShareItem>
+              <a href={data.contactDetails?.frontmatter.linkedin}>
+                <i className="fab fa-linkedin" />
+              </a>
+            </Footer.SocialShareItem>
+          </Footer.SocialShare>
         </Footer.Copyright>
       </Container>
     </Footer>
