@@ -76,7 +76,7 @@ Testimonial.SliderWrapper = styled(Box)`
       }
       &.slick-active {
         button {
-          background-color: #ab4922;
+          background-color: #6e0f0b;
         }
       }
     }
