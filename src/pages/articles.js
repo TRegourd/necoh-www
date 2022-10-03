@@ -1,5 +1,5 @@
 import React from "react"
-import { BlogSidebarOne } from "~sections/blog"
+import { BlogSidebarOne } from "~sections/Blog"
 import { PageWrapper } from "~components/Core"
 import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "."

@@ -6,7 +6,6 @@ import About from "./style"
 import { graphql, useStaticQuery } from "gatsby"
 
 export default function AboutusSection({ content, logo, color }) {
-  console.log(color)
   const images = useStaticQuery(graphql`
     query {
       allFile(

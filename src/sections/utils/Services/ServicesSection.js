@@ -1,13 +1,9 @@
 import React from "react"
 import Services from "./style"
-import SectionTitle from "./Components/SectionTitle"
-import { Col, Container, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import ServicesCard from "./Components/Card"
-import ServicesCardTwo from "./Components/CardTwo"
-import { ServiceDataIt } from "~data"
-import { Link } from "~components"
+
 export default function ServicesSection({ list }) {
-  console.log(list)
   return (
     <Services backgroundColor="#f3f4f6">
       <Container>
