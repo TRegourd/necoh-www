@@ -1,6 +1,6 @@
 ---
 serviceHeader:
-  title: Necoh Audit
+  title: Audit
   subtitle: Missions d'audit et commissariat aux comptes.
   logo: necohaudit_logonoir.png
   color: "#f39200"

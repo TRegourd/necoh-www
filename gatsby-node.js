@@ -32,6 +32,8 @@ exports.createPages = ({ actions, graphql }) => {
                 serviceHeader {
                   title
                   subtitle
+                  color
+                  logo
                 }
                 serviceIntro {
                   title

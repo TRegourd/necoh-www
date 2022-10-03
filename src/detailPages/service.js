@@ -1,24 +1,29 @@
 import React from "react"
 import { PageWrapper } from "~components/Core"
 import BreadCrumbSection from "~sections/shared/BreadCrumb"
-import AboutSection from "~sections/about/about"
-import FeatureSection from "~sections/about/Feature"
-import ContentSection from "~sections/about/Content"
-import TeamSection from "~sections/about/Team"
+import AboutSection from "~sections/services/about"
+import CTA from "~sections/services/promo"
+import Features from "~sections/services/ServicesOne"
 
 import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../pages/index.js"
 
 export default function Service({ pageContext }) {
   const { content } = pageContext
-  console.log(content)
+
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={content?.serviceHeader} />
-      <AboutSection />
-      <FeatureSection />
-      <ContentSection />
-      <TeamSection />
+      <AboutSection
+        color={content?.serviceHeader?.color}
+        logo={content?.serviceHeader?.logo}
+        content={content?.serviceIntro}
+      />
+      <Features
+        content={content?.serviceFeatures}
+        color={content?.serviceHeader?.color}
+      />
+      <CTA content={content?.serviceCTA} />
       <Footer />
     </PageWrapper>
   )
