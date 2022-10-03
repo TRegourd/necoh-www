@@ -109,10 +109,77 @@ collections:
                       - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
 
+  - label: "Services"
+    name: "services"
+    files:
+      - label: "Contenu"
+        name: "indexContent"
+        file: "src/data/index.md"
+        fields:
+          - label: Entête
+            name: servicesHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+
+          - label: Marques Necoh
+            name: servicesBrands
+            widget: object
+            fields:
+              - label: Necoh Comptabilité
+                name: comptabilite
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: string }
+                  - { label: Titre du lien, name: link, widget: string }
+                  - { label: Logo, name: logo, widget: image }
+              - label: Necoh Social
+                name: social
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: string }
+                  - { label: Titre du lien, name: link, widget: string }
+                  - { label: Logo, name: logo, widget: image }
+              - label: Necoh Juridique
+                name: juridique
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: string }
+                  - { label: Titre du lien, name: link, widget: string }
+                  - { label: Logo, name: logo, widget: image }
+              - label: Necoh Fiscalité
+                name: fiscalite
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: string }
+                  - { label: Titre du lien, name: link, widget: string }
+                  - { label: Logo, name: logo, widget: image }
+              - label: Necoh Audit
+                name: audit
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: string }
+                  - { label: Titre du lien, name: link, widget: string }
+                  - { label: Logo, name: logo, widget: image }
+              - label: Necoh Conseil
+                name: conseil
+                widget: object
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: string }
+                  - { label: Titre du lien, name: link, widget: string }
+                  - { label: Logo, name: logo, widget: image }
+
   - label: "A propos"
     name: "about"
     files:
-      - label: "Contenu de la page"
+      - label: "Contenu"
         name: "aboutContent"
         file: "src/data/about.md"
         fields:
@@ -124,19 +191,9 @@ collections:
               - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
 
   - label: "Outils et Liens utiles"
-    name: "tools"
+    name: "utils"
     files:
-      - label: "Outils"
-        name: "toolsContent"
-        file: "src/data/tools.md"
-        fields:
-          - label: Entête
-            name: toolsHeader
-            widget: object
-            fields:
-              - { label: Titre de l'entête, name: title, widget: string }
-              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
-      - label: "Liens Utiles"
+      - label: "Contenu"
         name: "utilsContent"
         file: "src/data/utils.md"
         fields:
@@ -146,6 +203,14 @@ collections:
             fields:
               - { label: Titre de l'entête, name: title, widget: string }
               - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+          - label: Liens et outils
+            name: utilsList
+            widget: list
+            fields:
+              - { label: Nom, name: name, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Lien, name: link, widget: string }
 
   - label: "Articles"
     name: "articles"

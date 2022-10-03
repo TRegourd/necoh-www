@@ -12,7 +12,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Helmet>
-        <title>Necoh</title>
+        <title>Necoh | Expertise</title>
         <link rel="icon" type="image/png" href={favicon} />
         <meta
           name="description"
