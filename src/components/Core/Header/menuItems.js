@@ -9,7 +9,7 @@ export const menuItems = [
     items: [
       { name: "about", label: "A propos de nous" },
       { name: "services", label: "Nos services" },
-      { name: "careers", label: "Nous rejoindre" },
+      { name: "career", label: "Nous rejoindre" },
       { name: "contact", label: "Nous contacter" },
     ],
   },
