@@ -112,69 +112,68 @@ collections:
   - label: "Services"
     name: "services"
     files:
-      - label: "Contenu"
-        name: "indexContent"
-        file: "src/data/index.md"
+      - label: "Comptabilité"
+        name: "comptabilite"
+        file: "src/data/services/comptabilite.md"
         fields:
           - label: Entête
-            name: servicesHeader
+            name: serviceHeader
             widget: object
             fields:
               - { label: Titre de l'entête, name: title, widget: string }
               - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
-
-          - label: Marques Necoh
-            name: servicesBrands
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
             widget: object
             fields:
-              - label: Necoh Comptabilité
-                name: comptabilite
-                widget: object
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: desc, widget: string }
-                  - { label: Titre du lien, name: link, widget: string }
-                  - { label: Logo, name: logo, widget: image }
-              - label: Necoh Social
-                name: social
-                widget: object
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: desc, widget: string }
-                  - { label: Titre du lien, name: link, widget: string }
-                  - { label: Logo, name: logo, widget: image }
-              - label: Necoh Juridique
-                name: juridique
-                widget: object
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: desc, widget: string }
-                  - { label: Titre du lien, name: link, widget: string }
-                  - { label: Logo, name: logo, widget: image }
-              - label: Necoh Fiscalité
-                name: fiscalite
-                widget: object
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: desc, widget: string }
-                  - { label: Titre du lien, name: link, widget: string }
-                  - { label: Logo, name: logo, widget: image }
-              - label: Necoh Audit
-                name: audit
-                widget: object
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: desc, widget: string }
-                  - { label: Titre du lien, name: link, widget: string }
-                  - { label: Logo, name: logo, widget: image }
-              - label: Necoh Conseil
-                name: conseil
-                widget: object
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: desc, widget: string }
-                  - { label: Titre du lien, name: link, widget: string }
-                  - { label: Logo, name: logo, widget: image }
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+      - label: "Audit"
+        name: "audit"
+        file: "src/data/services/audit.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
 
   - label: "A propos"
     name: "about"
