@@ -10,7 +10,7 @@ export default function Utils({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={data.utils.frontmatter?.utilsHeader} />
-      <ServicesSection />
+      <ServicesSection list={data.utils.frontmatter?.utilsList} />
       <Footer />
     </PageWrapper>
   )
@@ -23,6 +23,13 @@ export const query = graphql`
         utilsHeader {
           title
           subtitle
+        }
+        utilsList {
+          name
+          desc
+          logo
+          color
+          link
         }
       }
     }

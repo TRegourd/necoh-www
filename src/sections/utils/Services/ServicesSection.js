@@ -6,36 +6,30 @@ import ServicesCard from "./Components/Card"
 import ServicesCardTwo from "./Components/CardTwo"
 import { ServiceDataIt } from "~data"
 import { Link } from "~components"
-export default function ServicesSection() {
+export default function ServicesSection({ list }) {
+  console.log(list)
   return (
     <Services backgroundColor="#f3f4f6">
       <Container>
         <Row className="justify-content-center">
-          {ServiceDataIt.map(({ title, icon, text, id, iconBackground }) => {
+          {list?.map(({ name, logo, desc, color, link }) => {
             return (
               <Services.Box
                 mb="25px"
                 xs="12"
                 className="col-xl-3 col-lg-4 col-md-6 col-sm-9 col-xs-10"
-                key={id}
+                key={name}
               >
                 <ServicesCard
-                  title={title}
-                  text={text}
-                  icon={icon}
-                  to="/marketing"
-                  iconBackground={iconBackground}
+                  title={name}
+                  text={desc}
+                  icon={logo}
+                  to={link}
+                  iconBackground={color ? color : "#fff"}
                 />
               </Services.Box>
             )
           })}
-          <Services.Box
-            mb="25px"
-            xs="12"
-            className="col-xl-3 col-lg-4 col-md-6 col-sm-9 col-xs-10"
-          >
-            <ServicesCardTwo />
-          </Services.Box>
         </Row>
       </Container>
     </Services>
