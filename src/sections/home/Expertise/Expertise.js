@@ -25,8 +25,8 @@ export default function ExpertiseSection({ content }) {
               title={content?.brands?.comptabilite?.title}
               icon={content?.brands?.comptabilite?.logo}
               text={content?.brands?.comptabilite?.desc}
-              linkText="En savoir plus"
-              linkUrl="/contact"
+              linkText={content?.brands?.comptabilite?.link}
+              linkUrl="/services/comptabilite"
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
@@ -37,24 +37,24 @@ export default function ExpertiseSection({ content }) {
               title={content?.brands?.audit?.title}
               icon={content?.brands?.audit?.logo}
               text={content?.brands?.audit?.desc}
-              linkText="En savoir plus"
-              linkUrl="/contact"
+              linkText={content?.brands?.audit?.link}
+              linkUrl="/services/audit"
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
-              data-aos-delay="300"
+              data-aos-delay="100"
             />
             <Widget
               directionXS="row-reverse"
               title={content?.brands?.social?.title}
               icon={content?.brands?.social?.logo}
               text={content?.brands?.social?.desc}
-              linkText="En savoir plus"
-              linkUrl="/contact"
+              linkText={content?.brands?.social?.link}
+              linkUrl="/services/social"
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
-              data-aos-delay="500"
+              data-aos-delay="100"
             />
           </Col>
           <Col
@@ -81,27 +81,39 @@ export default function ExpertiseSection({ content }) {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3">
             <Widget
               directionXS="row"
-              title={content?.brands?.juridique?.title}
-              icon={content?.brands?.juridique?.logo}
-              text={content?.brands?.juridique?.desc}
-              linkText="En savoir plus"
-              linkUrl="/contact"
+              title={content?.brands?.conseil?.title}
+              icon={content?.brands?.conseil?.logo}
+              text={content?.brands?.conseil?.desc}
+              linkText={content?.brands?.conseil?.link}
+              linkUrl="/services/conseil"
               data-aos="fade-left"
               data-aos-duration="750"
               data-aos-once="true"
-              data-aos-delay="700"
+              data-aos-delay="100"
+            />
+            <Widget
+              directionXS="row"
+              title={content?.brands?.juridique?.title}
+              icon={content?.brands?.juridique?.logo}
+              text={content?.brands?.juridique?.desc}
+              linkText={content?.brands?.juridique?.link}
+              linkUrl="/services/juridique"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-once="true"
+              data-aos-delay="100"
             />
             <Widget
               directionXS="row"
               title={content?.brands?.fiscalite?.title}
               icon={content?.brands?.fiscalite?.logo}
               text={content?.brands?.fiscalite?.desc}
-              linkText="En savoir plus"
-              linkUrl="/contact"
+              linkText={content?.brands?.fiscalite?.link}
+              linkUrl="/services/fiscalite"
               data-aos="fade-left"
               data-aos-duration="750"
               data-aos-once="true"
-              data-aos-delay="900"
+              data-aos-delay="100"
             />
           </Col>
         </Row>

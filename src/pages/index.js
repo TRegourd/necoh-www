@@ -76,26 +76,37 @@ export const query = graphql`
             comptabilite {
               title
               desc
+              link
               logo
             }
             audit {
               title
               desc
+              link
               logo
             }
             fiscalite {
               title
               desc
+              link
               logo
             }
             juridique {
               title
               desc
+              link
               logo
             }
             social {
               title
               desc
+              link
+              logo
+            }
+            conseil {
+              title
+              desc
+              link
               logo
             }
           }

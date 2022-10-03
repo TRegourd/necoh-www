@@ -6,7 +6,7 @@ media_folder: src/assets/image
 public_folder: ""
 publish_mode: editorial_workflow
 collections:
-  - label: "Contenu de la page d'accueil"
+  - label: "Accueil"
     name: "index"
     files:
       - label: "Contenu"
@@ -66,6 +66,7 @@ collections:
                     fields:
                       - { label: Titre, name: title, widget: string }
                       - { label: Description, name: desc, widget: string }
+                      - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
                   - label: Necoh Social
                     name: social
@@ -73,6 +74,7 @@ collections:
                     fields:
                       - { label: Titre, name: title, widget: string }
                       - { label: Description, name: desc, widget: string }
+                      - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
                   - label: Necoh Juridique
                     name: juridique
@@ -80,6 +82,7 @@ collections:
                     fields:
                       - { label: Titre, name: title, widget: string }
                       - { label: Description, name: desc, widget: string }
+                      - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
                   - label: Necoh Fiscalité
                     name: fiscalite
@@ -87,6 +90,7 @@ collections:
                     fields:
                       - { label: Titre, name: title, widget: string }
                       - { label: Description, name: desc, widget: string }
+                      - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
                   - label: Necoh Audit
                     name: audit
@@ -94,12 +98,89 @@ collections:
                     fields:
                       - { label: Titre, name: title, widget: string }
                       - { label: Description, name: desc, widget: string }
+                      - { label: Titre du lien, name: link, widget: string }
+                      - { label: Logo, name: logo, widget: image }
+                  - label: Necoh Conseil
+                    name: conseil
+                    widget: object
+                    fields:
+                      - { label: Titre, name: title, widget: string }
+                      - { label: Description, name: desc, widget: string }
+                      - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
 
-  - label: "Contenu de la page A propos"
+  - label: "Services"
+    name: "services"
+    files:
+      - label: "Comptabilité"
+        name: "comptabilite"
+        file: "src/data/services/comptabilite.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+      - label: "Audit"
+        name: "audit"
+        file: "src/data/services/audit.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+
+  - label: "A propos"
     name: "about"
     files:
-      - label: "Contenu de la page"
+      - label: "Contenu"
         name: "aboutContent"
         file: "src/data/about.md"
         fields:
@@ -109,79 +190,31 @@ collections:
             fields:
               - { label: Titre de l'entête, name: title, widget: string }
               - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
-          - label: Description
-            name: aboutDesc
-            widget: object
-            fields:
-              - {
-                  label: Titre de la description,
-                  name: descTitle,
-                  widget: string,
-                }
-              - {
-                  label: Sous Titre de la description,
-                  name: descSubtitle,
-                  widget: text,
-                }
-              - {
-                  label: Image de la description n°1,
-                  name: descImage1,
-                  widget: image,
-                }
-              - {
-                  label: Image de la description n°2,
-                  name: descImage2,
-                  widget: image,
-                }
-          - label: Auteur
-            name: aboutAuthor
-            widget: object
-            fields:
-              - { label: Titre de l'auteur, name: authorTitle, widget: string }
-              - { label: Image de l'auteur, name: authorImage, widget: image }
-              - { label: Nom de l'auteur, name: authorName, widget: string }
-              - {
-                  label: Description de l'auteur,
-                  name: authorDesc,
-                  widget: markdown,
-                }
-          - label: Call To Action
-            name: aboutCTA
-            widget: object
-            fields:
-              - {
-                  label: Titre du Call to Action,
-                  name: CTATitle,
-                  widget: string,
-                }
-              - {
-                  label: SousTitre du Call to Action,
-                  name: CTASubtitle,
-                  widget: string,
-                }
 
-  - label: "Contenu de la FAQ"
-    name: "faq"
+  - label: "Outils et Liens utiles"
+    name: "utils"
     files:
-      - label: "Contenu de la page"
-        name: "faqContent"
-        file: "src/data/faq.md"
+      - label: "Contenu"
+        name: "utilsContent"
+        file: "src/data/utils.md"
         fields:
-          - { label: Titre, name: title, widget: string }
-          - { label: Sous Titre, name: subtitle, widget: string }
-          - label: Catégorie
-            name: category
+          - label: Entête
+            name: utilsHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+          - label: Liens et outils
+            name: utilsList
             widget: list
             fields:
               - { label: Nom, name: name, widget: string }
-              - label: Questions
-                name: questions
-                widget: list
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Texte, name: text, widget: markdown }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Lien, name: link, widget: string }
+              - { label: Couleur, name: color, widget: color, required: false }
 
-  - label: "Contenu des Articles"
+  - label: "Articles"
     name: "articles"
     files:
       - label: "Contenu de la page"
@@ -214,7 +247,7 @@ collections:
                     widget: list
                     fields:
                       - { label: Tag, name: tag, widget: string }
-  - label: "Contenu de la page contact"
+  - label: "Contact"
     name: "contact"
     files:
       - label: "Formulaire"

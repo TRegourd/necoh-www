@@ -1,21 +1,18 @@
 import React from "react"
 import { PageWrapper } from "~components/Core"
-import BreadCrumbSection from "~sections/about/BreadCrumb"
+import BreadCrumbSection from "~sections/shared/BreadCrumb"
 import AboutSection from "~sections/about/about"
 import FeatureSection from "~sections/about/Feature"
 import ContentSection from "~sections/about/Content"
 import TeamSection from "~sections/about/Team"
 import { NecohHeader } from "."
 import Footer from "~sections/shared/Footer"
+import { graphql } from "gatsby"
 
-export default function About() {
+export default function About({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
-      <BreadCrumbSection
-        title="About"
-        text="Our focus is always on finding the best people to work with. Our <br class='d-none d-md-block'/>
-bar is high, but you look ready to take on the challenge."
-      />
+      <BreadCrumbSection content={data.about.frontmatter?.aboutHeader} />
       <AboutSection />
       <FeatureSection />
       <ContentSection />
@@ -24,3 +21,16 @@ bar is high, but you look ready to take on the challenge."
     </PageWrapper>
   )
 }
+
+export const query = graphql`
+  query {
+    about: markdownRemark(fields: { slug: { eq: "/about" } }) {
+      frontmatter {
+        aboutHeader {
+          title
+          subtitle
+        }
+      }
+    }
+  }
+`

@@ -93,22 +93,22 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
       <ul className="d-none d-xl-flex list-unstyled">
         <li>
           <a href={data.contactDetails?.frontmatter.instagram}>
-            <i className="fab fa-instagram text-primary"></i>
+            <i className="fab fa-instagram text-secondary"></i>
           </a>
         </li>
         <li>
           <a href={data.contactDetails?.frontmatter.linkedin}>
-            <i className="fab fa-linkedin text-primary"></i>
+            <i className="fab fa-linkedin text-secondary"></i>
           </a>
         </li>
         <li>
           <a href={data.contactDetails?.frontmatter.facebook}>
-            <i className="fab fa-facebook text-primary"></i>
+            <i className="fab fa-facebook text-secondary"></i>
           </a>
         </li>
         <li>
           <a href={data.contactDetails?.frontmatter.twitter}>
-            <i className="fab fa-twitter text-primary"></i>
+            <i className="fab fa-twitter text-secondary"></i>
           </a>
         </li>
       </ul>

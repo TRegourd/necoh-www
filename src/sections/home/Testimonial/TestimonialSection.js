@@ -2,7 +2,6 @@ import React, { useRef } from "react"
 import Slider from "react-slick"
 import TestiomialCard from "./Component/Card"
 import Testimonial from "./style"
-import TestimonialData from "~data/services/testimonial"
 import { Container, Row, Col } from "react-bootstrap"
 export default function TestimonialSection({ content }) {
   const elSlider = useRef()

@@ -55,21 +55,31 @@ indexBrands:
     comptabilite:
       title: Comptabilité
       desc: Necoh Expertise Comptable
+      link: Je recherche un expert comptable
+      logo: necohcomptable_logocouleursnoir-copie-2.png
+    conseil:
+      title: Conseil
+      desc: Necoh Conseil
+      link: J'ai besoin d'accompagnement
       logo: necohcomptable_logocouleursnoir-copie-2.png
     social:
       title: Social
       desc: Necoh Social
+      link: J'ai une paye ou un contrat à faire
       logo: necohsociale_logocouleursnoir-copie.png
     juridique:
       title: Juridique
       desc: Necoh Juridique
+      link: Je recherche un avocat
       logo: necohjuridique_logocouleursnoir-copie.png
     fiscalite:
       title: Fiscalité
-      desc: Necoh Fiscalité
+      desc: Necoh Fiscalité des particuliers
+      link: J'ai des questions fiscales
       logo: necohfiscale_logocouleursnoir-copie.png
     audit:
       title: Audit
       desc: Necoh Audit
+      link: Je dois faire auditer mes comptes
       logo: necohaudit_logonoir-copie.png
 ---

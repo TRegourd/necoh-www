@@ -93,7 +93,7 @@ Widget.Text = styled(Paragraph)`
 `
 
 Widget.Link = styled.div`
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 30px;
