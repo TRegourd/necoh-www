@@ -27,9 +27,9 @@ Card.Icon = styled(Box)`
   align-items: center;
   justify-content: center;
   min-width: 48px;
-  max-width: 48px;
-  min-height: 48px;
-  max-height: 48px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
   border-radius: 10px;
   margin-bottom: 30px;
   font-size: 16px;
