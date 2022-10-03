@@ -26,7 +26,7 @@ export default function ExpertiseSection({ content }) {
               icon={content?.brands?.comptabilite?.logo}
               text={content?.brands?.comptabilite?.desc}
               linkText={content?.brands?.comptabilite?.link}
-              linkUrl="/contact"
+              linkUrl="/services/comptabilite"
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
@@ -38,7 +38,7 @@ export default function ExpertiseSection({ content }) {
               icon={content?.brands?.audit?.logo}
               text={content?.brands?.audit?.desc}
               linkText={content?.brands?.audit?.link}
-              linkUrl="/contact"
+              linkUrl="/services/audit"
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
@@ -50,7 +50,7 @@ export default function ExpertiseSection({ content }) {
               icon={content?.brands?.social?.logo}
               text={content?.brands?.social?.desc}
               linkText={content?.brands?.social?.link}
-              linkUrl="/contact"
+              linkUrl="/services/social"
               data-aos="fade-right"
               data-aos-duration="750"
               data-aos-once="true"
@@ -85,7 +85,7 @@ export default function ExpertiseSection({ content }) {
               icon={content?.brands?.conseil?.logo}
               text={content?.brands?.conseil?.desc}
               linkText={content?.brands?.conseil?.link}
-              linkUrl="/contact"
+              linkUrl="/services/conseil"
               data-aos="fade-left"
               data-aos-duration="750"
               data-aos-once="true"
@@ -97,7 +97,7 @@ export default function ExpertiseSection({ content }) {
               icon={content?.brands?.juridique?.logo}
               text={content?.brands?.juridique?.desc}
               linkText={content?.brands?.juridique?.link}
-              linkUrl="/contact"
+              linkUrl="/services/juridique"
               data-aos="fade-left"
               data-aos-duration="750"
               data-aos-once="true"
@@ -109,7 +109,7 @@ export default function ExpertiseSection({ content }) {
               icon={content?.brands?.fiscalite?.logo}
               text={content?.brands?.fiscalite?.desc}
               linkText={content?.brands?.fiscalite?.link}
-              linkUrl="/contact"
+              linkUrl="/services/fiscalite"
               data-aos="fade-left"
               data-aos-duration="750"
               data-aos-once="true"

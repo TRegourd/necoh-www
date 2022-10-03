@@ -137,6 +137,7 @@ collections:
             fields:
               - { label: Titre, name: title, widget: string }
               - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
           - label: Action
             name: serviceCTA
             widget: object

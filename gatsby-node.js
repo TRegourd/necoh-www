@@ -43,6 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
                 serviceFeatures {
                   title
                   desc
+                  logo
                 }
                 serviceCTA {
                   title

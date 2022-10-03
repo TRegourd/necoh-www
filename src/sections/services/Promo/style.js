@@ -2,16 +2,16 @@ import styled from "styled-components/macro"
 import { Box, Heading, Button, Paragraph } from "~styled"
 
 const Promo = styled(Box)`
-  padding-top: 35px;
+  padding-top: 10px;
   padding-bottom: 60px;
 
   @media (min-width: 768px) {
-    padding-top: 55px;
+    padding-top: 20px;
     padding-bottom: 80px;
   }
 
   @media (min-width: 992px) {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 130px;
   }
 `

@@ -1,24 +1,19 @@
-import styled from 'styled-components/macro';
-import { Box, Heading,Button,Paragraph } from '~styled';
+import styled from "styled-components/macro"
+import { Box, Heading, Button, Paragraph } from "~styled"
 
 const Service = styled(Box)`
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media (min-width:768px) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    @media (min-width:992px) {
-        padding-top: 125px;
-        padding-bottom: 130px;
-    }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 `
 
+Service.Box = styled(Box)``
 
-Service.Box = styled(Box)`
-
-`
-
-
-export default Service;
+export default Service

@@ -5,7 +5,6 @@ import Service from "./style"
 import SectionTitle from "./Components/SectionTitle"
 import ServicesCard from "./Components/Card"
 export default function ServicesSectionOne({ content, color }) {
-  console.log(content)
   return (
     <Service>
       <Container>
@@ -29,7 +28,7 @@ export default function ServicesSectionOne({ content, color }) {
           data-aos-once="true"
         >
           {/* Single Services */}
-          {content?.map(({ title, icon, desc }) => {
+          {content?.map(({ title, logo, desc }) => {
             return (
               <Col
                 xs="h2"
@@ -39,7 +38,7 @@ export default function ServicesSectionOne({ content, color }) {
                 <ServicesCard
                   title={title}
                   text={desc}
-                  icon={icon ? icon : ""}
+                  icon={logo}
                   iconBackground={color}
                 />
               </Col>
