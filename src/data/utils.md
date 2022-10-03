@@ -1,8 +1,8 @@
 ---
 utilsHeader:
-  title: Liens Utiles
-  subtitle: Les sites pour trouver les informations complémentaires dont vous
-    pourriez avoir besoin.
+  title: Outils et Liens Utiles
+  subtitle: Les liens vers les outils et sites pour nous communiquer des documents
+    ou déclarer votre situation.
 utilsList:
   - color: "#bc2828"
     name: Smash
