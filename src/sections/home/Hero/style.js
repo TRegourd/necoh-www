@@ -2,7 +2,7 @@ import styled from "styled-components/macro"
 import { Box, Heading, Paragraph } from "~styled"
 
 const Hero = styled(Box)`
-  margin-top: 150px;
+  margin-top: 70px;
   padding-top: 180px;
   padding-bottom: 55px;
   @media (min-width: 575px) {
