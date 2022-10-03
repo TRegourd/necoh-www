@@ -2,7 +2,7 @@
 serviceHeader:
   title: Necoh Expertise Comptable
   subtitle: Des experts comptables au service de votre entreprise
-  logo: necohcomptable_logocouleursnoir-copie-2.png
+  logo: necohcomptable_logocouleursnoir.png
   color: "#ab4922"
 serviceIntro:
   title: A propos
