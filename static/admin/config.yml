@@ -176,6 +176,134 @@ collections:
             fields:
               - { label: Titre, name: title, widget: string }
               - { label: Description, name: desc, widget: text }
+      - label: "Social"
+        name: "social"
+        file: "src/data/services/social.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+      - label: "Juridique"
+        name: "juridique"
+        file: "src/data/services/juridique.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+      - label: "Conseil"
+        name: "conseil"
+        file: "src/data/services/conseil.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+      - label: "Fiscalité"
+        name: "fiscalite"
+        file: "src/data/services/fiscalite.md"
+        fields:
+          - label: Entête
+            name: serviceHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur, name: color, widget: color }
+          - label: Présentation
+            name: serviceIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: serviceFeatures
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+          - label: Action
+            name: serviceCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
 
   - label: "A propos"
     name: "about"

@@ -44,9 +44,9 @@ export default function AboutWidget({
         <Widget.Title as="h5">{title}</Widget.Title>
         <Widget.Text>{text}</Widget.Text>
         <Widget.Link>
-          <a href={linkUrl} className="flex flew-row gap-2">
+          <a href={linkUrl}>
             <i className="fa fa-external-link-alt" />
-            <span className="pl-10 ">{linkText}</span>
+            <span>{linkText}</span>
           </a>
         </Widget.Link>
       </Widget.Box>
