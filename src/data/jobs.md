@@ -61,4 +61,24 @@ jobs:
       * Qui nobis fuga et fugiat inventore ex animi consequatur est voluptatum consequuntur.
 
       * Eos officiis quia id maxime possimus et voluptatibus itaque aut velit laborum.
+  - date: 2022-09-28T13:59:59.431Z
+    title: Juriste
+    location: Télé-Travail
+    type: Freelance
+    desc: >-
+      Lorem ipsum dolor sit amet. Et accusantium maxime ut pariatur similique
+      eum atque obcaecati. Nam sequi magni *Est blanditiis 33 enim consequatur
+      aut odio tempore* aut omnis sunt sit asperiores quis ad voluptatem
+      nesciunt. Et soluta dolores est atque itaque et doloribus minus.
+
+
+      * Aut amet consectetur aut quia corrupti sit ratione officia.
+
+      * Aut sunt aperiam ab consectetur laboriosam vel expedita labore est modi voluptas.
+
+
+      Aut natus eveniet ut voluptatem magnam **A quibusdam et molestias dolor est minus aliquam et quasi mollitia** eos nobis fuga? Eum mollitia fugiat ut magnam architectoaut mollitia ea sunt dolorum! Sit omnis quos aut distinctio voluptatem et possimus maxime aut veniam omnis.
+
+
+      Et libero velit **Esse et possimus dolorem**. Et sunt distinctio ab sint odio et quas autem a enim voluptates id nobis voluptatem ea alias ullam rem excepturi dolore.
 ---
