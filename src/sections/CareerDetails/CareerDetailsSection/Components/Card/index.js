@@ -26,7 +26,9 @@ export default function CareerCard({ job }) {
           className="btn btn-primary text-white box-shadow"
           as={Link}
           to={
-            job.link ? job.link : `mailto:contact@necoh.fr?subject=${job.title}`
+            job.link
+              ? job.link
+              : `mailto:contact@necoh.fr?subject=Candidature%20au%20poste%20de%20${job.title}`
           }
         >
           Postuler
