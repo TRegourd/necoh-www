@@ -24,7 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
     resolve(
       graphql(`
         query {
-          allMarkdownRemark(
+          servicesQuery: allMarkdownRemark(
             filter: { fields: { slug: { glob: "/services/*" } } }
           ) {
             nodes {
@@ -55,6 +55,18 @@ exports.createPages = ({ actions, graphql }) => {
               }
             }
           }
+          jobsQuery: markdownRemark(fields: { slug: { eq: "/jobs" } }) {
+            frontmatter {
+              jobs {
+                date
+                title
+                location
+                desc
+                type
+                link
+              }
+            }
+          }
         }
       `).then(result => {
         if (result.errors) {
@@ -64,7 +76,7 @@ exports.createPages = ({ actions, graphql }) => {
 
         const servicesTemplate = path.resolve("./src/detailPages/service.js")
 
-        result.data.allMarkdownRemark.nodes?.forEach(page => {
+        result.data.servicesQuery.nodes?.forEach(page => {
           const slug = page.fields?.slug
           createPage({
             path: `${slug}`,
@@ -72,6 +84,20 @@ exports.createPages = ({ actions, graphql }) => {
             context: {
               slug: `${slug}`,
               content: page.frontmatter,
+            },
+          })
+        })
+
+        const jobTemplate = path.resolve("./src/detailPages/career-details.js")
+
+        result.data.jobsQuery.frontmatter.jobs?.forEach(job => {
+          const slug = slugify(job.title + dayjs(job.date).format("DDMMYYYY"))
+          createPage({
+            path: `/careers/${slug}`,
+            component: jobTemplate,
+            context: {
+              slug: `/careers/${slug}`,
+              content: job,
             },
           })
         })

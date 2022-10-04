@@ -1,10 +1,8 @@
 import React from "react"
 import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import { Col, Container, Row } from "react-bootstrap"
-import { Link } from "~components"
 import About from "./style"
 import SectionTitle from "./Components/SectionTitle"
-import Video from "~components/VideoModal"
 import { graphql, useStaticQuery } from "gatsby"
 export default function AboutSection({ content }) {
   const images = useStaticQuery(graphql`

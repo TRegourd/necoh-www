@@ -1,4 +1,6 @@
+import dayjs from "dayjs"
 import React from "react"
+import slugify from "slugify"
 import { Link } from "~components"
 import Card from "./style"
 export default function ServicesCard({ title, address, hours, time, ...rest }) {
@@ -18,7 +20,13 @@ export default function ServicesCard({ title, address, hours, time, ...rest }) {
           <i className="fa fa-clock text-primary" /> {hours}
         </Card.List>
       </Card.Listwrapper>
-      <Card.Button className="btn-secondary">Voir l'offre</Card.Button>
+      <Card.Button
+        className="btn-secondary"
+        as={Link}
+        to={`/careers/${title + slugify(hours)}`}
+      >
+        Voir l'offre
+      </Card.Button>
     </Card>
   )
 }
