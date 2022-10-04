@@ -16,17 +16,20 @@ careersIntro:
   image: austin-kehmeier-lyikexa4zqa-unsplash.jpeg
 benefits:
   - title: Esprit d'équipe
-    desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
+    desc:
+      "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
     logo: presentation.png
     color: "#f39200"
   - title: Flexibilité
-    desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
+    desc:
+      "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
-    logo: rainbow-solid.svg
+    logo: contracter.png
     color: "#be1522"
   - title: Taille Humaine
-    desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
+    desc:
+      "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
     logo: contracter.png
     color: "#cbbb9f"
