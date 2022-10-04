@@ -2,13 +2,13 @@ import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import ServicesCard from "./Components/Card"
 import Service from "./style"
-import ServiceData  from "~data/Career/services"
-import SectionTitle from './Components/SectionTitle'
-export default function ServicesSection({ ...rest }) {
+import ServiceData from "~data/Career/services"
+
+export default function ServicesSection({ list, ...rest }) {
   return (
-    <Service backgroundColor="rgba(169, 210, 255, 0.1)" {...rest}>
+    <Service backgroundColor="#f3f4f6" {...rest}>
       <Container>
-        <Row className="justify-content-center">
+        {/* <Row className="justify-content-center">
           <Col xs="12 text-center">
           <SectionTitle 
                 title="Join a Workplace That Gives You More"
@@ -18,30 +18,26 @@ export default function ServicesSection({ ...rest }) {
                 textProps={{mb:"63px"}}
                 />
           </Col>
-        </Row>
+        </Row> */}
         <Row className="justify-content-center">
-            {ServiceData.map(({ title, icon, text, id, iconBackground }) => {
-              return (
-                <Col
-                  xs="12"
-                  className="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 "
-                  key={id}
-                >
+          {list.map(({ title, logo, desc, color }) => {
+            return (
+              <Col
+                xs="12"
+                className="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 "
+                key={title + color}
+              >
                 <ServicesCard
                   title={title}
-                  text={text}
-                  icon={icon}
-                  to="/marketing"
-                  iconBackground={iconBackground}
+                  text={desc}
+                  icon={logo}
+                  iconBackground={color}
                 />
               </Col>
-              )
-            })}
+            )
+          })}
         </Row>
       </Container>
     </Service>
   )
 }
-
-
-

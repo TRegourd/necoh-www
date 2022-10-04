@@ -375,6 +375,7 @@ collections:
                     widget: list
                     fields:
                       - { label: Tag, name: tag, widget: string }
+
   - label: "Contact"
     name: "contact"
     files:
@@ -403,3 +404,47 @@ collections:
           - { label: Facebook, name: facebook, widget: string }
           - { label: Instagram, name: instagram, widget: string }
           - { label: Twitter, name: twitter, widget: string }
+
+  - label: "Offres d'emploi"
+    name: "careers"
+    files:
+      - label: "Contenu de la page"
+        name: "careersContent"
+        file: "src/data/careers.md"
+        fields:
+          - label: Entête
+            name: careersHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+          - label: Introduction
+            name: careersIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Texte, name: text, widget: text }
+              - { label: Image, name: image, widget: image }
+
+          - label: Avantages
+            name: benefits
+            widget: list
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Couleur de fond, name: color, widget: color }
+      - label: "Offres d'emploi"
+        name: "jobsList"
+        file: "src/data/jobs.md"
+        fields:
+          - label: "Offres"
+            name: "jobs"
+            widget: list
+            fields:
+              - { label: Titre de l'offre, name: title, widget: string }
+              - { label: Localisation, name: location, widget: string }
+              - { label: Type, name: type, widget: string }
+              - { label: Date, name: date, widget: date }
+              - { label: Lien, name: link, widget: string, required: false }
+              - { label: Description, name: desc, widget: markdown }
