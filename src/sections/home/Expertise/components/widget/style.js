@@ -97,8 +97,17 @@ Widget.Link = styled.div`
   font-weight: 400;
   letter-spacing: normal;
   line-height: 30px;
-  span {
-    margin-left: 10px;
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    span {
+      padding-left: 10px;
+    }
+    /* @media (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+    } */
   }
 `
 
