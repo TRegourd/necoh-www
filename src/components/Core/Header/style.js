@@ -151,7 +151,7 @@ const SiteHeader = styled.div.attrs({
       }
       &:hover {
         a {
-          color: red;
+          color: #000;
         }
       }
     }
