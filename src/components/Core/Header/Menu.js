@@ -226,9 +226,13 @@ const Menu = ({ ...rest }) => {
                                           {itemInner.label}
                                         </NavDropdown.Item>
                                       ) : (
-                                        <Link to={`/${itemInner.name}`}>
-                                          {itemInner.label}
-                                        </Link>
+                                        <Nav.Link
+                                          eventKey={`/${itemInner.name}`}
+                                        >
+                                          <Link to={`/${itemInner.name}`}>
+                                            {itemInner.label}
+                                          </Link>
+                                        </Nav.Link>
                                       )}
                                     </Nav.Item>
                                   )
@@ -247,9 +251,14 @@ const Menu = ({ ...rest }) => {
                                   </Nav.Item>
                                 ) : (
                                   <Nav.Item className="drop-menu-item">
-                                    <Link to={`/${subItem.name}`}>
-                                      {subItem.label}
-                                    </Link>
+                                    <Nav.Link eventKey={`/${subItem.name}`}>
+                                      <Link
+                                        to={`/${subItem.name}`}
+                                        className={"text-black"}
+                                      >
+                                        {subItem.label}
+                                      </Link>
+                                    </Nav.Link>
                                   </Nav.Item>
                                 )}
                               </>
