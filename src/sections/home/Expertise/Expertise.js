@@ -70,7 +70,7 @@ export default function ExpertiseSection({ content }) {
               />
               <About.Shape>
                 <Img
-                  src="../../../assets/image/home-app/Necoh_Symbole.png"
+                  src="../../../assets/image/Necoh_Symbole.png"
                   alt="content"
                   layout="fullWidth"
                   placeholder="blurred"

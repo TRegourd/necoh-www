@@ -51,11 +51,11 @@ export default function AboutSection({ content }) {
             className="col-xl-7 col-lg-6 col-md-8 col-xs-11 order-1 order-lg-2"
           >
             <About.Image>
-              <GatsbyImage image={image} alt={content.title} />
-              {/* <Video id="LWZ7iytIA6k" className="video-btn sonar-emitter">
-                {" "}
-                <i className="fa fa-play" />{" "}
-              </Video> */}
+              <GatsbyImage
+                image={image}
+                alt={content.title}
+                className="rounded-image"
+              />
             </About.Image>
           </Col>
         </Row>

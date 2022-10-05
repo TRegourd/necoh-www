@@ -65,9 +65,6 @@ About.Image = styled(Box)`
     border-radius: 50%;
     border-color: transparent;
   }
-  .about-image {
-    border-radius: 20px;
-  }
 `
 
 About.Button = styled(Button)`

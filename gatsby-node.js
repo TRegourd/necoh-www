@@ -55,6 +55,40 @@ exports.createPages = ({ actions, graphql }) => {
               }
             }
           }
+          customersQuery: allMarkdownRemark(
+            filter: { fields: { slug: { glob: "/customers/*" } } }
+          ) {
+            nodes {
+              frontmatter {
+                customerHeader {
+                  title
+                  subtitle
+                }
+                customerIntro {
+                  title
+                  subtitle
+                  image
+                  text
+                }
+                customerFeatures {
+                  title
+                  subtitle
+                  features {
+                    title
+                    desc
+                    subtitle
+                  }
+                }
+                customerCTA {
+                  title
+                  desc
+                }
+              }
+              fields {
+                slug
+              }
+            }
+          }
           jobsQuery: markdownRemark(fields: { slug: { eq: "/jobs" } }) {
             frontmatter {
               jobs {
@@ -81,6 +115,20 @@ exports.createPages = ({ actions, graphql }) => {
           createPage({
             path: `${slug}`,
             component: servicesTemplate,
+            context: {
+              slug: `${slug}`,
+              content: page.frontmatter,
+            },
+          })
+        })
+
+        const customersTemplate = path.resolve("./src/detailPages/customer.js")
+
+        result.data.customersQuery.nodes?.forEach(page => {
+          const slug = page.fields?.slug
+          createPage({
+            path: `${slug}`,
+            component: customersTemplate,
             context: {
               slug: `${slug}`,
               content: page.frontmatter,

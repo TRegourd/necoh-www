@@ -52,7 +52,7 @@ export default function ContentSectionOne({ content, ...rest }) {
           >
             <Content.Widget mb="30px" mbXL="0px">
               <GatsbyImage
-                className="ceo-image"
+                className="rounded-image"
                 image={image}
                 alt="CEO image"
               />
