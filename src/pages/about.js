@@ -14,7 +14,10 @@ export default function About({ data }) {
       <BreadCrumbSection content={data.about.frontmatter?.aboutHeader} />
       <AboutSection />
       <ContentSection />
-      <TeamSection />
+      <TeamSection
+        content={data.team.frontmatter?.teamHeader}
+        employees={data.team.frontmatter?.employees}
+      />
       <Footer />
     </PageWrapper>
   )
@@ -27,6 +30,25 @@ export const query = graphql`
         aboutHeader {
           title
           subtitle
+        }
+      }
+    }
+    team: markdownRemark(fields: { slug: { eq: "/team" } }) {
+      frontmatter {
+        teamHeader {
+          title
+          subtitle
+        }
+        employees {
+          lastName
+          firstName
+          position
+          image
+          color
+          links {
+            contact
+            link
+          }
         }
       }
     }

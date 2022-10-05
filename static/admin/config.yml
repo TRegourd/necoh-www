@@ -355,7 +355,7 @@ collections:
         file: "src/data/team.md"
         fields:
           - label: Entête
-            name: aboutHeader
+            name: teamHeader
             widget: object
             fields:
               - {
