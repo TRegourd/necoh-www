@@ -5,6 +5,18 @@ aboutHeader:
 aboutIntro:
   title: Nos Valeurs
   subtitle: Necoh
+  textLeft: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat
+    expedita sit architecto odit eum iste voluptas a nihil
+    molestiae. Non autem consectetur et corporis omnis et quae
+    internos. Ea optio fugiat ut quis cupiditate ut modi quaerat.
+    Sed necessitatibus voluptatem et modi ipsam ut unde
+    reprehenderit et deserunt expedita.
+  textRight: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat
+    expedita sit architecto odit eum iste voluptas a nihil
+    molestiae. Non autem consectetur et corporis omnis et quae
+    internos. Ea optio fugiat ut quis cupiditate ut modi quaerat.
+    Sed necessitatibus voluptatem et modi ipsam ut unde
+    reprehenderit et deserunt expedita.
   values:
     - name: Humain
       desc: Nous sommes un cabinet à taille humaine

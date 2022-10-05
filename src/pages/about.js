@@ -38,6 +38,8 @@ export const query = graphql`
           subtitle
           video
           image
+          textLeft
+          textRight
           values {
             name
             desc

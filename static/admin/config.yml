@@ -364,6 +364,16 @@ collections:
                   name: subtitle,
                   widget: string,
                 }
+              - {
+                  label: Texte de la section (Gauche),
+                  name: textLeft,
+                  widget: text,
+                }
+              - {
+                  label: Texte de la section (Droite),
+                  name: textRight,
+                  widget: text,
+                }
               - { label: Video, name: video, widget: string }
               - { label: Image, name: image, widget: image }
               - label: Valeurs

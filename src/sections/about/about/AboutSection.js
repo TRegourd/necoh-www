@@ -35,6 +35,24 @@ export default function AboutSection({ content }) {
     <About>
       <Container>
         {/* about-us Content */}
+        <Row>
+          <SectionTitle
+            subTitle={content?.subtitle}
+            title={content?.title}
+            titleProps={{ mb: "30px" }}
+            subTitleProps={{ mb: "25px" }}
+          />
+          <Col xs="12" className="col-lg-6 col-md-12 mb-5 mb-lg-7">
+            <About.Box>
+              <About.Text mrLG="30px">{content?.textLeft}</About.Text>
+            </About.Box>
+          </Col>
+          <Col xs="12" className="col-lg-6 col-md-12 mb-5 mb-lg-7">
+            <About.Box>
+              <About.Text mrLG="30px">{content?.textRight}</About.Text>
+            </About.Box>
+          </Col>
+        </Row>
         <Row className="align-items-center justify-content-center">
           <Col xs="12" className="col-xl-6 col-lg-6 col-md-8 col-xs-10">
             <About.Image>
@@ -44,7 +62,7 @@ export default function AboutSection({ content }) {
                 alt="about image"
               />
               <Video
-                id={content.video}
+                id={content?.video}
                 className="video-btn btn-primary sonar-emitter"
               >
                 <i className="fa fa-play" />{" "}
@@ -56,12 +74,6 @@ export default function AboutSection({ content }) {
             className="col-xxl-5 offset-xxl-1 col-lg-5 col-md-8 col-xs-10"
           >
             <About.Content mt="40px" mtLG="0" mb="50px" mbLG="0" mlLG="30px">
-              <SectionTitle
-                subTitle={content.subtitle}
-                title={content.title}
-                titleProps={{ mb: "30px" }}
-                subTitleProps={{ mb: "25px" }}
-              />
               <About.Widget>
                 {/* Single Widget */}
                 {content.values?.map(value => {
