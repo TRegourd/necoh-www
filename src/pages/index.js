@@ -66,6 +66,7 @@ export const query = graphql`
           subtitle
           textLeft
           textRight
+          image
           features {
             name
           }

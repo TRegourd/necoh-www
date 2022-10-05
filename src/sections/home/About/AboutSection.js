@@ -1,10 +1,34 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import Feature from "./style"
-import { StaticImage as Img } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import SectionTitle from "./Components/SectionTitle"
 import CounterBlock from "./Components/CounterBlock"
+import { graphql, useStaticQuery } from "gatsby"
 export default function AboutSection({ content }) {
+  const images = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "" }
+          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+        }
+      ) {
+        nodes {
+          relativePath
+          childrenImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
+
+  const image = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === content?.image
+    })?.childrenImageSharp[0]
+  )
   return (
     <Feature backgroundColor="#f3f4f6">
       <Container>
@@ -38,13 +62,7 @@ export default function AboutSection({ content }) {
         <Row className="align-items-center justify-content-center">
           <Col xs="12" className="col-lg-6 col-md-12">
             <Feature.Image mb="30px">
-              <Img
-                className="w-100"
-                src="../../../assets/image/it-services/feature-l3-image.png"
-                alt="it-service"
-                layout="fullWidth"
-                placeholder="blurred"
-              />
+              <GatsbyImage image={image} alt="about image" />
             </Feature.Image>
           </Col>
           <Col className="col-lg-6 col-md-12">

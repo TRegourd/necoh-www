@@ -8,7 +8,7 @@ const Counter = styled(Box)`
   }
 `
 Counter.Wrapper = styled(Box)`
-  box-shadow: 0 24px 50px #f3920050;
+  box-shadow: 0 24px 40px #f3920050;
   border-radius: 15px;
   background-color: #f3920095;
   display: flex;
