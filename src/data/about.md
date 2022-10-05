@@ -21,8 +21,8 @@ aboutIntro:
   video: LWZ7iytIA6k
   image: austin-distel-rxpthowuvge-unsplash.jpeg
 aboutCEO:
-  title: Le mot du président
-  subtitle: La raison d'être de Necoh
+  title: La raison d'être de Necoh
+  subtitle: Le mot du président
   image: hannah-nicollet-jq2d4i-2eyw-unsplash.jpeg
   text: >-
     > Lorem ipsum dolor sit amet. Maiores suscipit qui blanditiis culpa qui

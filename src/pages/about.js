@@ -13,8 +13,8 @@ export default function About({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={data.about.frontmatter?.aboutHeader} />
-      <AboutSection />
-      <ContentSectionOne />
+      <AboutSection content={data.about.frontmatter?.aboutIntro} />
+      <ContentSectionOne content={data.about.frontmatter?.aboutCEO} />
       <TeamSection
         content={data.team.frontmatter?.teamHeader}
         employees={data.team.frontmatter?.employees}
@@ -32,6 +32,24 @@ export const query = graphql`
         aboutHeader {
           title
           subtitle
+        }
+        aboutIntro {
+          title
+          subtitle
+          video
+          image
+          values {
+            name
+            desc
+            color
+            image
+          }
+        }
+        aboutCEO {
+          title
+          subtitle
+          image
+          text
         }
       }
     }

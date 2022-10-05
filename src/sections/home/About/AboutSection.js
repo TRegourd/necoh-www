@@ -70,7 +70,11 @@ export default function AboutSection({ content }) {
               {/* Feature List */}
               <Feature.Contentlist mbLG="65px" mb="30px">
                 {content?.features?.map(feature => {
-                  return <Feature.List>{feature.name}</Feature.List>
+                  return (
+                    <Feature.List key={feature.name}>
+                      {feature.name}
+                    </Feature.List>
+                  )
                 })}
               </Feature.Contentlist>
               {/*/ .Feature List */}

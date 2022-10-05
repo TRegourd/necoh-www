@@ -79,6 +79,7 @@ export default function TeamCard({
                     as="a"
                     href={getLinkName(contact, link)}
                     tabIndex={0}
+                    key={contact + link}
                   >
                     <i className={getClassName(contact)} />
                   </Card.SocialItem>

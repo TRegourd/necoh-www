@@ -93,6 +93,7 @@ export default function TeamSection({ content, employees, ...rest }) {
                     userPosition={position}
                     color={color}
                     links={links}
+                    key={firstName + lastName}
                   />
                 )
               }

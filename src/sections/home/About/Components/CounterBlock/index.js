@@ -7,7 +7,7 @@ export default function CounterBlock({ numbers, ...rest }) {
       <Counter.Wrapper>
         {numbers?.map(item => {
           return (
-            <Counter.Single>
+            <Counter.Single key={item.number + item.text}>
               <Counter.Title as="h3" fontColor="#fff">
                 <span className="counter">{item.number}</span>
               </Counter.Title>

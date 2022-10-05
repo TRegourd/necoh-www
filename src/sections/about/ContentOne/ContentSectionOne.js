@@ -1,8 +1,33 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { StaticImage as Img } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import Content from "./style"
-export default function ContentSectionOne({ ...rest }) {
+import Markdown from "markdown-to-jsx"
+import { graphql, useStaticQuery } from "gatsby"
+export default function ContentSectionOne({ content, ...rest }) {
+  const images = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "" }
+          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+        }
+      ) {
+        nodes {
+          relativePath
+          childrenImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
+
+  const image = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === content?.image
+    })?.childrenImageSharp[0]
+  )
   return (
     <Content backgroundColor="fff" {...rest}>
       <Container>
@@ -11,19 +36,14 @@ export default function ContentSectionOne({ ...rest }) {
             xs="12"
             className="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-xs-11 order-2 order-lg-1"
           >
-            <Content.Subtitle as="h6" fontColor="#6001d3">
-              Why Choose Us
+            <Content.Subtitle as="h6" className="text-secondary">
+              {content.subtitle}
             </Content.Subtitle>
             <Content.Title as="h2" mb="13px">
-              Specialist in aviding <br className="d-none d-xs-block" />
-              clients on financial
-              <br className="d-none d-xs-block" />
-              challenges
+              {content.title}
             </Content.Title>
             <Content.Text mb="45px" mbXL="65px">
-              Corporate headquarters is the part of a corporate structure that
-              <br className="d-none d-md-block" /> deals with important tasks
-              such as strategic planning,{" "}
+              <Markdown>{content.text}</Markdown>
             </Content.Text>
           </Col>
           <Col
@@ -31,11 +51,10 @@ export default function ContentSectionOne({ ...rest }) {
             className="col-xxl-6 col-xl-5 col-lg-4 col-md-9 col-xs-10 order-1 order-lg-2"
           >
             <Content.Widget mb="30px" mbXL="0px">
-              <Img
-                src="../../../assets/image/home-services/content-img-l4-2.png"
-                alt="content"
-                layout="fullWidth"
-                placeholder="blurred"
+              <GatsbyImage
+                className="ceo-image"
+                image={image}
+                alt="CEO image"
               />
             </Content.Widget>
           </Col>
