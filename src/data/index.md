@@ -15,8 +15,7 @@ indexHero:
 indexAbout:
   title: Découvrez Necoh, experts au service des entreprises et particuliers
   subtitle: A propos
-  textLeft:
-    Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
+  textLeft: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
     cupiditate ipsam a consectetur consectetur! Et esse consectetur veritatis
     quos ut minima fugiat aut assumenda quos sit deserunt iure nam accusamus
     quisquam.
@@ -35,7 +34,7 @@ indexAbout:
       text: Départements
     - number: 100%
       text: Satisfaction Client
-
+  image: scott-graham-5fnmwej4taa-unsplash.jpeg
 indexTestimonials:
   title: Nos clients parlent de nous
   subtitle: Avis Clients
@@ -58,14 +57,12 @@ indexTestimonials:
       avatar: fred-foo.jpeg
     - name: Sophie Dubois
       position: Directrice Financière de Company
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum."
       avatar: jane-doe.jpeg
     - name: Frédéric Dujardin
       position: Comptable
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
         vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
         modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
