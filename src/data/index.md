@@ -49,7 +49,7 @@ indexTestimonials:
         ipsam rerum."
       avatar: john-doe.jpeg
 indexBrands:
-  title: Les Marques Necoh
+  title: Nos Services
   subtitle: Expertise
   brands:
     comptabilite:

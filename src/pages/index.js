@@ -2,12 +2,8 @@ import React from "react"
 import { PageWrapper } from "~components/Core"
 import HeaderButton from "~sections/shared/Header"
 import HeroSection from "~sections/home/Hero"
-import ServicesSection from "~sections/home/Services"
-import FeatureSection from "~sections/home/Feature"
-import ContentSectionOne from "~sections/home/ContentOne"
-import ProcessSection from "~sections/home/Process"
-import CtaSection from "~sections/home/Cta"
 import TestimonialSection from "~sections/home/Testimonial"
+import AboutSection from "~sections/home/About"
 import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
@@ -32,11 +28,7 @@ export default function Home({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <HeroSection content={data.index.frontmatter?.indexHero} />
-      {/* <ServicesSection />
-      <FeatureSection />
-      <ContentSectionOne />
-      <ProcessSection />
-      <CtaSection /> */}
+      <AboutSection />
       <Expertise content={data.index.frontmatter?.indexBrands} />
       <TestimonialSection content={data.index.frontmatter?.indexTestimonials} />
       <ContactSection

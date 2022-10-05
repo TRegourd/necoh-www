@@ -38,11 +38,11 @@ export default function AboutWidget({
   return (
     <Widget {...rest}>
       <Widget.Icon>
-        <GatsbyImage image={logo} alt="content" />
+        <GatsbyImage image={logo} alt="content" loading="eager" />
       </Widget.Icon>
       <Widget.Box>
         <Widget.Title as="h5">{title}</Widget.Title>
-        <Widget.Text>{text}</Widget.Text>
+        {/* <Widget.Text>{text}</Widget.Text> */}
         <Widget.Link>
           <a href={linkUrl}>
             <i className="fa fa-external-link-alt" />
