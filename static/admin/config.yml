@@ -24,6 +24,38 @@ collections:
                 widget: list
                 fields:
                   - { label: Text, name: text, widget: string }
+          - label: A propos
+            name: indexAbout
+            widget: object
+            fields:
+              - { label: Titre de la section, name: title, widget: string }
+              - {
+                  label: Sous-Titre de la section,
+                  name: subtitle,
+                  widget: string,
+                }
+              - {
+                  label: Texte de la section (Gauche),
+                  name: textLeft,
+                  widget: text,
+                }
+              - {
+                  label: Texte de la section (Droite),
+                  name: textRight,
+                  widget: text,
+                }
+              - { label: Image, name: image, widget: image }
+              - label: Mots Clefs
+                name: features
+                widget: list
+                fields:
+                  - { label: Nom, name: name, widget: string }
+              - label: Chiffres Clefs
+                name: numbers
+                widget: list
+                fields:
+                  - { label: Chiffre, name: number, widget: string }
+                  - { label: Texte, name: text, widget: string }
           - label: Avis Clients
             name: indexTestimonials
             widget: object
@@ -317,7 +349,84 @@ collections:
             widget: object
             fields:
               - { label: Titre de l'entête, name: title, widget: string }
-              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - {
+                  label: Sous-Titre de l'entête,
+                  name: subtitle,
+                  widget: string,
+                }
+          - label: Présentation
+            name: aboutIntro
+            widget: object
+            fields:
+              - { label: Titre de la section, name: title, widget: string }
+              - {
+                  label: Sous-Titre de la section,
+                  name: subtitle,
+                  widget: string,
+                }
+              - { label: Video, name: video, widget: string }
+              - { label: Image, name: image, widget: image }
+              - label: Valeurs
+                name: values
+                widget: list
+                fields:
+                  - { label: Nom, name: name, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Logo, name: image, widget: image }
+                  - { label: Couleur de fond, name: color, widget: color }
+
+          - label: Le mot du président
+            name: aboutCEO
+            widget: object
+            fields:
+              - { label: Titre de la section, name: title, widget: string }
+              - {
+                  label: Sous-Titre de la section,
+                  name: subtitle,
+                  widget: string,
+                }
+              - { label: Image, name: image, widget: image }
+              - { label: Texte, name: text, widget: markdown }
+
+      - label: "Equipe"
+        name: "team"
+        file: "src/data/team.md"
+        fields:
+          - label: Entête
+            name: teamHeader
+            widget: object
+            fields:
+              - {
+                  label: Titre de la section Equipe,
+                  name: title,
+                  widget: string,
+                }
+              - {
+                  label: Sous-Titre de la section Equipe,
+                  name: subtitle,
+                  widget: string,
+                }
+          - label: Membres
+            name: employees
+            widget: list
+            fields:
+              - { label: Nom, name: lastName, widget: string }
+              - { label: Prénom, name: firstName, widget: string }
+              - { label: Rôle, name: position, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Couleur de fond, name: color, widget: color }
+              - label: "Liens"
+                name: "links"
+                widget: list
+                required: false
+                fields:
+                  - {
+                      label: Contact,
+                      name: contact,
+                      widget: "select",
+                      options: ["twitter", "linkedin", "email", "tel"],
+                    }
+                  - { label: Lien/Mail/Tel, name: link, widget: string }
 
   - label: "Outils et Liens utiles"
     name: "utils"

@@ -1,14 +1,12 @@
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from "react"
 import Widget from "./style"
-import logo from "../../../../../assets/image/favicon.png"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql, useStaticQuery } from "gatsby"
-export default function AboutWidget({
+export default function ContentWidget({
+  icon,
   title,
   text,
-  linkText,
-  linkUrl,
-  icon,
+  iconBackground,
   ...rest
 }) {
   const images = useStaticQuery(graphql`
@@ -34,21 +32,14 @@ export default function AboutWidget({
       return el.relativePath === icon
     })?.childrenImageSharp[0]
   )
-
   return (
-    <Widget {...rest}>
-      <Widget.Icon>
-        <GatsbyImage image={logo} alt="content" loading="eager" />
+    <Widget backgroundColor="#fff" {...rest}>
+      <Widget.Icon backgroundColor={iconBackground}>
+        <GatsbyImage className={"value-icon"} image={logo} alt="logo" />
       </Widget.Icon>
       <Widget.Box>
-        <Widget.Title as="h5">{title}</Widget.Title>
-        {/* <Widget.Text>{text}</Widget.Text> */}
-        <Widget.Link>
-          <a href={linkUrl}>
-            <i className="fa fa-external-link-alt" />
-            <span>{linkText}</span>
-          </a>
-        </Widget.Link>
+        <Widget.Title as="h4">{title}</Widget.Title>
+        <Widget.Text fontColor="#667378">{text}</Widget.Text>
       </Widget.Box>
     </Widget>
   )

@@ -34,5 +34,11 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-slug`,
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: "gatsby-plugin-zopfli",
+      options: {
+        extensions: ["css", "html", "js", "svg"],
+      },
+    },
   ],
 }

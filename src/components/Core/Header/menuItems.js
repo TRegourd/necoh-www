@@ -20,7 +20,7 @@ export const menuItems = [
           { name: "services/juridique", label: "Juridique" },
         ],
       },
-      { name: "career", label: "Nous rejoindre" },
+      { name: "careers", label: "Nous rejoindre" },
       { name: "contact", label: "Nous contacter" },
     ],
   },

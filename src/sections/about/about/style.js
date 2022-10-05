@@ -3,15 +3,15 @@ import { Box, Heading, Button, Paragraph } from "~styled"
 
 const About = styled(Box)`
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   @media (min-width: 768px) {
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 
   @media (min-width: 992px) {
     padding-top: 100px;
-    padding-bottom: 110px;
+    padding-bottom: 30px;
   }
 `
 About.Content = styled(Box)``
@@ -65,6 +65,9 @@ About.Image = styled(Box)`
     border-radius: 50%;
     border-color: transparent;
   }
+  .about-image {
+    border-radius: 20px;
+  }
 `
 
 About.Button = styled(Button)`
@@ -81,5 +84,7 @@ About.Button = styled(Button)`
 `
 
 About.Box = styled(Box)``
+
+About.Widget = styled(Box)``
 
 export default About

@@ -5,12 +5,12 @@ const Feature = styled(Box)`
   padding-bottom: 60px;
   @media (min-width: 768px) {
     padding-top: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: 992px) {
     padding-top: 135px;
-    padding-bottom: 110px;
+    padding-bottom: 80px;
   }
 `
 
