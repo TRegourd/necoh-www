@@ -12,6 +12,7 @@ employees:
         link: fred@foo.com
       - contact: linkedin
         link: https://linkedin.com
+    color: "#f39200"
   - lastName: Doe
     firstName: Jane
     position: Expert Comptable
@@ -19,8 +20,10 @@ employees:
     links:
       - contact: tel
         link: "+33601020304"
+    color: "#be1522"
   - lastName: Smith
     firstName: Sarah
     position: Juriste
     image: wepik-photo-mode-202295-95618.png
+    color: "#6e0f0b"
 ---
