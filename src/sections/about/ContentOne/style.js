@@ -43,11 +43,7 @@ Content.Text = styled(Box)`
 
 Content.Image = styled(Box)``
 
-Content.Widget = styled(Box)`
-  .ceo-image {
-    border-radius: 20px;
-  }
-`
+Content.Widget = styled(Box)``
 Content.Box = styled(Box)``
 
 export default Content

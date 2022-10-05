@@ -43,7 +43,7 @@ export default function HeroSection({ content }) {
                       className="btn-secondary"
                       textTransform="capitalized"
                     >
-                      <Link to="/contact" className=" text-white">
+                      <Link to="/about" className=" text-white">
                         En savoir Plus
                       </Link>
                     </Button>

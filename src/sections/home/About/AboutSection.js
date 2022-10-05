@@ -62,7 +62,11 @@ export default function AboutSection({ content }) {
         <Row className="align-items-center justify-content-center">
           <Col xs="12" className="col-lg-6 col-md-12">
             <Feature.Image mb="30px">
-              <GatsbyImage image={image} alt="about image" />
+              <GatsbyImage
+                className="rounded-image"
+                image={image}
+                alt="about image"
+              />
             </Feature.Image>
           </Col>
           <Col className="col-lg-6 col-md-12">

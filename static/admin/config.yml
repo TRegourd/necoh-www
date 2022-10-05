@@ -337,6 +337,49 @@ collections:
               - { label: Titre, name: title, widget: string }
               - { label: Description, name: desc, widget: text }
 
+  - label: "Clients"
+    name: "customers"
+    files:
+      - label: "Créer une entreprise"
+        name: "create"
+        file: "src/data/customers/create.md"
+        fields:
+          - label: Entête
+            name: customerHeader
+            widget: object
+            fields:
+              - { label: Titre de l'entête, name: title, widget: string }
+              - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+          - label: Présentation
+            name: customerIntro
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Image, name: image, widget: image }
+          - label: Services
+            name: customerFeatures
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+
+              - label: Services
+                name: features
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Sous-Titre, name: subtitle, widget: string }
+                  - { label: Description, name: desc, widget: text }
+
+          - label: Action
+            name: customerCTA
+            widget: object
+            fields:
+              - { label: Titre, name: title, widget: string }
+              - { label: Description, name: desc, widget: text }
+
   - label: "A propos"
     name: "about"
     files:

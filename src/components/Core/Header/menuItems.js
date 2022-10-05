@@ -28,10 +28,10 @@ export const menuItems = [
     name: "needs",
     label: "Vos besoins",
     items: [
-      { name: "needs/create", label: "Créer une entreprise" },
-      { name: "needs/develop", label: "Développer mon business" },
-      { name: "needs/transformer", label: "Transformer mon activité" },
-      { name: "needs/acquire", label: "Acquérir ou transmettre" },
+      { name: "customers/create", label: "Créer une entreprise" },
+      { name: "customers/develop", label: "Développer mon business" },
+      { name: "customers/transform", label: "Transformer mon activité" },
+      { name: "customers/acquire", label: "Acquérir ou transmettre" },
     ],
   },
 
