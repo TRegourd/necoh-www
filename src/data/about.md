@@ -9,20 +9,20 @@ aboutIntro:
     - name: Humain
       desc: Nous sommes un cabinet à taille humaine
       color: "#f39200"
-      image: network.png
+      image: conference-64.png
     - name: Partenaire
       desc: Nous nous engageons à vos côtés
-      image: agreement.png
+      image: handshake-2-64.png
       color: "#936037"
     - name: Disponnibles
       desc: Nous sommes disponibles quand vous en avez le plus besoin
-      image: hourglass.png
+      image: time-5-64.png
       color: "#cbbb9f"
   video: LWZ7iytIA6k
   image: austin-distel-rxpthowuvge-unsplash.jpeg
 aboutCEO:
-  title: La raison d'être de Necoh
-  subtitle: Le mot du président
+  title: Le mot du président
+  subtitle: La raison d'être de Necoh
   image: hannah-nicollet-jq2d4i-2eyw-unsplash.jpeg
   text: >-
     > Lorem ipsum dolor sit amet. Maiores suscipit qui blanditiis culpa qui
