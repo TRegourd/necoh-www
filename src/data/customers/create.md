@@ -7,11 +7,12 @@ customerHeader:
   color: "#4d3434"
 customerIntro:
   title: Créateurs d'entreprises
-  subtitle: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
+  subtitle: Notre accompagnement
+  image: lukas-blazek-mcsdtbwxuzu-unsplash.jpeg
+  text: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
     suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam. Ut
     voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut illum
     aspernatur 33 esse aspernatur et vitae ipsam.
-  image: lukas-blazek-mcsdtbwxuzu-unsplash.jpeg
 customerFeatures:
   - title: "Prévisionnel "
     desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
