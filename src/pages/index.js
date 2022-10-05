@@ -28,7 +28,7 @@ export default function Home({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <HeroSection content={data.index.frontmatter?.indexHero} />
-      <AboutSection />
+      <AboutSection content={data.index.frontmatter?.indexAbout} />
       <Expertise content={data.index.frontmatter?.indexBrands} />
       <TestimonialSection content={data.index.frontmatter?.indexTestimonials} />
       <ContactSection
@@ -58,6 +58,19 @@ export const query = graphql`
             name
             position
             avatar
+            text
+          }
+        }
+        indexAbout {
+          title
+          subtitle
+          textLeft
+          textRight
+          features {
+            name
+          }
+          numbers {
+            number
             text
           }
         }

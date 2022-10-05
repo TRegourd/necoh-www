@@ -44,6 +44,7 @@ collections:
                   name: textRight,
                   widget: text,
                 }
+              - { label: Image, name: image, widget: image }
               - label: Mots Clefs
                 name: features
                 widget: list

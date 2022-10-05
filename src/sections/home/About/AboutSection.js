@@ -4,7 +4,7 @@ import Feature from "./style"
 import { StaticImage as Img } from "gatsby-plugin-image"
 import SectionTitle from "./Components/SectionTitle"
 import CounterBlock from "./Components/CounterBlock"
-export default function AboutSection() {
+export default function AboutSection({ content }) {
   return (
     <Feature backgroundColor="#f3f4f6">
       <Container>
@@ -13,9 +13,8 @@ export default function AboutSection() {
           <Col className="col-xl-8 col-lg-10">
             <Feature.Box>
               <SectionTitle
-                subTitle="About us"
-                title="We will make your website <br class='d-none d-xs-block'>
-                look more elegant and stylish!"
+                subTitle={content?.subtitle}
+                title={content?.title}
                 titleProps={{ mb: "33px" }}
                 subTitleProps={{ mb: "20px" }}
               />
@@ -25,24 +24,12 @@ export default function AboutSection() {
         <Row>
           <Col xs="12" className="col-lg-6 col-md-12 mb-5 mb-lg-7">
             <Feature.Box>
-              <Feature.Text mrLG="30px">
-                Business advisory service advises current and future businesses
-                prospects of a client, with the aim of advancing their business
-                or company. This service is used by all types of businesses and
-                would involve examining the legal, tax, finance, market and
-                risks factors involved to start up a business.
-              </Feature.Text>
+              <Feature.Text mrLG="30px">{content?.textLeft}</Feature.Text>
             </Feature.Box>
           </Col>
           <Col xs="12" className="col-lg-6 col-md-12 mb-5 mb-lg-7">
             <Feature.Box>
-              <Feature.Text mrLG="30px">
-                Business advisory service advises current and future businesses
-                prospects of a client, with the aim of advancing their business
-                or company. This service is used by all types of businesses and
-                would involve examining the legal, tax, finance, market and
-                risks factors involved to start up a business.
-              </Feature.Text>
+              <Feature.Text mrLG="30px">{content?.textRight}</Feature.Text>
             </Feature.Box>
           </Col>
         </Row>
@@ -64,12 +51,12 @@ export default function AboutSection() {
             <Feature.Box>
               {/* Feature List */}
               <Feature.Contentlist mbLG="65px" mb="30px">
-                <Feature.List>Multi-page sites and one-page sites</Feature.List>
-                <Feature.List>Built with Bootstrap 5</Feature.List>
-                <Feature.List>Free updates and support</Feature.List>
+                {content?.features?.map(feature => {
+                  return <Feature.List>{feature.name}</Feature.List>
+                })}
               </Feature.Contentlist>
               {/*/ .Feature List */}
-              <CounterBlock mt="50px" />
+              <CounterBlock mt="50px" numbers={content?.numbers} />
             </Feature.Box>
           </Col>
         </Row>
