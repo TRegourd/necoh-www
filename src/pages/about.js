@@ -2,7 +2,6 @@ import React from "react"
 import { PageWrapper } from "~components/Core"
 import BreadCrumbSection from "~sections/shared/BreadCrumb"
 import AboutSection from "~sections/about/about"
-import FeatureSection from "~sections/about/Feature"
 import ContentSection from "~sections/about/Content"
 import TeamSection from "~sections/about/Team"
 import { NecohHeader } from "."
@@ -14,7 +13,6 @@ export default function About({ data }) {
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={data.about.frontmatter?.aboutHeader} />
       <AboutSection />
-      <FeatureSection />
       <ContentSection />
       <TeamSection />
       <Footer />
