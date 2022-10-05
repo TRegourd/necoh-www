@@ -11,7 +11,26 @@ customerIntro:
     suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam. Ut
     voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut illum
     aspernatur 33 esse aspernatur et vitae ipsam.
-  image: christina-wocintechchat-com-0zx1bdv5bny-unsplash.jpeg
+  image: lukas-blazek-mcsdtbwxuzu-unsplash.jpeg
+customerFeatures:
+  - title: "Prévisionnel "
+    desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
+      suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
+      Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
+      illum aspernatur 33 esse aspernatur et vitae ipsam.
+    logo: handshake-2-64.png
+  - title: Rédaction des status
+    desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
+      suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
+      Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
+      illum aspernatur 33 esse aspernatur et vitae ipsam.
+    logo: conference-64.png
+  - title: Recherche de financements
+    desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
+      suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
+      Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
+      illum aspernatur 33 esse aspernatur et vitae ipsam.
+    logo: time-5-64.png
 customerCTA:
   title: Je souhaite créer mon entreprise
   desc: Contactez nous pour débuter votre accompagnement !
