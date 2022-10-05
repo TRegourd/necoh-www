@@ -82,4 +82,6 @@ About.Button = styled(Button)`
 
 About.Box = styled(Box)``
 
+About.Widget = styled(Box)``
+
 export default About

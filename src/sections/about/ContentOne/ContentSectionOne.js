@@ -1,7 +1,6 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { StaticImage as Img } from "gatsby-plugin-image"
-import ContentWidget from "./Components/Widget"
 import Content from "./style"
 export default function ContentSectionOne({ ...rest }) {
   return (
@@ -26,32 +25,6 @@ export default function ContentSectionOne({ ...rest }) {
               <br className="d-none d-md-block" /> deals with important tasks
               such as strategic planning,{" "}
             </Content.Text>
-            <Content.Widget>
-              {/* Single Widget */}
-              <ContentWidget
-                icon={"fa fa-rocket"}
-                title={"Fast Working Process"}
-                text={
-                  "Corporate headquarters is the part of a corporate structure that deals with important"
-                }
-              />
-              {/* Single Widget */}
-              <ContentWidget
-                icon={"fa fa-hammer"}
-                title={"Dedicated Team"}
-                text={
-                  "Corporate headquarters is the part of a corporate structure that deals with important"
-                }
-              />
-              {/* Single Widget */}
-              <ContentWidget
-                icon={"fa fa-hourglass"}
-                title={"24/7 Hours Support"}
-                text={
-                  "Corporate headquarters is the part of a corporate structure that deals with important"
-                }
-              />
-            </Content.Widget>
           </Col>
           <Col
             xs="12"

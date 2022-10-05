@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "~components"
 import About from "./style"
 import SectionTitle from "./Components/SectionTitle"
+import ContentWidget from "./Components/Widget"
 import Video from "~components/VideoModal"
 export default function AboutSection() {
   return (
@@ -37,19 +38,35 @@ export default function AboutSection() {
               <SectionTitle
                 subTitle="Watch video"
                 title="Watch how we work"
-                text="Scale up and down easily as your business demands. And make use of business-grade consultation. Book flexibly by the day, week or longer and customise the layout to reflect your brand."
                 titleProps={{ mb: "30px" }}
                 subTitleProps={{ mb: "25px" }}
               />
-              <About.ButtonGroup mt="25px">
-                <About.Button
-                  className="btn-secondary btn-1 text-white"
-                  as={Link}
-                  to="/"
-                >
-                  Learn More
-                </About.Button>
-              </About.ButtonGroup>
+              <About.Widget>
+                {/* Single Widget */}
+                <ContentWidget
+                  icon={"fa fa-rocket"}
+                  title={"Fast Working Process"}
+                  text={
+                    "Corporate headquarters is the part of a corporate structure that deals with important"
+                  }
+                />
+                {/* Single Widget */}
+                <ContentWidget
+                  icon={"fa fa-hammer"}
+                  title={"Dedicated Team"}
+                  text={
+                    "Corporate headquarters is the part of a corporate structure that deals with important"
+                  }
+                />
+                {/* Single Widget */}
+                <ContentWidget
+                  icon={"fa fa-hourglass"}
+                  title={"24/7 Hours Support"}
+                  text={
+                    "Corporate headquarters is the part of a corporate structure that deals with important"
+                  }
+                />
+              </About.Widget>
             </About.Content>
           </Col>
         </Row>
