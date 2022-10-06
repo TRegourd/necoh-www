@@ -57,7 +57,7 @@ export default function FooterOne() {
                         <a href="/about">A propos</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Nous rejoindre</a>
+                        <a href="/careers">Nous rejoindre</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
                         <a href="/terms">Mentions Légales</a>
@@ -73,19 +73,22 @@ export default function FooterOne() {
                     <Footer.Title>Nos Métiers</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <a href="#">Expertise Comptable</a>
+                        <a href="/services/comptabilite">Expertise Comptable</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Juridique</a>
+                        <a href="/services/juridique">Juridique</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Fiscalité</a>
+                        <a href="/services/fiscalite">Fiscalité</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Audit</a>
+                        <a href="/services/audit">Audit</a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="#">Social</a>
+                        <a href="/services/social">Social</a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="/services/conseil">Conseil</a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
