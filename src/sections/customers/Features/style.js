@@ -6,16 +6,14 @@ const Feature = styled(Box)`
   overflow: hidden;
   padding-top: 55px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+
   @media (min-width: 768px) {
     padding-top: 70px;
     padding-bottom: 40px;
-    margin-bottom: 50px;
   }
   @media (min-width: 992px) {
     padding-top: 125px;
     padding-bottom: 105px;
-    margin-bottom: 80px;
   }
   /* .newsletter-form {
         max-width: 521px;
@@ -61,6 +59,7 @@ Feature.Text = styled(Paragraph)`
   letter-spacing: normal;
   line-height: 1.62;
   opacity: 0.7;
+
   @media (min-width: 992px) {
     font-size: 21px;
   }
@@ -73,16 +72,16 @@ Feature.Tab = styled(Box).attrs(props => ({
     display: flex;
     /* justify-content:center; */
     a {
-      color: #fff;
+      color: #25373f;
       padding: 0;
       &.active {
         .nav-widget {
-          background-color: var(--bs-white);
-          color: var(--bs-blue-ribbon);
+          background-color: var(--bs-secondary);
+          color: var(--bs-white);
           border-radius: 10px;
-          color: black !important;
+
           i {
-            color: var(--bs-primary);
+            color: var(--bs-white);
           }
         }
       }

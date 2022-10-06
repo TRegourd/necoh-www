@@ -4,7 +4,7 @@ customerHeader:
   subtitle: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
     suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
 customerIntro:
-  title: Créateurs d'entreprises
+  title: Repreneurs
   subtitle: Notre accompagnement
   image: lukas-blazek-mcsdtbwxuzu-unsplash.jpeg
   text: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
@@ -22,15 +22,15 @@ customerFeatures:
         Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
         illum aspernatur 33 esse aspernatur et vitae ipsam.
       logo: handshake-2-64.png
-    - title: Rédaction des status
-      subtitle: "Accompagnement dans la redaction des status"
+    - title: Cession
+      subtitle: "Accompagnement dans la cession de votre entreprise"
       desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
         suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
         Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
         illum aspernatur 33 esse aspernatur et vitae ipsam.
       logo: conference-64.png
-    - title: Recherche de financements
-      subtitle: "Recherche de financements à vos côtés"
+    - title: Estimation de la valeur
+      subtitle: "Nous estimons la valeur de votre entreprise"
       desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
         suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
         Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut

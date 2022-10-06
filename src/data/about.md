@@ -18,15 +18,15 @@ aboutIntro:
     Sed necessitatibus voluptatem et modi ipsam ut unde
     reprehenderit et deserunt expedita.
   values:
-    - name: Humain
+    - name: Humains
       desc: Nous sommes un cabinet à taille humaine
       color: "#f39200"
       image: people-group.svg
-    - name: Partenaire
+    - name: Partenaires
       desc: Nous nous engageons à vos côtés
       image: handshake-simple.svg
       color: "#936037"
-    - name: Disponnibles
+    - name: Disponibles
       desc: Nous sommes disponibles quand vous en avez le plus besoin
       image: clock-rotate-left.svg
       color: "#cbbb9f"

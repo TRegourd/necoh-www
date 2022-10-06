@@ -17,8 +17,8 @@ const Widget = styled(Box)`
   transition: 0.4s;
 
   @media (min-width: 768px) {
-    width: 194px;
-    height: 60px;
+    width: 100%;
+    height: 90%;
   }
 
   i {
