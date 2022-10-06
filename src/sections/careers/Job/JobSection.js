@@ -8,7 +8,7 @@ import SectionTitleBlock from "./Component/SectionTitle"
 
 export default function JobSection({ jobsList }) {
   return (
-    <Job>
+    <Job backgroundColor="#f3f4f6">
       <Container>
         <Row className="justify-content-center">
           <Col xs="12 text-center">

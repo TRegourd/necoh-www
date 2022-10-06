@@ -2,7 +2,6 @@ import styled from "styled-components/macro"
 import { transparentize } from "polished"
 import { Box, Heading, Paragraph } from "~styled"
 
-const propToColor = (arg = "#ff1e38") => transparentize(0.6, arg)
 const Widget = styled(Box).attrs({ className: "content-Widget" })`
   color: #262729;
   border: none;
@@ -13,27 +12,22 @@ const Widget = styled(Box).attrs({ className: "content-Widget" })`
   background-color: transparent;
 `
 Widget.Icon = styled(Box)`
-  min-width: 60px;
-  max-width: 60px;
-  min-height: 60px;
-  max-height: 60px;
+  min-width: 65px;
+  min-height: 65px;
+  max-width: 65px;
+  max-height: 65px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 400;
-  margin-right: 25px;
-  margin-bottom: 30px;
-  color: ${props => (props.iconDark ? "#000" : "#fff")};
-  background: ${props =>
-    props.backgroundColor ? props.backgroundColor : "#ff1e38"};
-  box-shadow: ${props => "0 4px 65px " + propToColor(props.backgroundColor)};
-  .value-icon {
-    min-width: 50px;
-    max-width: 50px;
-    min-height: 50px;
-    max-height: 50px;
+  position: relative;
+  margin-bottom: 65px;
+
+  img {
+    position: absolute;
+    min-width: 65px;
+    min-height: 65px;
+    max-width: 65px;
+    max-height: 65px;
+    bottom: -18%;
+    right: -22%;
   }
 `
 Widget.Title = styled(Heading)`
@@ -49,5 +43,7 @@ Widget.Text = styled(Paragraph)`
   line-height: 1.86666;
   margin-bottom: 26px;
 `
-Widget.Box = styled(Box)``
+Widget.Box = styled(Box)`
+  padding-left: 30px;
+`
 export default Widget

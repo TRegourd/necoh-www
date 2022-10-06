@@ -6,7 +6,7 @@ import ServiceData from "~data/Career/services"
 
 export default function ServicesSection({ list, ...rest }) {
   return (
-    <Service backgroundColor="#f3f4f6" {...rest}>
+    <Service backgroundColor="#fff" {...rest}>
       <Container>
         {/* <Row className="justify-content-center">
           <Col xs="12 text-center">
