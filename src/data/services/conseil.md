@@ -13,20 +13,25 @@ serviceIntro:
     placeat velit.
   image: lukas-blazek-mcsdtbwxuzu-unsplash.jpeg
 serviceFeatures:
-  - title: Consulting
-    desc: Aut debitis eveniet aut quas quia et inventore nulla qui itaque cumque. A
-      nihil vitae ut consectetur aliquam id neque consequatur rem enim molestiae
-      eos aspernatur galisum est modi dolor 33 pariatur nulla. 33 nostrum
-      placeat eum explicabo rerum aut repudiandae qui quisquam veniam qui
-      placeat velit.
-    logo: presentation.png
-  - title: Amélioration continue
-    desc: Aut debitis eveniet aut quas quia et inventore nulla qui itaque cumque. A
-      nihil vitae ut consectetur aliquam id neque consequatur rem enim molestiae
-      eos aspernatur galisum est modi dolor 33 pariatur nulla. 33 nostrum
-      placeat eum explicabo rerum aut repudiandae qui quisquam veniam qui
-      placeat velit.
-    logo: graphique-en-ligne.png
+  title: Expertise Comptable
+  subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
+  features:
+    - title: Consulting
+      desc:
+        Aut debitis eveniet aut quas quia et inventore nulla qui itaque cumque. A
+        nihil vitae ut consectetur aliquam id neque consequatur rem enim molestiae
+        eos aspernatur galisum est modi dolor 33 pariatur nulla. 33 nostrum
+        placeat eum explicabo rerum aut repudiandae qui quisquam veniam qui
+        placeat velit.
+      logo: presentation.png
+    - title: Amélioration continue
+      desc:
+        Aut debitis eveniet aut quas quia et inventore nulla qui itaque cumque. A
+        nihil vitae ut consectetur aliquam id neque consequatur rem enim molestiae
+        eos aspernatur galisum est modi dolor 33 pariatur nulla. 33 nostrum
+        placeat eum explicabo rerum aut repudiandae qui quisquam veniam qui
+        placeat velit.
+      logo: graphique-en-ligne.png
 serviceCTA:
   title: Vous recherchez un consultant spécialisé ?
   desc: Contactez nos équipes pour débuter votre accompagnement !

@@ -40,7 +40,11 @@ export default function AboutusSection({ content, logo, color }) {
         <Row className="align-items-center justify-content-center g-0">
           <Col xs="12" className="col-xxl-6 col-lg-5 col-md-10">
             <About.Image>
-              <GatsbyImage image={serviceImage} alt="service Image" />
+              <GatsbyImage
+                image={serviceImage}
+                className="rounded-image"
+                alt="service Image"
+              />
             </About.Image>
           </Col>
           <Col className="col-xxl-6 col-lg-7 col-md-10">

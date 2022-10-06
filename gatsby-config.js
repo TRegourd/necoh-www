@@ -33,7 +33,9 @@ module.exports = {
     `gatsby-background-image`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-slug`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+    },
     {
       resolve: "gatsby-plugin-zopfli",
       options: {

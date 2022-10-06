@@ -3,7 +3,7 @@ import { PageWrapper } from "~components/Core"
 import BreadCrumbSection from "~sections/shared/BreadCrumb"
 import AboutSection from "~sections/services/About"
 import CTA from "~sections/services/Promo"
-import Features from "~sections/services/ServicesOne"
+import Features from "~sections/services/Features"
 
 import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../pages/index.js"
