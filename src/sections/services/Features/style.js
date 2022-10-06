@@ -2,17 +2,17 @@ import styled from "styled-components/macro"
 import { Box, Heading, Paragraph } from "~styled"
 
 const Service = styled(Box)`
-  padding-top: 55px;
+  padding-top: 10px;
   padding-bottom: 55px;
   position: relative;
 
   @media (min-width: 768px) {
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 25px;
   }
 
   @media (min-width: 992px) {
-    padding-top: 125px;
+    padding-top: 30px;
     padding-bottom: 113px;
   }
 `
