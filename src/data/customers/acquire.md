@@ -4,37 +4,38 @@ customerHeader:
   subtitle: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
     suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
 customerIntro:
-  title: Créateurs d'entreprises
+  title: Repreneurs
   subtitle: Notre accompagnement
-  image: lukas-blazek-mcsdtbwxuzu-unsplash.jpeg
+  image: docusign-7rwbsya9rro-unsplash.jpeg
   text: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
     suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam. Ut
     voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut illum
     aspernatur 33 esse aspernatur et vitae ipsam.
 customerFeatures:
   title: Services personnalisés
-  subtitle: Nous vous proposons des services au plus près de vos besoin de créateur d'entreprise
+  subtitle: Nous vous proposons des services au plus près de vos besoin de
+    créateur d'entreprise
   features:
-    - title: "Prévisionnel"
-      subtitle: "Creation de pévisionnel"
+    - title: Prévisionnel
+      subtitle: Creation de pévisionnel
       desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
-        suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
-        Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
-        illum aspernatur 33 esse aspernatur et vitae ipsam.
+        suscipit asperiores et assumenda illo ut iste magnam quo assumenda
+        ullam. Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam
+        error ut illum aspernatur 33 esse aspernatur et vitae ipsam.
       logo: handshake-2-64.png
-    - title: Rédaction des status
-      subtitle: "Accompagnement dans la redaction des status"
+    - title: Cession
+      subtitle: Accompagnement dans la cession de votre entreprise
       desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
-        suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
-        Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
-        illum aspernatur 33 esse aspernatur et vitae ipsam.
+        suscipit asperiores et assumenda illo ut iste magnam quo assumenda
+        ullam. Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam
+        error ut illum aspernatur 33 esse aspernatur et vitae ipsam.
       logo: conference-64.png
-    - title: Recherche de financements
-      subtitle: "Recherche de financements à vos côtés"
+    - title: Estimation de la valeur
+      subtitle: Nous estimons la valeur de votre entreprise
       desc: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
-        suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam.
-        Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut
-        illum aspernatur 33 esse aspernatur et vitae ipsam.
+        suscipit asperiores et assumenda illo ut iste magnam quo assumenda
+        ullam. Ut voluptas quae in nihil dolore et veniam dolorem sed aliquam
+        error ut illum aspernatur 33 esse aspernatur et vitae ipsam.
       logo: time-5-64.png
 customerCTA:
   title: Je souhaite acquérir ou céder une entreprise

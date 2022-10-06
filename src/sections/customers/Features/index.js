@@ -7,7 +7,7 @@ import Feature from "./style"
 import NecohSymbol from "../../../assets/image/Necoh_Symbole.png"
 const FeatureSection = ({ content, ...rest }) => {
   return (
-    <Feature className="bg-secondary">
+    <Feature backgroundColor="#fff">
       <Feature.Shapes>
         <img src={NecohSymbol} alt="shape1" className="w-100" />
       </Feature.Shapes>
@@ -16,10 +16,10 @@ const FeatureSection = ({ content, ...rest }) => {
         <Row>
           <Col xs="auto" className="col-xl-8 col-lg-10">
             <Feature.Box mb="35px" mbMD="80px" mbLG="148px">
-              <Feature.Title className="mb-5" as="h2" fontColor="#fff">
+              <Feature.Title className="mb-5" as="h2" fontColor="#25373f">
                 {content?.title}
               </Feature.Title>
-              <Feature.Text className="mt-8" fontColor="#fff">
+              <Feature.Text className="mt-8" fontColor="#25373f">
                 {content.subtitle}
               </Feature.Text>
             </Feature.Box>

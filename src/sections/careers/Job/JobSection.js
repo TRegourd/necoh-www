@@ -1,6 +1,7 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import Card from "./Component/Card"
+import Card2 from "./Component/Card2"
 import Job from "./style"
 
 import dayjs from "dayjs"
@@ -8,7 +9,7 @@ import SectionTitleBlock from "./Component/SectionTitle"
 
 export default function JobSection({ jobsList }) {
   return (
-    <Job>
+    <Job backgroundColor="#f3f4f6">
       <Container>
         <Row className="justify-content-center">
           <Col xs="12 text-center">
@@ -38,6 +39,9 @@ export default function JobSection({ jobsList }) {
                     </Col>
                   )
                 })}
+                <Col className="col-lg-6 col-md-12 col-xs-8 ">
+                  <Card2 />
+                </Col>
               </Row>
             </Job.Tab>
           </Col>

@@ -2,7 +2,6 @@ import styled from "styled-components/macro"
 import { Box, Heading, Button, Paragraph } from "~styled"
 
 import { transparentize, rgba } from "polished"
-const propToColor = (arg = "#1787FC") => transparentize(0.7, arg)
 const Card = styled(Box).attrs({ className: "service-card" })`
   border: none;
   padding-top: 35px;
@@ -35,28 +34,22 @@ const Card = styled(Box).attrs({ className: "service-card" })`
   }
 `
 Card.Icon = styled(Box)`
-  min-width: 80px;
-  max-width: 80px;
-  min-height: 80px;
-  max-height: 80px;
+  min-width: 65px;
+  min-height: 65px;
+  max-width: 65px;
+  max-height: 65px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 30px;
-  background: ${props => props.background};
-  box-shadow: ${props =>
-    props.background
-      ? "-12px 12px 50px " + rgba(props.background, 0.3)
-      : "none"};
-  .icon-logo {
-    min-width: 50px;
-    max-width: 50px;
-    min-height: 50px;
-    max-height: 50px;
+  position: relative;
+  margin-bottom: 65px;
+
+  img {
+    position: absolute;
+    min-width: 65px;
+    min-height: 65px;
+    max-width: 65px;
+    max-height: 65px;
+    bottom: -18%;
+    right: -22%;
   }
 `
 Card.Title = styled(Heading)`

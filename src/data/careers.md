@@ -19,18 +19,18 @@ benefits:
     desc:
       "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
-    logo: presentation.png
+    logo: people-group.svg
     color: "#f39200"
   - title: Flexibilité
     desc:
       "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
-    logo: contracter.png
+    logo: rainbow-solid.svg
     color: "#be1522"
   - title: Taille Humaine
     desc:
       "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
-    logo: contracter.png
+    logo: feather-solid.svg
     color: "#cbbb9f"
 ---
