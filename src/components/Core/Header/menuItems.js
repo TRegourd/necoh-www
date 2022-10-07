@@ -40,7 +40,7 @@ export const menuItems = [
     label: "Ressources",
     items: [
       { name: "articles", label: "Articles" },
-      { name: "events", label: "Evenements" },
+      { name: "feed", label: "Les Actualités Necoh" },
       { name: "utils", label: "Liens et outils" },
     ],
   },
