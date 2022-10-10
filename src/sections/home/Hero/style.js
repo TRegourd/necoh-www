@@ -3,7 +3,7 @@ import { Box, Heading, Paragraph } from "~styled"
 
 const Hero = styled(Box)`
   margin-top: 20px;
-  /* padding-top: 180px; */
+  padding-top: 250px;
   padding-bottom: 55px;
   @media (min-width: 575px) {
     padding-top: 273px;
