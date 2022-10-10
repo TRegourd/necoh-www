@@ -4,8 +4,8 @@ indexHero:
   subtitle: "Notre collectif d’experts-comptables, avocats, juristes, huissiers,
     notaires, auditeurs, consultants et recruteurs s’engage aux côtés des
     entrepreneurs, dirigeants et décideurs d’entreprises en mouvement, autour
-    d’une même mission : donner à chacun de l’élan pour grandir jour après jour
-    !"
+    d’une même mission : donner à chacun de l’élan pour grandir jour après
+    jour."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -20,8 +20,7 @@ indexHero:
 indexAbout:
   title: Découvrez Necoh, experts au service des entreprises et particuliers
   subtitle: A propos
-  textLeft:
-    Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
+  textLeft: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
     cupiditate ipsam a consectetur consectetur! Et esse consectetur veritatis
     quos ut minima fugiat aut assumenda quos sit deserunt iure nam accusamus
     quisquam.
@@ -63,14 +62,12 @@ indexTestimonials:
       avatar: fred-foo.jpeg
     - name: Sophie Dubois
       position: Directrice Financière de Company
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum."
       avatar: jane-doe.jpeg
     - name: Frédéric Dujardin
       position: Comptable
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
         vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
         modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
