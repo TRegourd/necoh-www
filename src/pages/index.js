@@ -1,6 +1,5 @@
 import React from "react"
 import { PageWrapper } from "~components/Core"
-import HeaderButton from "~sections/shared/Header"
 import HeroSection from "~sections/home/Hero"
 import TestimonialSection from "~sections/home/Testimonial"
 import AboutSection from "~sections/home/About"
@@ -8,21 +7,7 @@ import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
 import Expertise from "~sections/home/Expertise"
-
-export const NecohHeader = {
-  headerClasses:
-    "site-header site-header--menu-start light-header site-header--with-border site-header--sticky",
-  containerFluid: false,
-  buttonBlock: (
-    <HeaderButton
-      className="ms-auto d-none d-xs-inline-flex"
-      btnText="Contact"
-      mr="15px"
-      mrLG="0"
-      btnLink="/contact"
-    />
-  ),
-}
+import { NecohHeader } from "../libs/NecohHeader"
 
 export default function Home({ data }) {
   return (

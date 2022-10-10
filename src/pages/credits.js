@@ -2,8 +2,7 @@ import React from "react"
 import Footer from "~sections/shared/Footer"
 import { PageWrapper } from "~components/Core"
 import CreditsSection from "~sections/utility/Credits"
-
-import { NecohHeader } from "."
+import { NecohHeader } from "../libs/NecohHeader"
 const header = {
   headerClasses: "site-header site-header--menu-start light-header",
   containerFluid: false,

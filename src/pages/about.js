@@ -5,7 +5,7 @@ import AboutSection from "~sections/about/about"
 import ContentSectionOne from "~sections/about/ContentOne"
 import TeamSection from "~sections/about/Team"
 import Promo from "~sections/about/Promo"
-import { NecohHeader } from "."
+import { NecohHeader } from "../libs/NecohHeader"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
 

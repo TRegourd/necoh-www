@@ -5,7 +5,7 @@ import { PageWrapper } from "~components/Core"
 import BreadCrumbSection from "~sections/shared/BreadCrumb"
 
 import Footer from "~sections/shared/Footer"
-import { NecohHeader } from "../pages/index.js"
+import { NecohHeader } from "../libs/NecohHeader"
 
 export default function CareerDetails({ pageContext }) {
   const { content } = pageContext

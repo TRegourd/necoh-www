@@ -1,6 +1,7 @@
 import React from "react"
 import { Error } from "~sections/utility"
 import { PageWrapper } from "~components/Core"
+import { NecohHeader } from "../libs/NecohHeader"
 
 const header = {
   headerClasses: "site-header site-header--menu-start light-header",
@@ -9,7 +10,7 @@ const header = {
 
 export default function errorPage() {
   return (
-    <PageWrapper innerPage={false}>
+    <PageWrapper headerConfig={NecohHeader}>
       <Error />
     </PageWrapper>
   )
