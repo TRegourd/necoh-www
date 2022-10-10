@@ -2,9 +2,32 @@ import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import SectionTitle from "./components/SectionTitle"
 import Widget from "./components/widget"
-import { StaticImage as Img } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import About from "./style"
+import { graphql, useStaticQuery } from "gatsby"
 export default function ExpertiseSection({ content }) {
+  const images = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "" }
+          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+        }
+      ) {
+        nodes {
+          relativePath
+          childrenImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
+  const image = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === content?.image
+    })?.childrenImageSharp[0]
+  )
   return (
     <About backgroundColor="#f2f5fb">
       <Container>
@@ -62,12 +85,7 @@ export default function ExpertiseSection({ content }) {
             className="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2 text-center"
           >
             <About.ImageContent>
-              <Img
-                src="../../../assets/image/home-app/about-mobile-img.png"
-                alt="content"
-                layout="fullWidth"
-                placeholder="blurred"
-              />
+              <GatsbyImage image={image} alt="Necoh Services" />
               <About.Shape>
                 <Img
                   src="../../../assets/image/Necoh_Symbole.png"

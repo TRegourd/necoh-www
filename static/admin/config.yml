@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: TRegourd/necoh-www
   branch: main
 media_folder: src/assets/image
 public_folder: ""
@@ -63,33 +64,12 @@ collections:
                 fields:
                   - { label: Chiffre, name: number, widget: string }
                   - { label: Texte, name: text, widget: string }
-          - label: Avis Clients
-            name: indexTestimonials
-            widget: object
-            fields:
-              - { label: Titre de la section, name: title, widget: string }
-              - {
-                  label: Sous-Titre de la section,
-                  name: subtitle,
-                  widget: string,
-                }
-              - label: Avis Clients
-                name: testimonials
-                widget: list
-                fields:
-                  - { label: Nom, name: name, widget: string }
-                  - {
-                      label: Poste et/ou Entreprise,
-                      name: position,
-                      widget: string,
-                    }
-                  - { label: Avis, name: text, widget: text }
-                  - { label: Avatar, name: avatar, widget: image }
           - label: Marques Necoh
             name: indexBrands
             widget: object
             fields:
               - { label: Titre de la section, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
               - {
                   label: Sous-Titre de la section,
                   name: subtitle,
@@ -147,6 +127,29 @@ collections:
                       - { label: Description, name: desc, widget: string }
                       - { label: Titre du lien, name: link, widget: string }
                       - { label: Logo, name: logo, widget: image }
+
+          - label: Avis Clients
+            name: indexTestimonials
+            widget: object
+            fields:
+              - { label: Titre de la section, name: title, widget: string }
+              - {
+                  label: Sous-Titre de la section,
+                  name: subtitle,
+                  widget: string,
+                }
+              - label: Avis Clients
+                name: testimonials
+                widget: list
+                fields:
+                  - { label: Nom, name: name, widget: string }
+                  - {
+                      label: Poste et/ou Entreprise,
+                      name: position,
+                      widget: string,
+                    }
+                  - { label: Avis, name: text, widget: text }
+                  - { label: Avatar, name: avatar, widget: image }
 
   - label: "Services"
     name: "services"

@@ -4,8 +4,8 @@ indexHero:
   subtitle: "Notre collectif d’experts-comptables, avocats, juristes, huissiers,
     notaires, auditeurs, consultants et recruteurs s’engage aux côtés des
     entrepreneurs, dirigeants et décideurs d’entreprises en mouvement, autour
-    d’une même mission : donner à chacun de l’élan pour grandir jour après jour
-    !"
+    d’une même mission : donner à chacun de l’élan pour grandir jour après
+    jour."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -20,8 +20,7 @@ indexHero:
 indexAbout:
   title: Découvrez Necoh, experts au service des entreprises et particuliers
   subtitle: A propos
-  textLeft:
-    Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
+  textLeft: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
     cupiditate ipsam a consectetur consectetur! Et esse consectetur veritatis
     quos ut minima fugiat aut assumenda quos sit deserunt iure nam accusamus
     quisquam.
@@ -41,42 +40,6 @@ indexAbout:
     - number: 100%
       text: Satisfaction Client
   image: scott-graham-5fnmwej4taa-unsplash.jpeg
-indexTestimonials:
-  title: Nos clients parlent de nous
-  subtitle: Avis Clients
-  testimonials:
-    - name: Paul Durand
-      position: Artisan
-      text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
-        laboriosam assumenda est voluptatum atque ut culpa voluptates. Ut
-        provident rerum vel maiores culpa rem aliquam quia vel labore ipsum ut
-        enim ratione non modi molestiae in ipsam rerum.
-      avatar: paul-smith.jpeg
-    - name: Jean Dupont
-      position: Dirigeant de Dupont SAS
-      text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
-        laboriosam assumenda est voluptatum atque ut culpa voluptates. Ut
-        provident rerum vel maiores culpa rem aliquam quia vel labore ipsum ut
-        enim ratione non modi molestiae in ipsam rerum.  Ut provident rerum vel
-        maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non modi
-        molestiae in ipsam rerum.
-      avatar: fred-foo.jpeg
-    - name: Sophie Dubois
-      position: Directrice Financière de Company
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
-        ut enim ratione non modi molestiae in ipsam rerum."
-      avatar: jane-doe.jpeg
-    - name: Frédéric Dujardin
-      position: Comptable
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
-        ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
-        vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
-        modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
-        aliquam quia vel labore ipsum ut enim ratione non modi molestiae in
-        ipsam rerum."
-      avatar: john-doe.jpeg
 indexBrands:
   title: Nos Services
   subtitle: Expertise
@@ -111,4 +74,39 @@ indexBrands:
       desc: Necoh Audit
       link: Je dois faire auditer mes comptes
       logo: necohaudit_logonoir-copie.png
+  image: wepik-photo-mode-202295-95618.png
+indexTestimonials:
+  title: Nos clients parlent de nous
+  subtitle: Avis Clients
+  testimonials:
+    - name: Paul Durand
+      position: Artisan
+      text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
+        laboriosam assumenda est voluptatum atque ut culpa voluptates. Ut
+        provident rerum vel maiores culpa rem aliquam quia vel labore ipsum ut
+        enim ratione non modi molestiae in ipsam rerum.
+      avatar: paul-smith.jpeg
+    - name: Jean Dupont
+      position: Dirigeant de Dupont SAS
+      text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
+        laboriosam assumenda est voluptatum atque ut culpa voluptates. Ut
+        provident rerum vel maiores culpa rem aliquam quia vel labore ipsum ut
+        enim ratione non modi molestiae in ipsam rerum.  Ut provident rerum vel
+        maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non modi
+        molestiae in ipsam rerum.
+      avatar: fred-foo.jpeg
+    - name: Sophie Dubois
+      position: Directrice Financière de Company
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+        ut enim ratione non modi molestiae in ipsam rerum."
+      avatar: jane-doe.jpeg
+    - name: Frédéric Dujardin
+      position: Comptable
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+        ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
+        vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
+        modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
+        aliquam quia vel labore ipsum ut enim ratione non modi molestiae in
+        ipsam rerum."
+      avatar: john-doe.jpeg
 ---
