@@ -67,6 +67,7 @@ export const query = graphql`
         indexBrands {
           title
           subtitle
+          image
           brands {
             comptabilite {
               title
