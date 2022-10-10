@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path style="fill: rgb(147, 96, 55);" transform="matrix(1.780992, 0, 0, 1.780991, -330.771057, -377.048309)" d="M 298.02 211.707 A 112.297 112.297 0 0 1 185.723 324.004 L 185.723 211.707 Z" bx:shape="pie 185.723 211.707 0 112.297 90 180 1@4bed3818"/>
+</svg>

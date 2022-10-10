@@ -1,18 +1,19 @@
 import React from "react"
-import {StaticImage as Img} from "gatsby-plugin-image";
-import HeroImageGroup from "./style";
+import { icons } from "../../../../../libs/icons"
+import { StaticImage as Img } from "gatsby-plugin-image"
+import HeroImageGroup from "./style"
 export default function ImageGroup() {
   return (
     <>
       <HeroImageGroup>
         <HeroImageGroup.Inner>
-            <Img
-              src="../../../../../assets/image/marketing/l1-hero-img-ipad.png"
-              className=" welcome-image--group-01__main"
-              placeholder="blurred"
-              layout="fullWidth"
-              alt="hero image main"
-            />
+          <Img
+            src="../../../../../assets/image/marketing/l1-hero-img-ipad.png"
+            className=" welcome-image--group-01__main"
+            placeholder="blurred"
+            layout="fullWidth"
+            alt="hero image main"
+          />
           <div className=" welcome-image--group-01__img-1">
             <Img
               src="../../../../../assets/image/marketing/l1-hero-img-1.png"
@@ -21,46 +22,30 @@ export default function ImageGroup() {
             />
           </div>
           <div className=" welcome-image--group-01__img-2">
-          <Img
+            <Img
               src="../../../../../assets/image/marketing/l1-hero-img-2.png"
               alt="hero image"
               layout="fullWidth"
             />
           </div>
           <div className=" welcome-image--group-01__img-3">
-          <Img
+            <Img
               src="../../../../../assets/image/marketing/l1-hero-img-3.png"
               alt="hero image"
               layout="fullWidth"
             />
           </div>
           <div className=" welcome-image--group-01__img-4">
-            <Img
-              src="../../../../../assets/image/marketing/hero-dots.png"
-              alt="hero image"
-              layout="fullWidth"
-            />
+            <img src={icons["hero-dots.svg"]} className="value-icon" />
           </div>
           <div className=" welcome-image--group-01__img-5">
-            <Img
-                src="../../../../../assets/image/marketing/l1-hero-shape-1.png"
-                alt="hero image"
-                layout="fullWidth"
-              />
+            <img src={icons["hero-pie-left.svg"]} className="value-icon" />
           </div>
           <div className=" welcome-image--group-01__img-6">
-          <Img
-                src="../../../../../assets/image/marketing/l1-hero-shape-2.png"
-                alt="hero image"
-                layout="fullWidth"
-              />
+            <img src={icons["hero-pie-right.svg"]} className="value-icon" />
           </div>
           <div className=" welcome-image--group-01__img-7">
-              <Img
-                src="../../../../../assets/image/marketing/l1-hero-shape-3.png"
-                alt="hero image"
-                layout="fullWidth"
-              />
+            <img src={icons["hero-triangles.svg"]} className="value-icon" />
           </div>
         </HeroImageGroup.Inner>
       </HeroImageGroup>
