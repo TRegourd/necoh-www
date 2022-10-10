@@ -6,6 +6,10 @@ indexHero:
     entrepreneurs, dirigeants et décideurs d’entreprises en mouvement, autour
     d’une même mission : donner à chacun de l’élan pour grandir jour après jour
     !"
+  image0: hero-necoh.png
+  image1: wepik-photo-mode-202295-95434.png
+  image2: wepik-photo-mode-202295-95532.png
+  image3: wepik-photo-mode-202295-95618.png
   dynamicText:
     - text: Comptabilité.
     - text: Juridique.

@@ -32,6 +32,10 @@ export const query = graphql`
         indexHero {
           title
           subtitle
+          image0
+          image1
+          image2
+          image3
           dynamicText {
             text
           }

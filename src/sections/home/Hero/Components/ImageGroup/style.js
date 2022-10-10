@@ -4,7 +4,7 @@ const HeroImageGroup = styled.div`
   position: relative;
   width: 85%;
   margin: 0 auto;
-
+  margin-bottom: 50px;
   @media (min-width: 768px) {
     width: 80%;
   }
@@ -51,8 +51,14 @@ HeroImageGroup.Inner = styled.div`
   }
 
   @media (min-width: 1600px) {
-    width: 731px;
+    width: 620px;
     object-fit: contain;
+  }
+
+  .welcome-image--group-01__main {
+    width: 90%;
+    position: relative;
+    left: 10%;
   }
 
   .welcome-image--group-01__img-1 {
@@ -60,8 +66,11 @@ HeroImageGroup.Inner = styled.div`
     left: -2%;
     top: -7%;
     width: 28%;
+    height: 35%;
     box-shadow: 0 44px 54px rgba(37, 55, 63, 0.16);
-    border-radius: 50%;
+    background-color: #f39200;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    contain: paint;
   }
 
   .welcome-image--group-01__img-2 {
@@ -70,15 +79,21 @@ HeroImageGroup.Inner = styled.div`
     top: -34%;
     width: 33%;
     z-index: -1;
+    background-color: #be1522;
+    border-radius: 0% 50% 0% 0% / 25% 50% 25% 25%;
+    contain: paint;
   }
 
   .welcome-image--group-01__img-3 {
     position: absolute;
     right: 12%;
-    bottom: -15%;
+    bottom: -37%;
     width: 28%;
     transform: translateX(-50%);
     z-index: -1;
+    background-color: #32141c;
+    border-radius: 0% 25% 0% 50% / 25% 0% 25% 50%;
+    contain: paint;
   }
 
   .welcome-image--group-01__img-4 {
@@ -110,7 +125,7 @@ HeroImageGroup.Inner = styled.div`
   .welcome-image--group-01__img-7 {
     position: absolute;
     right: -9%;
-    bottom: -10%;
+    bottom: -20%;
     width: 32%;
     z-index: -1;
   }

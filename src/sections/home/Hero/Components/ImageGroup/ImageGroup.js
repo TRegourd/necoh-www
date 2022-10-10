@@ -1,39 +1,64 @@
 import React from "react"
 import { icons } from "../../../../../libs/icons"
-import { StaticImage as Img } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import HeroImageGroup from "./style"
-export default function ImageGroup() {
+import { graphql, useStaticQuery } from "gatsby"
+export default function ImageGroup({ image0, image1, image2, image3 }) {
+  const images = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: {
+          relativeDirectory: { eq: "" }
+          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+        }
+      ) {
+        nodes {
+          relativePath
+          childrenImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
+  const heroImage0 = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === image0
+    })?.childrenImageSharp[0]
+  )
+  const heroImage1 = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === image1
+    })?.childrenImageSharp[0]
+  )
+  const heroImage2 = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === image2
+    })?.childrenImageSharp[0]
+  )
+  const heroImage3 = getImage(
+    images.allFile.nodes?.find(el => {
+      return el.relativePath === image3
+    })?.childrenImageSharp[0]
+  )
   return (
     <>
       <HeroImageGroup>
         <HeroImageGroup.Inner>
-          <Img
-            src="../../../../../assets/image/marketing/l1-hero-img-ipad.png"
-            className=" welcome-image--group-01__main"
-            placeholder="blurred"
-            layout="fullWidth"
+          <GatsbyImage
+            image={heroImage0}
+            className="welcome-image--group-01__main"
             alt="hero image main"
           />
+
           <div className=" welcome-image--group-01__img-1">
-            <Img
-              src="../../../../../assets/image/marketing/l1-hero-img-1.png"
-              alt="hero image"
-              layout="fullWidth"
-            />
+            <GatsbyImage image={heroImage1} alt={"hero image 1"} />
           </div>
           <div className=" welcome-image--group-01__img-2">
-            <Img
-              src="../../../../../assets/image/marketing/l1-hero-img-2.png"
-              alt="hero image"
-              layout="fullWidth"
-            />
+            <GatsbyImage image={heroImage2} alt={"hero image 2"} />
           </div>
           <div className=" welcome-image--group-01__img-3">
-            <Img
-              src="../../../../../assets/image/marketing/l1-hero-img-3.png"
-              alt="hero image"
-              layout="fullWidth"
-            />
+            <GatsbyImage image={heroImage3} alt={"hero image 3"} />
           </div>
           <div className=" welcome-image--group-01__img-4">
             <img src={icons["hero-dots.svg"]} className="value-icon" />
