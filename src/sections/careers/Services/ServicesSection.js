@@ -2,7 +2,6 @@ import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import ServicesCard from "./Components/Card"
 import Service from "./style"
-import ServiceData from "~data/Career/services"
 
 export default function ServicesSection({ list, ...rest }) {
   return (

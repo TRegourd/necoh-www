@@ -1,7 +1,7 @@
 import { Link } from "~components"
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { Images } from "~data"
+import { icons } from "../../../libs/icons"
 import Promo from "./style"
 
 export default function PromoSection({ ...rest }) {
@@ -23,11 +23,7 @@ export default function PromoSection({ ...rest }) {
         </Row>
       </Container>
       <Promo.Shape>
-        <img
-          className="w-100"
-          src={Images.PageAboutUs.InnerPromoShape}
-          alt="inner shape"
-        />
+        <img src={icons["hero-pie-left.svg"]} className="value-icon" />
       </Promo.Shape>
     </Promo>
   )

@@ -5,7 +5,7 @@ import ServiceSection from "~sections/careers/Services"
 import JobSection from "~sections/careers/Job"
 import Footer from "~sections/shared/Footer"
 import { PageWrapper } from "~components/Core"
-import { NecohHeader } from "."
+import { NecohHeader } from "../libs/NecohHeader"
 import { graphql } from "gatsby"
 
 export default function Career({ data }) {

@@ -1,7 +1,7 @@
 import React from "react"
 import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import { PageWrapper } from "~components/Core"
-import { NecohHeader } from "."
+import { NecohHeader } from "../libs/NecohHeader"
 import Footer from "~sections/shared/Footer"
 import { graphql } from "gatsby"
 

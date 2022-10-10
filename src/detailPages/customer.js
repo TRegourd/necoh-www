@@ -6,7 +6,7 @@ import CTA from "~sections/services/Promo"
 import Features from "~sections/customers/Features"
 
 import Footer from "~sections/shared/Footer"
-import { NecohHeader } from "../pages/index.js"
+import { NecohHeader } from "../libs/NecohHeader"
 
 export default function Customer({ pageContext }) {
   const { content } = pageContext

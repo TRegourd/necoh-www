@@ -18,7 +18,7 @@ export default function HeroSection({ content }) {
           >
             <Hero.Content>
               <Hero.Title as="h1">
-                {content.title}
+                {content?.title}
                 <br />
                 <ReactTypingEffect
                   text={content.dynamicText?.map(item => {
@@ -34,7 +34,7 @@ export default function HeroSection({ content }) {
                   cursorClassName="typed-cursor"
                 />
               </Hero.Title>
-              <Hero.Text>{content.subtitle}</Hero.Text>
+              <Hero.Text>{content?.subtitle}</Hero.Text>
               {/* Newsletter */}
               <Row>
                 <Col xs="12" className="col-xxl-10">
@@ -58,7 +58,12 @@ export default function HeroSection({ content }) {
             xs={12}
             className="col-xl-6 col-lg-5 col-md-10 order-1 order-lg-2 position-static"
           >
-            <ImageGroup />
+            <ImageGroup
+              image0={content?.image0}
+              image1={content?.image1}
+              image2={content?.image2}
+              image3={content?.image3}
+            />
           </Col>
           {/*/ .Welcome Image Area */}
         </Row>

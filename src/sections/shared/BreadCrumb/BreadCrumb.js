@@ -1,6 +1,6 @@
 import React from "react"
 import BreadCrumb from "./style"
-import { StaticImage as Img } from "gatsby-plugin-image"
+import { icons } from "../../../libs/icons"
 import { Col, Row, Container } from "react-bootstrap"
 import { SuperTag } from "~components"
 export default function BreadCrumbSection({ colClasses, content, ...rest }) {
@@ -17,13 +17,7 @@ export default function BreadCrumbSection({ colClasses, content, ...rest }) {
         </Row>
       </Container>
       <BreadCrumb.Image>
-        <Img
-          className="w-100"
-          src="../../../assets/image/mixed/inner-banner-shape.png"
-          alt="shape"
-          layout="fullWidth"
-          placeholder="blurred"
-        />
+        <img src={icons["hero-pie-left.svg"]} className="value-icon" />
       </BreadCrumb.Image>
     </BreadCrumb>
   )

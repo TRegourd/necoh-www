@@ -1,7 +1,7 @@
 import React from "react"
 import { PageWrapper } from "~components/Core"
 import BreadCrumbSection from "~sections/shared/BreadCrumb"
-import { NecohHeader } from "."
+import { NecohHeader } from "../libs/NecohHeader"
 import Footer from "~sections/shared/Footer"
 import ServicesSection from "~sections/utils/Services"
 import { graphql } from "gatsby"

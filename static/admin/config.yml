@@ -19,6 +19,14 @@ collections:
             fields:
               - { label: Titre de l'entête, name: title, widget: string }
               - { label: Sous-Titre de l'entête, name: subtitle, widget: text }
+              - {
+                  label: Image Principale (centre),
+                  name: image0,
+                  widget: image,
+                }
+              - { label: Image 1 (rond), name: image1, widget: image }
+              - { label: Image 2 (haute), name: image2, widget: image }
+              - { label: Image 3 (bas), name: image3, widget: image }
               - label: Texte Dynamique
                 name: dynamicText
                 widget: list
