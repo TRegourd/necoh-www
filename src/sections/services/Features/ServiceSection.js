@@ -1,7 +1,5 @@
-import { StaticImage as Img } from "gatsby-plugin-image"
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import serviceData from "~data/marketing/Service"
 import ServiceWidget from "./Component/Widget"
 import Service from "./style"
 import NecohSymbol from "../../../assets/image/Necoh_Symbole.png"
