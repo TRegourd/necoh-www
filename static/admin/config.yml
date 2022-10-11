@@ -757,3 +757,13 @@ collections:
         fields:
           - { label: Titre de l'entête, name: title, widget: string }
           - { label: Texte, name: text, widget: markdown }
+
+  - label: "Mentions Légales"
+    name: "terms"
+    files:
+      - label: "Contenu"
+        name: "termsContent"
+        file: "src/data/terms.md"
+        fields:
+          - { label: Titre de l'entête, name: title, widget: string }
+          - { label: Texte, name: text, widget: markdown }
