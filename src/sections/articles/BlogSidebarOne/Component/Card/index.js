@@ -23,18 +23,16 @@ export default function BlogCard({ post }) {
               )
             })}
           </Card.BadgeContainer>
-          <Card.Date to="/blog/blog-details">
-            {dayjs(post?.isoDate).format("DD-MM-YYYY")}
-          </Card.Date>
+          <Card.Date>{dayjs(post?.isoDate).format("DD-MM-YYYY")}</Card.Date>
         </Card.Top>
         <Card.Title>
           {" "}
           <SuperTag value={post?.title} />
         </Card.Title>
         <Card.User>
-          <a href={post?.link}>
+          <a href={`/articles/${post?.id}`}>
             <i className="fas fa-external-link-alt" />
-            <SuperTag value={"Voir sur le site de Weblex"} />
+            <SuperTag value={"Lire la suite"} />
           </a>
         </Card.User>
       </Card.OvaerlayBlock>

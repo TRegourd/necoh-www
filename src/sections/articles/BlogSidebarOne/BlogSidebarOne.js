@@ -2,11 +2,8 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import Blog from "./style"
 import BlogCard from "./Component/Card"
-import BlogRequlerData from "~data/BlogRequlerData"
-import { Images } from "~data"
 import Sidebar from "~sections/articles/Sidebar"
 export default function BlogSidebarOne({ articles }) {
-  console.log(articles)
   return (
     <Blog backgroundColor="#f9fafc">
       <Container>
