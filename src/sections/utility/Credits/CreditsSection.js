@@ -1,21 +1,23 @@
+import Markdown from "markdown-to-jsx"
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import Credits from "./style"
-export default function CreditsCondition() {
+export default function CreditsCondition({ content }) {
   return (
     <Credits>
       <Container>
         <Row className="justify-content-center">
           <Col className="col-xl-7 col-lg-8 col-md-11 text-center">
             <Credits.Box>
-              <Credits.Title as="h2">Crédits</Credits.Title>
+              <Credits.Title as="h2">{content?.title}</Credits.Title>
             </Credits.Box>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col className="col-xxl-8 col-xl-9 col-lg-10">
             <Credits.Content>
-              <Credits.ContentBox>
+              <Markdown>{content?.text}</Markdown>
+              {/* <Credits.ContentBox>
                 <Credits.TitleSmall as="h5">Editeur du site</Credits.TitleSmall>
                 <Credits.List>
                   Le site{" "}
@@ -97,7 +99,7 @@ export default function CreditsCondition() {
                   <Credits.ListItem>Hero Image :</Credits.ListItem>
                   <Credits.ListItem>About Image :</Credits.ListItem>
                 </Credits.List>
-              </Credits.ContentBox>
+              </Credits.ContentBox> */}
             </Credits.Content>
           </Col>
         </Row>

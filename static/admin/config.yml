@@ -747,3 +747,13 @@ collections:
               - { label: Date, name: date, widget: date }
               - { label: Lien, name: link, widget: string, required: false }
               - { label: Description, name: desc, widget: markdown }
+
+  - label: "Crédits"
+    name: "credits"
+    files:
+      - label: "Contenu"
+        name: "creditsContent"
+        file: "src/data/credits.md"
+        fields:
+          - { label: Titre de l'entête, name: title, widget: string }
+          - { label: Texte, name: text, widget: markdown }
