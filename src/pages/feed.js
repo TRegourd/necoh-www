@@ -16,15 +16,21 @@ export default function feed({ data }) {
 
 export const query = graphql`
   query {
-    facebookFeed: allFeedFacebookRss {
+    facebookFeed: allFacebookFeed(
+      limit: 10
+      sort: { fields: isoDate, order: DESC }
+    ) {
       nodes {
-        title
-        pubDate
         content
         contentSnippet
         creator
+        dc_creator
+        guid
+        id
         isoDate
         link
+        pubDate
+        title
       }
     }
   }
