@@ -2,10 +2,8 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import Blog from "./style"
 import BlogCard from "./Component/Card"
-import BlogRequlerData from "~data/BlogRequlerData"
-import { Images } from "~data"
 import Sidebar from "~sections/articles/Sidebar"
-export default function BlogSidebarOne() {
+export default function BlogSidebarOne({ articles }) {
   return (
     <Blog backgroundColor="#f9fafc">
       <Container>
@@ -28,41 +26,29 @@ export default function BlogSidebarOne() {
           </Col>
           <Col xs="12" className="col-xl-8 col-lg-7 order-1 order-lg-2">
             <Row className="justify-content-xl-center">
-              <Col xs="12" className="col-xl-12 col-lg-9 col-md-12">
-                <BlogCard
-                  image={Images.BlogsPage.BlogsImg1}
-                  badge="Gadgets"
-                  date="01 June, 2020"
-                  title="We can blend colors multiple ways, the most common"
-                  user="George Lee"
-                  Like="21K"
-                  commentCount="305"
-                />
-              </Col>
-              {BlogRequlerData.map(
-                (
-                  { image, badge, Like, date, title, user, commentCount },
-                  index
-                ) => {
-                  return (
-                    <Col
-                      xs="12"
-                      className="col-xl-6 col-lg-9 col-md-6"
-                      key={"bsp" + index}
-                    >
-                      <BlogCard
-                        image={image}
-                        badge={badge}
-                        date={date}
-                        title={title}
-                        user={user}
-                        Like={Like}
-                        commentCount={commentCount}
-                      />
-                    </Col>
-                  )
-                }
-              )}
+              {articles &&
+                articles
+                  .filter(post => {
+                    return post.contentSnippet !== ""
+                  })
+                  .map((post, index) => {
+                    if (index === 0) {
+                      return (
+                        <Col xs="12" key={"bsp" + index}>
+                          <BlogCard post={post} />
+                        </Col>
+                      )
+                    } else
+                      return (
+                        <Col
+                          xs="12"
+                          className="col-lg-4 col-md-6 col-xs-9"
+                          key={"bsp" + index}
+                        >
+                          <BlogCard post={post} />
+                        </Col>
+                      )
+                  })}
             </Row>
             <Blog.Box mtLG="50px" mt="30px">
               <Row className="justify-content-xl-center">

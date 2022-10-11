@@ -7,7 +7,7 @@ export default function ServiceWidget({ icon, title, text, ...rest }) {
   return (
     <Widget {...rest}>
       <Widget.Icon>
-        <img src={icons[icon]} />
+        <img src={icons[icon]} alt={title} />
       </Widget.Icon>
       <Widget.Body>
         <Widget.Title>{title}</Widget.Title>

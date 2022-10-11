@@ -9,15 +9,36 @@ export default function Layout({ children }) {
   useLayoutEffect(() => {
     AOS.init()
   }, [])
+
+  const metaTags = [
+    { itemprop: "name", content: "Necoh" },
+    {
+      itemprop: "description",
+      content: "Expertise comptable et conseil aux entreprises à Chambéry",
+    },
+    {
+      name: "description",
+      content: "Expertise comptable et conseil aux entreprises à Chambéry",
+    },
+
+    { property: "og:title", content: "Necoh | Expertise" },
+    {
+      property: "og:description",
+      content: "Expertise comptable et conseil aux entreprises à Chambéry",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:site_name", content: "Necoh" },
+  ]
   return (
     <>
-      <Helmet>
-        <title>Necoh | Expertise</title>
+      <Helmet
+        htmlAttributes={{
+          lang: "fr",
+        }}
+        title="Necoh | Expertise"
+        meta={metaTags}
+      >
         <link rel="icon" type="image/png" href={favicon} />
-        <meta
-          name="description"
-          content="Expertise comptable et conseil aux entreprises à Chambéry"
-        />
       </Helmet>
       <Header />
       {children}

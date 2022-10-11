@@ -80,6 +80,7 @@ export default function TeamCard({
                     href={getLinkName(contact, link)}
                     tabIndex={0}
                     key={contact + link}
+                    aria-label="contact link"
                   >
                     <i className={getClassName(contact)} />
                   </Card.SocialItem>

@@ -1,6 +1,5 @@
 import React from "react"
 import Widget from "./style"
-import logo from "../../../../../assets/image/favicon.png"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 export default function AboutWidget({

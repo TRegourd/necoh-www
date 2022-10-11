@@ -1,9 +1,9 @@
 {
-  "name": "fastland-react-app",
+  "name": "necoh-website",
   "private": true,
-  "description": "Multiprpose landing template",
-  "version": "2.0.0",
-  "author": "contact@grayic.com",
+  "description": "Site Internet Necoh",
+  "version": "1.0.0",
+  "author": "contact@ridgecoding.com",
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "aos": "^2.3.4",
@@ -46,6 +46,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-typing-effect": "^2.0.5",
+    "rss-parser": "^3.12.0",
     "sass": "^1.52.3",
     "slick-carousel": "^1.8.1",
     "slugify": "^1.6.5",

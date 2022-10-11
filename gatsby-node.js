@@ -1,6 +1,7 @@
 const path = require("path")
 const { default: slugify } = require("slugify")
 const dayjs = require("dayjs")
+let Parser = require("rss-parser")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -15,6 +16,60 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       },
     },
   })
+}
+
+exports.sourceNodes = async ({
+  actions,
+  createContentDigest,
+  createNodeId,
+  getNodesByType,
+}) => {
+  const { createNode } = actions
+
+  const WEBLEX_POST_NODE_TYPE = `WeblexPost`
+  const FACEBOOK_FEED_NODE_TYPE = `FacebookFeed`
+
+  let parser = new Parser()
+
+  const weblexData = await parser.parseURL(
+    "https://www.weblex.fr/passerelle/621-37b1/772740a565/flux.rss"
+  )
+
+  const facebookData = await parser.parseURL(
+    "https://rss.app/feeds/CxNqKVxRZ49DMwnH.xml"
+  )
+
+  weblexData.items.forEach((post, i) =>
+    createNode({
+      ...post,
+      id: createNodeId(
+        `${WEBLEX_POST_NODE_TYPE}-${Math.random()}-${Math.random()}`
+      ),
+      parent: null,
+      children: [],
+      internal: {
+        type: WEBLEX_POST_NODE_TYPE,
+        contentDigest: createContentDigest(post),
+      },
+    })
+  )
+
+  facebookData.items.forEach((post, i) =>
+    createNode({
+      ...post,
+      id: createNodeId(
+        `${FACEBOOK_FEED_NODE_TYPE}-${Math.random()}-${Math.random()}`
+      ),
+      parent: null,
+      children: [],
+      internal: {
+        type: FACEBOOK_FEED_NODE_TYPE,
+        contentDigest: createContentDigest(post),
+      },
+    })
+  )
+
+  return
 }
 
 exports.createPages = ({ actions, graphql }) => {
@@ -105,6 +160,21 @@ exports.createPages = ({ actions, graphql }) => {
               }
             }
           }
+          weblexQuery: allWeblexPost(
+            limit: 10
+            sort: { fields: isoDate, order: DESC }
+          ) {
+            nodes {
+              content
+              categories
+              contentSnippet
+              id
+              isoDate
+              link
+              pubDate
+              title
+            }
+          }
         }
       `).then(result => {
         if (result.errors) {
@@ -154,8 +224,24 @@ exports.createPages = ({ actions, graphql }) => {
           })
         })
 
+        const blogTemplate = path.resolve("./src/detailPages/blog-details.js")
+
+        result.data.weblexQuery.nodes?.forEach(page => {
+          const slug = page.id
+          createPage({
+            path: `articles/${slug}`,
+            component: blogTemplate,
+            context: {
+              slug: `/articles/${slug}`,
+              content: page,
+            },
+          })
+        })
+
         return
       })
     )
   })
 }
+
+// loop through data and create Gatsby nodes

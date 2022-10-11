@@ -17,9 +17,7 @@ export default function BlogCard({ post }) {
       <Card.OvaerlayBlock>
         <Card.Top mb="20px">
           <Card.Badge backgroundColor="#f39200">{"Actu"}</Card.Badge>
-          <Card.Date to="/blog/blog-details">
-            {dayjs(post?.isoDate).format("DD-MM-YYYY")}
-          </Card.Date>
+          <Card.Date>{dayjs(post?.isoDate).format("DD-MM-YYYY")}</Card.Date>
         </Card.Top>
         <Card.Title>
           {" "}

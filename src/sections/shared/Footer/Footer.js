@@ -33,7 +33,7 @@ export default function FooterOne() {
               <Footer.Widgets className="footer-widgets footer-widgets--l7">
                 {/* Brand Logo*/}
                 <Footer.Box mb="30px">
-                  <Link to="#">
+                  <Link to="#" aria-label="back home">
                     <img
                       src={Images.FooterOne.LogoWhite}
                       width={"200px"}
@@ -54,16 +54,24 @@ export default function FooterOne() {
                     <Footer.Title>Necoh</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <a href="/about">A propos</a>
+                        <a href="/about" aria-label="about">
+                          A propos
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/careers">Nous rejoindre</a>
+                        <a href="/careers" aria-label="careers">
+                          Nous rejoindre
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/terms">Mentions Légales</a>
+                        <a href="/terms" aria-label="terms">
+                          Mentions Légales
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/credits">Crédits</a>
+                        <a href="/credits" aria-label="credits">
+                          Crédits
+                        </a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
@@ -73,22 +81,46 @@ export default function FooterOne() {
                     <Footer.Title>Nos Métiers</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <a href="/services/comptabilite">Expertise Comptable</a>
+                        <a
+                          href="/services/comptabilite"
+                          aria-label="service comptabilite"
+                        >
+                          Expertise Comptable
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/services/juridique">Juridique</a>
+                        <a
+                          href="/services/juridique"
+                          aria-label="service juridique"
+                        >
+                          Juridique
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/services/fiscalite">Fiscalité</a>
+                        <a
+                          href="/services/fiscalite"
+                          aria-label="service fiscalité"
+                        >
+                          Fiscalité
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/services/audit">Audit</a>
+                        <a href="/services/audit" aria-label="service audit">
+                          Audit
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/services/social">Social</a>
+                        <a href="/services/social" aria-label="service social">
+                          Social
+                        </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/services/conseil">Conseil</a>
+                        <a
+                          href="/services/conseil"
+                          aria-label="service conseil"
+                        >
+                          Conseil
+                        </a>
                       </Footer.ListItems>
                     </Footer.List>
                   </Footer.Widgets>
@@ -96,7 +128,11 @@ export default function FooterOne() {
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
                     <Footer.Title>
-                      <a href={"/contact"} className="text-white">
+                      <a
+                        href={"/contact"}
+                        className="text-white"
+                        aria-label="contact"
+                      >
                         Contact
                       </a>
                     </Footer.Title>
@@ -114,6 +150,7 @@ export default function FooterOne() {
 
                         <a
                           href={`tel:${data.contactDetails?.frontmatter.phone}`}
+                          aria-label="phone"
                         >
                           <span> Téléphone: </span>
                           <br className="d-block" />{" "}
@@ -124,6 +161,7 @@ export default function FooterOne() {
                         <i className="fa fa-envelope" />
                         <a
                           href={`mailto:${data.contactDetails?.frontmatter.email}`}
+                          aria-label="mail"
                         >
                           <span className="d-block"> Email:</span>
                           {data.contactDetails?.frontmatter.email}
@@ -150,22 +188,34 @@ export default function FooterOne() {
           </Footer.CopyrightText>
           <Footer.SocialShare>
             <Footer.SocialShareItem>
-              <a href={data.contactDetails?.frontmatter.facebook}>
+              <a
+                href={data.contactDetails?.frontmatter.facebook}
+                aria-label="Necoh Facebook"
+              >
                 <i className="fab fa-facebook-square" />
               </a>
             </Footer.SocialShareItem>
             <Footer.SocialShareItem>
-              <a href={data.contactDetails?.frontmatter.twitter}>
+              <a
+                href={data.contactDetails?.frontmatter.twitter}
+                aria-label="Necoh twitter"
+              >
                 <i className="fab fa-twitter" />
               </a>
             </Footer.SocialShareItem>
             <Footer.SocialShareItem>
-              <a href={data.contactDetails?.frontmatter.instagram}>
+              <a
+                href={data.contactDetails?.frontmatter.instagram}
+                aria-label="Necoh instagram"
+              >
                 <i className="fab fa-instagram" />
               </a>
             </Footer.SocialShareItem>
             <Footer.SocialShareItem>
-              <a href={data.contactDetails?.frontmatter.linkedin}>
+              <a
+                href={data.contactDetails?.frontmatter.linkedin}
+                aria-label="Necoh linkedin"
+              >
                 <i className="fab fa-linkedin" />
               </a>
             </Footer.SocialShareItem>

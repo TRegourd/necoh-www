@@ -42,12 +42,5 @@ module.exports = {
         extensions: ["css", "html", "js", "svg"],
       },
     },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://rss.app/feeds/CxNqKVxRZ49DMwnH.xml`,
-        name: `FacebookRss`,
-      },
-    },
   ],
 }

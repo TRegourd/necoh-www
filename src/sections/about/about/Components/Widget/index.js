@@ -11,7 +11,7 @@ export default function ContentWidget({
   return (
     <Widget backgroundColor="#fff" {...rest}>
       <Widget.Icon backgroundColor={iconBackground}>
-        <img src={icons[icon]} className="value-icon" />
+        <img src={icons[icon]} className="value-icon" alt="icon" />
       </Widget.Icon>
       <Widget.Box>
         <Widget.Title as="h4">{title}</Widget.Title>

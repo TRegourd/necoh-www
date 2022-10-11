@@ -38,7 +38,7 @@ Card.Badge = styled(Button)`
     color: #262729;
   }
 `
-Card.Date = styled(Link)`
+Card.Date = styled(Box)`
   margin-bottom: 0;
   font-size: 13px;
   font-weight: 400;
@@ -46,9 +46,6 @@ Card.Date = styled(Link)`
   line-height: 22px;
   color: #fff;
   transition: 0.4s;
-  &:hover {
-    color: #ff5722;
-  }
 `
 Card.User = styled(Box)`
   color: #fff;
