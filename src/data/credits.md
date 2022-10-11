@@ -51,7 +51,7 @@ creditsList:
       About Image :
 title: Crédits
 text: >-
-  ##### Editeur du site
+  #### Editeur du site
 
 
   Le site [www.necoh.fr](https://incandescent-beijinho-a03335.netlify.app/credits/www.necoh.fr)\
@@ -79,12 +79,10 @@ text: >-
   [contact@necoh.fr](mailto:contact@necoh.fr)
 
 
-
-
   Le directeur de publication est M. Guillaume COHEN, en sa qualité de PDG de Necoh. Il peut être contacté aux coordonnées figurant dans les présentes conditions. Les présentes Conditions Générales ont pour objet de prévoir l’ensemble des conditions d’accès et d’utilisation du Site. L’accès et l’utilisation du Site impliquent l’acceptation tacite et sans réserve des présentes conditions par l’utilisateur.
 
 
-  ##### Hébergeur du Site
+  #### Hébergeur du Site
 
 
   Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, California 94104. USA
