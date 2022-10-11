@@ -54,27 +54,23 @@ text: >-
   #### Editeur du site
 
 
-  Le site [www.necoh.fr](https://incandescent-beijinho-a03335.netlify.app/credits/www.necoh.fr)\
+  Le site [www.necoh.fr](https://incandescent-beijinho-a03335.netlify.app/credits/www.necoh.fr)
 
-  \
 
-  Est exploité par la société : Necoh – SOCIETE D’EXPERTISE ET DE GESTION COMPTABLE, société anonyme au capital social de XXX €\
+  Est exploité par la société : Necoh – SOCIETE D’EXPERTISE ET DE GESTION COMPTABLE, société anonyme au capital social de XXX €
 
-  \
 
-  Immatriculée au RCS de CHAMBERY sous le numéro XXX\
+  Immatriculée au RCS de CHAMBERY sous le numéro XXX
 
-  \
 
-  Dont le siège social est : 22 route de Challes 73000 BARBERAZ\
+  Dont le siège social est : 22 route de Challes 73000 BARBERAZ
 
-  \
 
-  N° SIRET : XXXXXXXX\
+  N° SIRET : XXXXXXXX
 
-  \
 
-  [+33 (0) 4 79 81 88 81](tel:+33479818881)\
+  [+33 (0) 4 79 81 88 81](tel:+33479818881)
+
 
   [contact@necoh.fr](mailto:contact@necoh.fr)
 
@@ -91,11 +87,14 @@ text: >-
   ##### Conception et réalisation
 
 
-  Ridge Coding\
+  Ridge Coding
 
-  Téléphone : [+33 (0)695025391](tel:+33695025391)\
 
-  Email : [contact@ridgecoding.com](mailto:contact@ridgecoding.com)\
+  Téléphone : [+33 (0)695025391](tel:+33695025391)
+
+
+  Email : [contact@ridgecoding.com](mailto:contact@ridgecoding.com)
+
 
   Site Web : [ridgecoding.com](https://incandescent-beijinho-a03335.netlify.app/credits/www.ridgecoding.com)
 
