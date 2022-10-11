@@ -1,16 +1,28 @@
-import React,{useState} from 'react'
-import ModalVideo from 'react-modal-video'
+import React, { useState } from "react"
+import ModalVideo from "react-modal-video"
 
-const Video = ({id,className,children}) => {
+const Video = ({ id, className, children }) => {
   const [isOpen, setOpen] = useState(false)
 
   return (
     <React.Fragment>
-      <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={id} onClose={() => setOpen(false)} />
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId={id}
+        onClose={() => setOpen(false)}
+      />
 
-      <button className={`btn-reset${className?" "+className:""}`} onClick={()=> setOpen(true)}>{children}</button>
+      <button
+        className={`btn-reset${className ? " " + className : ""}`}
+        onClick={() => setOpen(true)}
+        aria-label="video play button"
+      >
+        {children}
+      </button>
     </React.Fragment>
   )
 }
 
-export default Video;
+export default Video

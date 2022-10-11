@@ -61,16 +61,16 @@ export default function ImageGroup({ image0, image1, image2, image3 }) {
             <GatsbyImage image={heroImage3} alt={"hero image 3"} />
           </div>
           <div className=" welcome-image--group-01__img-4">
-            <img src={icons["hero-dots.svg"]} className="value-icon" />
+            <img src={icons["hero-dots.svg"]} alt="hero shape" />
           </div>
           <div className=" welcome-image--group-01__img-5">
-            <img src={icons["hero-pie-left.svg"]} className="value-icon" />
+            <img src={icons["hero-pie-left.svg"]} alt="hero shape" />
           </div>
           <div className=" welcome-image--group-01__img-6">
-            <img src={icons["hero-pie-right.svg"]} className="value-icon" />
+            <img src={icons["hero-pie-right.svg"]} alt="hero shape" />
           </div>
           <div className=" welcome-image--group-01__img-7">
-            <img src={icons["hero-triangles.svg"]} className="value-icon" />
+            <img src={icons["hero-triangles.svg"]} alt="hero shape" />
           </div>
         </HeroImageGroup.Inner>
       </HeroImageGroup>

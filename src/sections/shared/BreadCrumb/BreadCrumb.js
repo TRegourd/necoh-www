@@ -17,7 +17,7 @@ export default function BreadCrumbSection({ colClasses, content, ...rest }) {
         </Row>
       </Container>
       <BreadCrumb.Image>
-        <img src={icons["hero-pie-left.svg"]} className="value-icon" />
+        <img src={icons["hero-pie-left.svg"]} alt="BreadCrumb Shape" />
       </BreadCrumb.Image>
     </BreadCrumb>
   )

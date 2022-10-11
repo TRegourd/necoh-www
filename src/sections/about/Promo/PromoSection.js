@@ -23,7 +23,7 @@ export default function PromoSection({ ...rest }) {
         </Row>
       </Container>
       <Promo.Shape>
-        <img src={icons["hero-pie-left.svg"]} className="value-icon" />
+        <img src={icons["hero-pie-left.svg"]} alt="promo shape" />
       </Promo.Shape>
     </Promo>
   )
