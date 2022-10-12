@@ -93,16 +93,17 @@ Widget.Text = styled(Paragraph)`
 `
 
 Widget.Link = styled.div`
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 30px;
+
   a {
     display: flex;
-    flex-direction: row;
+
     align-items: center;
     span {
-      padding-left: 10px;
+      padding: 10px;
     }
     /* @media (max-width: 500px) {
       flex-direction: column;

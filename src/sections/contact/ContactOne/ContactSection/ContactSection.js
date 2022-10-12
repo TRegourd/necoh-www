@@ -31,7 +31,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         name="name"
                         required
                       />
-                      <label htmlFor="name">Votre Nom</label>
+                      <label htmlFor="name">Votre Nom *</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-6 mb-4">
@@ -43,7 +43,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         name="email"
                         required
                       />
-                      <label htmlFor="email">Votre Email</label>
+                      <label htmlFor="email">Votre Email *</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-6 mb-4">
@@ -66,14 +66,26 @@ export default function ContactOne({ contactDetails, contactForm }) {
                         name="message"
                         required
                       />
-                      <label htmlFor="message">Votre Message</label>
+                      <label htmlFor="message">Votre Message *</label>
                     </div>
                   </Col>
                   <Col xs="12" className="col-lg-12">
                     <Row className="align-items-center mt-3">
                       <Col
                         xs="12"
-                        className="col-md-4 col-lg-5 col-xl-4 text-md-end pt-3"
+                        className="col-md-12 col-lg-12 col-xl-12 text-start pt-3"
+                      >
+                        <Contact.FormDisclaimer as="p">
+                          {contactForm?.disclaimer}
+                        </Contact.FormDisclaimer>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col xs="12" className="col-lg-12">
+                    <Row className="align-items-center mt-3">
+                      <Col
+                        xs="12"
+                        className="col-md-4 col-lg-5 col-xl-4 text-md-end"
                       >
                         <Contact.Button>Envoyer</Contact.Button>
                       </Col>
@@ -101,7 +113,11 @@ export default function ContactOne({ contactDetails, contactForm }) {
                       <Contact.WidgetsTitle as="h3">
                         Nous rendre visite :
                       </Contact.WidgetsTitle>
-                      <Contact.WidgetsText as="p">
+                      <Contact.WidgetsText
+                        as="a"
+                        href={contactDetails?.google}
+                        target="_blank"
+                      >
                         {contactDetails?.addressLine1}{" "}
                         <br className="d-block" />
                         {contactDetails?.addressLine2}
@@ -133,7 +149,11 @@ export default function ContactOne({ contactDetails, contactForm }) {
                       <Contact.WidgetsTitle as="h3">
                         Nous appeller
                       </Contact.WidgetsTitle>
-                      <Contact.WidgetsText as="p">
+                      <Contact.WidgetsText
+                        as="a"
+                        href={`tel:${contactDetails?.phone}`}
+                        target="_blank"
+                      >
                         {contactDetails?.phone}
                       </Contact.WidgetsText>
                     </Contact.WidgetsBoxBody>

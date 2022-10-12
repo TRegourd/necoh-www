@@ -33,6 +33,7 @@ export const query = graphql`
         facebook
         instagram
         linkedin
+        google
       }
     }
     contactForm: markdownRemark(fields: { slug: { eq: "/contactForm" } }) {
@@ -40,6 +41,7 @@ export const query = graphql`
         title
         subtitle
         text
+        disclaimer
       }
     }
   }

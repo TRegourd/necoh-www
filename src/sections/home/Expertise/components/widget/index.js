@@ -8,6 +8,7 @@ export default function AboutWidget({
   linkText,
   linkUrl,
   icon,
+  linkDirection,
   ...rest
 }) {
   const images = useStaticQuery(graphql`
@@ -43,7 +44,7 @@ export default function AboutWidget({
         <Widget.Title as="h5">{title}</Widget.Title>
         {/* <Widget.Text>{text}</Widget.Text> */}
         <Widget.Link>
-          <a href={linkUrl}>
+          <a href={linkUrl} style={{ flexDirection: linkDirection }}>
             <i className="fa fa-external-link-alt" />
             <span>{linkText}</span>
           </a>
