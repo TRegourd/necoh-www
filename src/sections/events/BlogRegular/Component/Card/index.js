@@ -16,7 +16,7 @@ export default function BlogCard({ post }) {
       </Card.Image>
       <Card.OvaerlayBlock>
         <Card.Top mb="20px">
-          <Card.Badge backgroundColor="#f39200">{"Actu"}</Card.Badge>
+          <Card.Badge backgroundColor="#6e0f0b90">FaceBook</Card.Badge>
           <Card.Date>{dayjs(post?.isoDate).format("DD-MM-YYYY")}</Card.Date>
         </Card.Top>
         <Card.Title>

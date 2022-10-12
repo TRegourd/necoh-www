@@ -92,7 +92,7 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
     <HeaderButtonWrapper {...rest}>
       <ul className="d-none d-xl-flex list-unstyled">
         <li>
-          <a href={data.contactDetails?.frontmatter.instagram}>
+          <a href={data.contactDetails?.frontmatter.instagram} target="_blank">
             <i
               className="fab fa-instagram text-secondary"
               aria-label="Necoh Instagram"
@@ -100,7 +100,7 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
           </a>
         </li>
         <li>
-          <a href={data.contactDetails?.frontmatter.linkedin}>
+          <a href={data.contactDetails?.frontmatter.linkedin} target="_blank">
             <i
               className="fab fa-linkedin text-secondary"
               aria-label="Necoh linkedin"
@@ -108,7 +108,7 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
           </a>
         </li>
         <li>
-          <a href={data.contactDetails?.frontmatter.facebook}>
+          <a href={data.contactDetails?.frontmatter.facebook} target="_blank">
             <i
               className="fab fa-facebook text-secondary"
               aria-label="Necoh facebook"
@@ -116,7 +116,7 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
           </a>
         </li>
         <li>
-          <a href={data.contactDetails?.frontmatter.twitter}>
+          <a href={data.contactDetails?.frontmatter.twitter} target="_blank">
             <i
               className="fab fa-twitter text-secondary"
               aria-label="Necoh Twitter"

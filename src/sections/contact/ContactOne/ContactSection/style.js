@@ -195,4 +195,16 @@ Contact.Button = styled(Button).attrs({
   }
 `
 Contact.Box = styled(Box)``
+
+Contact.FormDisclaimer = styled(Paragraph)`
+  color: #747474;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+`
+
 export default Contact

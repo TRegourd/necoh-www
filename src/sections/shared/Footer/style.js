@@ -92,11 +92,6 @@ Footer.AddressItem = styled(Box).attrs({ className: "list-items", as: "li" })`
     width: 35px;
     color: #fff;
   }
-  span {
-    color: #fff !important;
-    display: inline-block;
-    word-break: break-all;
-  }
 `
 
 Footer.List = styled(Box).attrs({

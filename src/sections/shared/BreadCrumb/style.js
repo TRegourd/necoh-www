@@ -49,6 +49,7 @@ BreadCrumb.Image = styled(Box)`
   bottom: 30%;
   width: 8%;
   display: none;
+
   @media (min-width: 992px) {
     padding-bottom: 0;
     display: block;

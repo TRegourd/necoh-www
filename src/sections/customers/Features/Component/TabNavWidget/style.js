@@ -15,7 +15,9 @@ const Widget = styled(Box)`
   padding: 0 20px;
   color: inherit;
   transition: 0.4s;
-
+  :hover {
+    cursor: pointer;
+  }
   @media (min-width: 768px) {
     width: 100%;
     height: 90%;

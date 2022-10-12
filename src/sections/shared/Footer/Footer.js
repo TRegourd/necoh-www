@@ -20,6 +20,7 @@ export default function FooterOne() {
           facebook
           instagram
           linkedin
+          google
         }
       }
     }
@@ -139,32 +140,32 @@ export default function FooterOne() {
                     <Footer.Address className="widgets-address">
                       <Footer.AddressItem>
                         <i className="fa fa-map-marker-alt" />
-                        <span>
-                          {data.contactDetails?.frontmatter.addressLine1}
-                          <br />
-                          {data.contactDetails?.frontmatter.addressLine2}
-                        </span>
+                        <a
+                          href={data.contactDetails?.frontmatter.google}
+                          aria-label="address"
+                          target="_blank"
+                        >
+                          <span>
+                            {data.contactDetails?.frontmatter.addressLine1}
+                            <br />
+                            {data.contactDetails?.frontmatter.addressLine2}
+                          </span>
+                        </a>
                       </Footer.AddressItem>
                       <Footer.AddressItem>
                         <i className="fa fa-phone-alt" />
-
                         <a
                           href={`tel:${data.contactDetails?.frontmatter.phone}`}
                           aria-label="phone"
+                          target="_blank"
                         >
-                          <span> Téléphone: </span>
-                          <br className="d-block" />{" "}
                           {data.contactDetails?.frontmatter.phone}
                         </a>
                       </Footer.AddressItem>
                       <Footer.AddressItem>
                         <i className="fa fa-envelope" />
-                        <a
-                          href={`mailto:${data.contactDetails?.frontmatter.email}`}
-                          aria-label="mail"
-                        >
-                          <span className="d-block"> Email:</span>
-                          {data.contactDetails?.frontmatter.email}
+                        <a href={`/contact`} aria-label="mail">
+                          Nous Contacter
                         </a>
                       </Footer.AddressItem>
                     </Footer.Address>
@@ -191,6 +192,7 @@ export default function FooterOne() {
               <a
                 href={data.contactDetails?.frontmatter.facebook}
                 aria-label="Necoh Facebook"
+                target="_blank"
               >
                 <i className="fab fa-facebook-square" />
               </a>
@@ -199,6 +201,7 @@ export default function FooterOne() {
               <a
                 href={data.contactDetails?.frontmatter.twitter}
                 aria-label="Necoh twitter"
+                target="_blank"
               >
                 <i className="fab fa-twitter" />
               </a>
@@ -207,6 +210,7 @@ export default function FooterOne() {
               <a
                 href={data.contactDetails?.frontmatter.instagram}
                 aria-label="Necoh instagram"
+                target="_blank"
               >
                 <i className="fab fa-instagram" />
               </a>
@@ -215,6 +219,7 @@ export default function FooterOne() {
               <a
                 href={data.contactDetails?.frontmatter.linkedin}
                 aria-label="Necoh linkedin"
+                target="_blank"
               >
                 <i className="fab fa-linkedin" />
               </a>

@@ -45,6 +45,7 @@ export default function ExpertiseSection({ content }) {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-2 order-lg-1">
             <Widget
               directionXS="row-reverse"
+              linkDirection="row-reverse"
               title={content?.brands?.comptabilite?.title}
               icon={content?.brands?.comptabilite?.logo}
               text={content?.brands?.comptabilite?.desc}
@@ -57,6 +58,7 @@ export default function ExpertiseSection({ content }) {
             />
             <Widget
               directionXS="row-reverse"
+              linkDirection="row-reverse"
               title={content?.brands?.audit?.title}
               icon={content?.brands?.audit?.logo}
               text={content?.brands?.audit?.desc}
@@ -69,6 +71,7 @@ export default function ExpertiseSection({ content }) {
             />
             <Widget
               directionXS="row-reverse"
+              linkDirection="row-reverse"
               title={content?.brands?.social?.title}
               icon={content?.brands?.social?.logo}
               text={content?.brands?.social?.desc}
@@ -99,6 +102,7 @@ export default function ExpertiseSection({ content }) {
           <Col className="col-xxl-3 col-lg-4 col-md-6 col-sm-8 col-xs-9 order-3">
             <Widget
               directionXS="row"
+              linkDirection="row"
               title={content?.brands?.conseil?.title}
               icon={content?.brands?.conseil?.logo}
               text={content?.brands?.conseil?.desc}
@@ -111,6 +115,7 @@ export default function ExpertiseSection({ content }) {
             />
             <Widget
               directionXS="row"
+              linkDirection="row"
               title={content?.brands?.juridique?.title}
               icon={content?.brands?.juridique?.logo}
               text={content?.brands?.juridique?.desc}
@@ -123,6 +128,7 @@ export default function ExpertiseSection({ content }) {
             />
             <Widget
               directionXS="row"
+              linkDirection="row"
               title={content?.brands?.fiscalite?.title}
               icon={content?.brands?.fiscalite?.logo}
               text={content?.brands?.fiscalite?.desc}
