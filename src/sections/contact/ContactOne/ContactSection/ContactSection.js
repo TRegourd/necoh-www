@@ -95,7 +95,11 @@ export default function ContactOne({ contactDetails, contactForm }) {
               </Form>
             </Contact.From>
           </Col>
-          <Col xs="12" className="col-xl-5 col-lg-5">
+          <Col
+            xs="12"
+            className="col-xl-5 col-lg-5"
+            style={{ alignSelf: "center" }}
+          >
             <Contact.WidgetsBox className="contact-widget-box">
               <Contact.WidgetsBoxTitle as="h2">
                 {contactDetails?.title}
@@ -125,7 +129,7 @@ export default function ContactOne({ contactDetails, contactForm }) {
                     </Contact.WidgetsBoxBody>
                   </Contact.Widgets>
                 </Col>
-                <Col xs="12" className="col-lg-12 col-sm-6 active">
+                {/* <Col xs="12" className="col-lg-12 col-sm-6 active">
                   <Contact.Widgets>
                     <Contact.WidgetsIcon className="active">
                       <i className="fas fa-envelope" />
@@ -134,12 +138,16 @@ export default function ContactOne({ contactDetails, contactForm }) {
                       <Contact.WidgetsTitle as="h3">
                         Nous écrire
                       </Contact.WidgetsTitle>
-                      <Contact.WidgetsText as="p">
+                      <Contact.WidgetsText
+                        as="a"
+                        href={`mailto:${contactDetails?.email}`}
+                        target="_blank"
+                      >
                         {contactDetails?.email}
                       </Contact.WidgetsText>
                     </Contact.WidgetsBoxBody>
                   </Contact.Widgets>
-                </Col>
+                </Col> */}
                 <Col xs="12" className="col-lg-12 col-sm-6">
                   <Contact.Widgets>
                     <Contact.WidgetsIcon>
