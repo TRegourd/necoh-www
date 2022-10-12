@@ -23,20 +23,19 @@ Card.Title = styled(Box)`
   display: block;
   transition: 0.4s;
 `
-Card.Badge = styled(Button)`
+Card.Badge = styled(Box)`
   font-size: 11px;
   font-weight: 500;
   letter-spacing: normal;
   line-height: 1;
   min-width: 78px;
   height: 26px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-right: 12px;
   color: #fff;
-  padding: 0;
-  &:hover {
-    color: #262729;
-  }
+
+  text-align: center;
+  padding-top: 6px;
 `
 Card.Date = styled(Box)`
   margin-bottom: 0;
@@ -137,7 +136,8 @@ Card.Comment = styled(Link)`
 `
 Card.Box = styled(Box)``
 Card.Image = styled(Box)`
-  min-height: 330px;
+  min-height: 400px;
+  max-height: 400px;
   img {
     width: 100%;
   }

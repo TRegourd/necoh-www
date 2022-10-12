@@ -3,20 +3,10 @@ import { Container, Row, Col } from "react-bootstrap"
 import Blog from "./style"
 import BlogCard from "./Component/Card"
 import Sidebar from "~sections/articles/Sidebar"
-export default function BlogSidebarOne({ articles }) {
+export default function BlogSidebarOne({ articles, content }) {
   return (
     <Blog backgroundColor="#f9fafc">
       <Container>
-        <Row className="justify-content-center">
-          <Col className="col-xl-8 text-center">
-            <Blog.Box mb="63px">
-              <Blog.Subtitle as="h6" className="text-secondary">
-                Articles
-              </Blog.Subtitle>
-              <Blog.Title as="h2">Les dernières informations</Blog.Title>
-            </Blog.Box>
-          </Col>
-        </Row>
         <Row>
           <Col
             xs="12"

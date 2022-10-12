@@ -641,39 +641,21 @@ collections:
               - { label: Lien, name: link, widget: string }
               - { label: Couleur, name: color, widget: color, required: false }
 
-  - label: "Articles"
-    name: "articles"
+  - label: "Articles et News"
+    name: "feed"
     files:
-      - label: "Contenu de la page"
+      - label: "Contenu de la page Articles"
         name: "articlesContent"
         file: "src/data/articles.md"
         fields:
           - { label: Titre, name: title, widget: string }
           - { label: Sous Titre, name: subtitle, widget: string }
-          - label: Catégorie
-            name: category
-            widget: list
-            fields:
-              - { label: Nom, name: name, widget: string }
-              - label: Articles
-                name: articles
-                widget: list
-                fields:
-                  - { label: Titre, name: title, widget: string }
-                  - { label: Description, name: description, widget: string }
-                  - { label: Date, name: date, widget: date }
-                  - { label: Auteur, name: author, widget: string }
-                  - {
-                      label: Photo de couverture,
-                      name: thumbnail,
-                      widget: image,
-                    }
-                  - { label: Texte, name: text, widget: markdown }
-                  - label: Tags
-                    name: tags
-                    widget: list
-                    fields:
-                      - { label: Tag, name: tag, widget: string }
+      - label: "Contenu de la page News"
+        name: "newsContent"
+        file: "src/data/news.md"
+        fields:
+          - { label: Titre, name: title, widget: string }
+          - { label: Sous Titre, name: subtitle, widget: string }
 
   - label: "Contact"
     name: "contact"
