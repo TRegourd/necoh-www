@@ -169,6 +169,44 @@ export default function FooterOne() {
                         </a>
                       </Footer.AddressItem>
                     </Footer.Address>
+                    <Footer.SocialShare>
+                      <Footer.SocialShareItem>
+                        <a
+                          href={data.contactDetails?.frontmatter.facebook}
+                          aria-label="Necoh Facebook"
+                          target="_blank"
+                        >
+                          <i className="fab fa-facebook-square" />
+                        </a>
+                      </Footer.SocialShareItem>
+                      <Footer.SocialShareItem>
+                        <a
+                          href={data.contactDetails?.frontmatter.twitter}
+                          aria-label="Necoh twitter"
+                          target="_blank"
+                        >
+                          <i className="fab fa-twitter" />
+                        </a>
+                      </Footer.SocialShareItem>
+                      <Footer.SocialShareItem>
+                        <a
+                          href={data.contactDetails?.frontmatter.instagram}
+                          aria-label="Necoh instagram"
+                          target="_blank"
+                        >
+                          <i className="fab fa-instagram" />
+                        </a>
+                      </Footer.SocialShareItem>
+                      <Footer.SocialShareItem>
+                        <a
+                          href={data.contactDetails?.frontmatter.linkedin}
+                          aria-label="Necoh linkedin"
+                          target="_blank"
+                        >
+                          <i className="fab fa-linkedin" />
+                        </a>
+                      </Footer.SocialShareItem>
+                    </Footer.SocialShare>
                   </Footer.Widgets>
                 </Col>
               </Row>
@@ -187,44 +225,6 @@ export default function FooterOne() {
               </p>
             </a>
           </Footer.CopyrightText>
-          <Footer.SocialShare>
-            <Footer.SocialShareItem>
-              <a
-                href={data.contactDetails?.frontmatter.facebook}
-                aria-label="Necoh Facebook"
-                target="_blank"
-              >
-                <i className="fab fa-facebook-square" />
-              </a>
-            </Footer.SocialShareItem>
-            <Footer.SocialShareItem>
-              <a
-                href={data.contactDetails?.frontmatter.twitter}
-                aria-label="Necoh twitter"
-                target="_blank"
-              >
-                <i className="fab fa-twitter" />
-              </a>
-            </Footer.SocialShareItem>
-            <Footer.SocialShareItem>
-              <a
-                href={data.contactDetails?.frontmatter.instagram}
-                aria-label="Necoh instagram"
-                target="_blank"
-              >
-                <i className="fab fa-instagram" />
-              </a>
-            </Footer.SocialShareItem>
-            <Footer.SocialShareItem>
-              <a
-                href={data.contactDetails?.frontmatter.linkedin}
-                aria-label="Necoh linkedin"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin" />
-              </a>
-            </Footer.SocialShareItem>
-          </Footer.SocialShare>
         </Footer.Copyright>
       </Container>
     </Footer>

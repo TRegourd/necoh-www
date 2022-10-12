@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import Blog from "./style"
 import BlogCard from "./Component/Card"
 import Sidebar from "~sections/articles/Sidebar"
-export default function BlogSidebarOne({ articles, content }) {
+export default function BlogSidebarOne({ articles }) {
   return (
     <Blog backgroundColor="#f9fafc">
       <Container>
@@ -12,7 +12,7 @@ export default function BlogSidebarOne({ articles, content }) {
             xs="12"
             className="col-xl-4 col-lg-5 mt-5 mt-lg-0 order-2 order-lg-1"
           >
-            <Sidebar />
+            <Sidebar articles={articles} />
           </Col>
           <Col xs="12" className="col-xl-8 col-lg-7 order-1 order-lg-2">
             <Row className="justify-content-xl-center">
@@ -21,23 +21,16 @@ export default function BlogSidebarOne({ articles, content }) {
                   .filter(post => {
                     return post.contentSnippet !== ""
                   })
-                  .map((post, index) => {
-                    if (index === 0) {
-                      return (
-                        <Col xs="12" key={"bsp" + index}>
-                          <BlogCard post={post} />
-                        </Col>
-                      )
-                    } else
-                      return (
-                        <Col
-                          xs="12"
-                          className="col-lg-4 col-md-6 col-xs-9"
-                          key={"bsp" + index}
-                        >
-                          <BlogCard post={post} />
-                        </Col>
-                      )
+                  .map(post => {
+                    return (
+                      <Col
+                        xs="12"
+                        className="col-lg-4 col-md-6 col-xs-9"
+                        key={post.title + post?.isoDate}
+                      >
+                        <BlogCard post={post} />
+                      </Col>
+                    )
                   })}
             </Row>
             <Blog.Box mtLG="50px" mt="30px">

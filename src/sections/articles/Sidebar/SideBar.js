@@ -2,7 +2,24 @@ import React from "react"
 import { StaticImage as Img } from "gatsby-plugin-image"
 import SideBar from "./style"
 import { Link } from "~components"
-export default function SideBarSection() {
+import dayjs from "dayjs"
+export default function SideBarSection({ articles }) {
+  function extractCategories(list) {
+    const flatList = list
+      .map(article => {
+        return article.categories
+      })
+      .flat(1)
+
+    const counts = {}
+
+    for (const num of flatList) {
+      counts[num] = counts[num] ? counts[num] + 1 : 1
+    }
+
+    return Object.entries(counts)
+  }
+
   return (
     <SideBar>
       {/* Single Widgets */}
@@ -18,110 +35,41 @@ export default function SideBarSection() {
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>Recent Posts</SideBar.Title>
+        <SideBar.Title>Articles Récents</SideBar.Title>
         <SideBar.RecentPost>
-          <SideBar.RecentPostList>
-            <Link to="#">
-              <SideBar.RecentPostTitle>
-                How To Blow Through Capital At An Incredible Rate
-              </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>Jan 14, 2020</SideBar.RecentPostDate>
-            </Link>
-          </SideBar.RecentPostList>
-          <SideBar.RecentPostList>
-            <Link to="#">
-              <SideBar.RecentPostTitle>
-                Design Studios That Everyone Should Know About?
-              </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>Jan 14, 2020</SideBar.RecentPostDate>
-            </Link>
-          </SideBar.RecentPostList>
-          <SideBar.RecentPostList>
-            <Link to="#">
-              <SideBar.RecentPostTitle>
-                How did we get 1M+ visitors in 30 days without anything!
-              </SideBar.RecentPostTitle>
-              <SideBar.RecentPostDate>Jan 14, 2020</SideBar.RecentPostDate>
-            </Link>
-          </SideBar.RecentPostList>
+          {articles.slice(0, 4).map(article => {
+            return (
+              <SideBar.RecentPostList key={article.title}>
+                <Link to={`/articles/${article.id}`}>
+                  <SideBar.RecentPostTitle>
+                    {article.title}
+                  </SideBar.RecentPostTitle>
+                  <SideBar.RecentPostDate>
+                    {dayjs(article.isoDate).format("DD-MM-YYYY")}
+                  </SideBar.RecentPostDate>
+                </Link>
+              </SideBar.RecentPostList>
+            )
+          })}
         </SideBar.RecentPost>
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>Recent Tweets</SideBar.Title>
-        <SideBar.Twitter>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Smith,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Maurice,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Stella,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-          <SideBar.TwitterList>
-            <Link to="#">
-              <SideBar.TwitterUser as="span">@Howard,</SideBar.TwitterUser> the
-              master-builder of human happiness. No one rejects, dislikes, or
-              avoids pleasure
-            </Link>
-          </SideBar.TwitterList>
-        </SideBar.Twitter>
-      </SideBar.Widgets>
-      {/*/ .Single Widgets */}
-      {/* Single Widgets */}
-      <SideBar.Widgets>
-        <SideBar.Title>Categories</SideBar.Title>
+        <SideBar.Title>Catégories</SideBar.Title>
         <SideBar.CateGory>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Technology:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">20 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Freelancing:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">07 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Writing:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">16 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Marketing:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">11 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Business:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">35 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
-          <SideBar.CateGorySingle>
-            <Link to="#">
-              <SideBar.CateGoryTitle>Education:</SideBar.CateGoryTitle>
-              <SideBar.CateGoryCount as="span">14 posts</SideBar.CateGoryCount>
-            </Link>
-          </SideBar.CateGorySingle>
+          {extractCategories(articles)?.map(category => {
+            return (
+              <SideBar.CateGorySingle key={category[0]}>
+                <Link to="#">
+                  <SideBar.CateGoryTitle>{category[0]}</SideBar.CateGoryTitle>
+                  <SideBar.CateGoryCount as="span">
+                    {category[1]} articles
+                  </SideBar.CateGoryCount>
+                </Link>
+              </SideBar.CateGorySingle>
+            )
+          })}
         </SideBar.CateGory>
       </SideBar.Widgets>
     </SideBar>

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import Blog from "./style"
 import BlogCard from "./Component/Card"
 
-export default function BlogRegular({ feed, content }) {
+export default function BlogRegular({ feed }) {
   return (
     <Blog backgroundColor="#f9fafc">
       <Container>

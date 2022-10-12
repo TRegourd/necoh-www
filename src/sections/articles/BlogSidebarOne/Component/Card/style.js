@@ -23,20 +23,19 @@ Card.Title = styled(Box)`
   display: block;
   transition: 0.4s;
 `
-Card.Badge = styled(Button)`
+Card.Badge = styled(Box)`
   font-size: 11px;
   font-weight: 500;
   letter-spacing: normal;
   line-height: 1;
   min-width: 78px;
   height: 26px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-right: 12px;
   color: #fff;
-  padding: 5px;
-  &:hover {
-    color: #262729;
-  }
+
+  text-align: center;
+  padding: 6px;
 `
 Card.BadgeContainer = styled(Box)`
   display: flex;
