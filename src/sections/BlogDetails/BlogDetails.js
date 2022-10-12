@@ -5,7 +5,9 @@ import Details from "./style"
 import { StaticImage as Img } from "gatsby-plugin-image"
 import dayjs from "dayjs"
 import Markdown from "markdown-to-jsx"
-export default function BlogDetails({ content }) {
+import Sidebar from "./Component/Sidebar"
+export default function BlogDetails({ content, articlesList }) {
+  console.log(articlesList)
   return (
     <Details backgroundColor="#f9fafc">
       <Details.Box pb="60px" pbMD="80px" pbLG="130px">
@@ -36,12 +38,12 @@ export default function BlogDetails({ content }) {
 
                 <Details.Tag mt="50px">
                   <Details.SubTitle mr="25px" mt="10px" as="h4">
-                    Tags:
+                    Catégories:
                   </Details.SubTitle>
                   <Details.TagList>
                     {content.categories.map(category => {
                       return (
-                        <li>
+                        <li key={category}>
                           <Link>{category}</Link>
                         </li>
                       )
@@ -49,6 +51,9 @@ export default function BlogDetails({ content }) {
                   </Details.TagList>
                 </Details.Tag>
               </Details.Box>
+            </Col>
+            <Col xs="12" className="col-xl-4 offset-xl-1 col-lg-5">
+              <Sidebar articles={articlesList} />
             </Col>
           </Row>
         </Container>

@@ -8,12 +8,12 @@ import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../libs/NecohHeader"
 
 export default function BlogDetails({ pageContext }) {
-  const { content } = pageContext
+  const { content, articlesList } = pageContext
 
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={{ title: "Article" }} />
-      <BlogDetailsSection content={content} />
+      <BlogDetailsSection content={content} articlesList={articlesList} />
       <Footer />
     </PageWrapper>
   )

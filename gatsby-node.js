@@ -234,6 +234,7 @@ exports.createPages = ({ actions, graphql }) => {
             context: {
               slug: `/articles/${slug}`,
               content: page,
+              articlesList: result.data.weblexQuery?.nodes,
             },
           })
         })
