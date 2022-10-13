@@ -28,8 +28,12 @@ export default function BlogSidebarOne({ articles }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-
-    setFilteredArticles(filterArticles(articles, e.target.value))
+    if (e.type === "submit" && e.target[0].value) {
+      setFilteredArticles(filterArticles(articles, e.target[0].value))
+    }
+    if (e.type === "change") {
+      setFilteredArticles(filterArticles(articles, e.target?.value))
+    }
   }
 
   const handleClick = e => {
@@ -51,7 +55,11 @@ export default function BlogSidebarOne({ articles }) {
             xs="12"
             className="col-xl-4 col-lg-5 mt-5 mt-lg-0 order-2 order-lg-1"
           >
-            <form onChange={handleSubmit} onClick={handleClick}>
+            <form
+              onSubmit={handleSubmit}
+              onChange={handleSubmit}
+              onClick={handleClick}
+            >
               <Sidebar articles={articles} />
             </form>
           </Col>
