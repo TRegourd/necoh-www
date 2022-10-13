@@ -2,11 +2,11 @@ import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "~components"
 import Details from "./style"
-import { StaticImage as Img } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage as Img } from "gatsby-plugin-image"
 import dayjs from "dayjs"
 import Markdown from "markdown-to-jsx"
 import Sidebar from "./Component/Sidebar"
-export default function BlogDetails({ content, articlesList }) {
+export default function BlogDetails({ content, articlesList, images }) {
   const nextArticle = () => {
     return articlesList[
       articlesList.indexOf(
@@ -47,13 +47,20 @@ export default function BlogDetails({ content, articlesList }) {
               </Details.Box>
               <Details.Box>
                 <Details.Image mb="35px" mbLG="55px">
-                  {/* <Img
-                    className="w-100"
-                    src="../../../assets/image/blogs/blog-details-img-1.png"
-                    alt="Blog"
-                    layout="constrained"
-                    placeholder="blurred"
-                  /> */}
+                  <GatsbyImage
+                    image={
+                      images?.find(img => {
+                        return (
+                          img.parent.id ===
+                          content.enclosure.url?.replace(
+                            /%[0-9A-Fa-f][0-9A-Fa-f]/g,
+                            "/"
+                          )
+                        )
+                      })?.gatsbyImageData
+                    }
+                    alt={content?.title}
+                  />
                 </Details.Image>
                 <Details.Text>
                   <Markdown>{content.content}</Markdown>

@@ -17,6 +17,7 @@ export default function BlogDetails({ pageContext, data }) {
       <BlogDetailsSection
         content={content}
         articlesList={data.weblexFeed?.nodes}
+        images={data.images?.nodes}
       />
       <Footer />
     </PageWrapper>
@@ -38,6 +39,10 @@ export const query = graphql`
         link
         pubDate
         title
+        enclosure {
+          type
+          url
+        }
       }
     }
   }

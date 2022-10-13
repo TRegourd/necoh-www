@@ -2,6 +2,7 @@ const path = require("path")
 const { default: slugify } = require("slugify")
 const dayjs = require("dayjs")
 let Parser = require("rss-parser")
+const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -22,11 +23,16 @@ exports.sourceNodes = async ({
   actions,
   createContentDigest,
   createNodeId,
+
   getNodesByType,
+  store,
+  node,
+  cache,
 }) => {
   const { createNode } = actions
 
   const WEBLEX_POST_NODE_TYPE = `WeblexPost`
+  const WEBLEX_IMG_NODE_TYPE = `WeblexImg`
   const FACEBOOK_FEED_NODE_TYPE = `FacebookFeed`
 
   let parser = new Parser()
@@ -68,6 +74,28 @@ exports.sourceNodes = async ({
       },
     })
   )
+
+  const processWeblexImg = async post => {
+    let fileNode
+    try {
+      fileNode = await createRemoteFileNode({
+        url: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
+        store,
+        cache,
+        createNode,
+        createNodeId: id =>
+          post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
+      })
+    } catch (error) {
+      console.warn("error creating node", error)
+    }
+  }
+
+  weblexData.items.forEach(post => {
+    // console.log(post.enclosure)
+    const nodeData = processWeblexImg(post)
+    createNode(nodeData)
+  })
 
   return
 }
@@ -165,6 +193,10 @@ exports.createPages = ({ actions, graphql }) => {
             sort: { fields: isoDate, order: DESC }
           ) {
             nodes {
+              enclosure {
+                type
+                url
+              }
               content
               categories
               contentSnippet
@@ -243,5 +275,3 @@ exports.createPages = ({ actions, graphql }) => {
     )
   })
 }
-
-// loop through data and create Gatsby nodes

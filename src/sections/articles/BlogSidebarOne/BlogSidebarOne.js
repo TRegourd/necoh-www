@@ -4,7 +4,7 @@ import Blog from "./style"
 import BlogCard from "./Component/Card"
 import Sidebar from "~sections/articles/Sidebar"
 import { filterArticles } from "../../../libs/filterArticles"
-export default function BlogSidebarOne({ articles }) {
+export default function BlogSidebarOne({ articles, images }) {
   const [filteredArticles, setFilteredArticles] = useState(articles)
   const [currentPage, setCurrentPage] = useState(1)
   const [recordsPerPage] = useState(12)
@@ -77,7 +77,7 @@ export default function BlogSidebarOne({ articles }) {
                         className="col-xl-4 col-lg-6 col-md-6 col-xs-9"
                         key={post.title + post?.isoDate}
                       >
-                        <BlogCard post={post} />
+                        <BlogCard post={post} images={images} />
                       </Col>
                     )
                   })}

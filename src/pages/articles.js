@@ -10,7 +10,10 @@ export default function articles({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={data.articlesHeader?.frontmatter} />
-      <BlogSidebarOne articles={data.weblexFeed?.nodes} />
+      <BlogSidebarOne
+        articles={data.weblexFeed?.nodes}
+        images={data.images?.nodes}
+      />
       <Footer />
     </PageWrapper>
   )
@@ -23,6 +26,10 @@ export const query = graphql`
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {
+        enclosure {
+          type
+          url
+        }
         content
         categories
         contentSnippet
@@ -37,6 +44,14 @@ export const query = graphql`
       frontmatter {
         title
         subtitle
+      }
+    }
+    images: allImageSharp {
+      nodes {
+        gatsbyImageData
+        parent {
+          id
+        }
       }
     }
   }

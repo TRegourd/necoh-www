@@ -1,18 +1,23 @@
 import dayjs from "dayjs"
-import { useInView } from "react-intersection-observer"
 import React from "react"
 import { SuperTag } from "~components"
 import Card from "./style"
-export default function BlogCard({ post }) {
-  const { ref, inView } = useInView()
-  let postImg = post?.content.match(
-    /\<img.+src\=(?:\"|\')(.+?)(?:\"|\')(?:.+?)\>/
-  )
-
+import { GatsbyImage } from "gatsby-plugin-image"
+export default function BlogCard({ post, images }) {
   return (
-    <Card ref={ref}>
+    <Card>
       <Card.Image>
-        {postImg && inView && <img src={postImg[1]} alt={post?.title} />}
+        <GatsbyImage
+          image={
+            images?.find(img => {
+              return (
+                img.parent.id ===
+                post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/")
+              )
+            })?.gatsbyImageData
+          }
+          alt={post?.title}
+        />
       </Card.Image>
       <Card.OvaerlayBlock>
         <Card.Top mb="20px">
@@ -30,12 +35,13 @@ export default function BlogCard({ post }) {
           <Card.Date>{dayjs(post?.isoDate).format("DD-MM-YYYY")}</Card.Date>
         </Card.Top>
         <Card.Title>
-          {" "}
-          <SuperTag value={post?.title} />
+          <a href={`/articles/${post?.id}`}>
+            <SuperTag value={post?.title} />
+          </a>
         </Card.Title>
         <Card.User>
           <a href={`/articles/${post?.id}`}>
-            <i className="fas fa-external-link-alt" />
+            <i className="fab fa-medapps" />
             <SuperTag value={"Lire la suite"} />
           </a>
         </Card.User>
