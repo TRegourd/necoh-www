@@ -47,13 +47,16 @@ export default function BlogDetails({ content, articlesList }) {
               </Details.Box>
               <Details.Box>
                 <Details.Image mb="35px" mbLG="55px">
-                  {/* <Img
+                  <img
                     className="w-100"
-                    src="../../../assets/image/blogs/blog-details-img-1.png"
+                    src={content.enclosure.url?.replace(
+                      /%[0-9A-Fa-f][0-9A-Fa-f]/g,
+                      "/"
+                    )}
                     alt="Blog"
                     layout="constrained"
                     placeholder="blurred"
-                  /> */}
+                  />
                 </Details.Image>
                 <Details.Text>
                   <Markdown>{content.content}</Markdown>

@@ -139,7 +139,7 @@ Card.Image = styled(Box)`
   min-height: 400px;
   max-height: 400px;
   img {
-    width: 100%;
+    height: 100%;
   }
 `
 Card.Top = styled(Box).attrs({ className: "blog-top" })`

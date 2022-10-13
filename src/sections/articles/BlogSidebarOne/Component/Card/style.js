@@ -22,6 +22,9 @@ Card.Title = styled(Box)`
   color: #fff;
   display: block;
   transition: 0.4s;
+  a {
+    color: #fff;
+  }
 `
 Card.Badge = styled(Box)`
   font-size: 11px;
@@ -65,10 +68,10 @@ Card.User = styled(Box)`
   i {
     font-weight: 500;
     margin-right: 7px;
-    color: #ff5722;
+    color: #f39200;
   }
   a {
-    color: #fff;
+    color: #adadad;
   }
   /* &:before{
         content: "";
@@ -143,8 +146,10 @@ Card.Comment = styled(Link)`
 Card.Box = styled(Box)``
 Card.Image = styled(Box)`
   min-height: 330px;
-  img {
-    width: 100%;
+  max-height: 330px;
+  div {
+    height: 100%;
+    position: static !important;
   }
 `
 Card.Top = styled(Box).attrs({ className: "blog-top" })`
