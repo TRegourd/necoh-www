@@ -1,30 +1,12 @@
 import dayjs from "dayjs"
-import { useInView } from "react-intersection-observer"
 import React from "react"
 import { SuperTag } from "~components"
 import Card from "./style"
 import { GatsbyImage } from "gatsby-plugin-image"
 export default function BlogCard({ post, images }) {
-  const { ref, inView } = useInView()
-
-  console.log(
-    images?.find(img => {
-      return (
-        img.parent.id ===
-        post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/")
-      )
-    })?.gatsbyImageData
-  )
-
   return (
     <Card ref={ref}>
       <Card.Image>
-        {/* {inView && (
-          <img
-            src={post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/")}
-            alt={post?.title}
-          />
-        )} */}
         <GatsbyImage
           image={
             images?.find(img => {
