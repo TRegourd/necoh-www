@@ -3,28 +3,28 @@ import SideBar from "./style"
 import { Link } from "~components"
 import dayjs from "dayjs"
 export default function SideBarSection({ articles }) {
-  function extractCategories(list) {
-    if (list && list.length != 0) {
-      const flatList = list
-        .map(article => {
-          return article.categories
-        })
-        .flat(1)
+  // function extractCategories(list) {
+  //   if (list && list.length != 0) {
+  //     const flatList = list
+  //       .map(article => {
+  //         return article.categories
+  //       })
+  //       .flat(1)
 
-      const counts = {}
+  //     const counts = {}
 
-      for (const num of flatList) {
-        counts[num] = counts[num] ? counts[num] + 1 : 1
-      }
+  //     for (const num of flatList) {
+  //       counts[num] = counts[num] ? counts[num] + 1 : 1
+  //     }
 
-      return Object.entries(counts)
-    }
-  }
+  //     return Object.entries(counts)
+  //   }
+  // }
 
   return (
     <SideBar>
       {/* Single Widgets */}
-      <SideBar.Widgets>
+      {/* <SideBar.Widgets>
         <SideBar.Title>Search</SideBar.Title>
         <SideBar.Search>
           <form action="./">
@@ -32,13 +32,13 @@ export default function SideBarSection({ articles }) {
             <input type="text" placeholder="Type to search" />
           </form>
         </SideBar.Search>
-      </SideBar.Widgets>
+      </SideBar.Widgets> */}
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
       <SideBar.Widgets>
         <SideBar.Title>Articles Récents</SideBar.Title>
         <SideBar.RecentPost>
-          {articles?.slice(0, 4).map(article => {
+          {articles?.slice(0, 8).map(article => {
             return (
               <SideBar.RecentPostList key={article.title}>
                 <Link to={`/articles/${article.id}`}>
@@ -56,7 +56,7 @@ export default function SideBarSection({ articles }) {
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
-      <SideBar.Widgets>
+      {/* <SideBar.Widgets>
         <SideBar.Title>Catégories</SideBar.Title>
         <SideBar.CateGory>
           {extractCategories(articles)?.map(category => {
@@ -72,7 +72,7 @@ export default function SideBarSection({ articles }) {
             )
           })}
         </SideBar.CateGory>
-      </SideBar.Widgets>
+      </SideBar.Widgets> */}
     </SideBar>
   )
 }

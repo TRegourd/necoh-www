@@ -66,7 +66,7 @@ SideBar.RecentPostList = styled(Box)`
   &:hover {
     a {
       .widget__recent-post__title {
-        color: #ff5722;
+        color: #6e0f0b;
       }
     }
   }

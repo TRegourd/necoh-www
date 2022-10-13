@@ -5,11 +5,11 @@ const Details = styled(Box)`
   padding-top: 50px;
   padding-bottom: 40px;
   @media (min-width: 768px) {
-    padding-top: 70px;
+    /* padding-top: 70px; */
     padding-bottom: 60px;
   }
   @media (min-width: 992px) {
-    padding-top: 125px;
+    /* padding-top: 125px; */
     padding-bottom: 110px;
   }
 `
@@ -152,7 +152,7 @@ Details.TagList = styled(Box)`
       transition: 0.4s;
       cursor: pointer;
       &:hover {
-        background-color: #5034fc;
+        background-color: #6e0f0b;
         color: #fff !important;
       }
     }
@@ -190,7 +190,7 @@ Details.PrevButton = styled(Box)`
     align-items: center;
     cursor: pointer;
     &:hover {
-      color: #5034fc;
+      color: #6e0f0b;
     }
     i {
       margin-right: 10px;
@@ -207,7 +207,7 @@ Details.NextButton = styled(Box)`
     align-items: center;
     cursor: pointer;
     &:hover {
-      color: #5034fc;
+      color: #6e0f0b;
     }
     i {
       margin-left: 10px;
