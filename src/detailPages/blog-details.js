@@ -45,13 +45,5 @@ export const query = graphql`
         }
       }
     }
-    images: allImageSharp {
-      nodes {
-        gatsbyImageData
-        parent {
-          id
-        }
-      }
-    }
   }
 `
