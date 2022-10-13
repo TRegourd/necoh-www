@@ -19,7 +19,7 @@ export default function articles({ data }) {
 export const query = graphql`
   query {
     weblexFeed: allWeblexPost(
-      limit: 10
+      limit: 100
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {

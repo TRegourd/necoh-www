@@ -25,12 +25,12 @@ export default function SideBarSection({ articles }) {
     <SideBar>
       {/* Single Widgets */}
       <SideBar.Widgets>
-        <SideBar.Title>Search</SideBar.Title>
+        <SideBar.Title>Recherche</SideBar.Title>
         <SideBar.Search>
-          <form action="./">
+          <div>
             <i className="fa fa-search" />
-            <input type="text" placeholder="Type to search" />
-          </form>
+            <input type="text" placeholder="Rechercher un article" />
+          </div>
         </SideBar.Search>
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
@@ -62,12 +62,16 @@ export default function SideBarSection({ articles }) {
           {extractCategories(articles)?.map(category => {
             return (
               <SideBar.CateGorySingle key={category[0]}>
-                <Link to="#">
-                  <SideBar.CateGoryTitle>{category[0]}</SideBar.CateGoryTitle>
+                <div className="category">
+                  <Link to="#">
+                    <SideBar.CateGoryTitle as="span" className="clickable">
+                      {category[0]}
+                    </SideBar.CateGoryTitle>
+                  </Link>
                   <SideBar.CateGoryCount as="span">
                     {category[1]} articles
                   </SideBar.CateGoryCount>
-                </Link>
+                </div>
               </SideBar.CateGorySingle>
             )
           })}

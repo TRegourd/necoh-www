@@ -6,15 +6,39 @@ import BreadCrumbSection from "~sections/shared/BreadCrumb"
 
 import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../libs/NecohHeader"
+import { graphql } from "gatsby"
 
-export default function BlogDetails({ pageContext }) {
-  const { content, articlesList } = pageContext
+export default function BlogDetails({ pageContext, data }) {
+  const { content } = pageContext
 
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={{ title: "Article" }} />
-      <BlogDetailsSection content={content} articlesList={articlesList} />
+      <BlogDetailsSection
+        content={content}
+        articlesList={data.weblexFeed?.nodes}
+      />
       <Footer />
     </PageWrapper>
   )
 }
+
+export const query = graphql`
+  query {
+    weblexFeed: allWeblexPost(
+      limit: 100
+      sort: { fields: isoDate, order: DESC }
+    ) {
+      nodes {
+        content
+        categories
+        contentSnippet
+        id
+        isoDate
+        link
+        pubDate
+        title
+      }
+    }
+  }
+`
