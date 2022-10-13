@@ -22,7 +22,7 @@ SideBar.Title = styled(Heading)`
   color: #262729;
 `
 SideBar.Search = styled(Box)`
-  div {
+  form {
     border: 1px solid rgba(62, 73, 243, 0.1);
     padding: 0 20px;
     display: flex;
@@ -128,10 +128,6 @@ SideBar.CateGoryTitle = styled(Heading)`
   @media (min-width: 575px) {
     // width: 75%;
   }
-  :hover {
-    cursor: pointer;
-    color: #6e0f0b;
-  }
 `
 SideBar.CateGoryCount = styled(Heading)`
   font-size: 16px;
@@ -142,7 +138,6 @@ SideBar.CateGoryCount = styled(Heading)`
   display: block;
   position: relative;
   text-align: right;
-
   &:before {
     content: "";
     position: absolute;
@@ -164,21 +159,18 @@ SideBar.CateGoryCount = styled(Heading)`
       width: 51px;
       height: 1px;
       background-color: rgba(38, 39, 41, 0.1);
-      :hover {
-        cursor: not-allowed;
-      }
     }
   }
 `
 SideBar.CateGorySingle = styled(Box)`
-  .category {
+  a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: rgba(38, 39, 41, 0.7);
     margin-bottom: 17px;
   }
-  &:last-child .category {
+  &:last-child a {
     margin-bottom: 0;
   }
 `

@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     name: "company",
-    label: "Le cabinet",
+    label: "Necoh",
     items: [
       { name: "about", label: "A propos de nous" },
       {
@@ -22,6 +22,7 @@ export const menuItems = [
       },
       { name: "careers", label: "Nous rejoindre" },
       { name: "contact", label: "Nous contacter" },
+      { name: "utils", label: "Liens et outils" },
     ],
   },
   {
@@ -37,11 +38,10 @@ export const menuItems = [
 
   {
     name: "ressources",
-    label: "Ressources",
+    label: "Actualités",
     items: [
-      { name: "articles", label: "Articles" },
+      { name: "articles", label: "La newsletter métier" },
       { name: "feed", label: "Les Actualités Necoh" },
-      { name: "utils", label: "Liens et outils" },
     ],
   },
 ]

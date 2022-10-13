@@ -161,7 +161,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
           weblexQuery: allWeblexPost(
-            limit: 10
+            limit: 100
             sort: { fields: isoDate, order: DESC }
           ) {
             nodes {

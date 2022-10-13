@@ -143,8 +143,9 @@ Footer.SocialShare = styled(Box).attrs({
   padding: 0;
   margin: 0 -10px;
   margin-top: 30px;
+  margin-bottom: 20px;
   @media (min-width: 992px) {
-    margin-top: 0;
+    margin-top: 50px;
   }
 `
 Footer.SocialShareItem = styled(Box).attrs({
@@ -160,13 +161,8 @@ Footer.SocialShareItem = styled(Box).attrs({
     padding: 0 8px;
     transition: 0.4s;
     color: #fff;
-    font-size: 15px;
-    &::before {
-      content: ".";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
+    font-size: 25px;
+
     &:hover {
       color: #f39200;
     }

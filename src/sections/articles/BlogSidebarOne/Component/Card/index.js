@@ -19,7 +19,11 @@ export default function BlogCard({ post }) {
           <Card.BadgeContainer>
             {post?.categories?.map(category => {
               return (
-                <Card.Badge backgroundColor="#f39200">{category}</Card.Badge>
+                category !== "Actualités" && (
+                  <Card.Badge backgroundColor="#6e0f0b90">
+                    {category}
+                  </Card.Badge>
+                )
               )
             })}
           </Card.BadgeContainer>

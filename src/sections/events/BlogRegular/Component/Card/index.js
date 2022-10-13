@@ -24,7 +24,7 @@ export default function BlogCard({ post }) {
           <SuperTag value={post?.contentSnippet.slice(0, 100) + "..."} />
         </Card.Title>
         <Card.User>
-          <a href={post.link}>
+          <a href={post.link} target="_blank">
             <i className="fab fa-facebook"></i>{" "}
             <SuperTag value={"Voir sur Facebook"} />
           </a>

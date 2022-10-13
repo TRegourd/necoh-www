@@ -3,42 +3,42 @@ import SideBar from "./style"
 import { Link } from "~components"
 import dayjs from "dayjs"
 export default function SideBarSection({ articles }) {
-  function extractCategories(list) {
-    if (list && list.length != 0) {
-      const flatList = list
-        .map(article => {
-          return article.categories
-        })
-        .flat(1)
+  // function extractCategories(list) {
+  //   if (list && list.length != 0) {
+  //     const flatList = list
+  //       .map(article => {
+  //         return article.categories
+  //       })
+  //       .flat(1)
 
-      const counts = {}
+  //     const counts = {}
 
-      for (const num of flatList) {
-        counts[num] = counts[num] ? counts[num] + 1 : 1
-      }
+  //     for (const num of flatList) {
+  //       counts[num] = counts[num] ? counts[num] + 1 : 1
+  //     }
 
-      return Object.entries(counts)
-    }
-  }
+  //     return Object.entries(counts)
+  //   }
+  // }
 
   return (
     <SideBar>
       {/* Single Widgets */}
-      <SideBar.Widgets>
-        <SideBar.Title>Recherche</SideBar.Title>
+      {/* <SideBar.Widgets>
+        <SideBar.Title>Search</SideBar.Title>
         <SideBar.Search>
-          <div>
+          <form action="./">
             <i className="fa fa-search" />
-            <input type="text" placeholder="Rechercher un article" />
-          </div>
+            <input type="text" placeholder="Type to search" />
+          </form>
         </SideBar.Search>
-      </SideBar.Widgets>
+      </SideBar.Widgets> */}
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
       <SideBar.Widgets>
         <SideBar.Title>Articles Récents</SideBar.Title>
         <SideBar.RecentPost>
-          {articles?.slice(0, 4).map(article => {
+          {articles?.slice(0, 8).map(article => {
             return (
               <SideBar.RecentPostList key={article.title}>
                 <Link to={`/articles/${article.id}`}>
@@ -56,27 +56,23 @@ export default function SideBarSection({ articles }) {
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
-      <SideBar.Widgets>
+      {/* <SideBar.Widgets>
         <SideBar.Title>Catégories</SideBar.Title>
         <SideBar.CateGory>
           {extractCategories(articles)?.map(category => {
             return (
               <SideBar.CateGorySingle key={category[0]}>
-                <div className="category">
-                  <Link to="#">
-                    <SideBar.CateGoryTitle as="span" className="clickable">
-                      {category[0]}
-                    </SideBar.CateGoryTitle>
-                  </Link>
+                <Link to="#">
+                  <SideBar.CateGoryTitle>{category[0]}</SideBar.CateGoryTitle>
                   <SideBar.CateGoryCount as="span">
                     {category[1]} articles
                   </SideBar.CateGoryCount>
-                </div>
+                </Link>
               </SideBar.CateGorySingle>
             )
           })}
         </SideBar.CateGory>
-      </SideBar.Widgets>
+      </SideBar.Widgets> */}
     </SideBar>
   )
 }
