@@ -5,7 +5,7 @@ import Card from "./style"
 import { GatsbyImage } from "gatsby-plugin-image"
 export default function BlogCard({ post, images }) {
   return (
-    <Card ref={ref}>
+    <Card>
       <Card.Image>
         <GatsbyImage
           image={
