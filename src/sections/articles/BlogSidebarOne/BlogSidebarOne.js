@@ -27,7 +27,6 @@ export default function BlogSidebarOne({ articles, images }) {
   }
 
   const handleSubmit = e => {
-    console.log(e)
     e.preventDefault()
     if (e.type === "submit" && e.target[1].value) {
       setFilteredArticles(filterArticles(articles, e.target[1].value))
@@ -35,7 +34,6 @@ export default function BlogSidebarOne({ articles, images }) {
   }
 
   const handleClick = e => {
-    console.log(e)
     e.preventDefault()
     if (e.target.className.includes("clickable")) {
       if (e.target.textContent === "Tous les articles") {

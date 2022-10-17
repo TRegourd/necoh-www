@@ -17,7 +17,6 @@ export default function BlogDetails({ pageContext, data }) {
       <BlogDetailsSection
         content={content}
         articlesList={data.weblexFeed?.nodes}
-        images={data.images?.nodes}
       />
       <Footer />
     </PageWrapper>
@@ -27,7 +26,7 @@ export default function BlogDetails({ pageContext, data }) {
 export const query = graphql`
   query {
     weblexFeed: allWeblexPost(
-      limit: 100
+      limit: 300
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {

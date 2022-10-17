@@ -10,8 +10,7 @@ export default function BlogCard({ post, images }) {
         <GatsbyImage
           image={
             images?.find(img => {
-              return (
-                img.parent.id ===
+              return img.parent.internal.description?.includes(
                 post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/")
               )
             })?.gatsbyImageData
