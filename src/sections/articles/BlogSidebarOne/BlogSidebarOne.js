@@ -36,9 +36,8 @@ export default function BlogSidebarOne({ articles, images }) {
   const handleClick = e => {
     e.preventDefault()
     if (e.target.className.includes("clickable")) {
-      if (e.target.textContent === "Tous les articles") {
-        setFilteredArticles(filterArticles(articles, ""))
-      } else {
+      setFilteredArticles(filterArticles(articles, ""))
+      if (e.target.textContent !== "Tous les articles") {
         setFilteredArticles(
           filterArticles(articles, e.target.textContent?.toLowerCase())
         )
@@ -90,23 +89,63 @@ export default function BlogSidebarOne({ articles, images }) {
                         <i className="fa fa-chevron-left" />
                       </a>
                     </li>
-                    {pageNumbers.map(pgNumber => (
-                      <li
-                        key={pgNumber}
-                        className={`page-item ${
-                          currentPage == pgNumber ? "active" : ""
-                        } `}
-                      >
-                        <a
-                          onClick={() => setCurrentPage(pgNumber)}
-                          className="page-link"
-                          href="#"
-                          aria-label={"page number"}
+                    {currentPage > 1 && (
+                      <>
+                        <li
+                          className={`page-item ${
+                            currentPage == 1 ? "active" : ""
+                          } `}
                         >
-                          {pgNumber}
-                        </a>
-                      </li>
-                    ))}
+                          <a
+                            onClick={() => setCurrentPage(1)}
+                            className="page-link"
+                            href="#"
+                            aria-label={"page number"}
+                          >
+                            {1}
+                          </a>
+                        </li>
+                        {currentPage > 2 && <li>...</li>}
+                      </>
+                    )}
+                    {pageNumbers
+                      .slice(currentPage - 1, currentPage)
+                      .map(pgNumber => (
+                        <li
+                          key={pgNumber}
+                          className={`page-item ${
+                            currentPage == pgNumber ? "active" : ""
+                          } `}
+                        >
+                          <a
+                            onClick={() => setCurrentPage(pgNumber)}
+                            className="page-link"
+                            href="#"
+                            aria-label={"page number"}
+                          >
+                            {pgNumber}
+                          </a>
+                        </li>
+                      ))}
+                    {currentPage < pageNumbers.length && (
+                      <>
+                        {currentPage < pageNumbers.length - 1 && <li>...</li>}
+                        <li
+                          className={`page-item ${
+                            currentPage == pageNumbers.length ? "active" : ""
+                          } `}
+                        >
+                          <a
+                            onClick={() => setCurrentPage(pageNumbers.length)}
+                            className="page-link"
+                            href="#"
+                            aria-label={"page number"}
+                          >
+                            {pageNumbers.length}
+                          </a>
+                        </li>
+                      </>
+                    )}
                     <li>
                       <a href="#" onClick={nextPage} aria-label={"next"}>
                         <i className="fa fa-chevron-right" />
