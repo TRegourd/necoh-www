@@ -86,7 +86,7 @@ export default function BlogSidebarOne({ articles, images }) {
                 <Col xs="12" className="col-xl-8">
                   <Blog.Paginations className="list-unstyled text-xl-center mx-auto">
                     <li>
-                      <a href="#" onClick={prevPage}>
+                      <a href="#" onClick={prevPage} aria-label={"previous"}>
                         <i className="fa fa-chevron-left" />
                       </a>
                     </li>
@@ -101,13 +101,14 @@ export default function BlogSidebarOne({ articles, images }) {
                           onClick={() => setCurrentPage(pgNumber)}
                           className="page-link"
                           href="#"
+                          aria-label={"page number"}
                         >
                           {pgNumber}
                         </a>
                       </li>
                     ))}
                     <li>
-                      <a href="#" onClick={nextPage}>
+                      <a href="#" onClick={nextPage} aria-label={"next"}>
                         <i className="fa fa-chevron-right" />
                       </a>
                     </li>
