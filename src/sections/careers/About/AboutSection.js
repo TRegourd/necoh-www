@@ -3,31 +3,7 @@ import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import { Col, Container, Row } from "react-bootstrap"
 import About from "./style"
 import SectionTitle from "./Components/SectionTitle"
-import { graphql, useStaticQuery } from "gatsby"
-export default function AboutSection({ content }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-
-  const image = getImage(
-    images.allFile.nodes?.find(el => {
-      return el.relativePath === content.image
-    })?.childrenImageSharp[0]
-  )
+export default function AboutSection({ content, images }) {
   return (
     <About>
       <Container>
@@ -52,7 +28,11 @@ export default function AboutSection({ content }) {
           >
             <About.Image>
               <GatsbyImage
-                image={image}
+                image={getImage(
+                  images?.find(el => {
+                    return el.relativePath === content?.image
+                  })?.childrenImageSharp[0]
+                )}
                 alt={content.title}
                 className="rounded-image"
               />
