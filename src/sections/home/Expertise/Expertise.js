@@ -4,30 +4,7 @@ import SectionTitle from "./components/SectionTitle"
 import Widget from "./components/widget"
 import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import About from "./style"
-import { graphql, useStaticQuery } from "gatsby"
-export default function ExpertiseSection({ content }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-  const image = getImage(
-    images.allFile.nodes?.find(el => {
-      return el.relativePath === content?.image
-    })?.childrenImageSharp[0]
-  )
+export default function ExpertiseSection({ content, images }) {
   return (
     <About backgroundColor="#f2f5fb">
       <Container>
@@ -47,7 +24,11 @@ export default function ExpertiseSection({ content }) {
               directionXS="row-reverse"
               linkDirection="row-reverse"
               title={content?.brands?.comptabilite?.title}
-              icon={content?.brands?.comptabilite?.logo}
+              icon={getImage(
+                images?.find(el => {
+                  return el.relativePath === content?.brands?.comptabilite?.logo
+                })?.childrenImageSharp[0]
+              )}
               text={content?.brands?.comptabilite?.desc}
               linkText={content?.brands?.comptabilite?.link}
               linkUrl="/services/comptabilite"
@@ -60,7 +41,11 @@ export default function ExpertiseSection({ content }) {
               directionXS="row-reverse"
               linkDirection="row-reverse"
               title={content?.brands?.audit?.title}
-              icon={content?.brands?.audit?.logo}
+              icon={getImage(
+                images?.find(el => {
+                  return el.relativePath === content?.brands?.audit?.logo
+                })?.childrenImageSharp[0]
+              )}
               text={content?.brands?.audit?.desc}
               linkText={content?.brands?.audit?.link}
               linkUrl="/services/audit"
@@ -73,7 +58,11 @@ export default function ExpertiseSection({ content }) {
               directionXS="row-reverse"
               linkDirection="row-reverse"
               title={content?.brands?.social?.title}
-              icon={content?.brands?.social?.logo}
+              icon={getImage(
+                images?.find(el => {
+                  return el.relativePath === content?.brands?.social?.logo
+                })?.childrenImageSharp[0]
+              )}
               text={content?.brands?.social?.desc}
               linkText={content?.brands?.social?.link}
               linkUrl="/services/social"
@@ -88,7 +77,14 @@ export default function ExpertiseSection({ content }) {
             className="col-xxl-6 col-lg-4 col-md-8 col-xs-9 order-1 order-lg-2 text-center"
           >
             <About.ImageContent>
-              <GatsbyImage image={image} alt="Necoh Services" />
+              <GatsbyImage
+                image={getImage(
+                  images?.find(el => {
+                    return el.relativePath === content?.image
+                  })?.childrenImageSharp[0]
+                )}
+                alt="Necoh Services"
+              />
               <About.Shape>
                 <Img
                   src="../../../assets/image/Necoh_Symbole.png"
@@ -104,7 +100,11 @@ export default function ExpertiseSection({ content }) {
               directionXS="row"
               linkDirection="row"
               title={content?.brands?.conseil?.title}
-              icon={content?.brands?.conseil?.logo}
+              icon={getImage(
+                images?.find(el => {
+                  return el.relativePath === content?.brands?.conseil?.logo
+                })?.childrenImageSharp[0]
+              )}
               text={content?.brands?.conseil?.desc}
               linkText={content?.brands?.conseil?.link}
               linkUrl="/services/conseil"
@@ -117,7 +117,11 @@ export default function ExpertiseSection({ content }) {
               directionXS="row"
               linkDirection="row"
               title={content?.brands?.juridique?.title}
-              icon={content?.brands?.juridique?.logo}
+              icon={getImage(
+                images?.find(el => {
+                  return el.relativePath === content?.brands?.juridique?.logo
+                })?.childrenImageSharp[0]
+              )}
               text={content?.brands?.juridique?.desc}
               linkText={content?.brands?.juridique?.link}
               linkUrl="/services/juridique"
@@ -130,7 +134,11 @@ export default function ExpertiseSection({ content }) {
               directionXS="row"
               linkDirection="row"
               title={content?.brands?.fiscalite?.title}
-              icon={content?.brands?.fiscalite?.logo}
+              icon={getImage(
+                images?.find(el => {
+                  return el.relativePath === content?.brands?.fiscalite?.logo
+                })?.childrenImageSharp[0]
+              )}
               text={content?.brands?.fiscalite?.desc}
               linkText={content?.brands?.fiscalite?.link}
               linkUrl="/services/fiscalite"

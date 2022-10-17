@@ -12,10 +12,22 @@ import { NecohHeader } from "../libs/NecohHeader"
 export default function Home({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
-      <HeroSection content={data.index.frontmatter?.indexHero} />
-      <AboutSection content={data.index.frontmatter?.indexAbout} />
-      <Expertise content={data.index.frontmatter?.indexBrands} />
-      <TestimonialSection content={data.index.frontmatter?.indexTestimonials} />
+      <HeroSection
+        content={data.index.frontmatter?.indexHero}
+        images={data.images?.nodes}
+      />
+      <AboutSection
+        content={data.index.frontmatter?.indexAbout}
+        images={data.images?.nodes}
+      />
+      <Expertise
+        content={data.index.frontmatter?.indexBrands}
+        images={data.images?.nodes}
+      />
+      <TestimonialSection
+        content={data.index.frontmatter?.indexTestimonials}
+        images={data.images?.nodes}
+      />
       <ContactSection
         contactForm={data.contactForm?.frontmatter}
         contactDetails={data.contactDetails?.frontmatter}
@@ -132,6 +144,19 @@ export const query = graphql`
         subtitle
         text
         disclaimer
+      }
+    }
+    images: allFile(
+      filter: {
+        relativeDirectory: { eq: "" }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      }
+    ) {
+      nodes {
+        relativePath
+        childrenImageSharp {
+          gatsbyImageData
+        }
       }
     }
   }

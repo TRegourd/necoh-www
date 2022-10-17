@@ -1,33 +1,14 @@
 import React from "react"
 import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import { Col, Container, Row } from "react-bootstrap"
-import { Link } from "~components"
 import About from "./style"
 import SectionTitle from "./Components/SectionTitle"
 import ContentWidget from "./Components/Widget"
 import Video from "~components/VideoModal"
 import { graphql, useStaticQuery } from "gatsby"
-export default function AboutSection({ content }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-
+export default function AboutSection({ content, images }) {
   const image = getImage(
-    images.allFile.nodes?.find(el => {
+    images?.find(el => {
       return el.relativePath === content?.image
     })?.childrenImageSharp[0]
   )

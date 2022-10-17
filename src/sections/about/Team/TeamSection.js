@@ -5,7 +5,8 @@ import { Col, Container, Row } from "react-bootstrap"
 import SectionTitle from "./Components/SectionTitle"
 import TeamCard from "./Components/Card"
 import Team from "./style"
-export default function TeamSection({ content, employees, ...rest }) {
+import { getImage } from "gatsby-plugin-image"
+export default function TeamSection({ content, images, employees, ...rest }) {
   const elSlider = React.useRef()
 
   const sliderConfig = {
@@ -88,7 +89,11 @@ export default function TeamSection({ content, employees, ...rest }) {
               ({ firstName, lastName, position, links, color, image }) => {
                 return (
                   <TeamCard
-                    image={image}
+                    image={getImage(
+                      images.find(el => {
+                        return el.relativePath === image
+                      })?.childrenImageSharp[0]
+                    )}
                     userName={`${firstName} ${lastName}`}
                     userPosition={position}
                     color={color}

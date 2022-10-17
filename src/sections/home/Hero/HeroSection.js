@@ -6,7 +6,7 @@ import { Button } from "~styled"
 import ImageGroup from "./Components/ImageGroup"
 import Hero from "./style"
 
-export default function HeroSection({ content }) {
+export default function HeroSection({ content, images }) {
   return (
     <Hero className="position-relative bg-default">
       <Container>
@@ -59,6 +59,7 @@ export default function HeroSection({ content }) {
             className="col-xl-6 col-lg-5 col-md-10 order-1 order-lg-2 position-static"
           >
             <ImageGroup
+              images={images}
               image0={content?.image0}
               image1={content?.image1}
               image2={content?.image2}

@@ -10,29 +10,6 @@ export default function TestiomialCard({
   image,
   ...rest
 }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-
-  const avatar = getImage(
-    images.allFile.nodes?.find(el => {
-      return el.relativePath === image
-    })?.childrenImageSharp[0]
-  )
   return (
     <Card
       hoverbackground="#f39200"
@@ -43,7 +20,7 @@ export default function TestiomialCard({
       <Card.Top mb="20px">
         <Card.UserBlock>
           <Card.Image mr="10px">
-            <GatsbyImage image={avatar} alt="Testimonial" />
+            <GatsbyImage image={image} alt="Testimonial" />
           </Card.Image>
           <Card.Box>
             <Card.Title as="h3">{userName}</Card.Title>

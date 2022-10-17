@@ -3,28 +3,10 @@ import { Col, Container, Row } from "react-bootstrap"
 import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import Content from "./style"
 import Markdown from "markdown-to-jsx"
-import { graphql, useStaticQuery } from "gatsby"
-export default function ContentSectionOne({ content, ...rest }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
 
+export default function ContentSectionOne({ content, images, ...rest }) {
   const image = getImage(
-    images.allFile.nodes?.find(el => {
+    images?.find(el => {
       return el.relativePath === content?.image
     })?.childrenImageSharp[0]
   )
