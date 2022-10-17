@@ -22,7 +22,7 @@ export default function articles({ data }) {
 export const query = graphql`
   query {
     weblexFeed: allWeblexPost(
-      limit: 100
+      limit: 300
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {
@@ -50,7 +50,9 @@ export const query = graphql`
       nodes {
         gatsbyImageData
         parent {
-          id
+          internal {
+            description
+          }
         }
       }
     }

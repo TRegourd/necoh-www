@@ -22,19 +22,22 @@ SideBar.Title = styled(Heading)`
   color: #262729;
 `
 SideBar.Search = styled(Box)`
-  div {
+  form {
     border: 1px solid rgba(62, 73, 243, 0.1);
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-
-    i {
-      font-size: 18px;
-      letter-spacing: normal;
-      line-height: 22px;
-      color: #6e0f0b;
+    button {
+      background-color: transparent;
+      border-color: transparent;
+      i {
+        font-size: 18px;
+        letter-spacing: normal;
+        line-height: 22px;
+        color: #6e0f0b;
+      }
     }
     input {
       border: none;

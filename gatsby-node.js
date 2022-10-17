@@ -27,9 +27,9 @@ exports.sourceNodes = async ({
   getNodesByType,
   store,
   node,
-  cache,
+  getCache,
 }) => {
-  const { createNode } = actions
+  const { createNode, createNodeField } = actions
 
   const WEBLEX_POST_NODE_TYPE = `WeblexPost`
   const WEBLEX_IMG_NODE_TYPE = `WeblexImg`
@@ -45,7 +45,7 @@ exports.sourceNodes = async ({
     "https://rss.app/feeds/CxNqKVxRZ49DMwnH.xml"
   )
 
-  weblexData.items.forEach((post, i) =>
+  weblexData.items.slice(0, 300).forEach((post, i) =>
     createNode({
       ...post,
       id: createNodeId(
@@ -81,18 +81,16 @@ exports.sourceNodes = async ({
       fileNode = await createRemoteFileNode({
         url: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
         store,
-        cache,
+        getCache,
         createNode,
-        createNodeId: id =>
-          post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
+        createNodeId,
       })
     } catch (error) {
       console.warn("error creating node", error)
     }
   }
 
-  weblexData.items.forEach(post => {
-    // console.log(post.enclosure)
+  weblexData.items.slice(0, 300).forEach(post => {
     const nodeData = processWeblexImg(post)
     createNode(nodeData)
   })
@@ -189,7 +187,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
           weblexQuery: allWeblexPost(
-            limit: 100
+            limit: 300
             sort: { fields: isoDate, order: DESC }
           ) {
             nodes {

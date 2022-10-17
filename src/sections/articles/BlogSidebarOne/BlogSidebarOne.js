@@ -28,20 +28,21 @@ export default function BlogSidebarOne({ articles, images }) {
 
   const handleSubmit = e => {
     e.preventDefault()
-    if (e.type === "submit" && e.target[0].value) {
-      setFilteredArticles(filterArticles(articles, e.target[0].value))
-    }
-    if (e.type === "change") {
-      setFilteredArticles(filterArticles(articles, e.target?.value))
+    if (e.type === "submit" && e.target[1].value) {
+      setFilteredArticles(filterArticles(articles, e.target[1].value))
     }
   }
 
   const handleClick = e => {
     e.preventDefault()
     if (e.target.className.includes("clickable")) {
-      setFilteredArticles(
-        filterArticles(articles, e.target.textContent?.toLowerCase())
-      )
+      if (e.target.textContent === "Tous les articles") {
+        setFilteredArticles(filterArticles(articles, ""))
+      } else {
+        setFilteredArticles(
+          filterArticles(articles, e.target.textContent?.toLowerCase())
+        )
+      }
     }
   }
 
@@ -55,13 +56,11 @@ export default function BlogSidebarOne({ articles, images }) {
             xs="12"
             className="col-xl-4 col-lg-5 mt-5 mt-lg-0 order-2 order-lg-1"
           >
-            <form
-              onSubmit={handleSubmit}
-              onChange={handleSubmit}
-              onClick={handleClick}
-            >
-              <Sidebar articles={articles} />
-            </form>
+            <Sidebar
+              handleSubmit={handleSubmit}
+              articles={articles}
+              handleClick={handleClick}
+            />
           </Col>
           <Col xs="12" className="col-xl-8 col-lg-7 order-1 order-lg-2">
             <Row className="justify-content-xl-center">

@@ -6,7 +6,7 @@ import { GatsbyImage, StaticImage as Img } from "gatsby-plugin-image"
 import dayjs from "dayjs"
 import Markdown from "markdown-to-jsx"
 import Sidebar from "./Component/Sidebar"
-export default function BlogDetails({ content, articlesList, images }) {
+export default function BlogDetails({ content, articlesList }) {
   const nextArticle = () => {
     return articlesList[
       articlesList.indexOf(
@@ -46,22 +46,7 @@ export default function BlogDetails({ content, articlesList, images }) {
                 </Details.MetaInfo>
               </Details.Box>
               <Details.Box>
-                <Details.Image mb="35px" mbLG="55px">
-                  <GatsbyImage
-                    image={
-                      images?.find(img => {
-                        return (
-                          img.parent.id ===
-                          content.enclosure.url?.replace(
-                            /%[0-9A-Fa-f][0-9A-Fa-f]/g,
-                            "/"
-                          )
-                        )
-                      })?.gatsbyImageData
-                    }
-                    alt={content?.title}
-                  />
-                </Details.Image>
+                <Details.Image mb="35px" mbLG="55px"></Details.Image>
                 <Details.Text>
                   <Markdown>{content.content}</Markdown>
                 </Details.Text>
