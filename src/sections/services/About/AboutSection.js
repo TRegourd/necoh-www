@@ -5,32 +5,14 @@ import SectionTitle from "./Components/SectionTitle"
 import About from "./style"
 import { graphql, useStaticQuery } from "gatsby"
 
-export default function AboutusSection({ content, logo, color }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-
+export default function AboutusSection({ content, logo, color, images }) {
   const serviceLogo = getImage(
-    images.allFile.nodes?.find(el => {
+    images?.find(el => {
       return el.relativePath === logo
     })?.childrenImageSharp[0]
   )
   const serviceImage = getImage(
-    images.allFile.nodes?.find(el => {
+    images?.find(el => {
       return el.relativePath === content?.image
     })?.childrenImageSharp[0]
   )
