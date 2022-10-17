@@ -34,7 +34,7 @@ export default function SideBarSection({
         <SideBar.Title>Recherche</SideBar.Title>
         <SideBar.Search>
           <form className="btn" onSubmit={handleSubmit}>
-            <button type="submit">
+            <button type="submit" aria-label="search button">
               <i className="fa fa-search" />
             </button>
             <input type="text" placeholder="Rechercher un article" />

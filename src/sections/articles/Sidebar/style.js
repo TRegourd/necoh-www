@@ -55,7 +55,7 @@ SideBar.RecentPost = styled(Box).attrs({
   className: "list-unstyled",
   as: "ul",
 })``
-SideBar.RecentPostList = styled(Box)`
+SideBar.RecentPostList = styled(Box).attrs({ as: "li" })`
   border-bottom: 1px solid rgba(38, 39, 41, 0.1);
   padding-top: 20px;
   padding-bottom: 13px;
