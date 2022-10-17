@@ -2,7 +2,11 @@ import React from "react"
 import SideBar from "./style"
 import { Link } from "~components"
 import dayjs from "dayjs"
-export default function SideBarSection({ articles }) {
+export default function SideBarSection({
+  articles,
+  handleSubmit,
+  handleClick,
+}) {
   function extractCategories(list) {
     if (list && list.length != 0) {
       const flatList = list
@@ -17,7 +21,9 @@ export default function SideBarSection({ articles }) {
         counts[num] = counts[num] ? counts[num] + 1 : 1
       }
 
-      return Object.entries(counts)
+      return [["Tous les articles", list?.length]].concat(
+        Object.entries(counts)
+      )
     }
   }
 
@@ -27,10 +33,12 @@ export default function SideBarSection({ articles }) {
       <SideBar.Widgets>
         <SideBar.Title>Recherche</SideBar.Title>
         <SideBar.Search>
-          <div>
-            <i className="fa fa-search" />
+          <form className="btn" onSubmit={handleSubmit}>
+            <button type="submit">
+              <i className="fa fa-search" />
+            </button>
             <input type="text" placeholder="Rechercher un article" />
-          </div>
+          </form>
         </SideBar.Search>
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
@@ -64,12 +72,16 @@ export default function SideBarSection({ articles }) {
               <SideBar.CateGorySingle key={category[0]}>
                 <div className="category">
                   <Link to="#">
-                    <SideBar.CateGoryTitle as="span" className="clickable">
+                    <SideBar.CateGoryTitle
+                      as="span"
+                      className="clickable"
+                      onClick={handleClick}
+                    >
                       {category[0]}
                     </SideBar.CateGoryTitle>
                   </Link>
                   <SideBar.CateGoryCount as="span">
-                    {category[1]} articles
+                    {category[1]}
                   </SideBar.CateGoryCount>
                 </div>
               </SideBar.CateGorySingle>
