@@ -1,5 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import Card from "./style"
 export default function TeamCard({
@@ -10,34 +9,10 @@ export default function TeamCard({
   color,
   ...rest
 }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-
-  const avatar = getImage(
-    images.allFile.nodes?.find(el => {
-      return el.relativePath === image
-    })?.childrenImageSharp[0]
-  )
-
   return (
     <>
       <Card {...rest} backgroundColor={color}>
-        <GatsbyImage image={avatar} alt={userName} />
+        <GatsbyImage image={image} alt={userName} />
         <Card.InnerBlock>
           <div>
             <Card.Title fontColor="#fff">{userName}</Card.Title>

@@ -14,7 +14,10 @@ export default function Career({ data }) {
       <BreadCrumbSection
         content={data.careersContent.frontmatter?.careersHeader}
       />
-      <AboutSection content={data.careersContent.frontmatter?.careersIntro} />
+      <AboutSection
+        content={data.careersContent.frontmatter?.careersIntro}
+        images={data.images?.nodes}
+      />
       <ServiceSection list={data.careersContent.frontmatter?.benefits} />
       <JobSection jobsList={data.jobs.frontmatter?.jobs} />
       <Footer />
@@ -52,6 +55,19 @@ export const query = graphql`
           desc
           logo
           color
+        }
+      }
+    }
+    images: allFile(
+      filter: {
+        relativeDirectory: { eq: "" }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      }
+    ) {
+      nodes {
+        relativePath
+        childrenImageSharp {
+          gatsbyImageData
         }
       }
     }

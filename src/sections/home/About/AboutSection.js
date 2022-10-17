@@ -4,31 +4,7 @@ import Feature from "./style"
 import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import SectionTitle from "./Components/SectionTitle"
 import CounterBlock from "./Components/CounterBlock"
-import { graphql, useStaticQuery } from "gatsby"
-export default function AboutSection({ content }) {
-  const images = useStaticQuery(graphql`
-    query {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "" }
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-        }
-      ) {
-        nodes {
-          relativePath
-          childrenImageSharp {
-            gatsbyImageData
-          }
-        }
-      }
-    }
-  `)
-
-  const image = getImage(
-    images.allFile.nodes?.find(el => {
-      return el.relativePath === content?.image
-    })?.childrenImageSharp[0]
-  )
+export default function AboutSection({ content, images }) {
   return (
     <Feature backgroundColor="#f3f4f6">
       <Container>
@@ -64,7 +40,11 @@ export default function AboutSection({ content }) {
             <Feature.Image mb="30px">
               <GatsbyImage
                 className="rounded-image"
-                image={image}
+                image={getImage(
+                  images?.find(el => {
+                    return el.relativePath === content?.image
+                  })?.childrenImageSharp[0]
+                )}
                 alt="about image"
               />
             </Feature.Image>

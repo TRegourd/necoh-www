@@ -10,7 +10,10 @@ export default function Utils({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={data.utils.frontmatter?.utilsHeader} />
-      <ServicesSection list={data.utils.frontmatter?.utilsList} />
+      <ServicesSection
+        list={data.utils.frontmatter?.utilsList}
+        images={data.images?.nodes}
+      />
       <Footer />
     </PageWrapper>
   )
@@ -30,6 +33,19 @@ export const query = graphql`
           logo
           color
           link
+        }
+      }
+    }
+    images: allFile(
+      filter: {
+        relativeDirectory: { eq: "" }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      }
+    ) {
+      nodes {
+        relativePath
+        childrenImageSharp {
+          gatsbyImageData
         }
       }
     }

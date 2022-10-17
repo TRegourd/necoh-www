@@ -13,9 +13,16 @@ export default function About({ data }) {
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={data.about.frontmatter?.aboutHeader} />
-      <AboutSection content={data.about.frontmatter?.aboutIntro} />
-      <ContentSectionOne content={data.about.frontmatter?.aboutCEO} />
+      <AboutSection
+        images={data.images?.nodes}
+        content={data.about.frontmatter?.aboutIntro}
+      />
+      <ContentSectionOne
+        images={data.images?.nodes}
+        content={data.about.frontmatter?.aboutCEO}
+      />
       <TeamSection
+        images={data.images?.nodes}
         content={data.team.frontmatter?.teamHeader}
         employees={data.team.frontmatter?.employees}
       />
@@ -71,6 +78,19 @@ export const query = graphql`
             contact
             link
           }
+        }
+      }
+    }
+    images: allFile(
+      filter: {
+        relativeDirectory: { eq: "" }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      }
+    ) {
+      nodes {
+        relativePath
+        childrenImageSharp {
+          gatsbyImageData
         }
       }
     }

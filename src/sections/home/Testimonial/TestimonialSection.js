@@ -3,7 +3,8 @@ import Slider from "react-slick"
 import TestiomialCard from "./Component/Card"
 import Testimonial from "./style"
 import { Container, Row, Col } from "react-bootstrap"
-export default function TestimonialSection({ content }) {
+import { getImage } from "gatsby-plugin-image"
+export default function TestimonialSection({ content, images }) {
   const elSlider = useRef()
 
   const sliderConfig1 = {
@@ -63,7 +64,11 @@ export default function TestimonialSection({ content }) {
             return (
               <TestiomialCard
                 icon={"fa fa-quote-left"}
-                image={avatar}
+                image={getImage(
+                  images?.find(el => {
+                    return el.relativePath === avatar
+                  })?.childrenImageSharp[0]
+                )}
                 userName={name}
                 userPosition={position}
                 text={text}

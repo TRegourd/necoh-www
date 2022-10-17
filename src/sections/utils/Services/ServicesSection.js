@@ -2,8 +2,9 @@ import React from "react"
 import Services from "./style"
 import { Container, Row } from "react-bootstrap"
 import ServicesCard from "./Components/Card"
+import { getImage } from "gatsby-plugin-image"
 
-export default function ServicesSection({ list }) {
+export default function ServicesSection({ list, images }) {
   return (
     <Services backgroundColor="#f3f4f6">
       <Container>
@@ -19,7 +20,11 @@ export default function ServicesSection({ list }) {
                 <ServicesCard
                   title={name}
                   text={desc}
-                  icon={logo}
+                  icon={getImage(
+                    images?.find(el => {
+                      return el.relativePath === logo
+                    })?.childrenImageSharp[0]
+                  )}
                   to={link}
                   iconBackground={color ? color : "#fff"}
                 />

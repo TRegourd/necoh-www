@@ -7,8 +7,9 @@ import Features from "~sections/services/Features"
 
 import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../libs/NecohHeader"
+import { graphql } from "gatsby"
 
-export default function Service({ pageContext }) {
+export default function Service({ pageContext, data }) {
   const { content } = pageContext
 
   return (
@@ -18,6 +19,7 @@ export default function Service({ pageContext }) {
         color={content?.serviceHeader?.color}
         logo={content?.serviceHeader?.logo}
         content={content?.serviceIntro}
+        images={data.images?.nodes}
       />
       <Features
         content={content?.serviceFeatures}
@@ -28,3 +30,21 @@ export default function Service({ pageContext }) {
     </PageWrapper>
   )
 }
+
+export const query = graphql`
+  query {
+    images: allFile(
+      filter: {
+        relativeDirectory: { eq: "" }
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      }
+    ) {
+      nodes {
+        relativePath
+        childrenImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+`
