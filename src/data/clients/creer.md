@@ -8,7 +8,7 @@ customerIntro:
   subtitle: Notre accompagnement
   image: krakenimages-376kn_isple-unsplash.jpeg
   text: Lorem ipsum dolor sit amet. Eos reiciendis tempora qui quam quas aut
-    suscipit asperiores et assumenda illo ut iste magnam quo assumenda ullam. Ut
+    suscipit asperiores et assumenda illo iste magnam quo assumenda ullam. Ut
     voluptas quae in nihil dolore et veniam dolorem sed aliquam error ut illum
     aspernatur 33 esse aspernatur et vitae ipsam.
 customerFeatures:
