@@ -2,6 +2,7 @@ import React from "react"
 import SideBar from "./style"
 import { Link } from "~components"
 import dayjs from "dayjs"
+import slugify from "slugify"
 export default function SideBarSection({ articles }) {
   // function extractCategories(list) {
   //   if (list && list.length != 0) {
@@ -40,13 +41,13 @@ export default function SideBarSection({ articles }) {
         <SideBar.RecentPost>
           {articles?.slice(0, 8).map(article => {
             return (
-              <SideBar.RecentPostList key={article.title}>
-                <Link to={`/articles/${article.id}`}>
+              <SideBar.RecentPostList key={article?.id}>
+                <Link to={`/articles/${slugify(article?.title)}`}>
                   <SideBar.RecentPostTitle>
-                    {article.title}
+                    {article?.title}
                   </SideBar.RecentPostTitle>
                   <SideBar.RecentPostDate>
-                    {dayjs(article.isoDate).format("DD-MM-YYYY")}
+                    {dayjs(article?.isoDate).format("DD-MM-YYYY")}
                   </SideBar.RecentPostDate>
                 </Link>
               </SideBar.RecentPostList>

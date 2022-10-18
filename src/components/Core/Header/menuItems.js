@@ -40,8 +40,8 @@ export const menuItems = [
     name: "ressources",
     label: "Actualités",
     items: [
-      { name: "articles", label: "La newsletter métier" },
-      { name: "feed", label: "Les Actualités Necoh" },
+      { name: "articles", label: "Actualités règlementaires" },
+      { name: "feed", label: "Actualités Necoh" },
     ],
   },
 ]

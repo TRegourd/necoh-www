@@ -3,6 +3,7 @@ import React from "react"
 import { SuperTag } from "~components"
 import Card from "./style"
 import { GatsbyImage } from "gatsby-plugin-image"
+import slugify from "slugify"
 export default function BlogCard({ post, images }) {
   return (
     <Card>
@@ -34,12 +35,12 @@ export default function BlogCard({ post, images }) {
           <Card.Date>{dayjs(post?.isoDate).format("DD-MM-YYYY")}</Card.Date>
         </Card.Top>
         <Card.Title>
-          <a href={`/articles/${post?.id}`}>
+          <a href={`/articles/${slugify(post?.title)}`}>
             <SuperTag value={post?.title} />
           </a>
         </Card.Title>
         <Card.User>
-          <a href={`/articles/${post?.id}`}>
+          <a href={`/articles/${slugify(post?.title)}`}>
             <i className="fab fa-medapps" />
             <SuperTag value={"Lire la suite"} />
           </a>

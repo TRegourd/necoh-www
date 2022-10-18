@@ -6,21 +6,28 @@ import { GatsbyImage, StaticImage as Img } from "gatsby-plugin-image"
 import dayjs from "dayjs"
 import Markdown from "markdown-to-jsx"
 import Sidebar from "./Component/Sidebar"
+import slugify from "slugify"
 export default function BlogDetails({ content, articlesList }) {
   const nextArticle = () => {
-    return articlesList[
-      articlesList.indexOf(
-        articlesList.find(article => article.id === content.id)
-      ) + 1
-    ]?.id
+    const nextArticleTitle =
+      articlesList[
+        articlesList.indexOf(
+          articlesList.find(article => article.id === content.id)
+        ) + 1
+      ]?.title
+
+    return nextArticleTitle ? slugify(nextArticleTitle) : ""
   }
 
   const prevArticle = () => {
-    return articlesList[
-      articlesList.indexOf(
-        articlesList.find(article => article.id === content.id)
-      ) - 1
-    ]?.id
+    const prevArticleTitle =
+      articlesList[
+        articlesList.indexOf(
+          articlesList.find(article => article.id === content.id)
+        ) - 1
+      ]?.title
+
+    return prevArticleTitle ? slugify(prevArticleTitle) : ""
   }
 
   return (
@@ -59,7 +66,7 @@ export default function BlogDetails({ content, articlesList }) {
                     {content.categories.map(category => {
                       return (
                         <li key={category}>
-                          <Link>{category}</Link>
+                          <span>{category}</span>
                         </li>
                       )
                     })}
@@ -69,7 +76,7 @@ export default function BlogDetails({ content, articlesList }) {
                   <Details.PrevButton>
                     <Link
                       className="btn-link"
-                      to={`/articles/${prevArticle() ? prevArticle() : ""}`}
+                      to={`/articles/${prevArticle()}`}
                     >
                       <i className="fa fa-arrow-left" />
                       Précédent
@@ -78,7 +85,7 @@ export default function BlogDetails({ content, articlesList }) {
                   <Details.NextButton>
                     <Link
                       className="btn-link"
-                      to={`/articles/${nextArticle() ? nextArticle() : ""}`}
+                      to={`/articles/${nextArticle()}`}
                     >
                       Suivant
                       <i className="fa fa-arrow-right" />
