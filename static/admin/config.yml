@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: TRegourd/necoh-www
-  branch: main
+  name: git-gateway
+  branch: prod
 media_folder: src/assets/image
 public_folder: ""
 publish_mode: editorial_workflow
@@ -354,11 +353,11 @@ collections:
               - { label: Description, name: desc, widget: text }
 
   - label: "Clients"
-    name: "customers"
+    name: "clients"
     files:
       - label: "Créer"
-        name: "create"
-        file: "src/data/customers/create.md"
+        name: "creer"
+        file: "src/data/clients/creer.md"
         fields:
           - label: Entête
             name: customerHeader
@@ -396,8 +395,8 @@ collections:
               - { label: Titre, name: title, widget: string }
               - { label: Description, name: desc, widget: text }
       - label: "Développer"
-        name: "develop"
-        file: "src/data/customers/develop.md"
+        name: "developper"
+        file: "src/data/clients/developper.md"
         fields:
           - label: Entête
             name: customerHeader
@@ -435,8 +434,8 @@ collections:
               - { label: Titre, name: title, widget: string }
               - { label: Description, name: desc, widget: text }
       - label: "Transformer"
-        name: "transform"
-        file: "src/data/customers/transform.md"
+        name: "transformer"
+        file: "src/data/clients/transformer.md"
         fields:
           - label: Entête
             name: customerHeader
@@ -474,8 +473,8 @@ collections:
               - { label: Titre, name: title, widget: string }
               - { label: Description, name: desc, widget: text }
       - label: "Acquérir"
-        name: "acquire"
-        file: "src/data/customers/acquire.md"
+        name: "acquerir"
+        file: "src/data/clients/acquerir.md"
         fields:
           - label: Entête
             name: customerHeader

@@ -134,7 +134,7 @@ Details.TagList = styled(Box)`
   flex-wrap: wrap;
   li {
     list-style: none;
-    a {
+    span {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -150,11 +150,6 @@ Details.TagList = styled(Box)`
       margin-bottom: 5px;
       flex-wrap: wrap;
       transition: 0.4s;
-      cursor: pointer;
-      &:hover {
-        background-color: #6e0f0b;
-        color: #fff !important;
-      }
     }
   }
 `

@@ -2,6 +2,7 @@ import React from "react"
 import SideBar from "./style"
 import { Link } from "~components"
 import dayjs from "dayjs"
+import slugify from "slugify"
 export default function SideBarSection({
   articles,
   handleSubmit,
@@ -43,25 +44,7 @@ export default function SideBarSection({
       </SideBar.Widgets>
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
-      <SideBar.Widgets>
-        <SideBar.Title>Articles Récents</SideBar.Title>
-        <SideBar.RecentPost>
-          {articles?.slice(0, 4).map(article => {
-            return (
-              <SideBar.RecentPostList key={article.title}>
-                <Link to={`/articles/${article.id}`}>
-                  <SideBar.RecentPostTitle>
-                    {article.title}
-                  </SideBar.RecentPostTitle>
-                  <SideBar.RecentPostDate>
-                    {dayjs(article.isoDate).format("DD-MM-YYYY")}
-                  </SideBar.RecentPostDate>
-                </Link>
-              </SideBar.RecentPostList>
-            )
-          })}
-        </SideBar.RecentPost>
-      </SideBar.Widgets>
+
       {/*/ .Single Widgets */}
       {/* Single Widgets */}
       <SideBar.Widgets>
@@ -88,6 +71,25 @@ export default function SideBarSection({
             )
           })}
         </SideBar.CateGory>
+      </SideBar.Widgets>
+      <SideBar.Widgets>
+        <SideBar.Title>Articles Récents</SideBar.Title>
+        <SideBar.RecentPost>
+          {articles?.slice(0, 4).map(article => {
+            return (
+              <SideBar.RecentPostList key={article?.id}>
+                <Link to={`/articles/${slugify(article?.title)}`}>
+                  <SideBar.RecentPostTitle>
+                    {article.title}
+                  </SideBar.RecentPostTitle>
+                  <SideBar.RecentPostDate>
+                    {dayjs(article.isoDate).format("DD-MM-YYYY")}
+                  </SideBar.RecentPostDate>
+                </Link>
+              </SideBar.RecentPostList>
+            )
+          })}
+        </SideBar.RecentPost>
       </SideBar.Widgets>
     </SideBar>
   )

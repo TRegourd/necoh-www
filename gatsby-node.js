@@ -141,7 +141,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
           customersQuery: allMarkdownRemark(
-            filter: { fields: { slug: { glob: "/customers/*" } } }
+            filter: { fields: { slug: { glob: "/clients/*" } } }
           ) {
             nodes {
               frontmatter {
@@ -245,10 +245,10 @@ exports.createPages = ({ actions, graphql }) => {
         result.data.jobsQuery.frontmatter.jobs?.forEach(job => {
           const slug = slugify(job.title + dayjs(job.date).format("DDMMYYYY"))
           createPage({
-            path: `/careers/${slug}`,
+            path: `/emploi/${slug}`,
             component: jobTemplate,
             context: {
-              slug: `/careers/${slug}`,
+              slug: `/emploi/${slug}`,
               content: job,
             },
           })
@@ -257,7 +257,7 @@ exports.createPages = ({ actions, graphql }) => {
         const blogTemplate = path.resolve("./src/detailPages/blog-details.js")
 
         result.data.weblexQuery.nodes?.forEach(page => {
-          const slug = page.id
+          const slug = slugify(page?.title)
           createPage({
             path: `articles/${slug}`,
             component: blogTemplate,
