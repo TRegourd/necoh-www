@@ -1,7 +1,7 @@
 ---
 title: Nos coordonnées
 text: Nous sommes à votre disposition du Lundi au Vendredi de 09h à 18h.
-phone: +33 (0) 4 79 81 88 81
+phone: +33 4 79 81 88 81
 email: contact@necoh.fr
 addressLine1: 22 route de Challes
 addressLine2: 73000 BARBERAZ

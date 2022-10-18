@@ -1,4 +1,3 @@
-import dayjs from "dayjs"
 import React from "react"
 import slugify from "slugify"
 import { Link } from "~components"
@@ -23,7 +22,7 @@ export default function ServicesCard({ title, address, hours, time, ...rest }) {
       <Card.Button
         className="btn-secondary"
         as={Link}
-        to={`/careers/${title + slugify(hours)}`}
+        to={`/emploi/${title + slugify(hours)}`}
       >
         Voir l'offre
       </Card.Button>

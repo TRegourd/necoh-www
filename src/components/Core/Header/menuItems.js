@@ -7,7 +7,7 @@ export const menuItems = [
     name: "company",
     label: "Necoh",
     items: [
-      { name: "about", label: "A propos de nous" },
+      { name: "a-propos", label: "A propos de nous" },
       {
         name: "services",
         label: "Nos services",
@@ -20,19 +20,19 @@ export const menuItems = [
           { name: "services/juridique", label: "Juridique" },
         ],
       },
-      { name: "careers", label: "Nous rejoindre" },
+      { name: "emploi", label: "Nous rejoindre" },
       { name: "contact", label: "Nous contacter" },
-      { name: "utils", label: "Liens et outils" },
+      { name: "outils", label: "Liens et outils" },
     ],
   },
   {
-    name: "needs",
+    name: "clients",
     label: "Vos besoins",
     items: [
-      { name: "customers/create", label: "Créer une entreprise" },
-      { name: "customers/develop", label: "Développer mon business" },
-      { name: "customers/transform", label: "Transformer mon activité" },
-      { name: "customers/acquire", label: "Acquérir ou transmettre" },
+      { name: "clients/creer", label: "Créer une entreprise" },
+      { name: "clients/developper", label: "Développer mon business" },
+      { name: "clients/transformer", label: "Transformer mon activité" },
+      { name: "clients/acquerir", label: "Acquérir ou transmettre" },
     ],
   },
 
@@ -41,7 +41,7 @@ export const menuItems = [
     label: "Actualités",
     items: [
       { name: "articles", label: "Actualités règlementaires" },
-      { name: "feed", label: "Actualités Necoh" },
+      { name: "news", label: "Actualités Necoh" },
     ],
   },
 ]

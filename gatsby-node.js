@@ -141,7 +141,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
           customersQuery: allMarkdownRemark(
-            filter: { fields: { slug: { glob: "/customers/*" } } }
+            filter: { fields: { slug: { glob: "/clients/*" } } }
           ) {
             nodes {
               frontmatter {
