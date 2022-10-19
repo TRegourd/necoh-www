@@ -45,7 +45,16 @@ export default function BlogDetails({ content, articlesList }) {
           <Row className="justify-content-center">
             <Col className="col-lg-7">
               <Details.Box mb="30px" mbLG="55px">
-                <Details.Title as="h1">{content?.title}</Details.Title>
+                <Details.Image mb="35px" mbLG="55px">
+                  {" "}
+                  <GatsbyImage
+                    image={
+                      content?.localImage?.childImageSharp?.gatsbyImageData
+                    }
+                    alt={content?.title}
+                  />
+                </Details.Image>
+                {/* <Details.Title as="h1">{content?.title}</Details.Title> */}
                 <Details.MetaInfo>
                   <Details.Date>
                     {dayjs(content?.isoDate).format("DD-MM-YYYY")}
@@ -53,7 +62,6 @@ export default function BlogDetails({ content, articlesList }) {
                 </Details.MetaInfo>
               </Details.Box>
               <Details.Box>
-                <Details.Image mb="35px" mbLG="55px"></Details.Image>
                 <Details.Text>
                   <Markdown>{content.content}</Markdown>
                 </Details.Text>

@@ -75,7 +75,7 @@ export default function BlogSidebarOne({ articles, images }) {
                         className="col-xl-4 col-lg-6 col-md-6 col-xs-9"
                         key={post.title + post?.isoDate}
                       >
-                        <BlogCard post={post} images={images} />
+                        <BlogCard post={post} />
                       </Col>
                     )
                   })}

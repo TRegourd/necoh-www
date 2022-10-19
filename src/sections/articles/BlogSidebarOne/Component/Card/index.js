@@ -4,18 +4,12 @@ import { SuperTag } from "~components"
 import Card from "./style"
 import { GatsbyImage } from "gatsby-plugin-image"
 import slugify from "slugify"
-export default function BlogCard({ post, images }) {
+export default function BlogCard({ post }) {
   return (
     <Card>
       <Card.Image>
         <GatsbyImage
-          image={
-            images?.find(img => {
-              return img.parent.internal.description?.includes(
-                post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/")
-              )
-            })?.gatsbyImageData
-          }
+          image={post?.localImage?.childImageSharp?.gatsbyImageData}
           alt={post?.title}
         />
       </Card.Image>

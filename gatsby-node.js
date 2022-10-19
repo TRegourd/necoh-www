@@ -23,16 +23,10 @@ exports.sourceNodes = async ({
   actions,
   createContentDigest,
   createNodeId,
-
-  getNodesByType,
-  store,
-  node,
-  getCache,
 }) => {
-  const { createNode, createNodeField } = actions
+  const { createNode } = actions
 
   const WEBLEX_POST_NODE_TYPE = `WeblexPost`
-  const WEBLEX_IMG_NODE_TYPE = `WeblexImg`
   const FACEBOOK_FEED_NODE_TYPE = `FacebookFeed`
 
   let parser = new Parser()
@@ -48,6 +42,7 @@ exports.sourceNodes = async ({
   weblexData.items.slice(0, 300).forEach((post, i) =>
     createNode({
       ...post,
+      image: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
       id: createNodeId(
         `${WEBLEX_POST_NODE_TYPE}-${Math.random()}-${Math.random()}`
       ),
@@ -75,25 +70,25 @@ exports.sourceNodes = async ({
     })
   )
 
-  const processWeblexImg = async post => {
-    let fileNode
-    try {
-      fileNode = await createRemoteFileNode({
-        url: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
-        store,
-        getCache,
-        createNode,
-        createNodeId,
-      })
-    } catch (error) {
-      console.warn("error creating node", error)
-    }
-  }
+  // const processWeblexImg = async post => {
+  //   let fileNode
+  //   try {
+  //     fileNode = await createRemoteFileNode({
+  //       url: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
+  //       store,
+  //       getCache,
+  //       createNode,
+  //       createNodeId,
+  //     })
+  //   } catch (error) {
+  //     console.warn("error creating node", error)
+  //   }
+  // }
 
-  weblexData.items.slice(0, 300).forEach(post => {
-    const nodeData = processWeblexImg(post)
-    createNode(nodeData)
-  })
+  // weblexData.items.slice(0, 10).forEach(post => {
+  //   const nodeData = processWeblexImg(post)
+  //   createNode(nodeData)
+  // })
 
   return
 }
@@ -191,9 +186,10 @@ exports.createPages = ({ actions, graphql }) => {
             sort: { fields: isoDate, order: DESC }
           ) {
             nodes {
-              enclosure {
-                type
-                url
+              localImage {
+                childImageSharp {
+                  gatsbyImageData
+                }
               }
               content
               categories
