@@ -3,10 +3,11 @@ title: Crédits
 text: >-
   #### Editeur du site
 
+
   Le site [www.necoh.fr](https://incandescent-beijinho-a03335.netlify.app/credits/www.necoh.fr)
 
 
-  Est exploité par la société : Necoh – SOCIETE D’EXPERTISE ET DE GESTION COMPTABLE, société anonyme au capital social de XXX €
+  Est exploité par la société : Necoh , société anonyme au capital social de XXX €
 
 
   Immatriculée au RCS de CHAMBERY sous le numéro XXX
@@ -29,7 +30,9 @@ text: >-
 
   #### Hébergeur du Site
 
+
   Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, California 94104. USA
+
 
   ##### Conception et réalisation
 
@@ -48,6 +51,6 @@ text: >-
 
   ##### Crédits Images
 
-  Hero Image :
-  About Image :
+
+  Hero Image : About Image :
 ---
