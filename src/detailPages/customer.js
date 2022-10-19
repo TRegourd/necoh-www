@@ -7,36 +7,17 @@ import Features from "~sections/customers/Features"
 
 import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../libs/NecohHeader"
-import { graphql } from "gatsby"
 
-export default function Customer({ pageContext, data }) {
-  const { content } = pageContext
+export default function Customer({ pageContext }) {
+  const { content, images } = pageContext
 
   return (
     <PageWrapper headerConfig={NecohHeader}>
       <BreadCrumbSection content={content?.customerHeader} />
-      <About images={data.images?.nodes} content={content?.customerIntro} />
+      <About images={images} content={content?.customerIntro} />
       <Features content={content?.customerFeatures} />
       <CTA content={content?.customerCTA} />
       <Footer />
     </PageWrapper>
   )
 }
-
-export const query = graphql`
-  query {
-    images: allFile(
-      filter: {
-        relativeDirectory: { eq: "" }
-        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-      }
-    ) {
-      nodes {
-        relativePath
-        childrenImageSharp {
-          gatsbyImageData
-        }
-      }
-    }
-  }
-`

@@ -24,7 +24,7 @@ export default function articles({ data }) {
             subtitle: "Les actualités de la profession",
           }}
         />
-        <BlogSidebarOne articles={[]} images={[]} />
+        <BlogSidebarOne articles={[]} />
         <Footer />
       </PageWrapper>
     )
