@@ -12,24 +12,21 @@ careersIntro:
     doloremque in voluptatum doloribus nam porro fugit.
 
 
-    Et eveniet perferendis ut magnam veniam aut voluptates recusandae ab quia impedit? Et beatae atque qui totam consequuntur ad enim omnis et tenetur quasi ad dolorum enim aut commodi quia? In autem deleniti eum quasi similique et eaque voluptas aut neque officiis. Aut repellendus Quis sit vitae suscipit ut maxime deserunt ea laborum praesentium.
+    Et eveniet perferendis ut magnam veniam aut voluptates recusandae ab quia impedit? Et beatae atque qui totam consequuntur ad enim omnis et tenetur quasi ad dolorum enim aut commodi quia? In autem deleniti eum quasi similique et eaque voluptas aut neque officiis. 
   image: austin-kehmeier-lyikexa4zqa-unsplash.jpeg
 benefits:
   - title: Esprit d'équipe
-    desc:
-      "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
+    desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
     logo: people-group.svg
     color: "#f39200"
   - title: Flexibilité
-    desc:
-      "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
+    desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
     logo: rainbow-solid.svg
     color: "#be1522"
   - title: Taille Humaine
-    desc:
-      "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
+    desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
       esse eius ut dolorem consequatur id sint omnis. "
     logo: feather-solid.svg
     color: "#cbbb9f"
