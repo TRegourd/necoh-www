@@ -58,6 +58,7 @@ exports.sourceNodes = async ({
   facebookData.items.forEach((post, i) =>
     createNode({
       ...post,
+      image: post.enclosure?.url,
       id: createNodeId(
         `${FACEBOOK_FEED_NODE_TYPE}-${Math.random()}-${Math.random()}`
       ),

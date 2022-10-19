@@ -36,6 +36,11 @@ export const query = graphql`
         link
         pubDate
         title
+        localImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
     newsHeader: markdownRemark(fields: { slug: { eq: "/news" } }) {

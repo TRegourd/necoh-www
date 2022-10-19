@@ -50,5 +50,12 @@ module.exports = {
         imagePath: "image",
       },
     },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: "FacebookFeed",
+        imagePath: "image",
+      },
+    },
   ],
 }
