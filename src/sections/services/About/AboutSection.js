@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap"
 import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
 import SectionTitle from "./Components/SectionTitle"
 import About from "./style"
-import { graphql, useStaticQuery } from "gatsby"
 
 export default function AboutusSection({ content, logo, color, images }) {
   const serviceLogo = getImage(

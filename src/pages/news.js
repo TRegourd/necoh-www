@@ -7,30 +7,42 @@ import Footer from "~sections/shared/Footer"
 import { NecohHeader } from "../libs/NecohHeader"
 
 export default function feed({ data }) {
-  return (
-    <PageWrapper headerConfig={NecohHeader}>
-      <BreadCrumbSection content={data.newsHeader?.frontmatter} />
-      <BlogRegular
-        feed={data.facebookFeed?.nodes}
-        content={data.newsHeader?.frontmatter}
-      />
-      <Footer />
-    </PageWrapper>
-  )
+  if (data)
+    return (
+      <PageWrapper headerConfig={NecohHeader}>
+        <BreadCrumbSection content={data.newsHeader?.frontmatter} />
+        <BlogRegular
+          feed={data.facebookFeed?.nodes}
+          content={data.newsHeader?.frontmatter}
+        />
+        <Footer />
+      </PageWrapper>
+    )
+  else
+    return (
+      <PageWrapper headerConfig={NecohHeader}>
+        <BreadCrumbSection
+          content={{
+            title: "News",
+            subtitle: "Les actualités Necoh",
+          }}
+        />
+        <BlogRegular feed={[]} />
+        <Footer />
+      </PageWrapper>
+    )
 }
 
 export const query = graphql`
   query {
     facebookFeed: allFacebookFeed(
-      limit: 10
+      limit: 12
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {
         content
         contentSnippet
         creator
-        dc_creator
-        guid
         id
         isoDate
         link

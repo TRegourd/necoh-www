@@ -2,7 +2,6 @@ const path = require("path")
 const { default: slugify } = require("slugify")
 const dayjs = require("dayjs")
 let Parser = require("rss-parser")
-const { createRemoteFileNode } = require("gatsby-source-filesystem")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -202,6 +201,19 @@ exports.createPages = ({ actions, graphql }) => {
               title
             }
           }
+          images: allFile(
+            filter: {
+              relativeDirectory: { eq: "" }
+              extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+            }
+          ) {
+            nodes {
+              relativePath
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
         }
       `).then(result => {
         if (result.errors) {
@@ -219,6 +231,7 @@ exports.createPages = ({ actions, graphql }) => {
             context: {
               slug: `${slug}`,
               content: page.frontmatter,
+              images: result?.data?.images?.nodes,
             },
           })
         })
@@ -233,6 +246,7 @@ exports.createPages = ({ actions, graphql }) => {
             context: {
               slug: `${slug}`,
               content: page.frontmatter,
+              images: result?.data?.images?.nodes,
             },
           })
         })

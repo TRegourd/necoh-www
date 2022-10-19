@@ -95,7 +95,9 @@ Details.Date = styled(Box)`
   }
 `
 
-Details.Image = styled(Box)``
+Details.Image = styled(Box)`
+  text-align: center;
+`
 Details.Text = styled(Paragraph)`
   font-size: 18px;
   font-weight: 400;
