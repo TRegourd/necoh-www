@@ -7,7 +7,7 @@ const BUILD_HOOK =
 
 // Schedules the handler function to run at midnight on
 // Mondays, Wednesday, and Friday
-const handler = schedule("0-59/20 * * * *", async () => {
+const handler = schedule("0 12 * * 1-5", async () => {
   await fetch(BUILD_HOOK, {
     method: "POST",
   }).then(response => {
