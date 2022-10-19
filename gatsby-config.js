@@ -37,12 +37,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-netlify-cms",
     },
-    {
-      resolve: "gatsby-plugin-zopfli",
-      options: {
-        extensions: ["css", "html", "js", "svg"],
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-zopfli",
+    //   options: {
+    //     extensions: ["css", "html", "js", "svg"],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-remote-images`,
       options: {
