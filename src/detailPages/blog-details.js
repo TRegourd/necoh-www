@@ -13,7 +13,9 @@ export default function BlogDetails({ pageContext, data }) {
 
   return (
     <PageWrapper headerConfig={NecohHeader}>
-      <BreadCrumbSection content={{ title: "Article" }} />
+      <BreadCrumbSection
+        content={{ title: content?.title ? content.title : "Article" }}
+      />
       <BlogDetailsSection
         content={content}
         articlesList={data.weblexFeed?.nodes}
@@ -30,18 +32,10 @@ export const query = graphql`
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {
-        content
-        categories
-        contentSnippet
         id
         isoDate
-        link
         pubDate
         title
-        enclosure {
-          type
-          url
-        }
       }
     }
   }

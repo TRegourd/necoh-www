@@ -43,5 +43,19 @@ module.exports = {
         extensions: ["css", "html", "js", "svg"],
       },
     },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: "WeblexPost",
+        imagePath: "image",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-remote-images`,
+      options: {
+        nodeType: "FacebookFeed",
+        imagePath: "image",
+      },
+    },
   ],
 }

@@ -7,16 +7,27 @@ import { NecohHeader } from "../libs/NecohHeader"
 import { graphql } from "gatsby"
 
 export default function articles({ data }) {
-  return (
-    <PageWrapper headerConfig={NecohHeader}>
-      <BreadCrumbSection content={data.articlesHeader?.frontmatter} />
-      <BlogSidebarOne
-        articles={data.weblexFeed?.nodes}
-        images={data.images?.nodes}
-      />
-      <Footer />
-    </PageWrapper>
-  )
+  if (data)
+    return (
+      <PageWrapper headerConfig={NecohHeader}>
+        <BreadCrumbSection content={data.articlesHeader?.frontmatter} />
+        <BlogSidebarOne articles={data.weblexFeed?.nodes} />
+        <Footer />
+      </PageWrapper>
+    )
+  else
+    return (
+      <PageWrapper headerConfig={NecohHeader}>
+        <BreadCrumbSection
+          content={{
+            title: "Articles",
+            subtitle: "Les actualités de la profession",
+          }}
+        />
+        <BlogSidebarOne articles={[]} images={[]} />
+        <Footer />
+      </PageWrapper>
+    )
 }
 
 export const query = graphql`
@@ -26,9 +37,10 @@ export const query = graphql`
       sort: { fields: isoDate, order: DESC }
     ) {
       nodes {
-        enclosure {
-          type
-          url
+        localImage {
+          childImageSharp {
+            gatsbyImageData
+          }
         }
         content
         categories
@@ -44,16 +56,6 @@ export const query = graphql`
       frontmatter {
         title
         subtitle
-      }
-    }
-    images: allImageSharp {
-      nodes {
-        gatsbyImageData
-        parent {
-          internal {
-            description
-          }
-        }
       }
     }
   }
