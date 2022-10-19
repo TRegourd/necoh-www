@@ -1,6 +1,6 @@
 import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { GatsbyImage, getImage, StaticImage as Img } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SectionTitle from "./Components/SectionTitle"
 import About from "./style"
 
