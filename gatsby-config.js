@@ -57,5 +57,17 @@ module.exports = {
         imagePath: "image",
       },
     },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: "G-VR6P0W0ETP",
+          cookieName: "gatsby-gdpr-google-analytics",
+          anonymize: true,
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ["production"],
+      },
+    },
   ],
 }
