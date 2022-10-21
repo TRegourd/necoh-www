@@ -57,8 +57,10 @@ const PageWrapper = ({
         hideOnAccept
         onAccept={handleAccept}
         visible="byCookieValue"
+        overlay
       >
-        Ce site utilise des cookies pour son bon fonctionnement
+        Notre site utilise des cookies pour son bon fonctionnement
+        <i className="fa fa-cookie" style={{ paddingLeft: "10px" }} />
       </CookieConsent>
       {children}
     </>
