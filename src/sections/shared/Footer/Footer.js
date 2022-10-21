@@ -55,12 +55,12 @@ export default function FooterOne() {
                     <Footer.Title>Necoh</Footer.Title>
                     <Footer.List>
                       <Footer.ListItems>
-                        <a href="/about" aria-label="about">
+                        <a href="/a-propos" aria-label="about">
                           A propos
                         </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/careers" aria-label="careers">
+                        <a href="/emploi" aria-label="careers">
                           Nous rejoindre
                         </a>
                       </Footer.ListItems>
