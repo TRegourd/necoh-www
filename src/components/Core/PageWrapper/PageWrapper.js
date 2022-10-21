@@ -56,6 +56,7 @@ const PageWrapper = ({
         flipButtons
         hideOnAccept
         onAccept={handleAccept}
+        visible="byCookieValue"
       >
         Ce site utilise des cookies pour son bon fonctionnement
       </CookieConsent>
