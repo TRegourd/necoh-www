@@ -2,11 +2,11 @@ import styled from "styled-components/macro"
 import { Box, Heading, Button, Paragraph } from "~styled"
 
 const Credits = styled(Box)`
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 20px;
 
   @media (min-width: 768px) {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
   }
   @media (min-width: 992px) {
