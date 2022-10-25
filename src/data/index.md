@@ -65,7 +65,7 @@ indexBrands:
       link: Je recherche un avocat
       logo: necohjuridique_logocouleursnoir-copie.png
     fiscalite:
-      title: Fiscalité
+      title: Fiscalité des particuliers
       desc: Necoh Fiscalité des particuliers
       link: J'ai des questions fiscales
       logo: necohfiscale_logocouleursnoir-copie.png
