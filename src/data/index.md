@@ -1,11 +1,10 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle: "Notre collectif d’experts-comptables, avocats, juristes, huissiers,
-    notaires, auditeurs, consultants et recruteurs s’engage aux côtés des
-    entrepreneurs, dirigeants et décideurs d’entreprises en mouvement, autour
-    d’une même mission : donner à chacun de l’élan pour grandir jour après
-    jour."
+  subtitle: "Notre équipe pluridisciplinaire d’experts-comptables, avocats,
+    juristes, auditeurs et consultants s’engage aux côtés des entrepreneurs,
+    dirigeants et décideurs d’entreprises en mouvement, autour d’une même
+    mission : donner à chacun de l’élan pour grandir jour après jour."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -16,9 +15,9 @@ indexHero:
     - text: Audit.
     - text: Fiscalité.
     - text: Social.
-    - text: Conseil.
+    - text: Conseils.
 indexAbout:
-  title: Découvrez Necoh, experts au service des entreprises et particuliers
+  title: Découvrez NECOH, experts au service des entreprises et des particuliers
   subtitle: A propos
   textLeft: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
     cupiditate ipsam a consectetur consectetur! Et esse consectetur veritatis
