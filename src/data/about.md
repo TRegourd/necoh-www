@@ -25,7 +25,7 @@ aboutIntro:
         durable.
       image: handshake-simple.svg
       color: "#936037"
-    - name: Disponible
+    - name: Disponibilité
       desc: Nous sommes à votre écoute quand vous en avez le plus besoin.
       image: clock-rotate-left.svg
       color: "#cbbb9f"
