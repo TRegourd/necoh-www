@@ -58,7 +58,7 @@ indexBrands:
     social:
       title: Social
       desc: Necoh Social
-      link: J'ai une paie ou un contrat de travail à établir
+      link: J'ai des salariés et je souhaite en déléguer la gestion
       logo: necohsociale_logocouleursnoir-copie.png
     juridique:
       title: Juridique
