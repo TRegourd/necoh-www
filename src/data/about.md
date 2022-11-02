@@ -26,7 +26,7 @@ aboutIntro:
       image: handshake-simple.svg
       color: "#936037"
     - name: Disponible
-      desc: Nous sommes disponibles et proactifs quand vous en avez le plus besoin.
+      desc: Nous sommes à votre écoute quand vous en avez le plus besoin.
       image: clock-rotate-left.svg
       color: "#cbbb9f"
   video: LWZ7iytIA6k
