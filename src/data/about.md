@@ -17,15 +17,15 @@ aboutIntro:
     unde reprehenderit et deserunt expedita.
   values:
     - name: Esprit d'équipe
-      desc: Un collectif fort engagé à vos côtés
+      desc: Nous sommes un collectif fort engagé à vos côtés.
       color: "#f39200"
       image: people-group.svg
     - name: Confiance
-      desc: xxx
+      desc: Le lien indispensable qui nous unit
       image: handshake-simple.svg
       color: "#936037"
-    - name: Disponibilité
-      desc: "Une disponibilité et une réactivité comme gage "
+    - name: Disponible
+      desc: " Anticipons vos besoins"
       image: clock-rotate-left.svg
       color: "#cbbb9f"
   video: LWZ7iytIA6k
