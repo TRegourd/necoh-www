@@ -1,10 +1,10 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle: "Notre équipe pluridisciplinaire d’experts-comptables, avocats,
-    juristes, auditeurs et consultants s’engage aux côtés des entrepreneurs,
-    dirigeants et décideurs d’entreprises en mouvement, autour d’une même
-    mission : donner à chacun de l’élan pour grandir jour après jour."
+  subtitle: "Notre équipe d’experts-comptables, auditeurs, avocats, consultants et
+    juristes accompagne les entrepreneurs au quotidien et dans leur
+    développement : créons ensemble votre entreprise de demain dans des
+    conditions durables de réussite."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
