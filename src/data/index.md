@@ -1,11 +1,10 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle: "Notre collectif d’experts-comptables, avocats, juristes, huissiers,
-    notaires, auditeurs, consultants et recruteurs s’engage aux côtés des
-    entrepreneurs, dirigeants et décideurs d’entreprises en mouvement, autour
-    d’une même mission : donner à chacun de l’élan pour grandir jour après
-    jour."
+  subtitle: "Notre équipe pluridisciplinaire d’experts-comptables, avocats,
+    juristes, auditeurs et consultants s’engage aux côtés des entrepreneurs,
+    dirigeants et décideurs d’entreprises en mouvement, autour d’une même
+    mission : donner à chacun de l’élan pour grandir jour après jour."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -16,29 +15,31 @@ indexHero:
     - text: Audit.
     - text: Fiscalité.
     - text: Social.
-    - text: Conseil.
+    - text: Conseils.
 indexAbout:
-  title: Découvrez Necoh, experts au service des entreprises et particuliers
+  title: Découvrez NECOH, experts au service des entreprises et des particuliers
   subtitle: A propos
-  textLeft: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
-    cupiditate ipsam a consectetur consectetur! Et esse consectetur veritatis
-    quos ut minima fugiat aut assumenda quos sit deserunt iure nam accusamus
-    quisquam.
-  textRight: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum
-    quo cupiditate ipsam a consectetur consectetur! Et esse consectetur
-    veritatis quos ut minima fugiat aut assumenda quos sit deserunt iure nam
-    accusamus quisquam.
+  textLeft: >-
+    Porté par un territoire dynamique, NECOH prône un attachement local, gage de
+    proximité dans chacune des relations professionnelles que nous tissons.
+
+    Nous œuvrons quotidiennement à garantir les conditions indispensables à un travail de qualité dans le respect et la bienveillance que chacun mérite. 
+  textRight: >-
+    Nous cultivons la confiance mutuelle comme un lien puissant et étroit nous
+    permettant de vous accompagner simplement et efficacement. 
+
+    Nous déployons une écoute active au service de la réussite de votre projet professionnel afin de vous délivrer les outils et les conseils adéquats. 
   features:
-    - name: Un cabinet à taille Humaine
+    - name: Un cabinet à taille humaine
     - name: Des Experts à votre service
-    - name: Proche de vous au quotidien
+    - name: Un collectif pour vous accompagner au quotidien
   numbers:
     - number: "250"
       text: Clients
-    - number: "4"
-      text: Départements
-    - number: 100%
-      text: Satisfaction Client
+    - number: "2"
+      text: Bureaux
+    - number: 1 €
+      text: CA sous gestion
   image: scott-graham-5fnmwej4taa-unsplash.jpeg
 indexBrands:
   title: Nos Services
@@ -47,32 +48,33 @@ indexBrands:
     comptabilite:
       title: Comptabilité
       desc: Necoh Expertise Comptable
-      link: Je recherche un expert comptable
+      link: Je recherche un expert-comptable pour m'accompagner
       logo: necohcomptable_logocouleursnoir-copie-2.png
     conseil:
-      title: Conseil
+      title: Conseils
       desc: Necoh Conseil
-      link: J'ai besoin d'accompagnement
+      link: J'ai une problématique et je souhaite échanger sur les solutions possibles
       logo: necohcomptable_logocouleursnoir-copie-2.png
     social:
       title: Social
       desc: Necoh Social
-      link: J'ai une paye ou un contrat à faire
+      link: J'ai une paie ou un contrat de travail à établir
       logo: necohsociale_logocouleursnoir-copie.png
     juridique:
       title: Juridique
       desc: Necoh Juridique
-      link: Je recherche un avocat
+      link: Je recherche l'assistance d'un avocat pour me guider tout au long de la
+        vie de mon entreprise
       logo: necohjuridique_logocouleursnoir-copie.png
     fiscalite:
       title: Fiscalité des particuliers
       desc: Necoh Fiscalité des particuliers
-      link: J'ai des questions fiscales
+      link: Je désire confirer mon impôt sur le revenu ou mes locations meublées
       logo: necohfiscale_logocouleursnoir-copie.png
     audit:
       title: Audit
       desc: Necoh Audit
-      link: Je dois faire auditer mes comptes
+      link: J'ai besoin d'auditer mes comptes ou ceux d'une entreprise cible
       logo: necohaudit_logonoir-copie.png
   image: wepik-photo-mode-202295-95618.png
 indexTestimonials:
