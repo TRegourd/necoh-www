@@ -19,14 +19,16 @@ indexHero:
 indexAbout:
   title: Découvrez NECOH, experts au service des entreprises et des particuliers
   subtitle: A propos
-  textLeft: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum quo
-    cupiditate ipsam a consectetur consectetur! Et esse consectetur veritatis
-    quos ut minima fugiat aut assumenda quos sit deserunt iure nam accusamus
-    quisquam.
-  textRight: Lorem ipsum dolor sit amet. Ut similique quia et accusamus dolorum
-    quo cupiditate ipsam a consectetur consectetur! Et esse consectetur
-    veritatis quos ut minima fugiat aut assumenda quos sit deserunt iure nam
-    accusamus quisquam.
+  textLeft: >-
+    Porté par un territoire dynamique, NECOH prône un attachement local, gage de
+    proximité dans chacune des relations professionnelles que nous tissons.
+
+    Nous œuvrons quotidiennement à garantir les conditions indispensables à un travail de qualité dans le respect et la bienveillance que chacun mérite. 
+  textRight: >-
+    Nous cultivons la confiance mutuelle comme un lien puissant et étroit nous
+    permettant de vous accompagner simplement et efficacement. 
+
+    Nous déployons une écoute active au service de la réussite de votre projet professionnel afin de vous délivrer les outils et les conseils adéquats. 
   features:
     - name: Un cabinet à taille humaine
     - name: Des Experts à votre service
