@@ -21,11 +21,11 @@ aboutIntro:
       color: "#f39200"
       image: people-group.svg
     - name: Confiance
-      desc: Le lien indispensable qui nous unit
+      desc: "Nous tissons un lien "
       image: handshake-simple.svg
       color: "#936037"
     - name: Disponible
-      desc: " Anticipons vos besoins"
+      desc: Nous sommes disponibles et proactifs quand vous en avez le plus besoin.
       image: clock-rotate-left.svg
       color: "#cbbb9f"
   video: LWZ7iytIA6k
