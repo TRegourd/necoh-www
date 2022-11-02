@@ -21,7 +21,8 @@ aboutIntro:
       color: "#f39200"
       image: people-group.svg
     - name: Confiance
-      desc: "Nous tissons un lien "
+      desc: Nous voulons construire ensemble ce lien et entretenir une relation
+        durable.
       image: handshake-simple.svg
       color: "#936037"
     - name: Disponible
