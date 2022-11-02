@@ -1,22 +1,20 @@
 ---
 aboutHeader:
   title: A propos de Nous
-  subtitle: Découvrez le cabinet Necoh, ses valeurs et ses équipes.
+  subtitle: Découvrez NECOH, ses valeurs et ses équipes.
 aboutIntro:
   title: Nos Valeurs
-  subtitle: Necoh
-  textLeft: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat
-    expedita sit architecto odit eum iste voluptas a nihil
-    molestiae. Non autem consectetur et corporis omnis et quae
-    internos. Ea optio fugiat ut quis cupiditate ut modi quaerat.
-    Sed necessitatibus voluptatem et modi ipsam ut unde
-    reprehenderit et deserunt expedita.
-  textRight: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat
-    expedita sit architecto odit eum iste voluptas a nihil
-    molestiae. Non autem consectetur et corporis omnis et quae
-    internos. Ea optio fugiat ut quis cupiditate ut modi quaerat.
-    Sed necessitatibus voluptatem et modi ipsam ut unde
-    reprehenderit et deserunt expedita.
+  subtitle: NECOH
+  textLeft: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat expedita
+    sit architecto odit eum iste voluptas a nihil molestiae. Non autem
+    consectetur et corporis omnis et quae internos. Ea optio fugiat ut quis
+    cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
+    unde reprehenderit et deserunt expedita.
+  textRight: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat expedita
+    sit architecto odit eum iste voluptas a nihil molestiae. Non autem
+    consectetur et corporis omnis et quae internos. Ea optio fugiat ut quis
+    cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
+    unde reprehenderit et deserunt expedita.
   values:
     - name: Humains
       desc: Nous sommes un cabinet à taille humaine
