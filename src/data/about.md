@@ -17,17 +17,22 @@ aboutIntro:
     unde reprehenderit et deserunt expedita.
   values:
     - name: Esprit d'équipe
-      desc: Un collectif fort engagé à vos côtés
+      desc: Nous sommes un collectif fort engagé à vos côtés.
       color: "#f39200"
       image: people-group.svg
     - name: Confiance
-      desc: xxx
+      desc: Nous voulons construire ensemble ce lien et entretenir une relation
+        durable.
       image: handshake-simple.svg
       color: "#936037"
-    - name: Disponibilité
-      desc: "Une disponibilité et une réactivité comme gage "
+    - name: Disponible
+      desc: Nous sommes à votre écoute quand vous en avez le plus besoin.
       image: clock-rotate-left.svg
       color: "#cbbb9f"
+    - name: Proactivité
+      desc: Nous anticipons vos problématiques pour plus de sérénité.
+      color: "#bd0821"
+      image: Necoh_Symbole.png
   video: LWZ7iytIA6k
   image: austin-distel-rxpthowuvge-unsplash.jpeg
 aboutCEO:
