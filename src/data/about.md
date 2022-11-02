@@ -29,6 +29,10 @@ aboutIntro:
       desc: Nous sommes à votre écoute quand vous en avez le plus besoin.
       image: clock-rotate-left.svg
       color: "#cbbb9f"
+    - name: Proactivité
+      desc: Nous anticipons vos problématiques pour plus de sérénité.
+      color: "#bd0821"
+      image: Necoh_Symbole.png
   video: LWZ7iytIA6k
   image: austin-distel-rxpthowuvge-unsplash.jpeg
 aboutCEO:
