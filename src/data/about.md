@@ -16,16 +16,16 @@ aboutIntro:
     cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
     unde reprehenderit et deserunt expedita.
   values:
-    - name: Humains
-      desc: Nous sommes un cabinet à taille humaine
+    - name: Esprit d'équipe
+      desc: Un collectif fort engagé à vos côtés
       color: "#f39200"
       image: people-group.svg
-    - name: Partenaires
-      desc: Nous nous engageons à vos côtés
+    - name: Confiance
+      desc: xxx
       image: handshake-simple.svg
       color: "#936037"
-    - name: Disponibles
-      desc: Nous sommes disponibles quand vous en avez le plus besoin
+    - name: Disponibilité
+      desc: "Une disponibilité et une réactivité comme gage "
       image: clock-rotate-left.svg
       color: "#cbbb9f"
   video: LWZ7iytIA6k
