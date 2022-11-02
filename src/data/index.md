@@ -67,7 +67,7 @@ indexBrands:
     fiscalite:
       title: Fiscalité des particuliers
       desc: Necoh Fiscalité des particuliers
-      link: J'ai des questions fiscales
+      link: Je désire confirer mon impôt sur le revenu ou mes locations meublées
       logo: necohfiscale_logocouleursnoir-copie.png
     audit:
       title: Audit
