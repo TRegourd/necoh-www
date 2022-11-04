@@ -53,7 +53,7 @@ indexBrands:
       title: Conseil
       desc: Necoh Conseil
       link: J'ai besoin d'accompagnement
-      logo: necohcomptable_logocouleursnoir-copie-2.png
+      logo: necohconseils_logonoir-copie.png
     social:
       title: Social
       desc: Necoh Social
