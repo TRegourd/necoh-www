@@ -54,7 +54,7 @@ indexBrands:
       title: Conseils
       desc: Necoh Conseil
       link: J'ai une problématique et je souhaite échanger sur les solutions possibles
-      logo: necohcomptable_logocouleursnoir-copie-2.png
+      logo: necohconseils_logonoir-copie.png
     social:
       title: Social
       desc: Necoh Social
