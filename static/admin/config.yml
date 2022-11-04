@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: TRegourd/necoh-www
-  branch: main
+  name: git-gateway
+  branch: prod
 media_folder: src/assets/image
 public_folder: ""
 publish_mode: editorial_workflow
