@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: prod
+  name: github
+  repo: TRegourd/necoh-www
+  branch: main
 media_folder: src/assets/image
 public_folder: ""
 publish_mode: editorial_workflow
@@ -212,11 +213,17 @@ collections:
               - { label: Image, name: image, widget: image }
           - label: Services
             name: serviceFeatures
-            widget: list
+            widget: object
             fields:
               - { label: Titre, name: title, widget: string }
-              - { label: Description, name: desc, widget: text }
-              - { label: Logo (uniquement .svg), name: logo, widget: image }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+              - label: Services
+                name: features
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Logo (uniquement .svg), name: logo, widget: image }
           - label: Action
             name: serviceCTA
             widget: object
@@ -244,11 +251,17 @@ collections:
               - { label: Image, name: image, widget: image }
           - label: Services
             name: serviceFeatures
-            widget: list
+            widget: object
             fields:
               - { label: Titre, name: title, widget: string }
-              - { label: Description, name: desc, widget: text }
-              - { label: Logo (uniquement .svg), name: logo, widget: image }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+              - label: Services
+                name: features
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Logo (uniquement .svg), name: logo, widget: image }
           - label: Action
             name: serviceCTA
             widget: object
@@ -276,11 +289,17 @@ collections:
               - { label: Image, name: image, widget: image }
           - label: Services
             name: serviceFeatures
-            widget: list
+            widget: object
             fields:
               - { label: Titre, name: title, widget: string }
-              - { label: Description, name: desc, widget: text }
-              - { label: Logo (uniquement .svg), name: logo, widget: image }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+              - label: Services
+                name: features
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Logo (uniquement .svg), name: logo, widget: image }
           - label: Action
             name: serviceCTA
             widget: object
@@ -308,11 +327,17 @@ collections:
               - { label: Image, name: image, widget: image }
           - label: Services
             name: serviceFeatures
-            widget: list
+            widget: object
             fields:
               - { label: Titre, name: title, widget: string }
-              - { label: Description, name: desc, widget: text }
-              - { label: Logo (uniquement .svg), name: logo, widget: image }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+              - label: Services
+                name: features
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Logo (uniquement .svg), name: logo, widget: image }
           - label: Action
             name: serviceCTA
             widget: object
@@ -340,11 +365,17 @@ collections:
               - { label: Image, name: image, widget: image }
           - label: Services
             name: serviceFeatures
-            widget: list
+            widget: object
             fields:
               - { label: Titre, name: title, widget: string }
-              - { label: Description, name: desc, widget: text }
-              - { label: Logo (uniquement .svg), name: logo, widget: image }
+              - { label: Sous-Titre, name: subtitle, widget: string }
+              - label: Services
+                name: features
+                widget: list
+                fields:
+                  - { label: Titre, name: title, widget: string }
+                  - { label: Description, name: desc, widget: text }
+                  - { label: Logo (uniquement .svg), name: logo, widget: image }
           - label: Action
             name: serviceCTA
             widget: object
