@@ -2,8 +2,8 @@
 serviceHeader:
   title: Conseil aux entreprises
   subtitle: Mission de conseil en gestion d'entreprise
-  logo: necohcomptable_logocouleursnoir-copie.png
-  color: "#cbbb9f"
+  logo: necohconseils_logonoir.png
+  color: "#9f4f2d"
 serviceIntro:
   title: A propos
   subtitle: Aut debitis eveniet aut quas quia et inventore nulla qui itaque
@@ -17,19 +17,16 @@ serviceFeatures:
   subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
   features:
     - title: Création d'entreprise
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: rainbow-solid.svg
     - title: Bilan Comptable
-      desc:
-        "A few decent projects can keep your business very healthy for a long
+      desc: "A few decent projects can keep your business very healthy for a long
         time. "
       logo: feather-solid.svg
     - title: Conseil en Gestion
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: bolt-solid.svg
