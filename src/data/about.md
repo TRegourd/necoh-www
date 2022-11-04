@@ -1,40 +1,43 @@
 ---
 aboutHeader:
   title: A propos de Nous
-  subtitle: Découvrez le cabinet Necoh, ses valeurs et ses équipes.
+  subtitle: Découvrez NECOH, ses valeurs et ses équipes.
 aboutIntro:
   title: Nos Valeurs
-  subtitle: Necoh
-  textLeft: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat
-    expedita sit architecto odit eum iste voluptas a nihil
-    molestiae. Non autem consectetur et corporis omnis et quae
-    internos. Ea optio fugiat ut quis cupiditate ut modi quaerat.
-    Sed necessitatibus voluptatem et modi ipsam ut unde
-    reprehenderit et deserunt expedita.
-  textRight: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat
-    expedita sit architecto odit eum iste voluptas a nihil
-    molestiae. Non autem consectetur et corporis omnis et quae
-    internos. Ea optio fugiat ut quis cupiditate ut modi quaerat.
-    Sed necessitatibus voluptatem et modi ipsam ut unde
-    reprehenderit et deserunt expedita.
+  subtitle: NECOH
+  textLeft: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat expedita
+    sit architecto odit eum iste voluptas a nihil molestiae. Non autem
+    consectetur et corporis omnis et quae internos. Ea optio fugiat ut quis
+    cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
+    unde reprehenderit et deserunt expedita.
+  textRight: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat expedita
+    sit architecto odit eum iste voluptas a nihil molestiae. Non autem
+    consectetur et corporis omnis et quae internos. Ea optio fugiat ut quis
+    cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
+    unde reprehenderit et deserunt expedita.
   values:
-    - name: Humains
-      desc: Nous sommes un cabinet à taille humaine
+    - name: Esprit d'équipe
+      desc: Nous sommes un collectif fort engagé à vos côtés.
       color: "#f39200"
       image: people-group.svg
-    - name: Partenaires
-      desc: Nous nous engageons à vos côtés
+    - name: Confiance
+      desc: Nous voulons construire ensemble ce lien et entretenir une relation
+        durable.
       image: handshake-simple.svg
       color: "#936037"
-    - name: Disponibles
-      desc: Nous sommes disponibles quand vous en avez le plus besoin
+    - name: Disponibilité
+      desc: Nous sommes à votre écoute quand vous en avez le plus besoin.
       image: clock-rotate-left.svg
       color: "#cbbb9f"
+    - name: Proactivité
+      desc: Nous anticipons vos problématiques pour plus de sérénité.
+      color: "#bd0821"
+      image: Necoh_Symbole.png
   video: LWZ7iytIA6k
   image: austin-distel-rxpthowuvge-unsplash.jpeg
 aboutCEO:
   title: Le mot du président
-  subtitle: La raison d'être de Necoh
+  subtitle: La raison d'être de NECOH
   image: hannah-nicollet-jq2d4i-2eyw-unsplash.jpeg
   text: >-
     > Lorem ipsum dolor sit amet. Maiores suscipit qui blanditiis culpa qui

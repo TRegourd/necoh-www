@@ -1,4 +1,4 @@
 ---
 title: Articles
-subtitle: Les dernières actualités fiscales et juridiques
+subtitle: Les dernières actualités fiscales, juridiques et sociales
 ---
