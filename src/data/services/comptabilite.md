@@ -50,7 +50,7 @@ serviceFeatures:
         demain c'est le passage à la facturation électronique et nous répondons
         présent. "
       logo: clock-rotate-left.svg
-    - title: Transmission / reprise de votre entreprise
+    - title: "Transmission / Reprise "
       desc: >
         Il est temps de passer le flambeau ? Notre accompagnement s'articule
         autour de l'évaluation de votre entreprise, de la recherche du
