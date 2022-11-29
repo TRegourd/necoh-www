@@ -21,12 +21,12 @@ serviceFeatures:
       desc: >+
         Vous avez un projet en tête et vous souhaitez le concrétiser ? 
 
-        Prenons le temps d'échanger sur sa faisabilité et sur sa viabilité. Avec nos outils et nos expertises variés, nous construirons ensemble vos prévisionnels d'activité pour la réussite de votre projet. 
+        Prenons le temps d'échanger sur sa faisabilité et sur sa viabilité. Avec nos outils et nos expertises variés, nous construisons ensemble vos prévisionnels d'activité pour la réussite de votre projet. 
 
       logo: rainbow-solid.svg
     - title: Accompagnement fiscal et comptable
       desc: "Piloter une entreprise, c'est se soumettre à des obligations légales !
-        Bien entendu, nous sommes là à vos côtés pour établir vos déclarations
+        Bien entendu, nous sommes à vos côtés pour établir vos déclarations
         fiscales diverses (TVA, IS, etc.) et pour clôturer chacun de vos
         exercices comptables par un bilan lors d'un entretien privilégié. "
       logo: feather-solid.svg
@@ -44,13 +44,12 @@ serviceFeatures:
         ensemble les différentes possibilités et vous orientons vers les
         partenaires adéquats. "
     - title: Environnement digital
-      desc: "Digitaliser votre entreprise, c'est aujourd'hui primordial. NECOH vous
-        accompagne dans le choix des outils de dématérialisation afin de
-        garantir une administration fluide de votre entreprise. Le défi de
-        demain c'est le passage à la facturation électronique et nous répondons
-        présent. "
+      desc: "Se digitaliser, c'est aujourd'hui primordial. NECOH vous accompagne dans
+        le choix des outils de dématérialisation afin de garantir une
+        administration fluide de votre entreprise. Le défi de demain c'est le
+        passage à la facturation électronique et nous répondons présent. "
       logo: clock-rotate-left.svg
-    - title: Transmission / reprise de votre entreprise
+    - title: "Transmission / Reprise "
       desc: >
         Il est temps de passer le flambeau ? Notre accompagnement s'articule
         autour de l'évaluation de votre entreprise, de la recherche du
