@@ -27,11 +27,17 @@ serviceFeatures:
       logo: feather-solid.svg
     - title: Conseil en gestion
       desc: "Se conformer aux règles c'est indispensable, mais diriger une entreprise
-        c'est prendre des décisions au quotidien. Et pour cela, notre équipe est
-        à votre disposition pour l'établissement de situation intermédiaire, de
-        tableau de bord, de budgets (activité, trésorerie, etc.) et de
-        projection. "
+        c'est surtout prendre des décisions au quotidien. Et pour cela, notre
+        équipe est à votre disposition pour l'établissement de situation
+        intermédiaire, de tableau de bord, de budgets (activité, trésorerie,
+        etc.) et de projection. "
       logo: bolt-solid.svg
+    - title: Recherche de financement
+      logo: bolt-solid.svg
+      desc: "Au démarrage de votre entreprise ou tout au long de sa vie, vous aurez
+        besoin de trouver des financements. Sous quelle forme ? Nous étudions
+        ensemble les différentes possibilités et vous orientons vers les
+        partenaires adéquats. "
     - title: Environnement digital
       desc: "Digitaliser votre entreprise, c'est aujourd'hui primordial. NECOH vous
         accompagne dans le choix des outils de dématérialisation afin de
