@@ -21,7 +21,7 @@ serviceFeatures:
       desc: >+
         Vous avez un projet en tête et vous souhaitez le concrétiser ? 
 
-        Prenons le temps d'échanger sur sa faisabilité et sur sa viabilité. Avec nos outils et nos expertises variés, nous construirons ensemble vos prévisionnels d'activité pour la réussite de votre projet. 
+        Prenons le temps d'échanger sur sa faisabilité et sur sa viabilité. Avec nos outils et nos expertises variés, nous construisons ensemble vos prévisionnels d'activité pour la réussite de votre projet. 
 
       logo: rainbow-solid.svg
     - title: Accompagnement fiscal et comptable
