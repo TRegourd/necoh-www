@@ -6,10 +6,7 @@ serviceHeader:
   color: "#ab4922"
 serviceIntro:
   title: A propos
-  subtitle: Top of the list of dreams for many small firms and solo professionals
-    is to win lucrative work with big corporate clients. A few decent projects
-    can keep your business very healthy for a long time. The trouble is, those
-    lucrative corporate contracts can be extremely tricky to land.
+  subtitle: x
   image: christina-wocintechchat-com-0zx1bdv5bny-unsplash.jpeg
 serviceFeatures:
   title: X
@@ -28,12 +25,25 @@ serviceFeatures:
         fiscales diverses (TVA, IS, etc.) et pour clôturer chacun de vos
         exercices comptables par un bilan lors d'un entretien privilégié. "
       logo: feather-solid.svg
-    - title: Conseil en Gestion
+    - title: Conseil en gestion
       desc: "Se conformer aux règles c'est indispensable, mais diriger une entreprise
         c'est prendre des décisions au quotidien. Et pour cela, notre équipe est
         à votre disposition pour l'établissement de situation intermédiaire, de
         tableau de bord, de budgets (activité, trésorerie, etc.) et de
         projection. "
+      logo: bolt-solid.svg
+    - title: Environnement digital
+      desc: "Digitaliser votre entreprise, c'est aujourd'hui primordial. NECOH vous
+        accompagne dans le choix des outils de dématérialisation afin de
+        garantir une administration fluide de votre entreprise. Le défi de
+        demain c'est le passage à la facturation électronique et nous répondons
+        présent. "
+      logo: clock-rotate-left.svg
+    - title: Transmission / reprise de votre entreprise
+      desc: >
+        Il est temps de passer le flambeau ? Notre accompagnement s'articule
+        autour de l'évaluation de votre entreprise, de la recherche du
+        cessionnaire et de la formalisation de cette passation.
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'un Expert Comptable ?
