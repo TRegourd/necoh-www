@@ -44,11 +44,10 @@ serviceFeatures:
         ensemble les différentes possibilités et vous orientons vers les
         partenaires adéquats. "
     - title: Environnement digital
-      desc: "Digitaliser votre entreprise, c'est aujourd'hui primordial. NECOH vous
-        accompagne dans le choix des outils de dématérialisation afin de
-        garantir une administration fluide de votre entreprise. Le défi de
-        demain c'est le passage à la facturation électronique et nous répondons
-        présent. "
+      desc: "Se digitaliser, c'est aujourd'hui primordial. NECOH vous accompagne dans
+        le choix des outils de dématérialisation afin de garantir une
+        administration fluide de votre entreprise. Le défi de demain c'est le
+        passage à la facturation électronique et nous répondons présent. "
       logo: clock-rotate-left.svg
     - title: "Transmission / Reprise "
       desc: >
