@@ -6,7 +6,12 @@ serviceHeader:
   color: "#ab4922"
 serviceIntro:
   title: A propos
-  subtitle: x
+  subtitle: >
+    Notre rôle principal consiste à tenir la comptabilité des entreprises et à
+    établir des états financiers au travers de la mission de présentation des
+    comptes. Mais nos compétences ne se résument pas qu'à cela !
+
+    Notre service est en mesure de vous accompagner, quel que soit votre secteur d'activité, à tous les stades d'existence de votre entreprise : en phase de création, d'amorçage, de développement ou de transmission. 
   image: christina-wocintechchat-com-0zx1bdv5bny-unsplash.jpeg
 serviceFeatures:
   title: X
@@ -52,6 +57,6 @@ serviceFeatures:
         cessionnaire et de la formalisation de cette passation.
       logo: bolt-solid.svg
 serviceCTA:
-  title: Besoin d'un Expert Comptable ?
+  title: Besoin d'un Expert-Comptable ?
   desc: Contactez-nous pour débuter votre accompagnement !
 ---
