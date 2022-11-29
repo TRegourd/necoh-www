@@ -26,7 +26,7 @@ serviceFeatures:
       logo: rainbow-solid.svg
     - title: Accompagnement fiscal et comptable
       desc: "Piloter une entreprise, c'est se soumettre à des obligations légales !
-        Bien entendu, nous sommes là à vos côtés pour établir vos déclarations
+        Bien entendu, nous sommes à vos côtés pour établir vos déclarations
         fiscales diverses (TVA, IS, etc.) et pour clôturer chacun de vos
         exercices comptables par un bilan lors d'un entretien privilégié. "
       logo: feather-solid.svg
