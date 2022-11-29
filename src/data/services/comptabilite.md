@@ -29,9 +29,11 @@ serviceFeatures:
         exercices comptables par un bilan lors d'un entretien privilégié. "
       logo: feather-solid.svg
     - title: Conseil en Gestion
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+      desc: "Se conformer aux règles c'est indispensable, mais diriger une entreprise
+        c'est prendre des décisions au quotidien. Et pour cela, notre équipe est
+        à votre disposition pour l'établissement de situation intermédiaire, de
+        tableau de bord, de budgets (activité, trésorerie, etc.) et de
+        projection. "
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'un Expert Comptable ?
