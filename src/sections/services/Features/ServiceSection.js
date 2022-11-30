@@ -13,16 +13,18 @@ export default function ServiceSection({ content, color }) {
         </Service.Shape>
         <Container>
           {/* Section Title */}
-          <Row className="align-items-end justify-content-center text-start">
-            <Col xs="12" className="col-lg-7 col-md-12 col-xs-10">
-              <Service.Title as="h2" mb="0">
-                {content?.title}
-              </Service.Title>
-            </Col>
-            <Col xs="12" className="col-lg-5 col-md-12 col-xs-10">
-              <Service.Text>{content?.subtitle}</Service.Text>
-            </Col>
-          </Row>
+          {(content?.title || content?.subtitle) && (
+            <Row className="align-items-end justify-content-center text-start">
+              <Col xs="12" className="col-lg-7 col-md-12 col-xs-10">
+                <Service.Title as="h2" mb="0">
+                  {content?.title}
+                </Service.Title>
+              </Col>
+              <Col xs="12" className="col-lg-5 col-md-12 col-xs-10">
+                <Service.Text>{content?.subtitle}</Service.Text>
+              </Col>
+            </Row>
+          )}
           <Service.Box mtLG="100px" mtMD="40px">
             <Row className="justify-content-center justify-content-md-start">
               {/* Single Service */}

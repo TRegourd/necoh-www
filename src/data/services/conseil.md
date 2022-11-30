@@ -17,16 +17,19 @@ serviceFeatures:
   subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
   features:
     - title: Création d'entreprise
-      desc: A few decent projects can keep your business very healthy for a long time.
+      desc:
+        A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: rainbow-solid.svg
     - title: Bilan Comptable
-      desc: "A few decent projects can keep your business very healthy for a long
+      desc:
+        "A few decent projects can keep your business very healthy for a long
         time. "
       logo: feather-solid.svg
     - title: Conseil en Gestion
-      desc: A few decent projects can keep your business very healthy for a long time.
+      desc:
+        A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: bolt-solid.svg
