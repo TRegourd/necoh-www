@@ -1,10 +1,10 @@
 ---
 aboutHeader:
   title: A propos de Nous
-  subtitle: "  X"
+  subtitle: "Découvrez Necoh"
 aboutIntro:
-  title: "  X"
-  subtitle: Découvrez NECOH
+  title: "Notre vision"
+  subtitle: Necoh
   textLeft: NECOH est une entreprise pluridisciplinaire capable de vous
     accompagnez - en relation avec vos équipes internes - sur les problématiques
     de votre entreprise en lien avec la comptabilité, la gestion, le juridique

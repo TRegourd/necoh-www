@@ -5,7 +5,7 @@ import About from "./style"
 import SectionTitle from "./Components/SectionTitle"
 import ContentWidget from "./Components/Widget"
 import Video from "~components/VideoModal"
-import { graphql, useStaticQuery } from "gatsby"
+
 export default function AboutSection({ content, images }) {
   const image = getImage(
     images?.find(el => {

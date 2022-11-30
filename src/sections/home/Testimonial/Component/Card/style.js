@@ -54,6 +54,7 @@ Card.Text = styled(Paragraph)`
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  text-align: justify;
 `
 Card.Icon = styled(Box).attrs({ className: "text-secondary card-icon" })`
   color: #6001d3;

@@ -43,8 +43,8 @@ export default function HeroSection({ content, images }) {
                       className="btn-secondary"
                       textTransform="capitalized"
                     >
-                      <Link to="/about" className=" text-white">
-                        En savoir Plus
+                      <Link to="/a-propos" className=" text-white">
+                        En savoir plus
                       </Link>
                     </Button>
                   </Hero.Newsletter>

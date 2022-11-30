@@ -179,7 +179,7 @@ export default function FooterOne() {
                           <i className="fab fa-facebook-square" />
                         </a>
                       </Footer.SocialShareItem>
-                      <Footer.SocialShareItem>
+                      {/* <Footer.SocialShareItem>
                         <a
                           href={data.contactDetails?.frontmatter.twitter}
                           aria-label="Necoh twitter"
@@ -187,7 +187,7 @@ export default function FooterOne() {
                         >
                           <i className="fab fa-twitter" />
                         </a>
-                      </Footer.SocialShareItem>
+                      </Footer.SocialShareItem> */}
                       <Footer.SocialShareItem>
                         <a
                           href={data.contactDetails?.frontmatter.instagram}

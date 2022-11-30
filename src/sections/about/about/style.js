@@ -40,6 +40,7 @@ About.Text = styled(Paragraph)`
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.77777;
+  text-align: justify;
 `
 About.ButtonGroup = styled(Box)`
   margin-right: -17.0656px;

@@ -67,6 +67,7 @@ Card.Text = styled(Paragraph)`
   margin-bottom: 26px;
   opacity: 0.7;
   color: inherit;
+  text-align: justify;
 `
 Card.Button = styled(Box)`
   font-size: 15px;
