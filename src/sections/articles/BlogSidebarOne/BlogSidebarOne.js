@@ -30,6 +30,7 @@ export default function BlogSidebarOne({ articles, images }) {
     e.preventDefault()
     if (e.type === "submit" && e.target[1].value) {
       setFilteredArticles(filterArticles(articles, e.target[1].value))
+      setCurrentPage(1)
     }
   }
 
@@ -41,6 +42,7 @@ export default function BlogSidebarOne({ articles, images }) {
         setFilteredArticles(
           filterArticles(articles, e.target.textContent?.toLowerCase())
         )
+        setCurrentPage(1)
       }
     }
   }

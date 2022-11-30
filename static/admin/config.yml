@@ -176,8 +176,13 @@ collections:
             name: serviceFeatures
             widget: object
             fields:
-              - { label: Titre, name: title, widget: string }
-              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Titre, name: title, widget: string, required: false }
+              - {
+                  label: Sous-Titre,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
               - label: Services
                 name: features
                 widget: list
@@ -214,8 +219,13 @@ collections:
             name: serviceFeatures
             widget: object
             fields:
-              - { label: Titre, name: title, widget: string }
-              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Titre, name: title, widget: string, required: false }
+              - {
+                  label: Sous-Titre,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
               - label: Services
                 name: features
                 widget: list
@@ -252,8 +262,13 @@ collections:
             name: serviceFeatures
             widget: object
             fields:
-              - { label: Titre, name: title, widget: string }
-              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Titre, name: title, widget: string, required: false }
+              - {
+                  label: Sous-Titre,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
               - label: Services
                 name: features
                 widget: list
@@ -290,8 +305,13 @@ collections:
             name: serviceFeatures
             widget: object
             fields:
-              - { label: Titre, name: title, widget: string }
-              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Titre, name: title, widget: string, required: false }
+              - {
+                  label: Sous-Titre,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
               - label: Services
                 name: features
                 widget: list
@@ -328,8 +348,13 @@ collections:
             name: serviceFeatures
             widget: object
             fields:
-              - { label: Titre, name: title, widget: string }
-              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Titre, name: title, widget: string, required: false }
+              - {
+                  label: Sous-Titre,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
               - label: Services
                 name: features
                 widget: list
@@ -366,8 +391,13 @@ collections:
             name: serviceFeatures
             widget: object
             fields:
-              - { label: Titre, name: title, widget: string }
-              - { label: Sous-Titre, name: subtitle, widget: string }
+              - { label: Titre, name: title, widget: string, required: false }
+              - {
+                  label: Sous-Titre,
+                  name: subtitle,
+                  widget: string,
+                  required: false,
+                }
               - label: Services
                 name: features
                 widget: list

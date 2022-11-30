@@ -11,11 +11,11 @@ serviceIntro:
     établir des états financiers au travers de la mission de présentation des
     comptes. Mais nos compétences ne se résument pas qu'à cela !
 
-    Notre service est en mesure de vous accompagner, quel que soit votre secteur d'activité, à tous les stades d'existence de votre entreprise : en phase de création, d'amorçage, de développement ou de transmission. 
+    Notre service est en mesure de vous accompagner, quel que soit votre secteur d'activité, à tous les stades d'existence de votre entreprise : en phase de création, d'amorçage, de développement ou de transmission.
   image: christina-wocintechchat-com-0zx1bdv5bny-unsplash.jpeg
 serviceFeatures:
-  title: X
-  subtitle: X
+  title:
+  subtitle:
   features:
     - title: Création d'entreprise
       desc: >+
@@ -25,13 +25,15 @@ serviceFeatures:
 
       logo: rainbow-solid.svg
     - title: Accompagnement fiscal et comptable
-      desc: "Piloter une entreprise, c'est se soumettre à des obligations légales !
+      desc:
+        "Piloter une entreprise, c'est se soumettre à des obligations légales !
         Bien entendu, nous sommes à vos côtés pour établir vos déclarations
         fiscales diverses (TVA, IS, etc.) et pour clôturer chacun de vos
         exercices comptables par un bilan lors d'un entretien privilégié. "
       logo: feather-solid.svg
     - title: Conseil en gestion
-      desc: "Se conformer aux règles c'est indispensable, mais diriger une entreprise
+      desc:
+        "Se conformer aux règles c'est indispensable, mais diriger une entreprise
         c'est surtout prendre des décisions au quotidien. Et pour cela, notre
         équipe est à votre disposition pour l'établissement de situation
         intermédiaire, de tableau de bord, de budgets (activité, trésorerie,
@@ -39,12 +41,14 @@ serviceFeatures:
       logo: bolt-solid.svg
     - title: Recherche de financement
       logo: bolt-solid.svg
-      desc: "Au démarrage de votre entreprise ou tout au long de sa vie, vous aurez
+      desc:
+        "Au démarrage de votre entreprise ou tout au long de sa vie, vous aurez
         besoin de trouver des financements. Sous quelle forme ? Nous étudions
         ensemble les différentes possibilités et vous orientons vers les
         partenaires adéquats. "
     - title: Environnement digital
-      desc: "Se digitaliser, c'est aujourd'hui primordial. NECOH vous accompagne dans
+      desc:
+        "Se digitaliser, c'est aujourd'hui primordial. NECOH vous accompagne dans
         le choix des outils de dématérialisation afin de garantir une
         administration fluide de votre entreprise. Le défi de demain c'est le
         passage à la facturation électronique et nous répondons présent. "
