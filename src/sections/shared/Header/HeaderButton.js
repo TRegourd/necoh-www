@@ -116,12 +116,12 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
           </a>
         </li>
         <li>
-          <a href={data.contactDetails?.frontmatter.twitter} target="_blank">
+          {/* <a href={data.contactDetails?.frontmatter.twitter} target="_blank">
             <i
               className="fab fa-twitter text-secondary"
               aria-label="Necoh Twitter"
             ></i>
-          </a>
+          </a> */}
         </li>
       </ul>
       <Link

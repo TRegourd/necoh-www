@@ -21,11 +21,11 @@ export default function About({ data }) {
         images={data.images?.nodes}
         content={data.about.frontmatter?.aboutCEO}
       />
-      <TeamSection
+      {/* <TeamSection
         images={data.images?.nodes}
         content={data.team.frontmatter?.teamHeader}
         employees={data.team.frontmatter?.employees}
-      />
+      /> */}
       <Promo />
       <Footer />
     </PageWrapper>

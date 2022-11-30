@@ -43,6 +43,7 @@ Widget.Text = styled(Paragraph)`
   letter-spacing: normal;
   line-height: 1.75;
   opacity: 0.7;
+  text-align: justify;
 `
 
 export default Widget

@@ -14,7 +14,9 @@ const Feature = styled(Box)`
   }
 `
 
-Feature.Text = styled(Paragraph)``
+Feature.Text = styled(Paragraph)`
+  text-align: justify;
+`
 
 Feature.Image = styled(Box)`
   @media (min-width: 992px) {

@@ -15,7 +15,7 @@ export default function PromoSection({ ...rest }) {
                 Vous souhaitez nous rejoindre?{" "}
               </Promo.Title>
 
-              <Promo.Button as={Link} to={"/careers"} className="btn-secondary">
+              <Promo.Button as={Link} to={"/emploi"} className="btn-secondary">
                 Voir les offres d'emploi
               </Promo.Button>
             </Promo.Content>

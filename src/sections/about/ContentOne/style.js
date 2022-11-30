@@ -39,6 +39,7 @@ Content.Text = styled(Box)`
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.875;
+  text-align: justify;
 `
 
 Content.Image = styled(Box)``

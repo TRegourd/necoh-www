@@ -57,6 +57,7 @@ Hero.Text = styled(Paragraph)`
   letter-spacing: normal;
   line-height: 34px;
   margin-bottom: 53px;
+  text-align: justify;
   @media (min-width: 992px) {
     font-size: 21px;
   }

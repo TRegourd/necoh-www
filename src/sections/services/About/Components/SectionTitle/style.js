@@ -9,6 +9,7 @@ SectionTitle.Text = styled(Paragraph)`
   letter-spacing: normal;
   line-height: 1.77777;
   color: inherit;
+  text-align: justify;
 `
 SectionTitle.Subtitle = styled(Heading)`
   color: ${props => (props.fontColor ? props.fontColor : "#0000")};
