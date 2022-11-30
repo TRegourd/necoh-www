@@ -1,20 +1,25 @@
 ---
 aboutHeader:
   title: A propos de Nous
-  subtitle: Découvrez NECOH, ses valeurs et ses équipes.
+  subtitle: "  X"
 aboutIntro:
-  title: Nos Valeurs
-  subtitle: NECOH
-  textLeft: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat expedita
-    sit architecto odit eum iste voluptas a nihil molestiae. Non autem
-    consectetur et corporis omnis et quae internos. Ea optio fugiat ut quis
-    cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
-    unde reprehenderit et deserunt expedita.
-  textRight: Lorem ipsum dolor sit amet. Est libero dolorem ut repellat expedita
-    sit architecto odit eum iste voluptas a nihil molestiae. Non autem
-    consectetur et corporis omnis et quae internos. Ea optio fugiat ut quis
-    cupiditate ut modi quaerat. Sed necessitatibus voluptatem et modi ipsam ut
-    unde reprehenderit et deserunt expedita.
+  title: "  X"
+  subtitle: Découvrez NECOH
+  textLeft: NECOH est une entreprise pluridisciplinaire capable de vous
+    accompagnez - en relation avec vos équipes internes - sur les problématiques
+    de votre entreprise en lien avec la comptabilité, la gestion, le juridique
+    et la paie. Nous déployons une écoute active aux services de la réussite de
+    votre projet professionnel afin de vous délivrer les outils et conseils
+    adéquats. Nous nous adaptons quotidiennement dans l'environnement contraint
+    et changeant que nous connaissons afin de vous aider à prendre les bonnes
+    décisions.
+  textRight: >-
+    Notre équipe soudée, sous la responsabilité de 3 experts-comptables diplômés
+    et autant d'experts-comptables en formation se veut être à votre écoute,
+    disponible et réactive, compétente et sympathique. C'est le sens de notre
+    travail collectif. 
+
+    Nos bureaux se situe à Barberaz (73) dans un lieu atypique qui nous ressemble : chaleureux, convivial et prêt à vous accueillir dès que vous le souhaitez.
   values:
     - name: Esprit d'équipe
       desc: Nous sommes un collectif fort engagé à vos côtés.

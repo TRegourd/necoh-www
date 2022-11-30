@@ -63,13 +63,13 @@ indexBrands:
     juridique:
       title: Juridique
       desc: Necoh Juridique
-      link: Je recherche l'assistance d'un avocat pour me guider tout au long de la
-        vie de mon entreprise
+      link: Je recherche un avocat pour me guider tout au long de la vie de mon
+        entreprise
       logo: necohjuridique_logocouleursnoir-copie.png
     fiscalite:
       title: Fiscalité des particuliers
       desc: Necoh Fiscalité des particuliers
-      link: Je désire confier mon impôt sur le revenu ou mes locations meublées
+      link: Je désire confier mon impôt sur les revenus ou mes locations meublées
       logo: necohfiscale_logocouleursnoir-copie.png
     audit:
       title: Audit
