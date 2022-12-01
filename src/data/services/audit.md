@@ -1,38 +1,32 @@
 ---
 serviceHeader:
   title: Audit
-  subtitle: Missions d'audit et commissariat aux comptes.
+  subtitle: Un servie dédié à l'audit légal et contractuel
   logo: necohaudit_logonoir.png
   color: "#f39200"
 serviceIntro:
   title: A propos
-  subtitle: Lorem ipsum dolor sit amet. Aut placeat quia At voluptatum optio aut
-    enim omnis. Vel fugit quidem cum quaerat dolorem At nisi magnam. Ut
-    molestiae corporis ut galisum neque sed consequatur nihil. Ex sapiente
-    labore iste tenetur vel libero tempore.
+  subtitle: "Notre mission est de vérifier la qualité et la transparence des
+    informations financières et comptables des entités visé que ce soit dans le
+    cadre d'un audit légal ou contractuel. "
   image: thisisengineering-raeng-ftd-qk0om20-unsplash.jpeg
 serviceFeatures:
   title: Audit
   subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
   features:
     - title: Commissariat aux comptes
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+      desc: Vous êtes soumis à une obligation légale de contrôle de vos comptes ?
+        Après une prise de connaissance et une évaluation de votre contrôle
+        interne, nos équipes examinent vos états financiers dans l'objectif de
+        certifier la sincérité, la régularité et la fidélité des comptes.
       logo: rainbow-solid.svg
-    - title: Audit
-      desc:
-        "A few decent projects can keep your business very healthy for a long
-        time. "
+    - title: "Audit contractuel "
+      desc: Vous avez besoin d'un audit financier ? Un audit social ? Un audit
+        juridique ? Quel que soit votre demande, nos équipes dôtés de
+        compétences pluridisciplinaires pourront vous accompagner et émettre un
+        avis.
       logo: feather-solid.svg
-    - title: Inventaires
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
-      logo: bolt-solid.svg
 serviceCTA:
-  title: Besoin d'auditer vos comptes ?
+  title: Besoin d'auditer des comptes ?
   desc: Faites appel à nos commissaires aux comptes !
 ---
