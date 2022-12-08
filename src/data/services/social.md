@@ -1,33 +1,35 @@
 ---
 serviceHeader:
   title: Gestion Sociale
-  subtitle: Bulletins de paie et contrats de travail
+  subtitle: Une équipe sociale vouée à la gestion de vos salariés
   logo: necohsociale_logocouleursnoir.png
   color: "#be1522"
 serviceIntro:
   title: A propos
-  subtitle: Sed perferendis ducimus ex aliquam eaque et eligendi voluptas At
-    voluptas enim non inventore iusto. A quibusdam unde ut sunt nulla et itaque
-    quis aut sunt atque sit quasi maxime et aliquid dolore.
+  subtitle: >
+    La règlementation qui entoure la gestion sociale est sans cesse en évolution
+    et nécessite une maîtrise & une veille constante afin d'assurer une
+    production sociale viable via l'établissement des bulletins de salaire et le
+    calcul des charges sociales.
+
+
+    Le pôle social de chez NECOH vous accompagne dans l'objectif de garantir et optimiser la gestion de votre personnel. Nous vous apportons et mettons à disposition notre expertise en matière de production sociale et de conseil en ressources humaines.
   image: krakenimages-y5bvrlccx8k-unsplash.jpeg
 serviceFeatures:
   title: Expertise Sociale
-  subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
+  subtitle: ""
   features:
     - title: Bulletins
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: rainbow-solid.svg
     - title: Contrats de travail
-      desc:
-        "A few decent projects can keep your business very healthy for a long
+      desc: "A few decent projects can keep your business very healthy for a long
         time. "
       logo: feather-solid.svg
     - title: Rémunération des dirigeants
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: bolt-solid.svg
