@@ -7,12 +7,12 @@ serviceHeader:
 serviceIntro:
   title: A propos
   subtitle: "Notre mission est de vérifier la qualité et la transparence des
-    informations financières et comptables des entités visé que ce soit dans le
-    cadre d'un audit légal ou contractuel. "
+    informations financières et comptables des entités visés que ce soit dans le
+    cadre d'un audit légal ou contractuel. Chez NECOH Audit, "
   image: thisisengineering-raeng-ftd-qk0om20-unsplash.jpeg
 serviceFeatures:
   title: Audit
-  subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
+  subtitle: ""
   features:
     - title: Commissariat aux comptes
       desc: Vous êtes soumis à une obligation légale de contrôle de vos comptes ?
