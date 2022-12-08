@@ -33,5 +33,5 @@ serviceFeatures:
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'un contrat de travail ou de bulletins de paie ?
-  desc: Contactez nos expert en gestion sociale !
+  desc: Contactez nos experts en gestion sociale !
 ---
