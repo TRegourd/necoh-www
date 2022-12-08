@@ -22,19 +22,14 @@ serviceFeatures:
   title: Expertise Sociale
   subtitle: ""
   features:
-    - title: Bulletins
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+    - title: Production de la paie
+      desc: X
       logo: rainbow-solid.svg
-    - title: Contrats de travail
-      desc: "A few decent projects can keep your business very healthy for a long
-        time. "
+    - title: Gestion sociale
+      desc: X
       logo: feather-solid.svg
-    - title: Rémunération des dirigeants
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+    - title: Conseil social
+      desc: X
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'un contrat de travail ou de bulletins de paie ?
