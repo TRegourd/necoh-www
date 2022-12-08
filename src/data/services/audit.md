@@ -12,7 +12,7 @@ serviceIntro:
   image: thisisengineering-raeng-ftd-qk0om20-unsplash.jpeg
 serviceFeatures:
   title: Audit
-  subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
+  subtitle: ""
   features:
     - title: Commissariat aux comptes
       desc: Vous êtes soumis à une obligation légale de contrôle de vos comptes ?
