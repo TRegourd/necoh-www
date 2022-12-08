@@ -6,7 +6,7 @@ serviceHeader:
   color: "#be1522"
 serviceIntro:
   title: A propos
-  subtitle: >
+  subtitle: >-
     La règlementation qui entoure la gestion sociale est sans cesse en évolution
     et nécessite une maîtrise & une veille constante afin d'assurer une
     production sociale viable via l'établissement des bulletins de salaire et le
@@ -14,6 +14,9 @@ serviceIntro:
 
 
     Le pôle social de chez NECOH vous accompagne dans l'objectif de garantir et optimiser la gestion de votre personnel. Nous vous apportons et mettons à disposition notre expertise en matière de production sociale et de conseil en ressources humaines.
+
+
+    XXX
   image: krakenimages-y5bvrlccx8k-unsplash.jpeg
 serviceFeatures:
   title: Expertise Sociale
