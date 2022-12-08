@@ -23,7 +23,7 @@ serviceFeatures:
   subtitle: ""
   features:
     - title: Production de la paie
-      desc: X
+      desc: "Vous avez besoin de confier votre production de paie ? "
       logo: rainbow-solid.svg
     - title: Gestion sociale
       desc: X
