@@ -37,6 +37,8 @@ indexAbout:
       text: Dossiers
     - number: "2"
       text: Bureaux
+    - number: "20"
+      text: Collaborateurs
   image: scott-graham-5fnmwej4taa-unsplash.jpeg
 indexBrands:
   title: Nos Services
