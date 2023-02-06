@@ -1,9 +1,9 @@
 ---
 aboutHeader:
   title: A propos de Nous
-  subtitle: "Découvrez Necoh"
+  subtitle: Découvrez Necoh
 aboutIntro:
-  title: "Notre vision"
+  title: Notre vision
   subtitle: Necoh
   textLeft: NECOH est une entreprise pluridisciplinaire capable de vous
     accompagnez - en relation avec vos équipes internes - sur les problématiques
@@ -37,7 +37,7 @@ aboutIntro:
     - name: Proactivité
       desc: Nous anticipons vos problématiques pour plus de sérénité.
       color: "#bd0821"
-      image: Necoh_Symbole.png
+      image: briefcase-solid.svg
   video: LWZ7iytIA6k
   image: austin-distel-rxpthowuvge-unsplash.jpeg
 aboutCEO:
