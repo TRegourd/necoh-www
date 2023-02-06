@@ -163,6 +163,7 @@ collections:
                 name: references
                 widget: list
                 fields:
+                  - { label: Nom, name: name, widget: string }
                   - { label: Logo Client, name: logo, widget: image }
 
   - label: "Services"
