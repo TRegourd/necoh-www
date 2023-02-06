@@ -1,11 +1,9 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle:
-    "Notre équipe d’experts-comptables, auditeurs, avocats, consultants et
+  subtitle: "Notre équipe d’experts-comptables, auditeurs, avocats, consultants et
     juristes accompagne les entrepreneurs au quotidien et dans leur
-    développement : créons ensemble votre entreprise de demain dans des
-    conditions durables de réussite."
+    développement : créons ensemble votre entreprise de demain."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -100,14 +98,12 @@ indexTestimonials:
       avatar: fred-foo.jpeg
     - name: Sophie Dubois
       position: Directrice Financière de Company
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum."
       avatar: jane-doe.jpeg
     - name: Frédéric Dujardin
       position: Comptable
-      text:
-        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
         vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
         modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
