@@ -37,8 +37,6 @@ indexAbout:
       text: Clients
     - number: "2"
       text: Bureaux
-    - number: 1 €
-      text: CA sous gestion
   image: scott-graham-5fnmwej4taa-unsplash.jpeg
 indexBrands:
   title: Nos Services
