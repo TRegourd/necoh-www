@@ -2,6 +2,7 @@ import React from "react"
 import { PageWrapper } from "~components/Core"
 import HeroSection from "~sections/home/Hero"
 import TestimonialSection from "~sections/home/Testimonial"
+import ReferencesSection from "~sections/home/References"
 import AboutSection from "~sections/home/About"
 import ContactSection from "~sections/contact/ContactOne/ContactSection"
 import Footer from "~sections/shared/Footer"
@@ -14,6 +15,10 @@ export default function Home({ data }) {
     <PageWrapper headerConfig={NecohHeader}>
       <HeroSection
         content={data.index.frontmatter?.indexHero}
+        images={data.images?.nodes}
+      />
+      <ReferencesSection
+        content={data.index.frontmatter?.indexReferences}
         images={data.images?.nodes}
       />
       <AboutSection
@@ -60,6 +65,13 @@ export const query = graphql`
             position
             avatar
             text
+          }
+        }
+        indexReferences {
+          subtitle
+          references {
+            name
+            logo
           }
         }
         indexAbout {
