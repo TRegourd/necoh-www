@@ -1,7 +1,8 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle: "Notre équipe d’experts-comptables, auditeurs, avocats, consultants et
+  subtitle:
+    "Notre équipe d’experts-comptables, auditeurs, avocats, consultants et
     juristes accompagne les entrepreneurs au quotidien et dans leur
     développement : créons ensemble votre entreprise de demain dans des
     conditions durables de réussite."
@@ -23,12 +24,12 @@ indexAbout:
     Porté par un territoire dynamique, NECOH prône un attachement local, gage de
     proximité dans chacune des relations professionnelles que nous tissons.
 
-    Nous œuvrons quotidiennement à garantir les conditions indispensables à un travail de qualité dans le respect et la bienveillance que chacun mérite. 
+    Nous œuvrons quotidiennement à garantir les conditions indispensables à un travail de qualité dans le respect et la bienveillance que chacun mérite.
   textRight: >-
     Nous cultivons la confiance mutuelle comme un lien puissant et étroit nous
     permettant de vous accompagner simplement et efficacement. 
 
-    Nous déployons une écoute active au service de la réussite de votre projet professionnel afin de vous délivrer les outils et les conseils adéquats. 
+    Nous déployons une écoute active au service de la réussite de votre projet professionnel afin de vous délivrer les outils et les conseils adéquats.
   features:
     - name: Un cabinet à taille humaine
     - name: Des Experts à votre service
@@ -99,16 +100,31 @@ indexTestimonials:
       avatar: fred-foo.jpeg
     - name: Sophie Dubois
       position: Directrice Financière de Company
-      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text:
+        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum."
       avatar: jane-doe.jpeg
     - name: Frédéric Dujardin
       position: Comptable
-      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
+      text:
+        " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
         ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
         vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
         modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
         aliquam quia vel labore ipsum ut enim ratione non modi molestiae in
         ipsam rerum."
       avatar: john-doe.jpeg
+indexReferences:
+  subtitle: Ils nous font confiance
+  references:
+    - name: Groupe Pedretti
+      logo: pedretti.png
+    - name: Microsoft
+      logo: microsoft.png
+    - name: Google
+      logo: google.jpeg
+    - name: Apple
+      logo: apple.png
+    - name: Facebook
+      logo: facebook.jpeg
 ---

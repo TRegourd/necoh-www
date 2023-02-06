@@ -150,6 +150,21 @@ collections:
                   - { label: Avis, name: text, widget: text }
                   - { label: Avatar, name: avatar, widget: image }
 
+          - label: Références
+            name: indexReferences
+            widget: object
+            fields:
+              - {
+                  label: Sous-Titre de la section,
+                  name: subtitle,
+                  widget: string,
+                }
+              - label: Références
+                name: references
+                widget: list
+                fields:
+                  - { label: Logo Client, name: logo, widget: image }
+
   - label: "Services"
     name: "services"
     files:
