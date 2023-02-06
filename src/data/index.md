@@ -1,9 +1,9 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle: "Notre équipe d’experts-comptables, auditeurs, avocats, consultants et
-    juristes accompagne les entrepreneurs au quotidien et dans leur
-    développement : créons ensemble votre entreprise de demain."
+  subtitle: "Notre équipe d’experts-comptables, auditeurs, consultants et juristes
+    accompagne les entrepreneurs au quotidien et dans leur développement :
+    créons ensemble votre entreprise de demain."
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -33,10 +33,12 @@ indexAbout:
     - name: Des Experts à votre service
     - name: Un collectif pour vous accompagner au quotidien
   numbers:
-    - number: "250"
-      text: Clients
+    - number: "600"
+      text: Dossiers
     - number: "2"
       text: Bureaux
+    - number: "20"
+      text: Collaborateurs
   image: scott-graham-5fnmwej4taa-unsplash.jpeg
 indexBrands:
   title: Nos Services
