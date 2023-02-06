@@ -36,7 +36,7 @@ indexAbout:
     - number: "250"
       text: Clients
     - number: "2"
-      text: Bureaux
+      text: Bureaux (Lyon & Chambery)
   image: scott-graham-5fnmwej4taa-unsplash.jpeg
 indexBrands:
   title: Nos Services
