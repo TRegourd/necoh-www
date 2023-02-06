@@ -110,4 +110,8 @@ indexTestimonials:
         aliquam quia vel labore ipsum ut enim ratione non modi molestiae in
         ipsam rerum."
       avatar: john-doe.jpeg
+indexReferences:
+  references:
+    - logo: apple.png
+  subtitle: Tes
 ---
