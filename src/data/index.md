@@ -85,7 +85,7 @@ indexTestimonials:
       text: Une équipe professionnelle et enthousiaste qui m’a accompagné dans la
         création de mon entreprise et qui me conseille désormais au quotidien
         dans sa gestion.
-      avatar: user-tie-solid.svg
+      avatar: avatar-homme-1.png
     - name: Alice Verron
       position: Dirigeante SARL
       text: |-
@@ -99,7 +99,7 @@ indexTestimonials:
       avatar: jane-doe.jpeg
     - name: Kevin Cheret
       position: Dirigeant
-      text: Une équipe très professionnelle, à l écoute et toujours disponible
+      text: Une équipe très professionnelle, à l écoute et toujours disponible.
       avatar: john-doe.jpeg
     - name: Justin Baillieu
       text: Équipe très professionnelle, je réitèrerais l’expérience les yeux fermés.
