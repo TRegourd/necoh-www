@@ -121,8 +121,8 @@ indexReferences:
       logo: pedretti.png
     - name: La Folie Douce
       logo: logo-lafoliedouce-corporate-noir.png
-    - name: Google
-      logo: google.jpeg
+    - name: Batterie 73
+      logo: batteries73-logo-1597653987.jpg.png
     - name: Apple
       logo: apple.png
     - name: Facebook
