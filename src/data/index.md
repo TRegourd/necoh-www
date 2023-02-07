@@ -86,29 +86,34 @@ indexTestimonials:
         création de mon entreprise et qui me conseille désormais au quotidien
         dans sa gestion.
       avatar: user-tie-solid.svg
-    - name: Jean Dupont
-      position: Dirigeant de Dupont SAS
-      text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
-        laboriosam assumenda est voluptatum atque ut culpa voluptates. Ut
-        provident rerum vel maiores culpa rem aliquam quia vel labore ipsum ut
-        enim ratione non modi molestiae in ipsam rerum.  Ut provident rerum vel
-        maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non modi
-        molestiae in ipsam rerum.
+    - name: Alice Verron
+      position: Dirigeante SARL
+      text: |-
+        Equipe jeune et dynamique, très disponible et à l'écoute.
+        Le cabinet est toujours de bon conseil pour notre SARL.
       avatar: fred-foo.jpeg
-    - name: Sophie Dubois
-      position: Directrice Financière de Company
-      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
-        ut enim ratione non modi molestiae in ipsam rerum."
+    - name: Arthur Duc
+      position: "Jeune entrepreneur "
+      text: Une entreprise à l'écoute de ses clients. Idéal pour les jeunes
+        entrepreneurs.
       avatar: jane-doe.jpeg
-    - name: Frédéric Dujardin
-      position: Comptable
-      text: " Ut provident rerum vel maiores culpa rem aliquam quia vel labore ipsum
-        ut enim ratione non modi molestiae in ipsam rerum. Ut provident rerum
-        vel maiores culpa rem aliquam quia vel labore ipsum ut enim ratione non
-        modi molestiae in ipsam rerum. Ut provident rerum vel maiores culpa rem
-        aliquam quia vel labore ipsum ut enim ratione non modi molestiae in
-        ipsam rerum."
+    - name: Kevin Cheret
+      position: Dirigeant
+      text: Une équipe très professionnelle, à l écoute et toujours disponible
       avatar: john-doe.jpeg
+    - name: Justin Baillieu
+      text: Équipe très professionnelle, je réitèrerais l’expérience les yeux fermés.
+      position: Entrepreneur
+      avatar: user-tie-solid.svg
+    - name: Thien-An Le Van
+      text: >-
+        J’ai pu être conseillé durant la création de mon entreprise. J’ai
+        beaucoup apprécié leur professionnalisme mais surtout ils étaient
+        vraiment à l’écoute et très pédagogue pour moi qui suit encore novice.
+
+        Merci encore !
+      position: Créateur d'entreprise
+      avatar: user-tie-solid.svg
 indexReferences:
   subtitle: Ils nous font confiance
   references:
