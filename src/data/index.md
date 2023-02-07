@@ -119,8 +119,8 @@ indexReferences:
   references:
     - name: Groupe Pedretti
       logo: pedretti.png
-    - name: Microsoft
-      logo: microsoft.png
+    - name: La Folie Douce
+      logo: logo-lafoliedouce-corporate-noir.png
     - name: Google
       logo: google.jpeg
     - name: Apple
