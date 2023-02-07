@@ -91,7 +91,7 @@ indexTestimonials:
       text: |-
         Equipe jeune et dynamique, très disponible et à l'écoute.
         Le cabinet est toujours de bon conseil pour notre SARL.
-      avatar: fred-foo.jpeg
+      avatar: avatar-femme-1.png
     - name: Arthur Duc
       position: "Jeune entrepreneur "
       text: Une entreprise à l'écoute de ses clients. Idéal pour les jeunes
@@ -112,8 +112,8 @@ indexTestimonials:
         vraiment à l’écoute et très pédagogue pour moi qui suit encore novice.
 
         Merci encore !
-      position: Créateur d'entreprise
-      avatar: user-tie-solid.svg
+      position: Créatrice d'entreprise
+      avatar: avatar-femme-2.png
 indexReferences:
   subtitle: Ils nous font confiance
   references:
