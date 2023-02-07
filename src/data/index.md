@@ -96,15 +96,15 @@ indexTestimonials:
       position: "Jeune entrepreneur "
       text: Une entreprise à l'écoute de ses clients. Idéal pour les jeunes
         entrepreneurs.
-      avatar: jane-doe.jpeg
+      avatar: avatar-homme-2.png
     - name: Kevin Cheret
       position: Dirigeant
       text: Une équipe très professionnelle, à l écoute et toujours disponible.
-      avatar: john-doe.jpeg
+      avatar: avatar-homme-3.png
     - name: Justin Baillieu
       text: Équipe très professionnelle, je réitèrerais l’expérience les yeux fermés.
       position: Entrepreneur
-      avatar: user-tie-solid.svg
+      avatar: avatar-homme-4.png
     - name: Thien-An Le Van
       text: >-
         J’ai pu être conseillé durant la création de mon entreprise. J’ai
