@@ -55,5 +55,5 @@ aboutCEO:
 
     >
 
-    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de ses clients, la dimension humaine et la confiance étant au centre de notre développement.
+    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients, la dimension humaine et la confiance étant au centre de notre développement.
 ---
