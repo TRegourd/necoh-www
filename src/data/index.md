@@ -80,13 +80,12 @@ indexTestimonials:
   title: Nos clients parlent de nous
   subtitle: Avis Clients
   testimonials:
-    - name: Paul Durand
-      position: Artisan
-      text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
-        laboriosam assumenda est voluptatum atque ut culpa voluptates. Ut
-        provident rerum vel maiores culpa rem aliquam quia vel labore ipsum ut
-        enim ratione non modi molestiae in ipsam rerum.
-      avatar: paul-smith.jpeg
+    - name: Thomas Regourd
+      position: Entrepreneur
+      text: Une équipe professionnelle et enthousiaste qui m’a accompagné dans la
+        création de mon entreprise et qui me conseille désormais au quotidien
+        dans sa gestion.
+      avatar: user-tie-solid.svg
     - name: Jean Dupont
       position: Dirigeant de Dupont SAS
       text: Lorem ipsum dolor sit amet. Hic minima sint et repudiandae quasi et
