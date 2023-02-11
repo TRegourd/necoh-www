@@ -39,7 +39,7 @@ aboutIntro:
       color: "#bd0821"
       image: briefcase-solid.svg
   video: LWZ7iytIA6k
-  image: austin-distel-rxpthowuvge-unsplash.jpeg
+  image: photo-accueil-necoh.jpg
 aboutCEO:
   title: Le mot du président
   subtitle: La raison d'être de NECOH
