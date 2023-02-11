@@ -44,7 +44,7 @@ aboutIntro:
       color: "#bd0821"
       image: briefcase-solid.svg
   video: fffffffffff
-  image: photo-necoh-bureau.png
+  image: photo-bureau-necoh.png
 aboutCEO:
   title: Le mot du président
   subtitle: La raison d'être de NECOH
