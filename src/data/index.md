@@ -118,13 +118,19 @@ indexReferences:
   subtitle: Ils nous font confiance
   references:
     - name: Groupe Pedretti
-      logo: pedretti.png
+      logo: logo_pedretti.png
     - name: La Folie Douce
-      logo: logo-lafoliedouce-corporate-noir.png
+      logo: logo_lafoliedouce.png
+    - name: Maison Aribert
+      logo: logo_maisonaribert.png
+    - name: JMV Resort
+      logo: logo_jmvresort.png
     - name: Batterie 73
-      logo: batteries73-logo-1597653987.jpg.png
-    - name: Apple
-      logo: apple.png
-    - name: Facebook
-      logo: facebook.jpeg
+      logo: logo_batterie73.png
+    - name: R Janin
+      logo: logo_rjanin.png
+    - name: Zanon Charpente
+      logo: logo_zanoncharpente.png
+    - name: Ortolland transport
+      logo: logo_ortolland.png
 ---
