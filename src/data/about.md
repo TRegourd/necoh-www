@@ -57,4 +57,8 @@ aboutCEO:
     >
 
     > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients. La dimension humaine et la confiance étant au centre de notre développement.
+
+    >
+
+    >  *\    Guillaume COHEN, Président*
 ---
