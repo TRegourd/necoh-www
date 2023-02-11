@@ -17,7 +17,7 @@ indexHero:
     - text: Social.
     - text: Conseils.
 indexAbout:
-  title: Découvrez NECOH, experts au service des entreprises et des particuliers
+  title: Découvrez NECOH, des experts au service des entreprises et des particuliers
   subtitle: A propos
   textLeft: >-
     Porté par un territoire dynamique, NECOH prône un attachement local, gage de
