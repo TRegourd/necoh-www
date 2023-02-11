@@ -129,9 +129,9 @@ indexReferences:
     - name: Batterie 73
       logo: logo_batterie73.png
     - name: R Janin
-      logo: logo_rjanin.png
+      logo: logo-r-janin-500x400px.png
     - name: Zanon Charpente
       logo: logo_zanoncharpente.png
     - name: Ortolland transport
-      logo: logo_ortolland.png
+      logo: logo-ortolland-500x400px.png
 ---
