@@ -44,7 +44,7 @@ aboutIntro:
 aboutCEO:
   title: Le mot du président
   subtitle: La raison d'être de NECOH
-  image: portrait-g-cohen.png
+  image: photo-g-cohen.png
   text: >-
     > Necoh Expertise Conseil SAS est une structure d'expertise comptable
     installée à Barberaz. Notre atout : un ancrage fort à notre territoire et
@@ -56,5 +56,9 @@ aboutCEO:
 
     >
 
-    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients. La dimension humaine et la confiance étant au centre de notre développement.
+    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients. La dimension humaine et la confiance étant au centre de notre développement. 
+
+    >
+
+    >  *\    Guillaume COHEN, Président*
 ---
