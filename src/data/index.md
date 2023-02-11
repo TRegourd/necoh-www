@@ -1,9 +1,10 @@
 ---
 indexHero:
   title: Votre Partenaire
-  subtitle: "Notre équipe d’experts-comptables, auditeurs, consultants et juristes
-    accompagne les entrepreneurs au quotidien et dans leur développement :
-    créons ensemble votre entreprise de demain."
+  subtitle: Notre équipe de spécialistes composée d’experts-comptables,
+    d'auditeurs, de consultants et de juristes accompagne les entrepreneurs au
+    quotidien dans le pilotage de leur activité et dans le développement de leur
+    projet. Ensemble nous créons votre entreprise de demain.
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
@@ -16,7 +17,7 @@ indexHero:
     - text: Social.
     - text: Conseils.
 indexAbout:
-  title: Découvrez NECOH, experts au service des entreprises et des particuliers
+  title: Découvrez NECOH, des experts au service des entreprises et des particuliers
   subtitle: A propos
   textLeft: >-
     Porté par un territoire dynamique, NECOH prône un attachement local, gage de
