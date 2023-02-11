@@ -39,7 +39,7 @@ aboutIntro:
       color: "#bd0821"
       image: briefcase-solid.svg
   video: LWZ7iytIA6k
-  image: austin-distel-rxpthowuvge-unsplash.jpeg
+  image: photo-accueil-necoh.jpg
 aboutCEO:
   title: Le mot du président
   subtitle: La raison d'être de NECOH
@@ -55,5 +55,5 @@ aboutCEO:
 
     >
 
-    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de ses clients, la dimension humaine et la confiance étant au centre de notre développement.
+    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients, la dimension humaine et la confiance étant au centre de notre développement.
 ---
