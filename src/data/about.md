@@ -20,6 +20,7 @@ aboutIntro:
     est à votre écoute, disponible et réactive, compétente et sympathique. C'est
     le sens de notre travail collectif.
 
+
     Nos bureaux se situe à Barberaz (73) dans un lieu atypique qui nous ressemble : chaleureux, convivial et prêt à vous accueillir dès que vous le souhaitez. Nous sommes également présent à Lyon (69).
   values:
     - name: Esprit d'équipe
