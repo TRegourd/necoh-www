@@ -123,7 +123,7 @@ indexReferences:
     - name: La Folie Douce
       logo: logo_lafoliedouce.png
     - name: Maison Aribert
-      logo: logo_aribert.png
+      logo: logo_aribert-500x400px.png
     - name: JMV Resort
       logo: logo_jmvresort.png
     - name: Batterie 73
