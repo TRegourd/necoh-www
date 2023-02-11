@@ -1,6 +1,7 @@
 ---
 title: Nos coordonnées
-text: Nous sommes à votre disposition du Lundi au Vendredi de 9h à 17h.
+text: Nous sommes à votre disposition du Lundi au Vendredi de 9h à 12h et de 14h
+  à 17h
 phone: +33 4 79 81 88 81
 email: contact@necoh.fr
 addressLine1: 22 route de Challes
