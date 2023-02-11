@@ -5,15 +5,15 @@ aboutHeader:
 aboutIntro:
   title: Notre vision
   subtitle: Necoh
-  textLeft: NECOH est une entreprise pluridisciplinaire capable de vous
-    accompagnez dans votre activité quotidienne. Nous travaillons en étroite
-    relation avec vos équipes internes sur les problématiques de votre
-    entreprise en lien avec la comptabilité, la gestion, le juridique et la
-    paie. Nous déployons une écoute active aux services de la réussite de votre
-    projet professionnel afin de vous délivrer les outils et conseils adéquats.
-    Nous nous adaptons quotidiennement dans l'environnement contraint et
-    changeant que nous connaissons afin de vous aider à prendre les bonnes
-    décisions.
+  textLeft: >-
+    NECOH est une entreprise pluridisciplinaire capable de vous accompagnez dans
+    votre activité quotidienne. 
+
+
+    Nous travaillons en étroite relation avec vos équipes internes sur les problématiques de votre entreprise en lien avec la comptabilité, la gestion, le juridique et la paie. 
+
+
+    Nous déployons une écoute active aux services de la réussite de votre projet professionnel afin de vous délivrer les outils et conseils adéquats. Nous nous adaptons quotidiennement dans l'environnement contraint et changeant que nous connaissons afin de vous aider à prendre les bonnes décisions.
   textRight: >-
     Notre équipe est soudée, sous la responsabilité de 3 experts-comptables
     diplômés et autant d'experts-comptables en formation. L'ensemble de l'équipe
