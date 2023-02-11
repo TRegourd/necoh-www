@@ -63,7 +63,7 @@ indexBrands:
     juridique:
       title: Juridique
       desc: Necoh Juridique
-      link: Je recherche un avocat pour me guider tout au long de la vie de mon
+      link: Je recherche un conseil pour me guider tout au long de la vie de mon
         entreprise
       logo: necohjuridique_logocouleursnoir-copie.png
     fiscalite:
@@ -123,7 +123,7 @@ indexReferences:
     - name: La Folie Douce
       logo: logo_lafoliedouce.png
     - name: Maison Aribert
-      logo: logo_maisonaribert.png
+      logo: logo_aribert.png
     - name: JMV Resort
       logo: logo_jmvresort.png
     - name: Batterie 73
