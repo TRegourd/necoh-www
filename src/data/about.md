@@ -38,16 +38,16 @@ aboutIntro:
       desc: Nous anticipons vos problématiques pour plus de sérénité.
       color: "#bd0821"
       image: briefcase-solid.svg
-  video: LWZ7iytIA6k
-  image: photo-accueil-necoh.jpg
+  video: fffffffffff
+  image: photo-necoh-bureau.png
 aboutCEO:
   title: Le mot du président
   subtitle: La raison d'être de NECOH
-  image: portrait-guillaume-cohen.jpg
+  image: portrait-g-cohen.png
   text: >-
     > Necoh Expertise Conseil SAS est une structure d'expertise comptable
     installée à Barberaz. Notre atout : un ancrage fort à notre territoire et
-    aux spécificités de montagne.
+    aux spécificités de la montagne.
 
     >
 
@@ -55,5 +55,5 @@ aboutCEO:
 
     >
 
-    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients, la dimension humaine et la confiance étant au centre de notre développement.
+    > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients. La dimension humaine et la confiance étant au centre de notre développement.
 ---
