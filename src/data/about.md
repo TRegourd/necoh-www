@@ -5,24 +5,22 @@ aboutHeader:
 aboutIntro:
   title: Notre vision
   subtitle: Necoh
-  textLeft: >-
-    NECOH est une entreprise pluridisciplinaire capable de vous accompagnez dans
-    votre activité quotidienne. 
-
-    <br/>
-
-    Nous travaillons en étroite relation avec vos équipes internes sur les problématiques de votre entreprise en lien avec la comptabilité, la gestion, le juridique et la paie. 
-
-    <br/>
-
-    Nous déployons une écoute active aux services de la réussite de votre projet professionnel afin de vous délivrer les outils et conseils adéquats. Nous nous adaptons quotidiennement dans l'environnement contraint et changeant que nous connaissons afin de vous aider à prendre les bonnes décisions.
+  textLeft: NECOH est une entreprise pluridisciplinaire capable de vous
+    accompagnez dans votre activité
+    quotidienne.                                                                                                                                                            Nous
+    travaillons en étroite relation avec vos équipes internes sur les
+    problématiques de votre entreprise en lien avec la comptabilité, la gestion,
+    le juridique et la
+    paie.                                                                          Nous
+    déployons une écoute active aux services de la réussite de votre projet
+    professionnel afin de vous délivrer les outils et conseils adéquats. Nous
+    nous adaptons quotidiennement dans l'environnement contraint et changeant
+    que nous connaissons afin de vous aider à prendre les bonnes décisions.
   textRight: >-
     Notre équipe est soudée, sous la responsabilité de 3 experts-comptables
     diplômés et autant d'experts-comptables en formation. L'ensemble de l'équipe
     est à votre écoute, disponible et réactive, compétente et sympathique. C'est
     le sens de notre travail collectif.
-
-    <br/>
 
     Nos bureaux se situe à Barberaz (73) dans un lieu atypique qui nous ressemble : chaleureux, convivial et prêt à vous accueillir dès que vous le souhaitez. Nous sommes également présent à Lyon (69).
   values:
