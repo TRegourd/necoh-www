@@ -4,7 +4,8 @@ indexHero:
   subtitle: Notre équipe de spécialistes composée d’experts-comptables,
     d'auditeurs, de consultants et de juristes accompagne les entrepreneurs au
     quotidien dans le pilotage de leur activité et dans le développement de leur
-    projet. Ensemble nous créons votre entreprise de demain.
+    projet.                                                                                                                                                                  Ensemble
+    nous créons votre entreprise de demain.
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
   image2: wepik-photo-mode-202295-95532.png
