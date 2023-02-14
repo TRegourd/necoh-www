@@ -12,7 +12,7 @@ employees:
         link: fred@foo.com
       - contact: linkedin
         link: https://linkedin.com
-    color: "#f39200"
+    color: "#f39100"
   - lastName: Doe
     firstName: Jane
     position: Expert Comptable
@@ -48,5 +48,5 @@ employees:
       - contact: tel
         link: "+33601020304"
       - contact: linkedin
-        link: "https://linkedin.com"
+        link: https://linkedin.com
 ---
