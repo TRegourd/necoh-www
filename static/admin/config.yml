@@ -44,12 +44,12 @@ collections:
               - {
                   label: Texte de la section (Gauche),
                   name: textLeft,
-                  widget: text,
+                  widget: markdown,
                 }
               - {
                   label: Texte de la section (Droite),
                   name: textRight,
-                  widget: text,
+                  widget: markdown,
                 }
               - { label: Image, name: image, widget: image }
               - label: Mots Clefs
