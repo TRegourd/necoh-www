@@ -14,20 +14,18 @@ serviceIntro:
 
 
     Sit galisum voluptates ut enim explicabo quo blanditiis ipsa. Ut omnis minima et magnam facilis sed voluptatibus ipsum qui accusamus quisquam eum quae cumque est dolore illo est totam praesentium? Aut sunt consequatur non tempora minima qui asperiores veniam.
-  image: scott-graham-5fnmwej4taa-unsplash.jpeg
+  image: fiscaliteparticuliers_photo.png
 serviceFeatures:
   title: Fiscalité des particuliers
   subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
   features:
     - title: Déclarations Fiscales
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: rainbow-solid.svg
     - title: Conseil en patrimoine
-      desc:
-        "A few decent projects can keep your business very healthy for a long
+      desc: "A few decent projects can keep your business very healthy for a long
         time. "
       logo: feather-solid.svg
 serviceCTA:
