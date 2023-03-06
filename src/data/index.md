@@ -77,7 +77,7 @@ indexBrands:
       desc: Necoh Audit
       link: J'ai besoin d'auditer mes comptes ou ceux d'une entreprise cible
       logo: necohaudit_logonoir-copie.png
-  image: wepik-photo-mode-202295-95618.png
+  image: test_services_accueil.png
 indexTestimonials:
   title: Nos clients parlent de nous
   subtitle: Avis Clients
