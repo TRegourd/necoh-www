@@ -16,25 +16,22 @@ serviceIntro:
 
 
     Vel internos maiores ut doloribus soluta aut nesciunt consequatur et cupiditate alias qui voluptas possimus est perspiciatis sequi et tempora nostrum. Et reprehenderit impedit sed quasi dolor ea quidem cumque cum nihil aspernatur. Ut rerum atque est modi architecto sit quod nemo.
-  image: mikhail-pavstyuk-eky2otrpxdw-unsplash.jpeg
+  image: juridique_photo.png
 serviceFeatures:
   title: Juridique
   subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
   features:
     - title: Code du Travail
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: rainbow-solid.svg
     - title: Code Pénal
-      desc:
-        "A few decent projects can keep your business very healthy for a long
+      desc: "A few decent projects can keep your business very healthy for a long
         time. "
       logo: feather-solid.svg
     - title: Droit des sociétés
-      desc:
-        A few decent projects can keep your business very healthy for a long time.
+      desc: A few decent projects can keep your business very healthy for a long time.
         The trouble is, those lucrative corporate contracts can be extremely
         tricky to land.
       logo: bolt-solid.svg
