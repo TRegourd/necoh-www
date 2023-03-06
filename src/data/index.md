@@ -41,7 +41,7 @@ indexAbout:
       text: Bureaux
     - number: "20"
       text: Collaborateurs
-  image: a-propos_accueil_photo.png
+  image: apropos_accueil.png
 indexBrands:
   title: Nos Services
   subtitle: Expertise
