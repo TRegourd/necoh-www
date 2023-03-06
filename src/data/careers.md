@@ -13,7 +13,7 @@ careersIntro:
 
 
     Et eveniet perferendis ut magnam veniam aut voluptates recusandae ab quia impedit? Et beatae atque qui totam consequuntur ad enim omnis et tenetur quasi ad dolorum enim aut commodi quia? In autem deleniti eum quasi similique et eaque voluptas aut neque officiis. 
-  image: austin-kehmeier-lyikexa4zqa-unsplash.jpeg
+  image: rejoindrenecoh_photo.png
 benefits:
   - title: Esprit d'équipe
     desc: "Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est
