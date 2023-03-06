@@ -17,7 +17,7 @@ serviceIntro:
 
 
     XXX
-  image: krakenimages-y5bvrlccx8k-unsplash.jpeg
+  image: social_photo.png
 serviceFeatures:
   title: Expertise Sociale
   subtitle: ""
