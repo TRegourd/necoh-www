@@ -12,7 +12,7 @@ serviceIntro:
     comptes. Mais nos compétences ne se résument pas qu'à cela !
 
     Notre service est en mesure de vous accompagner, quel que soit votre secteur d'activité, à tous les stades d'existence de votre entreprise : en phase de création, d'amorçage, de développement ou de transmission.
-  image: comptabilité2_photo.png
+  image: comptabilite2_photo.png
 serviceFeatures:
   title: Expertise Comptable
   subtitle: null
