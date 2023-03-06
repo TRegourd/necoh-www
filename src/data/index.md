@@ -41,7 +41,7 @@ indexAbout:
       text: Bureaux
     - number: "20"
       text: Collaborateurs
-  image: scott-graham-5fnmwej4taa-unsplash.jpeg
+  image: a-propos_accueil_photo.png
 indexBrands:
   title: Nos Services
   subtitle: Expertise
