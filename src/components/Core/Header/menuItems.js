@@ -47,6 +47,7 @@ const menus = [
 ]
 
 function filterMenuItems(menus) {
+  console.log(process.env.NODE_ENV)
   if (process.env.NODE_ENV === "production") {
     const namesToFilter = ["services", "emploi", "clients"]
 
