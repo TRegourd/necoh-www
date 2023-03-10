@@ -47,8 +47,7 @@ const menus = [
 ]
 
 function filterMenuItems(menus) {
-  console.log(process.env.PUBLISH_MODE === "production")
-  if (process.env.PUBLISH_MODE === "production") {
+  if (process.env.GATSBY_PUBLISH_MODE === "production") {
     const namesToFilter = ["services", "emploi", "clients"]
 
     return menus.filter(item => {
