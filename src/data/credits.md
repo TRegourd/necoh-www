@@ -7,16 +7,16 @@ text: >-
   Le site [www.necoh.fr](https://incandescent-beijinho-a03335.netlify.app/credits/www.necoh.fr)
 
 
-  Est exploité par la société : Necoh , société anonyme au capital social de XXX €
+  Est exploité par la société : Necoh , société par actions simplifiée au capital de 5 000 €
 
 
-  Immatriculée au RCS de CHAMBERY sous le numéro XXX
+  Immatriculée au RCS de CHAMBERY sous le numéro 914090501
 
 
   Dont le siège social est : 22 route de Challes 73000 BARBERAZ
 
 
-  N° SIRET : XXXXXXXX
+  N° SIRET : 91409050100018
 
 
   [+33 (0) 4 79 81 88 81](tel:+33479818881)
@@ -25,7 +25,7 @@ text: >-
   [contact@necoh.fr](mailto:contact@necoh.fr)
 
 
-  Le directeur de publication est M. Guillaume COHEN, en sa qualité de PDG de Necoh. Il peut être contacté aux coordonnées figurant dans les présentes conditions. Les présentes Conditions Générales ont pour objet de prévoir l’ensemble des conditions d’accès et d’utilisation du Site. L’accès et l’utilisation du Site impliquent l’acceptation tacite et sans réserve des présentes conditions par l’utilisateur.
+  Le directeur de publication est M. Guillaume COHEN, en sa qualité de Président de Necoh. Il peut être contacté aux coordonnées figurant dans les présentes conditions. Les présentes Conditions Générales ont pour objet de prévoir l’ensemble des conditions d’accès et d’utilisation du Site. L’accès et l’utilisation du Site impliquent l’acceptation tacite et sans réserve des présentes conditions par l’utilisateur.
 
 
   #### Hébergeur du Site
