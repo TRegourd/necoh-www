@@ -65,5 +65,5 @@ aboutCEO:
 
     >
 
-    >  / *Guillaume COHEN, Président*
+    > *Guillaume COHEN, Président*
 ---
