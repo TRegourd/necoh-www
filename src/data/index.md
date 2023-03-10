@@ -15,7 +15,7 @@ indexHero:
     - text: Juridique.
     - text: Audit.
     - text: Fiscalité.
-    - text: Social.
+    - text: Paie et RH
     - text: Conseils.
 indexAbout:
   title: Découvrez NECOH, des experts au service des entreprises et des particuliers
@@ -35,11 +35,11 @@ indexAbout:
     - name: Des Experts à votre service
     - name: Un collectif pour vous accompagner au quotidien
   numbers:
-    - number: "600"
+    - number: + de 600
       text: Dossiers
     - number: "2"
       text: Bureaux
-    - number: "20"
+    - number: + de 20
       text: Collaborateurs
   image: apropos_accueil.png
 indexBrands:
@@ -57,8 +57,8 @@ indexBrands:
       link: J'ai une problématique et je souhaite échanger sur les solutions possibles
       logo: necohconseils_logonoir-copie.png
     social:
-      title: Social
-      desc: Necoh Social
+      title: Paie et RH
+      desc: Necoh Paie et RH
       link: J'ai des salariés et je souhaite en déléguer la gestion
       logo: necohsociale_logocouleursnoir-copie.png
     juridique:
