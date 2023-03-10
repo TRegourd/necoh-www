@@ -1,8 +1,0 @@
-[context.development.environment]
-  PUBLISH_MODE = "development"
-
-[context.deploy-preview.environment]
-  PUBLISH_MODE = "development"
-
-[context.production.environment]
-  PUBLISH_MODE = "production"
