@@ -7,7 +7,7 @@ text: >-
   Le site [www.necoh.fr](https://incandescent-beijinho-a03335.netlify.app/credits/www.necoh.fr)
 
 
-  Est exploité par la société : Necoh , société par actions simplifiée au capital de 5 000 €
+  Est exploité par la société : Necoh Expertise Conseil, société par actions simplifiée au capital de 5 000 €
 
 
   Immatriculée au RCS de CHAMBERY sous le numéro 914090501
