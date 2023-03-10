@@ -15,10 +15,10 @@ indexHero:
     - text: Juridique.
     - text: Audit.
     - text: Fiscalité.
-    - text: Paie et RH
-    - text: Conseils.
+    - text: Paie et RH.
+    - text: Conseil.
 indexAbout:
-  title: Découvrez NECOH, des experts au service des entreprises et des particuliers
+  title: Découvrez NECOH, des experts au service des entreprises et des particuliers.
   subtitle: A propos
   textLeft: >-
     Porté par un territoire dynamique, NECOH prône un attachement local, gage de
@@ -52,7 +52,7 @@ indexBrands:
       link: Je recherche un expert-comptable pour m'accompagner
       logo: necohcomptable_logocouleursnoir-copie-2.png
     conseil:
-      title: Conseils
+      title: Conseil
       desc: Necoh Conseil
       link: J'ai une problématique et je souhaite échanger sur les solutions possibles
       logo: necohconseils_logonoir-copie.png
