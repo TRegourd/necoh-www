@@ -49,17 +49,19 @@ aboutCEO:
   subtitle: La raison d'être de NECOH
   image: photo-g-cohen-portrait.png
   text: >-
-    > Necoh Expertise Conseil SAS est une structure d'expertise comptable
-    installée à Barberaz. Notre atout : un ancrage fort à notre territoire et
-    aux spécificités de la montagne.
-
-    >
-
-    > Nous accompagnons les entreprises et les entrepreneurs, en expertise comptable, paie et RH, audit, conseil, juridique, fiscalité des particuliers dans tout type de secteurs d'activités : Services, Artisanat, Commerces et distributions, Hotels et Restaurants, BTP et Immobilier ainsi que les Professions libérales.
+    > Nous accompagnons les entreprises et les entrepreneurs, en expertise
+    comptable, paie et RH, audit, conseil, juridique, fiscalité des particuliers
+    dans tout type de secteurs d'activités : Services, Artisanat, Commerces et
+    distributions, Hotels et Restaurants, BTP et Immobilier ainsi que les
+    Professions libérales.
 
     >
 
     > Notre ambition est de garantir une proximité renforcée et un suivi personnalisé de nos clients. La dimension humaine et la confiance étant au centre de notre développement. 
+
+    >
+
+    > Notre atout : un ancrage fort à notre territoire et aux spécificités de la montagne.  
 
     >
 
