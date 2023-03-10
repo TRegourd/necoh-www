@@ -9,6 +9,6 @@ addressLine2: 73000 BARBERAZ
 google: https://goo.gl/maps/czPjxFstUQydJSJQ9
 linkedin: https://www.linkedin.com/company/necoh/
 facebook: https://www.facebook.com/NECOHExpertise/
-instagram: https://www.instagram.com/necohexpertise/
-twitter: https://twitter.com/necohexpertise
+instagram: " "
+twitter: " "
 ---
