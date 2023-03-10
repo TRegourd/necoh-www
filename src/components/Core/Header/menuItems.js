@@ -1,4 +1,4 @@
-export const menuItems = [
+const menus = [
   {
     name: "",
     label: "Accueil",
@@ -45,3 +45,18 @@ export const menuItems = [
     ],
   },
 ]
+
+function filterMenuItems(menus) {
+  if (process.env.NODE_ENV === "production") {
+    const namesToFilter = ["services", "emploi", "clients"]
+
+    return menus.filter(item => {
+      if (item.items) {
+        item.items = filterMenuItems(item.items, namesToFilter)
+      }
+      return !namesToFilter.includes(item.name)
+    })
+  } else return menus
+}
+
+export const menuItems = filterMenuItems(menus)
