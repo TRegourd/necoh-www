@@ -1,6 +1,6 @@
 ---
 serviceHeader:
-  title: Gestion Sociale
+  title: Paie et RH
   subtitle: Une équipe sociale vouée à la gestion de vos salariés
   logo: necohsociale_logocouleursnoir.png
   color: "#be1522"
