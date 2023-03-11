@@ -25,6 +25,7 @@ export default function FooterOne() {
       }
     }
   `)
+
   return (
     <Footer backgroundColor="#32141c">
       <Container>
@@ -44,7 +45,7 @@ export default function FooterOne() {
                 </Footer.Box>
                 <Footer.Text mb="36px">
                   Votre partenaire Expertise Comptable, Juridique, Fiscalité,
-                  Social et Audit.
+                  Conseil, Paie & RH.
                 </Footer.Text>
               </Footer.Widgets>
             </Col>
@@ -59,11 +60,13 @@ export default function FooterOne() {
                           A propos
                         </a>
                       </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="/emploi" aria-label="careers">
-                          Nous rejoindre
-                        </a>
-                      </Footer.ListItems>
+                      {process.env.GATSBY_PUBLISH_MODE !== "production" && (
+                        <Footer.ListItems>
+                          <a href="/emploi" aria-label="careers">
+                            Nous rejoindre
+                          </a>
+                        </Footer.ListItems>
+                      )}
                       <Footer.ListItems>
                         <a href="/terms" aria-label="terms">
                           Mentions Légales
@@ -77,54 +80,57 @@ export default function FooterOne() {
                     </Footer.List>
                   </Footer.Widgets>
                 </Col>
+
                 <Col xs="6" className="col-md-4 col-xs-6">
-                  <Footer.Widgets>
-                    <Footer.Title>Nos Métiers</Footer.Title>
-                    <Footer.List>
-                      <Footer.ListItems>
-                        <a
-                          href="/services/comptabilite"
-                          aria-label="service comptabilite"
-                        >
-                          Expertise Comptable
-                        </a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a
-                          href="/services/juridique"
-                          aria-label="service juridique"
-                        >
-                          Juridique
-                        </a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a
-                          href="/services/fiscalite"
-                          aria-label="service fiscalité"
-                        >
-                          Fiscalité
-                        </a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="/services/audit" aria-label="service audit">
-                          Audit
-                        </a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a href="/services/social" aria-label="service social">
-                          Social
-                        </a>
-                      </Footer.ListItems>
-                      <Footer.ListItems>
-                        <a
-                          href="/services/conseil"
-                          aria-label="service conseil"
-                        >
-                          Conseil
-                        </a>
-                      </Footer.ListItems>
-                    </Footer.List>
-                  </Footer.Widgets>
+                  {process.env.GATSBY_PUBLISH_MODE !== "production" && (
+                    <Footer.Widgets>
+                      <Footer.Title>Nos Métiers</Footer.Title>
+                      <Footer.List>
+                        <Footer.ListItems>
+                          <a
+                            href="/services/comptabilite"
+                            aria-label="service comptabilite"
+                          >
+                            Expertise Comptable
+                          </a>
+                        </Footer.ListItems>
+                        <Footer.ListItems>
+                          <a
+                            href="/services/juridique"
+                            aria-label="service juridique"
+                          >
+                            Juridique
+                          </a>
+                        </Footer.ListItems>
+                        <Footer.ListItems>
+                          <a
+                            href="/services/fiscalite"
+                            aria-label="service fiscalité"
+                          >
+                            Fiscalité
+                          </a>
+                        </Footer.ListItems>
+                        <Footer.ListItems>
+                          <a href="/services/audit" aria-label="service audit">
+                            Audit
+                          </a>
+                        </Footer.ListItems>
+                        <Footer.ListItems>
+                          <a href="/services/social" aria-label="Paie & RH">
+                            Paie & RH
+                          </a>
+                        </Footer.ListItems>
+                        <Footer.ListItems>
+                          <a
+                            href="/services/conseil"
+                            aria-label="service conseil"
+                          >
+                            Conseil
+                          </a>
+                        </Footer.ListItems>
+                      </Footer.List>
+                    </Footer.Widgets>
+                  )}
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
@@ -188,7 +194,7 @@ export default function FooterOne() {
                           <i className="fab fa-twitter" />
                         </a>
                       </Footer.SocialShareItem> */}
-                      <Footer.SocialShareItem>
+                      {/* <Footer.SocialShareItem>
                         <a
                           href={data.contactDetails?.frontmatter.instagram}
                           aria-label="Necoh instagram"
@@ -196,7 +202,7 @@ export default function FooterOne() {
                         >
                           <i className="fab fa-instagram" />
                         </a>
-                      </Footer.SocialShareItem>
+                      </Footer.SocialShareItem> */}
                       <Footer.SocialShareItem>
                         <a
                           href={data.contactDetails?.frontmatter.linkedin}
