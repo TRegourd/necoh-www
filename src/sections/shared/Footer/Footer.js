@@ -44,7 +44,7 @@ export default function FooterOne() {
                 </Footer.Box>
                 <Footer.Text mb="36px">
                   Votre partenaire Expertise Comptable, Juridique, Fiscalité,
-                  Social et Audit.
+                  Conseil, Paie & RH.
                 </Footer.Text>
               </Footer.Widgets>
             </Col>
@@ -111,8 +111,8 @@ export default function FooterOne() {
                         </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
-                        <a href="/services/social" aria-label="service social">
-                          Social
+                        <a href="/services/social" aria-label="Paie & RH">
+                          Paie & RH
                         </a>
                       </Footer.ListItems>
                       <Footer.ListItems>
@@ -188,7 +188,7 @@ export default function FooterOne() {
                           <i className="fab fa-twitter" />
                         </a>
                       </Footer.SocialShareItem> */}
-                      <Footer.SocialShareItem>
+                      {/* <Footer.SocialShareItem>
                         <a
                           href={data.contactDetails?.frontmatter.instagram}
                           aria-label="Necoh instagram"
@@ -196,7 +196,7 @@ export default function FooterOne() {
                         >
                           <i className="fab fa-instagram" />
                         </a>
-                      </Footer.SocialShareItem>
+                      </Footer.SocialShareItem> */}
                       <Footer.SocialShareItem>
                         <a
                           href={data.contactDetails?.frontmatter.linkedin}

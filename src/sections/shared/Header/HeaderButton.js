@@ -91,14 +91,14 @@ const HeaderButton = ({ btnLink, btnOneText, btnText, ...rest }) => {
   return (
     <HeaderButtonWrapper {...rest}>
       <ul className="d-none d-xl-flex list-unstyled">
-        <li>
+        {/* <li>
           <a href={data.contactDetails?.frontmatter.instagram} target="_blank">
             <i
               className="fab fa-instagram text-secondary"
               aria-label="Necoh Instagram"
             ></i>
           </a>
-        </li>
+        </li> */}
         <li>
           <a href={data.contactDetails?.frontmatter.linkedin} target="_blank">
             <i
