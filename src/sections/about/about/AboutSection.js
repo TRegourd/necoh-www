@@ -42,12 +42,12 @@ export default function AboutSection({ content, images }) {
                 image={image}
                 alt="about image"
               />
-              <Video
+              {/* <Video
                 id={content?.video}
                 className="video-btn btn-primary sonar-emitter"
               >
                 <i className="fa fa-play" />{" "}
-              </Video>
+              </Video> */}
             </About.Image>
           </Col>
           <Col

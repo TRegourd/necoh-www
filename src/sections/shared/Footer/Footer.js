@@ -44,8 +44,8 @@ export default function FooterOne() {
                   </Link>
                 </Footer.Box>
                 <Footer.Text mb="36px">
-                  Votre partenaire Expertise Comptable, Juridique, Fiscalité,
-                  Conseil, Paie & RH.
+                  Votre partenaire Expertise Comptable, Juridique, Audit,
+                  Fiscalité, Conseil, Paie & RH.
                 </Footer.Text>
               </Footer.Widgets>
             </Col>
