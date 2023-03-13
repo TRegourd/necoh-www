@@ -8,7 +8,7 @@ careersIntro:
     Vous bénéficier de toutes les conditions pour développer vos talents et
     votre épanouissement.
 
-    Nous avons à coeur de faire gagner en responsabilités les membres de notre équipe. Pour se faire la formation est au centre de notre politique RH, le partage d'expérience et l'accompagnement dans notre ADN. Chez Necoh, la qualité des relations humaines, l'ambiance au travail, l'innovation et l'autonomie sont des valeurs fortes.
+    Nous avons à coeur de faire gagner en responsabilité les membres de notre équipe. Pour se faire la formation est au centre de notre politique RH, le partage d'expérience et l'accompagnement dans notre ADN. Chez Necoh, la qualité des relations humaines, l'ambiance au travail, l'innovation et l'autonomie sont des valeurs fortes.
   image: nousrejoindre_photo.png
 benefits:
   - title: Esprit d'équipe
