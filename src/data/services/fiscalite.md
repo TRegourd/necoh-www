@@ -6,14 +6,7 @@ serviceHeader:
   color: "#936037"
 serviceIntro:
   title: A propos
-  subtitle: >-
-    Ut quis ullam rem exercitationem provident et sapiente possimus. Ut quas
-    maiores et voluptas dolorem eos blanditiis perspiciatis? Quo iusto aperiam
-    ut iusto libero ab obcaecati blanditiis rem esse eius aut magnam labore qui
-    quia rerum.
-
-
-    Sit galisum voluptates ut enim explicabo quo blanditiis ipsa. Ut omnis minima et magnam facilis sed voluptatibus ipsum qui accusamus quisquam eum quae cumque est dolore illo est totam praesentium? Aut sunt consequatur non tempora minima qui asperiores veniam.
+  subtitle: Texte de la section fiscalité
   image: fiscaliteparticuliers_photo.png
 serviceFeatures:
   title: Fiscalité des particuliers
