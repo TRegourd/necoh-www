@@ -3,16 +3,13 @@ careersHeader:
   title: Offres d'emploi
   subtitle: Nous rejoindre
 careersIntro:
-  title: Rejoindre Necoh
-  text: >-
-    Lorem ipsum dolor sit amet. Eum veniam consequatur quo rerum animi est esse
-    eius ut dolorem consequatur id sint omnis. Est quia praesentium in dolores
-    velit quos mollitia et voluptas molestias. Aut aspernatur omnis 33 pariatur
-    quam molestiae perferendis aut omnis impedit. Id quidem enim est sunt
-    doloremque in voluptatum doloribus nam porro fugit.
+  title: Rejoindre Necoh, c'est progresser dans un environnement professionnel
+    dynamique
+  text: >
+    Vous bénéficier de toutes les conditions pour développer vos talents et
+    votre épanouissement.
 
-
-    Et eveniet perferendis ut magnam veniam aut voluptates recusandae ab quia impedit? Et beatae atque qui totam consequuntur ad enim omnis et tenetur quasi ad dolorum enim aut commodi quia? In autem deleniti eum quasi similique et eaque voluptas aut neque officiis. 
+    Nous avons à coeur de faire gagner en responsabilités les membres de notre équipe. Pour se faire la formation est au centre de notre politique RH, le partage d'expérience et l'accompagnement dans notre ADN. Chez Necoh, la qualité des relations humaines, l'ambiance au travail, l'innovation et l'autonomie sont des valeurs fortes.
   image: nousrejoindre_photo.png
 benefits:
   - title: Esprit d'équipe
