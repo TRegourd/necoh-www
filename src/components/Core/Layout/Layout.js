@@ -39,6 +39,10 @@ export default function Layout({ children }) {
         meta={metaTags}
       >
         <link rel="icon" type="image/png" href={favicon} />
+        <meta
+          name="google-site-verification"
+          content="xPIrrlt_qjldnKejJjqVYrhMEM2mMZtFX67ogclqEbM"
+        />
       </Helmet>
       <Header />
       {children}

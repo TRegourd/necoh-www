@@ -6,7 +6,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Necoh`,
+    url: "https://necoh.fr",
+    title: "Necoh",
+    description:
+      "Votre partenaire Expertise Comptable, Juridique, Audit, Fiscalité, Conseil, Paie & RH.",
+    image:
+      "https://lh3.googleusercontent.com/p/AF1QipMVGRubz68z4eyEG3RrwLumL_9H7DrTmPYCbvrB=s1360-w1360-h1020",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
