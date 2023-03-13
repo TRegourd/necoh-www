@@ -8,8 +8,8 @@ indexHero:
     nous créons votre entreprise de demain.
   image0: hero-necoh.png
   image1: wepik-photo-mode-202295-95434.png
-  image2: wepik-photo-mode-202295-95532.png
-  image3: wepik-photo-mode-202295-95618.png
+  image2: accueil_visage1.png
+  image3: accuueil_visage2.png
   dynamicText:
     - text: Comptabilité.
     - text: Juridique.
