@@ -3,8 +3,7 @@ careersHeader:
   title: Offres d'emploi
   subtitle: Nous rejoindre
 careersIntro:
-  title: Rejoindre Necoh, c'est progresser dans un environnement professionnel
-    dynamique
+  title: Rejoindre Necoh, c'est progresser dans un environnement dynamique
   text: >
     Vous bénéficier de toutes les conditions pour développer vos talents et
     votre épanouissement.
