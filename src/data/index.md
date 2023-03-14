@@ -7,7 +7,7 @@ indexHero:
     projet.                                                                                                                                                                  Ensemble
     nous créons votre entreprise de demain.
   image0: hero-necoh.png
-  image1: wepik-photo-mode-202295-95434.png
+  image1: accueil_visage3.png
   image2: accueil_visage1.png
   image3: accuueil_visage2.png
   dynamicText:
