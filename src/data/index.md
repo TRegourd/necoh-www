@@ -135,4 +135,18 @@ indexReferences:
       logo: logo_zanoncharpente.png
     - name: Ortolland transport
       logo: logo-ortolland-500x400px.png
+    - logo: pharmacie-les-grands-moulins.png
+      name: Pharmacie du Grand Moulin
+    - logo: patriarche.jpg
+      name: Patriarche
+    - logo: gibello.png
+      name: Gibello
+    - logo: frerault-expertises.jpg
+      name: Frerault Expertise
+    - logo: lhtp.png
+      name: LH TP
+    - logo: crown-dental.jpg
+      name: Crown Dental
+    - logo: brasserie-folliet.png
+      name: Brasserie Folliet
 ---
