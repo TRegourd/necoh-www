@@ -1,37 +1,48 @@
 ---
 jobs:
-  - date: 2022-10-04T11:53:25.324Z
-    title: Comptable
+  - date: 2023-03-14T12:53:25.324Z
+    title: Comptable Confirmé(e)
     location: Chambéry
     type: CDI
     desc: >-
-      ##### Qui illo distinctio et omnis tempore.
+      **Votre Poste**
 
 
-      Lorem ipsum dolor sit amet. Est accusamus totam est minus soluta vel perspiciatis nisi nam galisum ipsum in reprehenderit quia. Ut accusantium animiet provident At dolores quisquam? Et nihil obcaecati **Ab rerum eum iusto quia rem repellat mollitia**.
+      Au sein de Necoh, vous intégrez une équipe conviviale et assurez en grande autonomie le suivi d'un portefeuille de clients.
 
 
-      * Est ducimus dolorem et tempora similique ut doloribus molestiae ea ipsum fuga.
-
-      * Cum vero molestiae quo adipisci omnis eos quisquam consequuntur.
-
-      * Rem ullam ipsum aut quaerat reiciendis.
-
-      * Est voluptates voluptate cum repellendus deserunt et pariatur dolore in unde voluptate.
-
-      * Aut exercitationem itaque 33 itaque sint et mollitia quis.
+      Vous préparez les états financiers des clients ainsi que les situations comptables et tableaux de bord en collaboration directe avec nos managers.
 
 
-      ###### Ut nihil blanditiis qui eius officia rem voluptatem.
+      Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre evolution.
 
 
-      Sit veritatis dolorum At pariatur sint *Ea cupiditate id voluptatem accusantium*. Et voluptate praesentium **Id iure vel quidem ipsum sit rerum fugiat**.
+      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENIO vous permettent d'etre réactifs et disponibles.
 
 
-      ###### Id repudiandae ipsum ut laboriosam suscipit.
+      Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
 
 
-      Eos assumenda vero aut esse nesciunt aut necessitatibus earum. Aut molestiae provident sit odit aspernaturquo nihil. Ut rerum quos **Et omnis** ut quia provident. Vel veritatis itaque vel odio quibusdam in nobis amet et aliquid voluptates.
+      **Salaire annuel : 32k€ minimum + Intéressement**
+
+
+      **Votre Profil**
+
+
+      * Vous avez une expérience d'au moins 4 ans en cabinet d'Expertise-comptable. 
+
+      * Vous etes rigoureux avec un sens de l'organisation, proactif, sympathique avec un bon sens du relationnel et digital centré.
+
+
+      **Vos avantages**
+
+
+      * Intéressement, Tickets restaurants, Wiismile (oeuvres sociales), chèques cadeaux et journée détente.
+
+      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi
+
+
+      Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ...                   **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
   - date: 2022-10-03T11:54:27.147Z
     title: Avocat
     location: Chambéry
