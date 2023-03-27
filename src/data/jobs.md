@@ -51,4 +51,5 @@ jobs:
     location: Test
     type: Test
     desc: T﻿est
+    link: '""'
 ---
