@@ -4,7 +4,6 @@ jobs:
     title: Comptable Confirmé(e)
     location: Chambéry
     type: CDI
-    link: ""
     desc: >-
       **Votre Poste**
 
@@ -47,4 +46,9 @@ jobs:
 
 
       **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
+  - date: 2023-03-27T18:22:37.971Z
+    title: Test
+    location: Test
+    type: Test
+    desc: T﻿est
 ---
