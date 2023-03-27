@@ -30,15 +30,55 @@ exports.sourceNodes = async ({
 
   let parser = new Parser()
 
-  const weblexData = await parser.parseURL(
-    "https://www.weblex.fr/passerelle/621-37b1/772740a565/flux.rss"
-  )
+  let weblexData = {
+    items: [
+      {
+        content: "",
+        categories: "",
+        contentSnippet: "",
+        id: "",
+        isoDate: "",
+        link: "",
+        pubDate: "",
+        title: "",
+        enclosure: "",
+      },
+    ],
+  }
+  let facebookData = {
+    items: [
+      {
+        content: "",
+        categories: "",
+        contentSnippet: "",
+        id: "",
+        isoDate: "",
+        link: "",
+        pubDate: "",
+        title: "",
+        enclosure: "",
+        creator: "",
+      },
+    ],
+  }
 
-  const facebookData = await parser.parseURL(
-    "https://rss.app/feeds/CxNqKVxRZ49DMwnH.xml"
-  )
+  try {
+    weblexData = await parser.parseURL(
+      "https://www.weblex.fr/passerelle/621-37b1/772740a565/flux.rss"
+    )
+  } catch (err) {
+    console.log(err)
+  }
 
-  weblexData.items.slice(0, 300).forEach((post, i) =>
+  try {
+    facebookData = await parser.parseURL(
+      "https://rss.app/feeds/CxNqKVxRZ49DMwnH.xml"
+    )
+  } catch (err) {
+    console.log(err)
+  }
+
+  weblexData?.items?.slice(0, 300).forEach((post, i) =>
     createNode({
       ...post,
       image: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
@@ -54,7 +94,7 @@ exports.sourceNodes = async ({
     })
   )
 
-  facebookData.items.forEach((post, i) =>
+  facebookData?.items?.forEach((post, i) =>
     createNode({
       ...post,
       image: post.enclosure?.url,
