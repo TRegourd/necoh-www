@@ -26,7 +26,8 @@ export default function About({ data }) {
         content={data.team.frontmatter?.teamHeader}
         employees={data.team.frontmatter?.employees}
       /> */}
-      {process.env.GATSBY_PUBLISH_MODE !== "production" && <Promo />}
+      {/* {process.env.GATSBY_PUBLISH_MODE !== "production" && <Promo />} */}
+      <Promo />
       <Footer />
     </PageWrapper>
   )
