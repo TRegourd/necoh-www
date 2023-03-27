@@ -804,7 +804,13 @@ collections:
               - { label: Localisation, name: location, widget: string }
               - { label: Type, name: type, widget: string }
               - { label: Date, name: date, widget: date }
-              - { label: Lien, name: link, widget: string, required: false }
+              - {
+                  label: Lien,
+                  name: link,
+                  widget: string,
+                  required: false,
+                  default: "",
+                }
               - { label: Description, name: desc, widget: markdown }
 
   - label: "Crédits"
