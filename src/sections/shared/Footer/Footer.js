@@ -60,13 +60,14 @@ export default function FooterOne() {
                           A propos
                         </a>
                       </Footer.ListItems>
-                      {process.env.GATSBY_PUBLISH_MODE !== "production" && (
+                      {
+                        //process.env.GATSBY_PUBLISH_MODE !== "production" &&
                         <Footer.ListItems>
                           <a href="/emploi" aria-label="careers">
                             Nous rejoindre
                           </a>
                         </Footer.ListItems>
-                      )}
+                      }
                       <Footer.ListItems>
                         <a href="/terms" aria-label="terms">
                           Mentions Légales

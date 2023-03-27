@@ -294,7 +294,9 @@ exports.createPages = ({ actions, graphql }) => {
         const jobTemplate = path.resolve("./src/detailPages/career-details.js")
 
         result.data.jobsQuery.frontmatter.jobs?.forEach(job => {
-          const slug = slugify(job.title + dayjs(job.date).format("DDMMYYYY"))
+          const slug = encodeURIComponent(
+            slugify(job.title + dayjs(job.date).format("DDMMYYYY"))
+          )
           createPage({
             path: `/emploi/${slug}`,
             component: jobTemplate,

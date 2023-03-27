@@ -48,7 +48,7 @@ const menus = [
 
 function filterMenuItems(menus) {
   if (process.env.GATSBY_PUBLISH_MODE === "production") {
-    const namesToFilter = ["services", "emploi", "clients"]
+    const namesToFilter = ["services", "clients"]
 
     return menus.filter(item => {
       if (item.items) {
