@@ -42,7 +42,10 @@ jobs:
       * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi
 
 
-      Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ...                   **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
+      Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ...                   
+
+
+      **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
   - date: 2022-10-03T11:54:27.147Z
     title: Avocat
     location: Chambéry
