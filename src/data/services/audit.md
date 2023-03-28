@@ -22,9 +22,10 @@ serviceFeatures:
       logo: rainbow-solid.svg
     - title: "Audit contractuel "
       desc: Vous avez besoin d'un audit financier ? Un audit social ? Un audit
-        juridique ? Quel que soit votre demande, nos équipes dôtés de
+        juridique ? Quel que soit votre demande, nos équipes dotées de
         compétences pluridisciplinaires pourront vous accompagner et émettre un
-        avis.
+        avis objectif concernant le fonctionnement et l'organisation de votre
+        entreprise.
       logo: feather-solid.svg
 serviceCTA:
   title: Besoin d'auditer des comptes ?
