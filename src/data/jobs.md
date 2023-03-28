@@ -98,13 +98,13 @@ jobs:
       **Votre Profil**
 
 
-      * Vous avez une expérience d'au moins 3 ans en tant que Gestionnaire de Paie 
+      Vous avez une expérience d'au moins 3 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
 
-      * Formation en Paie/Gestion/Comptabilité
 
-      * Maitrise du logiciel SILAE
+      Vous maitrisez du logiciel SILAE.
 
-      * Vous etes curieux(se), autonome, proactif(ve), sympathique et à l'écoute
+
+      Vous êtes curieux(se), autonome, proactif(ve), sympathique et à l'écoute.
 
 
       **Vos avantages**
