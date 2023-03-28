@@ -28,8 +28,6 @@ exports.sourceNodes = async ({
   const WEBLEX_POST_NODE_TYPE = `WeblexPost`
   const FACEBOOK_FEED_NODE_TYPE = `FacebookFeed`
 
-  let parser = new Parser()
-
   let weblexData = {
     items: [
       {
@@ -63,6 +61,11 @@ exports.sourceNodes = async ({
   }
 
   try {
+    let parser = new Parser({
+      customFields: {
+        item: "image",
+      },
+    })
     weblexData = await parser.parseURL(
       "https://www.weblex.fr/passerelle/621-37b1/772740a565/flux.rss"
     )
@@ -71,6 +74,7 @@ exports.sourceNodes = async ({
   }
 
   try {
+    let parser = new Parser()
     facebookData = await parser.parseURL(
       "https://rss.app/feeds/CxNqKVxRZ49DMwnH.xml"
     )
@@ -78,10 +82,15 @@ exports.sourceNodes = async ({
     console.log(err)
   }
 
-  weblexData?.items?.slice(0, 300).forEach((post, i) =>
+  weblexData?.items?.slice(0, 300).forEach((post, i) => {
+    let image = ""
+    if (post.image?.url && post.image.url.length > 0) {
+      image = post.image.url[0]
+    }
+
     createNode({
       ...post,
-      image: post.enclosure.url?.replace(/%[0-9A-Fa-f][0-9A-Fa-f]/g, "/"),
+      image: image,
       id: createNodeId(
         `${WEBLEX_POST_NODE_TYPE}-${Math.random()}-${Math.random()}`
       ),
@@ -92,7 +101,7 @@ exports.sourceNodes = async ({
         contentDigest: createContentDigest(post),
       },
     })
-  )
+  })
 
   facebookData?.items?.forEach((post, i) =>
     createNode({
