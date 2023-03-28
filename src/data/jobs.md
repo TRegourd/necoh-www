@@ -18,7 +18,7 @@ jobs:
       Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre evolution.
 
 
-      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENIO vous permettent d'etre réactifs et disponibles.
+      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENEO vous permettent d'etre réactifs et disponibles.
 
 
       Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
@@ -98,13 +98,13 @@ jobs:
       **Votre Profil**
 
 
-      * Vous avez une expérience d'au moins 3 ans en tant que Gestionnaire de Paie 
+      Vous avez une expérience d'au moins 3 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
 
-      * Formation en Paie/Gestion/Comptabilité
 
-      * Maitrise du logiciel SILAE
+      Vous maitrisez du logiciel SILAE.
 
-      * Vous etes curieux(se), autonome, proactif(ve), sympathique et à l'écoute
+
+      Vous êtes curieux(se), autonome, proactif(ve), sympathique et à l'écoute.
 
 
       **Vos avantages**
