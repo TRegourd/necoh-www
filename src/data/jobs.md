@@ -4,7 +4,7 @@ jobs:
     title: Comptable Confirmé(e)
     location: Chambéry
     type: CDI
-    link: ""
+    link: "mail"
     desc: >-
       **Votre Poste**
 
