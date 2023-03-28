@@ -18,7 +18,7 @@ jobs:
       Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre evolution.
 
 
-      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENIO vous permettent d'etre réactifs et disponibles.
+      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENEO vous permettent d'etre réactifs et disponibles.
 
 
       Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
