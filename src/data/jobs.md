@@ -47,4 +47,10 @@ jobs:
 
 
       **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
+  - link: ""
+    date: 2023-03-28T09:59:47.997Z
+    title: Gestionnaire de Paie
+    location: Chambéry
+    type: CDI
+    desc: Offre de gestionnaire de paie
 ---
