@@ -61,7 +61,6 @@ export default function FooterOne() {
                         </a>
                       </Footer.ListItems>
                       {
-                        //process.env.GATSBY_PUBLISH_MODE !== "production" &&
                         <Footer.ListItems>
                           <a href="/emploi" aria-label="careers">
                             Nous rejoindre
@@ -83,55 +82,53 @@ export default function FooterOne() {
                 </Col>
 
                 <Col xs="6" className="col-md-4 col-xs-6">
-                  {process.env.GATSBY_PUBLISH_MODE !== "production" && (
-                    <Footer.Widgets>
-                      <Footer.Title>Nos Métiers</Footer.Title>
-                      <Footer.List>
-                        <Footer.ListItems>
-                          <a
-                            href="/services/comptabilite"
-                            aria-label="service comptabilite"
-                          >
-                            Expertise Comptable
-                          </a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                          <a
-                            href="/services/juridique"
-                            aria-label="service juridique"
-                          >
-                            Juridique
-                          </a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                          <a
-                            href="/services/fiscalite"
-                            aria-label="service fiscalité"
-                          >
-                            Fiscalité
-                          </a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                          <a href="/services/audit" aria-label="service audit">
-                            Audit
-                          </a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                          <a href="/services/social" aria-label="Paie & RH">
-                            Paie & RH
-                          </a>
-                        </Footer.ListItems>
-                        <Footer.ListItems>
-                          <a
-                            href="/services/conseil"
-                            aria-label="service conseil"
-                          >
-                            Conseil
-                          </a>
-                        </Footer.ListItems>
-                      </Footer.List>
-                    </Footer.Widgets>
-                  )}
+                  <Footer.Widgets>
+                    <Footer.Title>Nos Métiers</Footer.Title>
+                    <Footer.List>
+                      <Footer.ListItems>
+                        <a
+                          href="/services/comptabilite"
+                          aria-label="service comptabilite"
+                        >
+                          Expertise Comptable
+                        </a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a
+                          href="/services/juridique"
+                          aria-label="service juridique"
+                        >
+                          Juridique
+                        </a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a
+                          href="/services/fiscalite"
+                          aria-label="service fiscalité"
+                        >
+                          Fiscalité
+                        </a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="/services/audit" aria-label="service audit">
+                          Audit
+                        </a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a href="/services/social" aria-label="Paie & RH">
+                          Paie & RH
+                        </a>
+                      </Footer.ListItems>
+                      <Footer.ListItems>
+                        <a
+                          href="/services/conseil"
+                          aria-label="service conseil"
+                        >
+                          Conseil
+                        </a>
+                      </Footer.ListItems>
+                    </Footer.List>
+                  </Footer.Widgets>
                 </Col>
                 <Col xs="12" className="col-md-4 col-xs-6">
                   <Footer.Widgets>
