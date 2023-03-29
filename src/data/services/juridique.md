@@ -6,16 +6,10 @@ serviceHeader:
   color: "#804e33"
 serviceIntro:
   title: A propos
-  subtitle: >-
-    Lorem ipsum dolor sit amet. Qui sint consequuntur sed amet maxime hic autem
-    molestiae ea molestiae temporibus! Est sunt delectus et eveniet fugit id
-    perspiciatis nobis. Eos tempora alias quo delectus magnam et sint dolores.
-
-
-    Ut nesciunt architecto eos delectus doloribus id minima nostrum est iure vitae dolorem corrupti ut internos numquam et tempore galisum. Et illo obcaecati et ipsam sequi ut tempora quibusdam et provident libero ut commodi sunt?
-
-
-    Vel internos maiores ut doloribus soluta aut nesciunt consequatur et cupiditate alias qui voluptas possimus est perspiciatis sequi et tempora nostrum. Et reprehenderit impedit sed quasi dolor ea quidem cumque cum nihil aspernatur. Ut rerum atque est modi architecto sit quod nemo.
+  subtitle: Il est difficile de maîtriser toute la réglementation juridique, une
+    seule erreur et cela peut être lourd de conséquence pour votre entreprise.
+    C'est pourquoi il est important d'être épaulé par un juriste dans vos
+    opérations juridique du quotidien.
   image: juridique_photo.png
 serviceFeatures:
   title: Juridique
