@@ -34,5 +34,6 @@ serviceFeatures:
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'assistance juridique ?
-  desc: Nous vous mettons en relation avec des avocats spécialisés !
+  desc: Notre équipe de juriste est là pour vous conseiller et vous apporter des
+    solutions à vos attentes de chef d'entreprise.
 ---
