@@ -8,7 +8,9 @@ serviceIntro:
   title: A propos
   subtitle: "Notre mission est de vérifier la qualité et la transparence des
     informations financières et comptables des entités visés que ce soit dans le
-    cadre d'un audit légal ou contractuel. Chez NECOH Audit, "
+    cadre d'un audit légal ou contractuel. Chez NECOH Audit, notre rôle est
+    d'accréditer les états financiers de votre entreprise et de vous aider à
+    mesurer vos responsabilités financières, sociales, juridiques... "
   image: audit_photo.png
 serviceFeatures:
   title: Audit
@@ -22,9 +24,11 @@ serviceFeatures:
       logo: rainbow-solid.svg
     - title: "Audit contractuel "
       desc: Vous avez besoin d'un audit financier ? Un audit social ? Un audit
-        juridique ? Quel que soit votre demande, nos équipes dôtés de
-        compétences pluridisciplinaires pourront vous accompagner et émettre un
-        avis.
+        juridique ? Un audit d'organisation ? Un audit d'évaluation ? Un audit
+        de conformité et d'optimisation ?  Quel que soit votre demande, nos
+        équipes dotées de compétences pluridisciplinaires pourront vous
+        accompagner et émettre un avis objectif concernant le fonctionnement et
+        l'organisation de votre entreprise.
       logo: feather-solid.svg
 serviceCTA:
   title: Besoin d'auditer des comptes ?
