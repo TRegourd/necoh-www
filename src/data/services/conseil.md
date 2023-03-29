@@ -6,29 +6,20 @@ serviceHeader:
   color: "#9f4f2d"
 serviceIntro:
   title: A propos
-  subtitle: Aut debitis eveniet aut quas quia et inventore nulla qui itaque
-    cumque. A nihil vitae ut consectetur aliquam id neque consequatur rem enim
-    molestiae eos aspernatur galisum est modi dolor 33 pariatur nulla. 33
-    nostrum placeat eum explicabo rerum aut repudiandae qui quisquam veniam qui
-    placeat velit.
+  subtitle: ...
   image: conseil_photo.png
 serviceFeatures:
   title: Conseil aux entreprises
-  subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
+  subtitle: ...
   features:
     - title: Création d'entreprise
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+      desc: ...
       logo: rainbow-solid.svg
     - title: Bilan Comptable
-      desc: "A few decent projects can keep your business very healthy for a long
-        time. "
+      desc: ...
       logo: feather-solid.svg
     - title: Conseil en Gestion
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+      desc: ...
       logo: bolt-solid.svg
 serviceCTA:
   title: Vous recherchez un consultant spécialisé ?
