@@ -41,7 +41,19 @@ serviceFeatures:
         > Le bilan de retraite des salariés 
       logo: feather-solid.svg
     - title: Conseil social
-      desc: X
+      desc: >
+        Vous recherchez un spécialiste pour :
+
+        > Choisir le contrat de travail adapté 
+
+        > Se tenir informé de l'actualité juridique
+
+        > Mettre en oeuvre des procédures disciplinaires et licenciements
+
+        > Etablir un audit de la paie et des charges sociales
+
+
+        Dirigeant ! vous souhaitez être conseillé dans le choix de votre système de rémunération, bilan prévoyance et retraite. Notre équipe est là pour accompagner !
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'un contrat de travail ou de bulletins de paie ?
