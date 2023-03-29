@@ -15,19 +15,22 @@ serviceFeatures:
   title: Juridique
   subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
   features:
-    - title: Code du Travail
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+    - title: Gestion du secrétariat juridique annuel
+      desc: |-
+        Vous recherchez l'intervention d'un spécialiste pour :
+        > La rédaction des procès verbaux d'AG
+        > La gestion des dividendes
+        > La rédaction du rapport de gestion 
+        > ...
       logo: rainbow-solid.svg
-    - title: Code Pénal
-      desc: "A few decent projects can keep your business very healthy for a long
-        time. "
+    - title: Constitution de société
+      desc: "Nous vous accompagnons dans la rédaction des statuts et la gestion des
+        formalités légales liées à l'immatriculation. "
       logo: feather-solid.svg
-    - title: Droit des sociétés
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+    - title: Rédaction des actes juridiques
+      desc: Nos juristes vous assiste sur la partie des modifications statutaires mais
+        également dans la gestion du formalisme en cas de transformation, fusion
+        et ou dissolution.
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'assistance juridique ?
