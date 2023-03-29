@@ -32,7 +32,13 @@ serviceFeatures:
         > Gestion des entrées/sorties de personne
       logo: rainbow-solid.svg
     - title: Gestion sociale
-      desc: X
+      desc: |-
+        Vous recherchez un spécialiste pour :
+        > La gestion du recrutement
+        > La mise en place des entretiens annuels
+        > La gestion de la formation
+        > L'étude et choix du régime de prévoyance
+        > Le bilan de retraite des salariés 
       logo: feather-solid.svg
     - title: Conseil social
       desc: X
