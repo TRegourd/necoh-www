@@ -11,7 +11,7 @@ serviceIntro:
     pour mieux vous accompagner.
   image: conseil_photo.png
 serviceFeatures:
-  title: Conseils en gestion d'entreprise
+  title: Gestion d'entreprise
   subtitle: ""
   features:
     - title: Le suivi de gestion et prévisionnel
