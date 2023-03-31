@@ -14,7 +14,7 @@ aboutIntro:
     paie.                                                                          Nous
     déployons une écoute active au service de la réussite de votre projet
     professionnel afin de vous délivrer les outils et conseils adéquats. Notre
-    équipe se forme assidument afin d'évoluer et de s'adapter à l'environnement
+    équipe se forme assidûment afin d'évoluer et de s'adapter à l'environnement
     contraint et changeant, dans le but de vous aider à prendre les meilleures
     décisions.
   textRight: >-
