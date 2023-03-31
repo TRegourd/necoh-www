@@ -26,9 +26,8 @@ serviceFeatures:
       desc: Vous avez besoin d'un audit financier ? Un audit social ? Un audit
         juridique ? Un audit d'organisation ? Un audit d'évaluation ? Un audit
         de conformité et d'optimisation ?  Quel que soit votre demande, nos
-        équipes dotées de compétences pluridisciplinaires pourront vous
-        accompagner et émettre un avis objectif concernant le fonctionnement et
-        l'organisation de votre entreprise.
+        équipes pourront vous accompagner et émettre un avis objectif concernant
+        le fonctionnement et l'organisation de votre entreprise.
       logo: feather-solid.svg
 serviceCTA:
   title: Besoin d'auditer des comptes ?
