@@ -1,7 +1,7 @@
 ---
 serviceHeader:
-  title: Paie et RH
-  subtitle: Une équipe sociale vouée à la gestion de vos salariés
+  title: Paie & RH
+  subtitle: Une équipe sociale dédiée à la gestion de vos salariés
   logo: necohsociale_logocouleursnoir.png
   color: "#be1522"
 serviceIntro:
@@ -13,7 +13,7 @@ serviceIntro:
     calcul des charges sociales.
 
 
-    Le pôle social de chez NECOH vous accompagne afin de garantir et optimiser la gestion de votre personnel. Nous vous apportons et mettons à disposition notre expertise en matière de production sociale et de conseil en ressources humaines.
+    Le pôle social de chez NECOH vous accompagne afin de garantir et optimiser la gestion de votre personnel. Nous vous apportons notre expertise en matière de production sociale et de conseil en ressources humaines.
 
 
     Nous connaissons votre métier et vos problématiques et sommes à votre écoute pour vous accompagner.
@@ -24,11 +24,11 @@ serviceFeatures:
   features:
     - title: Production de la paie
       desc: >
-        Vous avez besoin de confier votre production de paie ? Nous vous
+        Vous avez besoin de confier votre production de paies ? Nous vous
         accompagnons pour l'établissement des bulletins de salaire et des
         déclarations sociales, la rédaction des contrats de travails et
         avenants, la gestion des incidents de paie (maladie, accident du
-        travail...), la gestion des entrées/sorties de personne.
+        travail...), la gestion des entrées/sorties de personnel.
       logo: rainbow-solid.svg
     - title: Gestion sociale
       desc: Vous recherchez un spécialiste pour vous assister dans la gestion du
@@ -40,13 +40,13 @@ serviceFeatures:
     - title: Conseil social
       desc: >
         Vous recherchez un spécialiste pour vous conseiller dans les choix de
-        contrats de travail,  vous tenir informé de l'actualité juridique,  vous
-        aider à mettre en oeuvre des procédures disciplinaires et licenciements
-        mais aussi vous établir un audit de la paie et des charges sociales.
-        Nous sommes à vos côtés pour prendre les bonnes décisions !
+        contrats de travail,  vous tenir informé de l'actualité juridique
+        sociale,  vous aider à mettre en oeuvre des procédures disciplinaires et
+        licenciements mais aussi établir un audit de la paie et des charges
+        sociales : Nous sommes à vos côtés pour prendre les bonnes décisions !
 
 
-        Dirigeant ! vous souhaitez être conseillé dans le choix de votre système de rémunération, bilan prévoyance et retraite. Notre équipe de spécialiste est également là pour accompagner !
+        Dirigeant, vous souhaitez être conseillé dans le choix de votre système de rémunération, bilan prévoyance et retraite ? Notre équipe de spécialistes est également là pour accompagner.
       logo: bolt-solid.svg
 serviceCTA:
   title: Besoin d'un contrat de travail ou de bulletins de paie ?
