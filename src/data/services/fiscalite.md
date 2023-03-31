@@ -1,7 +1,7 @@
 ---
 serviceHeader:
   title: Fiscalité des particuliers
-  subtitle: La gestion fiscale des revenus locatifs LMNP et LMP
+  subtitle: "La gestion fiscale de vos revenus locatifs "
   logo: necohfiscale_logocouleursnoir.png
   color: "#936037"
 serviceIntro:
