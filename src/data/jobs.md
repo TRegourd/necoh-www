@@ -4,7 +4,7 @@ jobs:
     title: Comptable Confirmé(e)
     location: Chambéry
     type: CDI
-    link: "mail"
+    link: mail
     desc: >-
       **Votre Poste**
 
@@ -18,7 +18,7 @@ jobs:
       Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre evolution.
 
 
-      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENIO vous permettent d'etre réactifs et disponibles.
+      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENEO vous permettent d'etre réactifs et disponibles.
 
 
       Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
@@ -47,4 +47,79 @@ jobs:
 
 
       **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
+  - date: 2023-03-28T12:31:23.909Z
+    title: Gestionnaire de paie Confirmé(e)
+    desc: >-
+      **Votre poste**
+
+
+      **Gérer les bulletins de salaires**
+
+
+      * Paramétrer les dossiers sur le logiciel SILAE. 
+
+      * Récupérer les éléments variables de paie auprès du client afin de réaliser les fiches de paie.
+
+      * Vérifier le respect de la législation/conventionnelle ou contractuelle.
+
+      * Transmettre les bulletins aux clients.
+
+      * Etre disponible pour répondre aux questions et demandes des clients.
+
+
+      **Gérer les charges sociales**
+
+
+      * Collaborer avec les organismes sociaux.
+
+      * Mettre en place les mandats de prélèvements SEPA.
+
+      * Calculer et déposer les DSN mensuelles.
+
+      * Suivre le traitement des DSN.
+
+      * Régulariser les anomalies des DSN si nécessaire.
+
+
+      **Gérer l'administration du personnel**
+
+
+      * Intégrer les nouveaux salariés sur SILAE.
+
+      * Effectuer les déclarations associés.
+
+      * Etablir les contrats de travail.
+
+      * Réaliser les procédures de ruptures conventionnelles.
+
+      * Salaire annuel : 32k€ minimum + Intéressement.
+
+
+      **Votre Profil**
+
+
+      Vous avez une expérience d'au moins 3 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
+
+
+      Vous maitrisez du logiciel SILAE.
+
+
+      Vous êtes curieux(se), autonome, proactif(ve), sympathique et à l'écoute.
+
+
+      **Vos avantages**
+
+
+      * Intéressement, Tickets restaurants, Wiismile (oeuvres sociales), chèques cadeaux et journée détente.
+
+      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi
+
+
+      Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ... 
+
+
+      **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
+    type: CDI
+    location: Chambéry
+    link: mail
 ---
