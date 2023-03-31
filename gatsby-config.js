@@ -6,7 +6,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    url: "https://necoh.fr",
+    url: "https://wwww.necoh.fr",
+    siteUrl: "https://wwww.necoh.fr",
     title: "Necoh",
     description:
       "Votre partenaire Expertise Comptable, Juridique, Audit, Fiscalité, Conseil, Paie & RH.",
@@ -19,6 +20,12 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require("sass"),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     `gatsby-plugin-react-helmet`,
