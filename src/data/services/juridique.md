@@ -13,8 +13,7 @@ serviceIntro:
   image: juridique_photo.png
 serviceFeatures:
   title: Juridique
-  subtitle: Concentrez vous sur la gestion de votre entreprise et libérez vous des
-    aspects juridique lourds et complexes
+  subtitle: ""
   features:
     - title: Gestion du secrétariat juridique annuel
       desc: |-
