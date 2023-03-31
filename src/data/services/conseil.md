@@ -14,11 +14,13 @@ serviceFeatures:
   title: Conseil aux entreprises
   subtitle: ...
   features:
-    - title: Création d'entreprise
-      desc: ...
+    - title: Le suivi de gestion
+      desc: "Vous avez besoin de savoir ou vous en êtes pour maitriser au mieux votre
+        gestion. Nous vous proposons notre solution de tableau de bord. "
       logo: rainbow-solid.svg
-    - title: Bilan Comptable
-      desc: ...
+    - title: Le prévisionnel
+      desc: Répondons ensemble à vos interrogations via un prévisionnel d'activité
+        formalisé dans un rapport complet avec nos analyses et recommandations.
       logo: feather-solid.svg
     - title: Conseil en Gestion
       desc: ...
