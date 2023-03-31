@@ -6,7 +6,9 @@ serviceHeader:
   color: "#9f4f2d"
 serviceIntro:
   title: A propos
-  subtitle: ...
+  subtitle: A chaque étape de votre développement, nous sommes à vos côtés pour
+    prendre les meilleures décisions et vous proposons des solutions innovantes
+    pour mieux vous accompagner.
   image: conseil_photo.png
 serviceFeatures:
   title: Conseil aux entreprises
