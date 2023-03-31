@@ -14,7 +14,7 @@ const menus = [
         items: [
           { name: "services/comptabilite", label: "Comptabilité" },
           { name: "services/audit", label: "Audit" },
-          { name: "services/social", label: "Social" },
+          { name: "services/social", label: "Paie & RH" },
           { name: "services/fiscalite", label: "Fiscalité des particuliers" },
           { name: "services/conseil", label: "Conseil" },
           { name: "services/juridique", label: "Juridique" },
