@@ -6,11 +6,11 @@ serviceHeader:
   color: "#f39200"
 serviceIntro:
   title: A propos
-  subtitle: "Notre mission est de vérifier la qualité et la transparence des
-    informations financières et comptables des entités visés que ce soit dans le
-    cadre d'un audit légal ou contractuel. Chez NECOH Audit, notre rôle est
+  subtitle: Notre mission est de vérifier la qualité et la transparence des
+    informations financières et comptables des entités visées que ce soit dans
+    le cadre d'un audit légal ou contractuel. Chez NECOH Audit, notre rôle est
     d'accréditer les états financiers de votre entreprise et de vous aider à
-    mesurer vos responsabilités financières, sociales, juridiques... "
+    apprécier vos responsabilités financières, sociales et juridiques.
   image: audit_photo.png
 serviceFeatures:
   title: Audit
