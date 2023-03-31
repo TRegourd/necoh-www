@@ -25,12 +25,12 @@ export default function Home({ data }) {
         content={data.index.frontmatter?.indexAbout}
         images={data.images?.nodes}
       />
-      {process.env.GATSBY_PUBLISH_MODE !== "production" && (
-        <Expertise
-          content={data.index.frontmatter?.indexBrands}
-          images={data.images?.nodes}
-        />
-      )}
+
+      <Expertise
+        content={data.index.frontmatter?.indexBrands}
+        images={data.images?.nodes}
+      />
+
       <TestimonialSection
         content={data.index.frontmatter?.indexTestimonials}
         images={data.images?.nodes}
