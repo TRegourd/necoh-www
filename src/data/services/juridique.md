@@ -16,12 +16,9 @@ serviceFeatures:
   subtitle: ""
   features:
     - title: Gestion du secrétariat juridique annuel
-      desc: |-
-        Vous recherchez l'intervention d'un spécialiste pour :
-        > La rédaction des procès verbaux d'AG
-        > La gestion des dividendes
-        > La rédaction du rapport de gestion 
-        > ...
+      desc: Vous recherchez l'intervention d'un spécialiste pour la rédaction des
+        procès verbaux d'AG, la gestion des dividendes, la rédaction du rapport
+        de gestion...
       logo: rainbow-solid.svg
     - title: Constitution de société
       desc: "Nous vous accompagnons dans la rédaction des statuts et la gestion des
