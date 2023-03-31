@@ -11,20 +11,16 @@ serviceIntro:
     pour mieux vous accompagner.
   image: conseil_photo.png
 serviceFeatures:
-  title: Conseil aux entreprises
-  subtitle: ...
+  title: Conseils en gestion d'entreprises
+  subtitle: ""
   features:
-    - title: Le suivi de gestion
-      desc: "Vous avez besoin de savoir ou vous en êtes pour maitriser au mieux votre
-        gestion. Nous vous proposons notre solution de tableau de bord. "
+    - title: Le suivi de gestion et prévisionnel
+      desc: "Vous avez besoin de savoir où vous en êtes pour maitriser au mieux votre
+        gestion. Vous souhaitez disposer d'une information financière sans
+        attendre votre RDV Bilan. Vous envisagez d'investir, embaucher et avez
+        besoin de vérifier votre résultat. Vous avez besoin d'un rapport complet
+        pour mieux communiquer avec votre partenaire bancaire. "
       logo: rainbow-solid.svg
-    - title: Le prévisionnel
-      desc: Répondons ensemble à vos interrogations via un prévisionnel d'activité
-        formalisé dans un rapport complet avec nos analyses et recommandations.
-      logo: feather-solid.svg
-    - title: Conseil en Gestion
-      desc: ...
-      logo: bolt-solid.svg
 serviceCTA:
   title: Vous recherchez un consultant spécialisé ?
   desc: Contactez nos équipes pour débuter votre accompagnement !
