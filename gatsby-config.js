@@ -6,8 +6,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    url: "https://wwww.necoh.fr",
-    siteUrl: "https://wwww.necoh.fr",
+    url: "https://www.necoh.fr",
+    siteUrl: "https://www.necoh.fr",
     title: "Necoh",
     description:
       "Votre partenaire Expertise Comptable, Juridique, Audit, Fiscalité, Conseil, Paie & RH.",
