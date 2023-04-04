@@ -43,6 +43,10 @@ export default function Layout({ children }) {
           name="google-site-verification"
           content="xPIrrlt_qjldnKejJjqVYrhMEM2mMZtFX67ogclqEbM"
         />
+        <meta
+          name="description"
+          content="Expertise comptable et conseil aux entreprises"
+        />
       </Helmet>
       <Header />
       {children}
