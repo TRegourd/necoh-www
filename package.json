@@ -26,6 +26,7 @@
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^5.17.0",
     "gatsby-plugin-sharp": "^4.17.0",
+    "gatsby-plugin-sitemap": "5.22.0",
     "gatsby-plugin-slug": "^2.0.0",
     "gatsby-plugin-styled-components": "^5.17.0",
     "gatsby-plugin-zopfli": "^2.0.0",

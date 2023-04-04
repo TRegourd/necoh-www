@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -25,6 +26,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
+        sitemap: "https://www.necoh.fr/sitemap/sitemap-index.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
