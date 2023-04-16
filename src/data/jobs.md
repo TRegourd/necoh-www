@@ -1,6 +1,6 @@
 ---
 jobs:
-  - date: 2023-03-14T12:53:25.324Z
+  - date: 2023-04-16T11:53:25.324Z
     title: Comptable Confirmé(e)
     location: Chambéry
     type: CDI
@@ -24,7 +24,7 @@ jobs:
       Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
 
 
-      **Salaire annuel : 32k€ minimum + Intéressement**
+      **Salaire annuel : 32k€ brut minimum + Intéressement**
 
 
       **Votre Profil**
@@ -47,8 +47,8 @@ jobs:
 
 
       **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
-  - date: 2023-03-28T12:31:23.909Z
-    title: Gestionnaire de paie Confirmé(e)
+  - date: 2023-04-16T12:31:23.909Z
+    title: "Gestionnaire de paie "
     desc: >-
       **Votre poste**
 
@@ -92,13 +92,13 @@ jobs:
 
       * Réaliser les procédures de ruptures conventionnelles.
 
-      * Salaire annuel : 32k€ minimum + Intéressement.
+      * Salaire annuel : 27,6 k€ brut minimum + Intéressement.
 
 
       **Votre Profil**
 
 
-      Vous avez une expérience d'au moins 3 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
+      Vous avez une expérience d'au moins 2 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
 
 
       Vous maitrisez du logiciel SILAE.
