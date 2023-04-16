@@ -21,8 +21,9 @@ indexAbout:
   title: Découvrez NECOH, des experts au service des entreprises et des particuliers.
   subtitle: A propos
   textLeft: >-
-    Porté par un territoire dynamique, NECOH prône un attachement local, gage de
-    proximité dans chacune des relations professionnelles que nous tissons.
+    Porté par un territoire dynamique, NECOH, implanté en Savoie à Chambéry,
+    prône un attachement local, gage de proximité dans chacune des relations
+    professionnelles que nous tissons.
 
     Nous œuvrons quotidiennement à garantir les conditions indispensables à un travail de qualité dans le respect et la bienveillance que chacun mérite.
   textRight: >-
