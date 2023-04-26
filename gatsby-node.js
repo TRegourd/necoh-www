@@ -67,7 +67,7 @@ exports.sourceNodes = async ({
       },
     })
     weblexData = await parser.parseURL(
-      "https://www.weblex.fr/passerelle/621-37b1/772740a565/flux.rss"
+      "https://www.weblex.fr/weblex/feed/14501"
     )
   } catch (err) {
     console.log(err)
