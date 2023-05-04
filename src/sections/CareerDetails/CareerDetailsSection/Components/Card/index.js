@@ -14,10 +14,10 @@ export default function CareerCard({ job }) {
           <Card.ListItem>
             <i className="fa fa-briefcase text-primary" /> {job.type}
           </Card.ListItem>
-          <Card.ListItem>
+          {/* <Card.ListItem>
             <i className="fa fa-clock text-primary" />{" "}
             {dayjs(job.date).format("DD/MM/YYYY")}
-          </Card.ListItem>
+          </Card.ListItem> */}
         </Card.List>
       </Card.Box>
       <Card.ButtonGroup>

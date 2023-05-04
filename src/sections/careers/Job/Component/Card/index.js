@@ -16,9 +16,9 @@ export default function ServicesCard({ title, address, hours, time, ...rest }) {
           <i className="fa fa-briefcase text-primary" />
           {time}
         </Card.List>
-        <Card.List fontColor="#262729b3">
+        {/* <Card.List fontColor="#262729b3">
           <i className="fa fa-clock text-primary" /> {hours}
-        </Card.List>
+        </Card.List> */}
       </Card.Listwrapper>
       <Card.Button
         className="btn-secondary"
