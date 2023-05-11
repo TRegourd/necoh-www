@@ -24,7 +24,7 @@ jobs:
       Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
 
 
-      **Salaire annuel : 32k€ brut minimum + Intéressement**
+      **Salaire annuel : 33k€ brut minimum + Intéressement**
 
 
       **Votre Profil**
