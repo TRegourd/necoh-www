@@ -5,10 +5,10 @@ careersHeader:
 careersIntro:
   title: Rejoindre Necoh, c'est progresser dans un environnement dynamique
   text: >
-    Vous bénéficier de toutes les conditions pour développer vos talents et
+    Vous bénéficier de toutes les conditions pour développer votre talent et
     votre épanouissement.
 
-    Nous avons à coeur de faire gagner en responsabilité les membres de notre équipe. Pour se faire la formation est au centre de notre politique RH, le partage d'expérience et l'accompagnement dans notre ADN. Chez Necoh, la qualité des relations humaines, l'ambiance au travail et l'autonomie sont des valeurs fortes.  
+    Nous avons à cœur de faire gagner en responsabilité les membres de notre équipe. Pour se faire la formation est au centre de notre politique RH, le partage d'expérience et l'accompagnement dans notre ADN. Chez Necoh, la qualité des relations humaines, l'ambiance au travail et l'autonomie sont des valeurs fortes.  
 
     Nos clients étant au centre de notre projet collectif, votre quotidien sera riche de découvertes et d'innovations.
 
@@ -21,16 +21,19 @@ benefits:
     logo: people-group.svg
     color: "#f39200"
   - title: Flexibilité
-    desc: Aménagement possible du temps de travail sur 4 jours et demi.
+    desc: |-
+      Aménagement possible du temps de travail sur 4 jours et demi.
+      1 journée de télé-travail par semaine possible.
     logo: rainbow-solid.svg
     color: "#be1522"
   - title: Taille Humaine
-    desc: "Une équipe de 20 personnes qui vous accueillera chaleureusement. "
+    desc: "Une équipe d'une vingtaine de personnes qui vous accueillera
+      chaleureusement. "
     logo: feather-solid.svg
     color: "#cbbb9f"
   - title: Avantages sociaux
-    desc: Tickets restaurants, Wiismile (oeuvres sociales), chèques cadeaux et
-      journée détente.
+    desc: Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise,
+      primes de clientèle et de cooptation.
     logo: briefcase-solid.svg
     color: "#d23131"
 ---
