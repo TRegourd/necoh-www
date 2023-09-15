@@ -23,7 +23,7 @@ benefits:
   - title: Flexibilité
     desc: |-
       Aménagement possible du temps de travail sur 4 jours et demi.
-      1 journée de télé-travail par semaine possible.
+      1 journée de télétravail par semaine possible.
     logo: rainbow-solid.svg
     color: "#be1522"
   - title: Taille Humaine
