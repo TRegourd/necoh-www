@@ -17,9 +17,10 @@ serviceFeatures:
     - title: Le suivi de gestion et prévisionnel
       desc: Vous avez besoin de savoir où vous en êtes pour maitriser au mieux votre
         gestion. Vous souhaitez disposer d'une information financière sans
-        attendre votre RDV Bilan. Vous envisagez d'investir, embaucher et avez
-        besoin de vérifier votre résultat. Vous avez besoin d'un rapport complet
-        pour mieux communiquer avec votre partenaire bancaire..
+        attendre votre rendez-vous Bilan. Vous envisagez d'investir et/ou
+        embaucher et avez besoin de vérifier votre résultat. Vous avez besoin
+        d'un rapport complet pour mieux communiquer avec votre partenaire
+        bancaire.
       logo: rainbow-solid.svg
 serviceCTA:
   title: Vous recherchez un consultant spécialisé ?
