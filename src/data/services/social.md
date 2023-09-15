@@ -16,7 +16,7 @@ serviceIntro:
     Le pôle social de chez NECOH vous accompagne afin de garantir et optimiser la gestion de votre personnel. Nous vous apportons notre expertise en matière de production sociale et de conseil en ressources humaines.
 
 
-    Nous connaissons votre métier et vos problématiques et sommes à votre écoute pour vous accompagner.
+    Nous connaissons votre métier et vos problématiques et nous sommes à votre écoute pour vous accompagner.
   image: social_photo.png
 serviceFeatures:
   title: Expertise Sociale
