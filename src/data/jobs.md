@@ -38,9 +38,9 @@ jobs:
       **Vos avantages**
 
 
-      * Intéressement, Tickets restaurants, Wiismile (oeuvres sociales), chèques cadeaux et journée détente.
+      * Intéressement, Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise, primes de clientèle et de cooptation.
 
-      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi
+      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi. 1 journée de télétravail par semaine possible.
 
 
       Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ...                   
