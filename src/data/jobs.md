@@ -98,7 +98,7 @@ jobs:
       **Votre Profil**
 
 
-      Vous avez une expérience d'au moins 2 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
+      Vous avez une expérience d'au moins 2 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité.
 
 
       Vous maitrisez le logiciel SILAE.
@@ -110,7 +110,7 @@ jobs:
       **Vos avantages**
 
 
-      * Avantages : Intéressement, Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise, primes de clientèle et de cooptation.
+      * Intéressement, Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise, primes de clientèle et de cooptation.
 
       * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi. 1 journée de télétravail par semaine possible.
 
