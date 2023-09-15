@@ -1,7 +1,7 @@
 ---
 serviceHeader:
   title: Assistance Juridique
-  subtitle: Accompagnement dans vos démarches juridiques.
+  subtitle: Accompagnement dans vos démarches juridiques
   logo: necohjuridique_logocouleursnoir.png
   color: "#804e33"
 serviceIntro:
