@@ -15,13 +15,13 @@ jobs:
       Vous préparez les états financiers des clients ainsi que les situations comptables et tableaux de bord en collaboration directe avec nos managers.
 
 
-      Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre evolution.
+      Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre évolution.
 
 
-      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENEO vous permettent d'etre réactifs et disponibles.
+      Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENEO vous permettent d'être réactifs et disponibles.
 
 
-      Vous avez à coeur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
+      Vous avez à cœur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
 
 
       **Salaire annuel : 33k€ brut minimum + Intéressement**
@@ -32,7 +32,7 @@ jobs:
 
       * Vous avez une expérience d'au moins 4 ans en cabinet d'Expertise-comptable. 
 
-      * Vous etes rigoureux avec un sens de l'organisation, proactif, sympathique avec un bon sens du relationnel et digital centré.
+      * Vous êtes rigoureux avec un sens de l'organisation, proactif, sympathique avec un bon sens du relationnel et digital centré.
 
 
       **Vos avantages**
@@ -98,10 +98,10 @@ jobs:
       **Votre Profil**
 
 
-      Vous avez une expérience d'au moins 2 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité
+      Vous avez une expérience d'au moins 2 ans en tant que Gestionnaire de Paie . De formation en Paie/Gestion/Comptabilité.
 
 
-      Vous maitrisez du logiciel SILAE.
+      Vous maitrisez le logiciel SILAE.
 
 
       Vous êtes curieux(se), autonome, proactif(ve), sympathique et à l'écoute.
@@ -110,9 +110,9 @@ jobs:
       **Vos avantages**
 
 
-      * Intéressement, Tickets restaurants, Wiismile (oeuvres sociales), chèques cadeaux et journée détente.
+      * Intéressement, Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise, primes de clientèle et de cooptation.
 
-      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi
+      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi. 1 journée de télétravail par semaine possible.
 
 
       Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ... 
