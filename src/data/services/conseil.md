@@ -6,30 +6,22 @@ serviceHeader:
   color: "#9f4f2d"
 serviceIntro:
   title: A propos
-  subtitle: Aut debitis eveniet aut quas quia et inventore nulla qui itaque
-    cumque. A nihil vitae ut consectetur aliquam id neque consequatur rem enim
-    molestiae eos aspernatur galisum est modi dolor 33 pariatur nulla. 33
-    nostrum placeat eum explicabo rerum aut repudiandae qui quisquam veniam qui
-    placeat velit.
+  subtitle: A chaque étape de votre développement, nous sommes à vos côtés pour
+    prendre les meilleures décisions et vous proposons des solutions innovantes
+    pour mieux vous accompagner.
   image: conseil_photo.png
 serviceFeatures:
-  title: Conseil aux entreprises
-  subtitle: Lorem ipsum dolor sit amet, consectetured  adipiscing elit.
+  title: Gestion d'entreprise
+  subtitle: ""
   features:
-    - title: Création d'entreprise
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
+    - title: Le suivi de gestion et prévisionnel
+      desc: Vous avez besoin de savoir où vous en êtes pour maitriser au mieux votre
+        gestion. Vous souhaitez disposer d'une information financière sans
+        attendre votre rendez-vous Bilan. Vous envisagez d'investir et/ou
+        embaucher et avez besoin de vérifier votre résultat. Vous avez besoin
+        d'un rapport complet pour mieux communiquer avec votre partenaire
+        bancaire.
       logo: rainbow-solid.svg
-    - title: Bilan Comptable
-      desc: "A few decent projects can keep your business very healthy for a long
-        time. "
-      logo: feather-solid.svg
-    - title: Conseil en Gestion
-      desc: A few decent projects can keep your business very healthy for a long time.
-        The trouble is, those lucrative corporate contracts can be extremely
-        tricky to land.
-      logo: bolt-solid.svg
 serviceCTA:
   title: Vous recherchez un consultant spécialisé ?
   desc: Contactez nos équipes pour débuter votre accompagnement !
