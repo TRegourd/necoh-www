@@ -63,7 +63,9 @@ export default function BlogDetails({ content, articlesList }) {
               </Details.Box>
               <Details.Box>
                 <Details.Text>
-                  <Markdown>{content.content}</Markdown>
+                  <Markdown className="blog-article-text">
+                    {content.content}
+                  </Markdown>
                 </Details.Text>
 
                 <Details.Tag mt="50px">
