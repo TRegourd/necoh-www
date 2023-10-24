@@ -136,9 +136,7 @@ jobs:
       Au sein de Necoh, vous intégrez une équipe conviviale et
 
 
-
-
-      Vous participez à faire grandir ceux que vous accompagnez en vue de renforcer la solidarité d'équipe qui nous est chère. Nos experts-comptables vous accompagnent dans votre propre évolution.
+      Vous participez à faire grandir les collaborateurs en vue de renforcer la solidarité d'équipe qui nous est chère. Nos experts-comptables vous accompagnent dans votre propre évolution.
 
 
       Vous avez à cœur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
