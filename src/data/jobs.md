@@ -15,7 +15,7 @@ jobs:
       Vous préparez les états financiers des clients ainsi que les situations comptables et tableaux de bord en collaboration directe avec nos managers.
 
 
-      Vous participez à faire grandir ceux qui commencent dans notre métiers en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre évolution.
+      Vous participez à faire grandir ceux qui commencent dans notre métier en vue de renforcer la solidarité d'équipe qui nous est chère. Nos managers vous accompagnent dans votre propre évolution.
 
 
       Les outils innovants à votre disposition, notamment l'automatisation de la saisie avec INGENEO vous permettent d'être réactifs et disponibles.
