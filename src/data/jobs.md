@@ -133,7 +133,8 @@ jobs:
       **Votre Poste**
 
 
-      Au sein de Necoh, vous intégrez une équipe conviviale et prenez en charge la gestion d'un portefeuille clients avec l'appui d'une équipe de collaborateurs.\
+      Au sein de Necoh, vous intégrez une équipe conviviale et prenez en charge la gestion d'un portefeuille clients avec l'appui d'une équipe de collaborateurs.
+
 
       Véritable référent technique, vous animez avec dynamisme et proximité, et vous accompagnez l'équipe dans la gestion de ses missions, auprès d'une clientèle composée principalement de TPE/PME.
 
