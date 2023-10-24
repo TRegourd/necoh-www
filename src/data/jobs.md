@@ -133,16 +133,24 @@ jobs:
       **Votre Poste**
 
 
-      Au sein de Necoh, vous intégrez une équipe conviviale et
+      Au sein de Necoh, vous intégrez une équipe conviviale et prenez en charge la gestion d'un portefeuille clients avec l'appui d'une équipe de collaborateurs.\
+
+      Véritable référent technique, vous animez avec dynamisme et proximité, et vous accompagnez l'équipe dans la gestion de ses missions, auprès d'une clientèle composée principalement de TPE/PME.
 
 
-      Vous participez à faire grandir les collaborateurs en vue de renforcer la solidarité d'équipe qui nous est chère. Nos experts-comptables vous accompagnent dans votre propre évolution.
+      Nos experts-comptables vous accompagnent dans votre propre évolution.
+
+
+      Egalement, vous gérez en direct un portefeuille de clients clés pour lesquels vous avez un véritable rôle de conseil et d'accompagnement, et les orientez dans leurs choix stratégiques.
 
 
       Vous avez à cœur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
 
 
       **Salaire annuel : 42 k€ brut minimum + Intéressement**
+
+
+      **P﻿oste ouvert su stage d'expertise comptable**
 
 
       **Votre Profil**
