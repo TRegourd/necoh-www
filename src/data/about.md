@@ -10,7 +10,7 @@ aboutIntro:
     quotidien.                                                                                                                                                            Nous
     travaillons en étroite relation avec vos équipes et vos autres conseils sur
     les problématiques de votre entreprise en lien avec la comptabilité, la
-    fiscalité, la gestion, le juridique et la
+    fiscalité, l'audit, la gestion, le juridique et la
     paie.                                                                          Nous
     déployons une écoute active au service de la réussite de votre projet
     professionnel afin de vous délivrer les outils et conseils adéquats. Notre
