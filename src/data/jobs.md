@@ -53,6 +53,9 @@ jobs:
       **Votre poste**
 
 
+      Au sein de Necoh, vous intégrez une équipe conviviale et assurez en grande autonomie le suivi d'un portefeuille de clients.
+
+
       **Gérer les bulletins de salaires**
 
 
