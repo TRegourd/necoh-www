@@ -2,7 +2,7 @@
 jobs:
   - date: 2023-04-16T11:53:25.324Z
     title: Comptable Confirmé(e)
-    location: Chambéry
+    location: Chambéry - Barberaz
     type: CDI
     link: mail
     desc: >-
@@ -123,6 +123,49 @@ jobs:
 
       **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
     type: CDI
-    location: Chambéry
+    location: Chambéry - Barberaz
+    link: mail
+  - date: 2023-10-24T10:39:27.234Z
+    title: Manager en expertise comptable
+    location: Chambéry - Barberaz
+    type: CDI
+    desc: >-
+      **Votre Poste**
+
+
+      Au sein de Necoh, vous intégrez une équipe conviviale et
+
+
+
+
+      Vous participez à faire grandir ceux que vous accompagnez en vue de renforcer la solidarité d'équipe qui nous est chère. Nos experts-comptables vous accompagnent dans votre propre évolution.
+
+
+      Vous avez à cœur de travailler à l'organisation de la fonction administrative et financière de nos clients quelque soit la taille avec nos outils ACD Compta Expert et RCA MEG.
+
+
+      **Salaire annuel : 42 k€ brut minimum + Intéressement**
+
+
+      **Votre Profil**
+
+
+      * Vous avez une expérience d'au moins 5 ans en cabinet d'Expertise-comptable. 
+
+      * Vous êtes rigoureux avec un sens de l'organisation, proactif, sympathique avec un bon sens du relationnel et digital centré.
+
+
+      **Vos avantages**
+
+
+      * Intéressement, Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise, primes de clientèle et de cooptation.
+
+      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi. 1 journée de télétravail par semaine possible.
+
+
+      Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ...                   
+
+
+      **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
     link: mail
 ---
