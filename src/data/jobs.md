@@ -174,4 +174,59 @@ jobs:
 
       **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
     link: mail
+  - date: 2023-10-24T10:56:35.876Z
+    title: "Intégrateur Fonctionnel de Logiciels de Gestion Comptable et Gestion des
+      Flux "
+    location: Chambéry - Barberaz
+    type: CDI
+    link: mail
+    desc: >-
+      **Votre Poste**
+
+
+      Au sein de Necoh, vous intégrez une équipe conviviale afin d'intervenir en toute autonomie, sur un portefeuille très varié composé d’entrepreneurs individuels, TPE et PME, voire ETI.
+
+
+      Vos missions seront sur trois axes principaux :
+
+
+      * Installation et paramétrage de logiciels métiers auprès des clients (identifier et comprendre les besoins du client, accompagner les clients dans la prise en mains des logiciels métiers) – 50% des missions 
+
+      * Veille sur les nouveaux outils, dans le but de pouvoir proposer au cabinet et aux clients des outils et logiciels innovants qui leur permettront de relever les défis de transformations à venir – 25% des missions
+
+      * Accompagnement sur le pilotage du transfert et du traitements des flux, notamment dans le cadre de la facturation électronique – 25% des missions
+
+
+      Le poste est en pleine création. Les sujets de gestion des flux pourront représenter une part plus important des missions à moyen-terme, selon les besoins opérationnels et évolutions. Des missions d’analyse des données et de visualisation pourront également être développées à l’avenir. 
+
+
+      Nous recherchons une personne avec une grande autonomie, qui souhaite être le référent fonctionnel informatique et intégration des données, à la fois au sein du cabinet mais aussi auprès des clients. L’aspect multi-tâche du poste, et la possibilité de travailler sur des problématiques variées, sont des critères qui vous attirent.
+
+
+      Des déplacements réguliers chez les clients de la région sont à prévoir (à la journée ou à la demi-journée). 
+
+
+      **Salaire annuel : 36 k€ brut minimum + Intéressement**
+
+
+      **Votre Profil**
+
+
+      * Vous avez une expérience d'au moins 5 à 10 ans sur des missions d’installation et de paramétrage de logiciels informatiques chez des clients. Vous avez idéalement des notions en comptabilité. 
+
+      * Nous sommes également ouverts à des profils qui viennent de la comptabilité mais qui ont une forte appétence pour les outils informatiques et la gestion des flux de données. 
+
+
+      **Vos avantages**
+
+
+      * Intéressement, Tickets restaurants, CSE, chèques cadeaux, bonus, journée d'entreprise, primes de clientèle et de cooptation.
+
+      * Flexibilité : Aménagement possible du temps de travail sur 4 jours et demi. 1 journée de télétravail par semaine possible.
+
+
+      Notre entreprise est en fort développement, rien n'est établi, tout reste à faire ...                   
+
+
+      **Vous aimez les challenges, faites partie de l'aventure et rejoignez nous !**
 ---
