@@ -5,7 +5,7 @@ careersHeader:
 careersIntro:
   title: Rejoindre Necoh, c'est progresser dans un environnement dynamique
   text: >
-    Vous bénéficier de toutes les conditions pour développer votre talent et
+    Vous bénéficiez de toutes les conditions pour développer votre talent et
     votre épanouissement.
 
     Nous avons à cœur de faire gagner en responsabilité les membres de notre équipe. Pour se faire la formation est au centre de notre politique RH, le partage d'expérience et l'accompagnement dans notre ADN. Chez Necoh, la qualité des relations humaines, l'ambiance au travail et l'autonomie sont des valeurs fortes.  
