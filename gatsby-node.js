@@ -1,7 +1,7 @@
 const path = require("path")
-const { default: slugify } = require("slugify")
 const dayjs = require("dayjs")
 let Parser = require("rss-parser")
+const { default: slugify } = require("slugify")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -319,7 +319,7 @@ exports.createPages = ({ actions, graphql }) => {
         const blogTemplate = path.resolve("./src/detailPages/blog-details.js")
 
         result.data.weblexQuery.nodes?.forEach(page => {
-          const slug = slugify(page?.title)
+          const slug = makeUrlSafe(page?.title)
           createPage({
             path: `articles/${slug}`,
             component: blogTemplate,
@@ -335,3 +335,10 @@ exports.createPages = ({ actions, graphql }) => {
     )
   })
 }
+
+const makeUrlSafe = url => {
+  return slugify(url, {
+    remove: /[*+~.()'"!:@?«»]/g,
+    lower: true,
+  })
+} // change also the code in src

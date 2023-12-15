@@ -1,8 +1,8 @@
-import dayjs from "dayjs"
 import React from "react"
-import slugify from "slugify"
 import { Link } from "~components"
 import Card from "./style"
+import slugify from "slugify"
+
 export default function ServicesCard({ title, address, hours, time, ...rest }) {
   return (
     <Card backgrounColor="#fff">
