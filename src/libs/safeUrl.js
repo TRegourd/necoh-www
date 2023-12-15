@@ -2,7 +2,7 @@ import slugify from "slugify"
 
 export default function makeUrlSafe(url) {
   return slugify(url, {
-    remove: /[*+~.()'"!:@?«»]/g,
+    strict: true,
     lower: true,
   })
 }
