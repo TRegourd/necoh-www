@@ -2,7 +2,8 @@ import React from "react"
 import SideBar from "./style"
 import { Link } from "~components"
 import dayjs from "dayjs"
-import slugify from "slugify"
+import makeUrlSafe from "../../../../libs/safeUrl"
+
 export default function SideBarSection({ articles }) {
   // function extractCategories(list) {
   //   if (list && list.length != 0) {
@@ -42,7 +43,7 @@ export default function SideBarSection({ articles }) {
           {articles?.slice(0, 8).map(article => {
             return (
               <SideBar.RecentPostList key={article?.id}>
-                <Link to={`/articles/${slugify(article?.title)}`}>
+                <Link to={`/articles/${makeUrlSafe(article?.title)}`}>
                   <SideBar.RecentPostTitle>
                     {article?.title}
                   </SideBar.RecentPostTitle>

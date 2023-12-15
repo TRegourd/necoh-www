@@ -6,7 +6,8 @@ import { GatsbyImage, StaticImage as Img } from "gatsby-plugin-image"
 import dayjs from "dayjs"
 import Markdown from "markdown-to-jsx"
 import Sidebar from "./Component/Sidebar"
-import slugify from "slugify"
+import makeUrlSafe from "../../libs/safeUrl"
+
 export default function BlogDetails({ content, articlesList }) {
   const nextArticle = () => {
     const nextArticleTitle =
@@ -16,7 +17,7 @@ export default function BlogDetails({ content, articlesList }) {
         ) + 1
       ]?.title
 
-    return nextArticleTitle ? slugify(nextArticleTitle) : ""
+    return nextArticleTitle ? makeUrlSafe(nextArticleTitle) : ""
   }
 
   const prevArticle = () => {
@@ -27,7 +28,7 @@ export default function BlogDetails({ content, articlesList }) {
         ) - 1
       ]?.title
 
-    return prevArticleTitle ? slugify(prevArticleTitle) : ""
+    return prevArticleTitle ? makeUrlSafe(prevArticleTitle) : ""
   }
 
   return (
