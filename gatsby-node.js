@@ -338,7 +338,7 @@ exports.createPages = ({ actions, graphql }) => {
 
 const makeUrlSafe = url => {
   return slugify(url, {
-    remove: /[*+~.()'"!:@?«»]/g,
+    strict: true,
     lower: true,
   })
 } // change also the code in src
